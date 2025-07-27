@@ -1,7 +1,9 @@
 import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
-public class Randomize{
+
+public class Randomize {
 
     ExpansionsList expansionsList = new ExpansionsList();
     CharactersList charactersList = new CharactersList();
@@ -18,7 +20,7 @@ public class Randomize{
         return expansions.get(0);
     }
 
-    public String getHero(){
+    public String getOneHero(){
         randomize(heroes);
         return heroes.get(0);
     }
@@ -28,4 +30,12 @@ public class Randomize{
         return villains.get(0);
     }
 
+    public List<String> getHeroTeam(){
+        List<String> heroTeam = new ArrayList<>();
+        randomize(heroes);
+        for (int i = 0; i < 4; i ++){
+            heroTeam.add(heroes.get(i));
+        }
+            return heroTeam;
+    }
 }
