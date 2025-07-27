@@ -14,6 +14,7 @@ public class ExpansionsList {
     public final String phoenixFive = "Phoenix Five";
     public final String xForce = "X-Force";
     public final String daysOfFuturePast = "Days of Future Past";
-    
+    public final String xMenBlueTeam = "X-MEN Blue Team";
+    public final String xMenMutantPromos = "X-MEN Mutant Promos";    
 
 }
