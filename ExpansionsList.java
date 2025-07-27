@@ -11,6 +11,7 @@ public class ExpansionsList {
     public final String xMenCoreBox = "X-MEN Core Box";
     public final String deadpool = "Deadpool";
     public final String riseOfTheBlackPanther = "Rise of the Black Panther";
+    public final String phoenixFive = "Phoenix Five";
     
 
 }

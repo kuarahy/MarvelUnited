@@ -51,6 +51,16 @@ public class Charactes extends ExpansionsList {
     public final String bobAgentOfHydra = "Bob Agent of Hydra";
     public final String vBobAgentOfHydra = "Bob Agent of Hydra";
     /* Rise of the Black Panther */
+    public final String vKillmonger = "Killmonger";
+    public final String blackPanther = "Black Panther";
+    public final String winterSoldier = "Winter Soldier";
+    public final String shuri = "Shuri";
+    /* Phoenix Five */
+    public final String hopeSummers = "Hope Summers";
+    public final String vColossus = "Colossus";
+    public final String vCyclops = "Cyclops";
+    public final String vMagik = "Magik";
+    public final String vEmmaFrost = "Emma Frost";
+    public final String vNamor = "Namor";
     
-
 }
