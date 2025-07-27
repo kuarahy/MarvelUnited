@@ -20,7 +20,7 @@ public class ExpansionsList {
     public final String xMenBlueTeam = "X-MEN Blue Team";
     public final String xMenMutantPromos = "X-MEN Mutant Promos";
 
-    public List<String> getExpansionList(){
+    public List<String> getExpansions(){
         List<String> expansionList = new ArrayList<>();
         expansionList.add(enterTheSpiderVerse);
         expansionList.add(coreBoxAvengers);

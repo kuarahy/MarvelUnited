@@ -7,7 +7,10 @@
  * have mattered for performance.
  */
 
-public class Charactes extends ExpansionsList {
+import java.util.List;
+import java.util.ArrayList;
+
+public class CharactersList extends ExpansionsList {
     /* Enter the Spider-Verse */
     public final String spiderMan = "Spider-Man";
     public final String milesMorales = "Miles Morales";
@@ -25,7 +28,7 @@ public class Charactes extends ExpansionsList {
     public final String vTaskmaster = "Taskmaster";
     /* The Horsemen of Apocalypse */
     public final String apocalypse = "Apocalypse";
-    public final 
+    public final String vApolypse = "Apocalypse";
     public final String vFamine = "Famine";
     public final String vWar = "War";
     public final String vDeath ="Death";
@@ -87,7 +90,7 @@ public class Charactes extends ExpansionsList {
     public final String vMastermind = "Mastermind";
     public final String vLadyDeathstrike = "Lady Deathstrike";
     public final String vShadowKing = "Shadow King";
-    public final Stirng vSilverSamurai = "Silver Samurai";
+    public final String vSilverSamurai = "Silver Samurai";
     public final String vOmegaRed = "Omega Red";
     public final String vArcade = "Arcade";
     public final String vSauron = "Sauron";
@@ -100,13 +103,13 @@ public class Charactes extends ExpansionsList {
     public final String vDarkPhoenix = "Dark Phoenix";
     public final String vLegion = "Legion";
     public final String legion = "Legion";
-    public final String vemmaFrost = "Emma Frost - Mutant Promo";
+    public final String vEmmaFrostMutantPromo = "Emma Frost - Mutant Promo";
     public final String emmaFrost = "Emma Frost";
     public final String vMarrow = "Marrow";
     public final String marrow = "Marrow";
     public final String vSpiral = "Spiral";
     public final String spiral = "Spiral";
-    public final String vNamor = "Namor";
+    public final String vNamorMutantPromo = "Namor from Mutant Promo";
     public final String magik = "Magik";
     public final String sunspot = "Sunspot"; // BRAZIL MENTIONED
     public final String warlock = "Warlock";
@@ -141,5 +144,130 @@ public class Charactes extends ExpansionsList {
     public final String puck = "Puck";
     public final String guardian = "Guardian";
     public final String snowbird = "Snowbird";
+
+    public List getHeroes(){
+        List<String> heroesList = new ArrayList<>();
+        heroesList.add(spiderMan);
+        heroesList.add(milesMorales);
+        heroesList.add(ghostSpider);
+        heroesList.add(ironMan);
+        heroesList.add(captainAmerica);
+        heroesList.add(blackWidow);
+        heroesList.add(hulk);
+        heroesList.add(captainMarvel);
+        heroesList.add(antMan);
+        heroesList.add(wasp);
+        heroesList.add(professorX);
+        heroesList.add(cyclops);
+        heroesList.add(jeanGrey);
+        heroesList.add(wolverine);
+        heroesList.add(storm);
+        heroesList.add(deadpool);
+        heroesList.add(ladyDeadpool);
+        heroesList.add(bobAgentOfHydra);
+        heroesList.add(blackPanther);
+        heroesList.add(winterSoldier);
+        heroesList.add(shuri);
+        heroesList.add(hopeSummers);
+        heroesList.add(domino);
+        heroesList.add(cannonball);
+        heroesList.add(shatterstar);
+        heroesList.add(cable);
+        heroesList.add(logan);
+        heroesList.add(banshee);
+        heroesList.add(psylocke);
+        heroesList.add(jubilee);
+        heroesList.add(rogue);
+        heroesList.add(gambit);
+        heroesList.add(emmaFrost);
+        heroesList.add(magik);
+        heroesList.add(sunspot);
+        heroesList.add(warlock);
+        heroesList.add(mirage);
+        heroesList.add(wolfsbane);
+        heroesList.add(havok);
+        heroesList.add(multipleMan);
+        heroesList.add(polaris);
+        heroesList.add(strongGuy);
+        heroesList.add(boomBoom);
+        heroesList.add(blink);
+        heroesList.add(firestar);
+        heroesList.add(warpath);
+        heroesList.add(fantomex);
+        heroesList.add(feral);
+        heroesList.add(kittyPride);
+        heroesList.add(lockheed);
+        heroesList.add(nightcrawler);
+        heroesList.add(captainBritain);
+        heroesList.add(phoenix);
+        heroesList.add(doop);
+        heroesList.add(gwenpool);
+        heroesList.add(dagger);
+        heroesList.add(cloak);
+        heroesList.add(longshot);
+        heroesList.add(sunfire);
+        heroesList.add(weaponX);
+        heroesList.add(x23);
+        heroesList.add(dazzler);
+        heroesList.add(pixie);
+        heroesList.add(sasquatch);
+        heroesList.add(puck);
+        heroesList.add(guardian);
+        heroesList.add(snowbird);
+        return heroesList;
+    }
+
+    public List getVillains(){
+        List<String> villainsList = new ArrayList<>();
+        villainsList.add(vRedSkull);
+        villainsList.add(vUltron);
+        villainsList.add(vTaskmaster);
+        villainsList.add(vApolypse);
+        villainsList.add(vFamine);
+        villainsList.add(vWar);
+        villainsList.add(vDeath);
+        villainsList.add(vPestilence);
+        villainsList.add(vJuggernaut);
+        villainsList.add(vSabretooth);
+        villainsList.add(vMystique);
+        villainsList.add(vMagneto);
+        villainsList.add(vDeadpool);
+        villainsList.add(vDeadpoolChallenge);
+        villainsList.add(vBobAgentOfHydra);
+        villainsList.add(vKillmonger);
+        villainsList.add(vColossus);
+        villainsList.add(vCyclops);
+        villainsList.add(vMagik);
+        villainsList.add(vEmmaFrost);
+        villainsList.add(vNamor);
+        villainsList.add(vStryfe);
+        villainsList.add(vSentinelI);
+        villainsList.add(vSentinelII);
+        villainsList.add(vSentinelIII);
+        villainsList.add(vNimrod);
+        villainsList.add(vMisterSinister);
+        villainsList.add(vAvalanche);
+        villainsList.add(vDeathbird);
+        villainsList.add(vMastermind);
+        villainsList.add(vLadyDeathstrike);
+        villainsList.add(vShadowKing);
+        villainsList.add(vSilverSamurai);
+        villainsList.add(vOmegaRed);
+        villainsList.add(vArcade);
+        villainsList.add(vSauron);
+        villainsList.add(vPyro);
+        villainsList.add(vToad);
+        villainsList.add(vBlob);
+        villainsList.add(vMojo);
+        villainsList.add(vBroodQueen);
+        villainsList.add(vOnslaught);
+        villainsList.add(vDarkPhoenix);
+        villainsList.add(vLegion);
+        villainsList.add(vEmmaFrostMutantPromo);
+        villainsList.add(vMarrow);
+        villainsList.add(vSpiral);
+        villainsList.add(vNamorMutantPromo);
+        return villainsList;
+    }
     
 }
