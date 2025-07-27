@@ -9,9 +9,7 @@ import java.util.ArrayList;
 public class ExpansionsList {
 
     public final String enterTheSpiderVerse = "Enter the Spider-Verse";
-    public final String coreBoxAvengers = "Avengers Core Box";
     public final String xMenTheHorsemenOfApocalypse = "X-MEN The Horsemen of Apocalypse";
-    public final String xMenCoreBox = "X-MEN Core Box";
     public final String deadpool = "Deadpool";
     public final String riseOfTheBlackPanther = "Rise of the Black Panther";
     public final String phoenixFive = "Phoenix Five";
@@ -23,10 +21,8 @@ public class ExpansionsList {
     public List<String> getExpansions(){
         List<String> expansionList = new ArrayList<>();
         expansionList.add(enterTheSpiderVerse);
-        expansionList.add(coreBoxAvengers);
         expansionList.add(xMenTheHorsemenOfApocalypse);
         expansionList.add(xMenBlueTeam);
-        expansionList.add(xMenCoreBox);
         expansionList.add(xMenMutantPromos);
         expansionList.add(deadpool);
         expansionList.add(riseOfTheBlackPanther);
