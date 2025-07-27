@@ -5,11 +5,12 @@
 
 public class ExpansionsList {
 
-    /* Enter the Spider-Verse */
     public final String enterTheSpiderVerse = "Enter the Spider-Verse";
     public final String coreBoxAvengers = "Avengers Core Box";
     public final String xMenTheHorsemenOfApocalypse = "X-MEN The Horsemen of Apocalypse";
-    public 
+    public final String xMenCoreBox = "X-MEN Core Box";
+    public final String deadpool = "Deadpool";
+    public final String riseOfTheBlackPanther = "Rise of the Black Panther";
     
 
 }
