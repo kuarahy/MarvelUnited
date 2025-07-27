@@ -1,0 +1,26 @@
+# Compiled class files
+*.class
+
+# Object files
+*.obj
+
+# JAR files
+*.jar
+
+# Package-info files
+package-info.java
+
+# IDE project files (adjust based on your IDE)
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.buildpath
+bin/
+out/
+
+# Eclipse specific
+.settings/
+*.eml
+*.dat

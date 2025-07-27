@@ -3,6 +3,9 @@
  * Extend this class with your characters so you can randomize it to your needs
  */
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class ExpansionsList {
 
     public final String enterTheSpiderVerse = "Enter the Spider-Verse";
@@ -15,6 +18,22 @@ public class ExpansionsList {
     public final String xForce = "X-Force";
     public final String daysOfFuturePast = "Days of Future Past";
     public final String xMenBlueTeam = "X-MEN Blue Team";
-    public final String xMenMutantPromos = "X-MEN Mutant Promos";    
+    public final String xMenMutantPromos = "X-MEN Mutant Promos";
+
+    public List<String> getExpansionList(){
+        List<String> expansionList = new ArrayList<>();
+        expansionList.add(enterTheSpiderVerse);
+        expansionList.add(coreBoxAvengers);
+        expansionList.add(xMenTheHorsemenOfApocalypse);
+        expansionList.add(xMenBlueTeam);
+        expansionList.add(xMenCoreBox);
+        expansionList.add(xMenMutantPromos);
+        expansionList.add(deadpool);
+        expansionList.add(riseOfTheBlackPanther);
+        expansionList.add(phoenixFive);
+        expansionList.add(xForce);
+        expansionList.add(daysOfFuturePast);
+        return expansionList;
+    }
 
 }
