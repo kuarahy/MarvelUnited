@@ -62,5 +62,16 @@ public class Charactes extends ExpansionsList {
     public final String vMagik = "Magik";
     public final String vEmmaFrost = "Emma Frost";
     public final String vNamor = "Namor";
-    
+    /* X-Force */
+    public final String domino = "Domino";
+    public final String cannonball = "Cannonball";
+    public final String shatterstar = "Shatterstar";
+    public final String cable = "Cable";
+    public final String vStryfe = "Stryfe";
+    /* Days of Future Past */
+    public final String logan = "Logan";
+    public final String vSentinelI = "Sentinel I";
+    public final String vSentinelII = "Sentinel II";
+    public final String vSentinelIII = "Sentinel III";
+    public final String vNimrod = "Nimrod";
 }
