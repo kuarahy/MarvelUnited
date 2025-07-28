@@ -47,7 +47,7 @@ public class CharactersList extends ExpansionsList {
     public final String magneto = "Magneto";
     /* Deadpool */
     public final String deadpool = "Deadpool";
-    public final String ladyDeadpool = "LadyDeadpool";
+    public final String ladyDeadpool = "Lady Deadpool";
     public final String vDeadpool = "Deadpool";
     public final String vDeadpoolChallenge = "Deadpool (Challenge)";
     public final String deadpoolUnicorn = "Deadpool in an Unicorn";
