@@ -23,6 +23,7 @@ public class CharactersList extends ExpansionsList {
     public final String captainMarvel = "Captain Marvel";
     public final String antMan = "Ant-Man";
     public final String wasp = "Wasp";
+    public final String doctorStrange = "Doctor Strange";
     public final String vRedSkull = "RedSkull";
     public final String vUltron = "Ultron";
     public final String vTaskmaster = "Taskmaster";
@@ -39,6 +40,7 @@ public class CharactersList extends ExpansionsList {
     public final String jeanGrey = "Jean Grey";
     public final String wolverine = "Wolverine";
     public final String storm = "Storm";
+    public final String mohawkStorm = "Mohawk Storm";
     public final String vJuggernaut = "Juggernaut";
     public final String vSabretooth = "Sabretooth";
     public final String vMystique = "Mystique";
