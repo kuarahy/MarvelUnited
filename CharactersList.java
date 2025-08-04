@@ -29,7 +29,7 @@ public class CharactersList extends ExpansionsList {
     public final String vTaskmaster = "Taskmaster";
     /* The Horsemen of Apocalypse */
     public final String apocalypse = "Apocalypse";
-    public final String vApolypse = "Apocalypse";
+    public final String vApocalypse = "Apocalypse";
     public final String vFamine = "Famine";
     public final String vWar = "War";
     public final String vDeath ="Death";
@@ -224,7 +224,7 @@ public class CharactersList extends ExpansionsList {
         villainsList.add(vRedSkull);
         villainsList.add(vUltron);
         villainsList.add(vTaskmaster);
-        villainsList.add(vApolypse);
+        villainsList.add(vApocalypse);
         villainsList.add(vFamine);
         villainsList.add(vWar);
         villainsList.add(vDeath);
