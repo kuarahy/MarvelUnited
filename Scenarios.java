@@ -6,6 +6,7 @@ public class Scenarios {
      * and heroes
      * I could create a storyline and randomize each villain too
      * How about storylines that have different branches depending on possibilities?
+     * I probably should extend Scenarios to each scenario so they are more readable 
      * 
      */
 
