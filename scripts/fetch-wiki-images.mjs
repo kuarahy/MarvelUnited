@@ -72,7 +72,7 @@ for (const [id, { slug, role, fileTitle }] of entries) {
       continue
     }
 
-    const outDir  = join(OUT_BASE, role === 'hero' ? 'heroes' : 'villains')
+    const outDir  = join(OUT_BASE, role === 'villain' ? 'villains' : 'heroes')
     const outPath = join(outDir, `${id}.jpg`)
 
     if (!FORCE && existsSync(outPath)) {
