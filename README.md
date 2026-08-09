@@ -1,6 +1,6 @@
 # Marvel United Randomizer
 
-A Java tool that randomizes heroes, villains, and expansions for the **Marvel United** board game. It also includes two custom branching campaign systems with narrative consequences for wins and losses.
+A tool that randomizes heroes, villains, and expansions for the **Marvel United** board game. It also includes two custom branching campaign systems with narrative consequences for wins and losses.
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![Board Game](https://img.shields.io/badge/Board%20Game-Marvel%20United-red?style=flat)
