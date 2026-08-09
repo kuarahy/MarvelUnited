@@ -1,10 +1,9 @@
+![Board Game](https://img.shields.io/badge/Board%20Game-Marvel%20United-red?style=flat)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat)
+
 # Marvel United Randomizer
 
 A tool that randomizes heroes, villains, and expansions for the **Marvel United** board game. It also includes two custom branching campaign systems with narrative consequences for wins and losses.
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![Board Game](https://img.shields.io/badge/Board%20Game-Marvel%20United-red?style=flat)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat)
 
 Link: https://marvel-united-randomizer.vercel.app/
 
