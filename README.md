@@ -36,23 +36,6 @@ Link: https://marvel-united-randomizer.vercel.app/
 
 ---
 
-## How to Run
-
-Requires Java 8+. Compile and run from the project root:
-
-```bash
-javac *.java
-java Main
-```
-
-The output lists all expansions and heroes, then prints:
-- A randomly selected expansion
-- A randomly selected hero
-- A randomly selected villain
-- A randomly selected team of 4 heroes
-
----
-
 ## Campaigns
 
 ### [X-Men: Children of the Atom](Campaigns/X-Men%20Campaign.md)
