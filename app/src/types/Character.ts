@@ -1,4 +1,4 @@
-export type CharacterRole = 'hero' | 'villain'
+export type CharacterRole = 'hero' | 'villain' | 'anti-hero'
 
 export interface Character {
   id: string

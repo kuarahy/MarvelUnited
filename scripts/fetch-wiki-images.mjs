@@ -34,6 +34,7 @@ const WIKI_API = 'https://cmon-united.fandom.com/api.php'
 const OUT_BASE = join(ROOT, 'app', 'public', 'images')
 
 const DRY_RUN = process.env.DRY_RUN === '1'
+const FORCE   = process.env.FORCE === '1'
 const ONLY    = process.env.ONLY ?? null
 
 const slugs = JSON.parse(
@@ -73,6 +74,12 @@ for (const [id, { slug, role, fileTitle }] of entries) {
 
     const outDir  = join(OUT_BASE, role === 'hero' ? 'heroes' : 'villains')
     const outPath = join(outDir, `${id}.jpg`)
+
+    if (!FORCE && existsSync(outPath)) {
+      console.log(`–  ${id} (already exists)`)
+      ok++
+      continue
+    }
 
     mkdirSync(outDir, { recursive: true })
 
