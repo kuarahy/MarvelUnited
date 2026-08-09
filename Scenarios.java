@@ -7,7 +7,6 @@ public class Scenarios {
      * I could create a storyline and randomize each villain too
      * How about storylines that have different branches depending on possibilities?
      * I probably should extend Scenarios to each scenario so they are more readable 
-     * 
      */
 
     String echoesOfFear = "New York City. Mutant tensions are at a boiling point. A series of manipulated events—starting with a brutal rampage—threatens to ignite a city-wide conflict and trigger a dark future where mutantkind is hunted. Can you uncover the conspiracy and prevent disaster?";
