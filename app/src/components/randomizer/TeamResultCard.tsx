@@ -17,7 +17,7 @@ export function TeamResultCard({ team }: TeamResultCardProps) {
         Hero Team
       </span>
       {team.length > 0 ? (
-        <ul className="mt-2 grid grid-cols-2 gap-3">
+        <ul className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
           {team.map((hero) => (
             <li
               key={hero.id}
