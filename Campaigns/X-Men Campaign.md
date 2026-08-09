@@ -4,7 +4,6 @@ Based on how official Marvel United Campaign Decks work, each campaign uses Rule
 
 Here's a custom X-Men campaign with branching paths where losses change the story, starting small and escalating in scope.
 
-
 ---
 
 ## Campaign Overview: "From the Ashes"
@@ -16,24 +15,7 @@ Here's a custom X-Men campaign with branching paths where losses change the stor
 
 ---
 
-## NON-X-MEN CAMPAIGN README
-
-```markdown
-# Marvel United: Earth's Mightiest – A Branching Campaign
-
-## Campaign Overview: "Shadows Over New York"
-
-**Starting Roster:** Spider-Man, Iron Man, Captain America, Thor, Black Widow, Hulk (choose 4 per game, but all are available)
-
-**Tone:** Begins with street-level crime, escalates to cosmic threats and Earth-shattering events.
-
-**Theme:** This campaign treats New York City as the heart of the Marvel Universe. Every villain wants a piece of it, and the Heroes must defend it while uncovering a conspiracy that links street crime to intergalactic warlords.
-
----
-
 ## Campaign Flow Diagram
-
-### Graph Style (Mermaid.js - Renders on GitHub/GitLab)
 
 ```mermaid
 graph LR
