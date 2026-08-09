@@ -53,20 +53,6 @@ The output lists all expansions and heroes, then prints:
 
 ---
 
-## Project Structure
-
-| File | Purpose |
-|---|---|
-| `Main.java` | Entry point — runs and prints randomized results |
-| `Randomize.java` | Shuffles and picks from lists |
-| `CharactersList.java` | All heroes and villains grouped by expansion |
-| `ExpansionsList.java` | All owned expansions |
-| `Scenarios.java` | Original story prompts for custom sessions |
-| `EchoesOfFear.java` | Scenario stub — *Echoes of Fear* |
-| `Campaigns/` | Markdown files for branching campaign systems |
-
----
-
 ## Campaigns
 
 ### [X-Men: Children of the Atom](Campaigns/X-Men%20Campaign.md)
