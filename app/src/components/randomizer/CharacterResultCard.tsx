@@ -11,15 +11,15 @@ export function CharacterResultCard({ label, character, expansionName }: Charact
   return (
     <div className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
       {character ? (
-        <>
-          <div className="w-full" style={{ aspectRatio: '2 / 3' }}>
+        <div className="flex items-stretch">
+          <div className="w-1/4 shrink-0" style={{ aspectRatio: '2 / 3' }}>
             <img
               src={getCharacterImageUrl(character)}
               alt={character.name}
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="p-3 flex flex-col gap-1">
+          <div className="p-3 flex flex-col gap-1 justify-center">
             <span className="text-xs font-semibold uppercase tracking-widest text-gray-400">
               {label}
             </span>
@@ -32,7 +32,7 @@ export function CharacterResultCard({ label, character, expansionName }: Charact
               </span>
             )}
           </div>
-        </>
+        </div>
       ) : (
         <div className="p-4 min-h-[80px] flex flex-col gap-1 justify-center">
           <span className="text-xs font-semibold uppercase tracking-widest text-gray-400">

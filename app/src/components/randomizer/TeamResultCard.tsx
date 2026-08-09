@@ -1,8 +1,13 @@
 import type { Character } from '../../types'
+import { expansions } from '../../data'
 import { getCharacterImageUrl } from '../../utils'
 
 interface TeamResultCardProps {
   team: Character[]
+}
+
+function resolveExpansionName(expansionId: string): string | undefined {
+  return expansions.find((e) => e.id === expansionId)?.name
 }
 
 export function TeamResultCard({ team }: TeamResultCardProps) {
@@ -16,18 +21,25 @@ export function TeamResultCard({ team }: TeamResultCardProps) {
           {team.map((hero) => (
             <li
               key={hero.id}
-              className="rounded-lg overflow-hidden border border-gray-100 bg-gray-50"
+              className="rounded-lg overflow-hidden border border-gray-100 bg-gray-50 flex items-stretch"
             >
-              <div className="w-full" style={{ aspectRatio: '2 / 3' }}>
+              <div className="w-1/4 shrink-0" style={{ aspectRatio: '2 / 3' }}>
                 <img
                   src={getCharacterImageUrl(hero)}
                   alt={hero.name}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-sm font-semibold text-gray-900 px-2 py-1.5 leading-tight">
-                {hero.name}
-              </p>
+              <div className="p-2 flex flex-col gap-1 justify-center">
+                <p className="text-lg font-bold text-gray-900 leading-tight">
+                  {hero.name}
+                </p>
+                {resolveExpansionName(hero.expansionId) && (
+                  <span className="text-xs bg-red-100 text-red-700 font-medium px-2 py-0.5 rounded-full self-start">
+                    {resolveExpansionName(hero.expansionId)}
+                  </span>
+                )}
+              </div>
             </li>
           ))}
         </ul>
