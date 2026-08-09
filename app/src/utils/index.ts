@@ -1,0 +1,1 @@
+export { getCharacterImageUrl } from './getCharacterImageUrl'

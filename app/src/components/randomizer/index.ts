@@ -1,4 +1,5 @@
 export { RollButton } from './RollButton'
 export { ResultCard } from './ResultCard'
+export { CharacterResultCard } from './CharacterResultCard'
 export { TeamResultCard } from './TeamResultCard'
 export { RandomizerPanel } from './RandomizerPanel'

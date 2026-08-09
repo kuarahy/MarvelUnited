@@ -1,4 +1,5 @@
 import type { Character } from '../../types'
+import { getCharacterImageUrl } from '../../utils'
 
 interface TeamResultCardProps {
   team: Character[]
@@ -11,13 +12,22 @@ export function TeamResultCard({ team }: TeamResultCardProps) {
         Hero Team
       </span>
       {team.length > 0 ? (
-        <ul className="mt-2 grid grid-cols-2 gap-2">
+        <ul className="mt-2 grid grid-cols-2 gap-3">
           {team.map((hero) => (
             <li
               key={hero.id}
-              className="text-sm font-semibold text-gray-900 bg-gray-50 rounded-lg px-3 py-2 border border-gray-100"
+              className="rounded-lg overflow-hidden border border-gray-100 bg-gray-50"
             >
-              {hero.name}
+              <div className="w-full" style={{ aspectRatio: '2 / 3' }}>
+                <img
+                  src={getCharacterImageUrl(hero)}
+                  alt={hero.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p className="text-sm font-semibold text-gray-900 px-2 py-1.5 leading-tight">
+                {hero.name}
+              </p>
             </li>
           ))}
         </ul>
