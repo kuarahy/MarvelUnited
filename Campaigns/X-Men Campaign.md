@@ -4,6 +4,7 @@ Based on how official Marvel United Campaign Decks work, each campaign uses Rule
 
 Here's a custom X-Men campaign with branching paths where losses change the story, starting small and escalating in scope.
 
+
 ---
 
 ## Campaign Overview: "From the Ashes"
@@ -11,6 +12,85 @@ Here's a custom X-Men campaign with branching paths where losses change the stor
 **Starting Roster:** Cyclops, Jean Grey, Beast, Iceman, Angel (the original five X-Men)
 
 **Tone:** Begins with a mysterious threat to the school, escalates to mutant extinction-level events.
+
+
+---
+
+## NON-X-MEN CAMPAIGN README
+
+```markdown
+# Marvel United: Earth's Mightiest – A Branching Campaign
+
+## Campaign Overview: "Shadows Over New York"
+
+**Starting Roster:** Spider-Man, Iron Man, Captain America, Thor, Black Widow, Hulk (choose 4 per game, but all are available)
+
+**Tone:** Begins with street-level crime, escalates to cosmic threats and Earth-shattering events.
+
+**Theme:** This campaign treats New York City as the heart of the Marvel Universe. Every villain wants a piece of it, and the Heroes must defend it while uncovering a conspiracy that links street crime to intergalactic warlords.
+
+---
+
+## Campaign Flow Diagram
+
+### Graph Style (Mermaid.js - Renders on GitHub/GitLab)
+
+```mermaid
+graph LR
+    Start((Start)) --> G1[Game 1: Kingpin]
+    
+    G1 -- WIN --> G2A[Game 2A: Serpent Society]
+    G1 -- LOSS --> G2B[Game 2B: Mysterio]
+    
+    G2A -- WIN --> G3A[Game 3A: Cosmic Cube]
+    G2A -- LOSS --> G3B[Game 3B: Lethal Legion]
+    
+    G2B -- WIN --> G3C[Game 3C: Secret Empire]
+    G2B -- LOSS --> G2C[Game 2C: Kraven]
+    
+    G3A -- WIN --> V1((🏆 VICTORY))
+    G3A -- LOSS --> G4A[Game 4A: Reality Warped]
+    
+    G3B -- WIN --> G4B[Game 4B: Last Avenger]
+    G3B -- LOSS --> G4C[Game 4C: Underground Avengers]
+    
+    G3C -- WIN --> V2((🏆 VICTORY))
+    G3C -- LOSS --> G4G[Game 4G: Resistance History]
+    
+    G2C -- WIN --> G3D[Game 3D: MODOK]
+    G2C -- LOSS --> G3E[Game 3E: Thanos Gauntlet]
+    
+    G3D -- WIN --> V3((🏆 VICTORY))
+    G3D -- LOSS --> G4I[Game 4I: MODOK's Revenge]
+    
+    G3E -- WIN --> V4((🏆 VICTORY))
+    G3E -- LOSS --> GO((💀 GAME OVER))
+    
+    G4A -- WIN --> V5((🏆 VICTORY))
+    G4A -- LOSS --> GO
+    
+    G4B -- WIN --> V6((🏆 VICTORY))
+    G4B -- LOSS --> GO
+    
+    G4C -- WIN --> V7((🏆 VICTORY))
+    G4C -- LOSS --> GO
+    
+    G4G -- WIN --> V8((🏆 VICTORY))
+    G4G -- LOSS --> GO
+    
+    G4I -- WIN --> V9((🏆 VICTORY))
+    G4I -- LOSS --> GO
+    
+    classDef victory fill:#4CAF50,stroke:#2E7D32,color:white
+    classDef gameover fill:#f44336,stroke:#c62828,color:white
+    classDef game fill:#2196F3,stroke:#0D47A1,color:white
+    classDef start fill:#FF9800,stroke:#E65100,color:white
+    
+    class V1,V2,V3,V4,V5,V6,V7,V8,V9 victory
+    class GO gameover
+    class G1,G2A,G2B,G2C,G3A,G3B,G3C,G3D,G3E,G4A,G4B,G4C,G4G,G4I game
+    class Start start
+```
 
 ---
 
