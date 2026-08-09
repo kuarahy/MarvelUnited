@@ -67,24 +67,6 @@ A 4-act Avengers campaign starting at street level and escalating to cosmic thre
 **Required:** Marvel United base set  
 **Recommended expansions:** Spider-Man, Avengers, Guardians of the Galaxy
 
----
-
-## Scenarios
-
-Original scenario prompts included in `Scenarios.java` to set the tone for custom sessions:
-
-- **Echoes of Fear** — Mutant tensions ignite a city-wide conflict in New York City
-- **Crimson Covenant** — A clandestine society employs twisted experiments and deadly assassins
-- **Phoenix Rising** — A fractured team faces the destructive legacy of the Phoenix
-- **Shifting Sands** — Investigators uncover a pattern of manipulation and theft
-- **Shadow Syndicate** — Spies and manipulators operate from the shadows
-- **Doop Directive** — Reality itself breaks as a mysterious entity breaches dimensions
-- **Frozen Frontier** — An ancient evil stirs beneath the ice
-- **Fantomex Gambit** — Elaborate schemes and intricate traps threaten to unravel reality
-- and more...
-
----
-
 ## Roadmap
 
 - [x] Convert code to a front-end centric code that can be deployed and read directly from Vercel, or similar
