@@ -17,15 +17,6 @@ The two campaigns already in this repository were trimmed to a more playable foo
 
 ## New Campaign Sketches
 
-### Single-Expansion Campaigns *(pick up and play)*
-
-| Campaign Name | Theme | # of Expansions | List of Expansions | Suggested Heroes | Suggested Villains |
-|---|---|:---:|---|---|---|
-| **Age of Ultron** | MCU — Avengers vs Ultron's drone army and the shadow of Hydra | 1 | Marvel United (Avengers Core) | Iron Man, Captain America, Black Widow, Hulk, Ant-Man | Ultron, Taskmaster, Red Skull |
-| **The Brotherhood** | Comics — Classic X-Men defend the school from the Brotherhood | 1 | Marvel United: X-Men | Cyclops, Jean Grey, Wolverine, Storm, Professor X | Magneto, Mystique, Juggernaut, Sabretooth |
-| **Wakanda Under Siege** | MCU/Comics — T'Challa defends Wakanda from within | 1 | Rise of the Black Panther | Black Panther, Winter Soldier, Shuri | Killmonger |
-| **Maximum Effort** | Comics — Meta/chaos campaign; Deadpool vs everyone including himself | 1 | Deadpool | Deadpool, Lady Deadpool | Deadpool (Challenge), Bob Agent of Hydra |
-
 ---
 
 ### Two-Expansion Campaigns *(a full evening)*
