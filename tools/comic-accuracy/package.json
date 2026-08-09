@@ -1,0 +1,12 @@
+{
+  "name": "mu-comic-accuracy",
+  "version": "1.0.0",
+  "description": "Standalone tool: builds a comic co-appearance lookup for Marvel United crossover research.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
