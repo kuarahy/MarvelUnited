@@ -53,11 +53,11 @@ A 4-act Avengers campaign starting at street level and escalating to cosmic thre
 ## Roadmap
 
 - [x] Convert code to a front-end centric code that can be deployed and read directly from Vercel, or similar
-- [ ] Add more campaign boxes (Kickstarter Promo Box 2, The Infinity Gauntlet, Spider-Geddon)
+- [x] Add more campaign boxes (Kickstarter Promo Box 2, The Infinity Gauntlet, Spider-Geddon)
+- [x] Add images to every expansion, hero, villain, and fields
+- [ ] Add suggestions or automated connections to Random Scenarios
 - [ ] Release PDFs to communities with images, making it easy for people to play with
 - [ ] Add name and links social media, donation boxes, etc (no ads! :D)
-- [ ] Add images to every expansion, hero, villain, and fields
-- [ ] Add suggestions or automated connections to Random Scenarios
 
 ---
 
