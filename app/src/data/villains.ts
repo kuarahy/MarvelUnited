@@ -43,7 +43,7 @@ export const villains: Character[] = [
 
   // ── X-Men Blue Team ──────────────────────────────────────────────────────
   { id: 'mister-sinister',     name: 'Mister Sinister',    role: 'villain', expansionId: 'xmen-blue' },
-  { id: 'thanos',              name: 'Thanos',             role: 'villain', expansionId: 'xmen-blue' },
+  { id: 'thanos',              name: 'Thanos',             role: 'villain', expansionId: 'infinity-gauntlet' },
 
   // ── Season 1 Stretch Goals (continued) ───────────────────────────────────
   { id: 'dormammu',            name: 'Dormammu',           role: 'villain', expansionId: 'season-1-stretch-goals' },
@@ -161,10 +161,10 @@ export const villains: Character[] = [
   { id: 'corvus-glaive',       name: 'Corvus Glaive',      role: 'villain', expansionId: 'season-1-stretch-goals' },
   { id: 'kang',                name: 'Kang',               role: 'villain', expansionId: 'season-1-stretch-goals' },
 
-  // ── Avengers (KS Exclusives) ─────────────────────────────────────────────
-  { id: 'black-dwarf',         name: 'Black Dwarf',        role: 'villain', expansionId: 'avengers-ks' },
-  { id: 'ebony-maw',           name: 'Ebony Maw',          role: 'villain', expansionId: 'avengers-ks' },
-  { id: 'proxima-midnight',    name: 'Proxima Midnight',   role: 'villain', expansionId: 'avengers-ks' },
+  // ── The Infinity Gauntlet ─────────────────────────────────────────────────
+  { id: 'black-dwarf',         name: 'Black Dwarf',        role: 'villain', expansionId: 'infinity-gauntlet' },
+  { id: 'ebony-maw',           name: 'Ebony Maw',          role: 'villain', expansionId: 'infinity-gauntlet' },
+  { id: 'proxima-midnight',    name: 'Proxima Midnight',   role: 'villain', expansionId: 'infinity-gauntlet' },
 
   // ── Season 2 Stretch Goals ────────────────────────────────────────────────────────────────────
   { id: 'avalanche',           name: 'Avalanche',          role: 'villain', expansionId: 'season-2-stretch-goals' },
@@ -176,9 +176,9 @@ export const villains: Character[] = [
   { id: 'omega-red',           name: 'Omega Red',          role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'arcade',              name: 'Arcade',             role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'sauron',              name: 'Sauron',             role: 'villain', expansionId: 'season-2-stretch-goals' },
-  { id: 'pyro',                name: 'Pyro',               role: 'villain', expansionId: 'season-2-stretch-goals' },
-  { id: 'toad',                name: 'Toad',               role: 'villain', expansionId: 'season-2-stretch-goals' },
-  { id: 'blob',                name: 'Blob',               role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'pyro',                name: 'Pyro',               role: 'villain', expansionId: 'mutant-promos' },
+  { id: 'toad',                name: 'Toad',               role: 'villain', expansionId: 'mutant-promos' },
+  { id: 'blob',                name: 'Blob',               role: 'villain', expansionId: 'mutant-promos' },
   { id: 'mojo',                name: 'Mojo',               role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'brood-queen',         name: 'Brood Queen',        role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'onslaught',           name: 'Onslaught',          role: 'villain', expansionId: 'season-2-stretch-goals' },

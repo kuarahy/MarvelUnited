@@ -5,4 +5,5 @@ export interface Character {
   name: string
   role: CharacterRole
   expansionId: string
+  ksExclusive?: boolean
 }

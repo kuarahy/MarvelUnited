@@ -36,7 +36,7 @@ export const expansions: Expansion[] = [
 
 
   // ── KS Exclusive Packs ───────────────────────────────────────────────────
-  { id: 'avengers-ks',          name: 'Avengers (KS Exclusives)',        type: 'promo' },
+  { id: 'infinity-gauntlet',     name: 'The Infinity Gauntlet',           type: 'promo' },
   { id: 'spider-foes',          name: 'Return of the Sinister Six',      type: 'promo' },
   { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',        type: 'promo' },
   // Remaining X-Men mutant promos (will redistribute over time)
