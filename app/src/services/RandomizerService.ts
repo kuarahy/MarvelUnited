@@ -13,19 +13,19 @@ export class RandomizerService {
     private readonly expansionRepo: ExpansionRepository,
   ) {}
 
-  rollHero(): Character {
-    return this.shuffle.pickOne(this.characterRepo.getHeroes())
+  rollHero(pool?: Character[]): Character {
+    return this.shuffle.pickOne(pool ?? this.characterRepo.getHeroes())
   }
 
-  rollVillain(): Character {
-    return this.shuffle.pickOne(this.characterRepo.getVillains())
+  rollVillain(pool?: Character[]): Character {
+    return this.shuffle.pickOne(pool ?? this.characterRepo.getVillains())
   }
 
-  rollTeam(): Character[] {
-    return this.shuffle.pickMany(this.characterRepo.getHeroes(), TEAM_SIZE)
+  rollTeam(pool?: Character[]): Character[] {
+    return this.shuffle.pickMany(pool ?? this.characterRepo.getHeroes(), TEAM_SIZE)
   }
 
-  rollExpansion(): Expansion {
-    return this.shuffle.pickOne(this.expansionRepo.getAll())
+  rollExpansion(pool?: Expansion[]): Expansion {
+    return this.shuffle.pickOne(pool ?? this.expansionRepo.getAll())
   }
 }
