@@ -42,14 +42,46 @@ the Guardians of the Galaxy expansion.
 
 | Field | Current | Correct |
 |---|---|---|
-| `expansionId` | `'guardians'` | `'s1-promo-box'` |
+| `expansionId` | `'guardians'` | `'season-1-stretch-goals'` |
 
-Yondu was a separate S1 KS promo (described as "fits in promo box") —
-he was never part of the retail Guardians box. He belongs in `s1-promo-box`
-alongside Nick Fury, Hawkeye, Corvus Glaive, and Adam Warlock (see below).
+Yondu was a separate S1 KS promo (never in the retail Guardians box). The
+HoU "Season 1 Kickstarter Stretch Goals" page lists him under
+"Separate Kickstarter Promos" — the correct bucket is `season-1-stretch-goals`,
+the same expansion that holds Nick Fury, Hawkeye, Corvus Glaive, and Adam Warlock.
 
-**Fix:** change the `expansionId` on `yondu` in `heroes.ts` (as part of the
-S1 Promo Box re-assignment batch).
+**Fix:** change the `expansionId` on `yondu` in `heroes.ts`.
+
+---
+
+### 3 — `avengers-ks` is misnamed — rename to `infinity-gauntlet`
+
+The existing expansion entry reads:
+
+```ts
+{ id: 'avengers-ks', name: 'Avengers (KS Exclusives)', type: 'promo' }
+```
+
+This name is wrong. The Avengers content lives in `avengers-core` (the retail
+Core Box). There is no separate "Avengers KS box." The actual occupants —
+Black Dwarf, Ebony Maw, Proxima Midnight — are all characters from
+**The Infinity Gauntlet** expansion, which has its own dedicated box.
+
+**Fix:** rename `id` → `'infinity-gauntlet'` and `name` → `'The Infinity Gauntlet'`
+in `expansions.ts`, and update all three character `expansionId` references in
+`villains.ts`.
+
+---
+
+### 4 — Thanos: wrong expansion
+
+| Field | Current | Correct |
+|---|---|---|
+| `expansionId` | `'xmen-blue'` | `'infinity-gauntlet'` |
+
+The HoU Infinity Gauntlet page lists Thanos alongside the Black Order. He has
+no connection to the X-Men Blue Team expansion.
+
+**Fix:** change the `expansionId` on `thanos` in `villains.ts`.
 
 ---
 
@@ -112,52 +144,6 @@ tile?), but the data model change can land independently first.
 > Storm (Mohawk) is already in `season-2-stretch-goals` (a KS-only expansion),
 > so she does not need the flag.
 
----
-
-## `avengers-ks` Is Misnamed and Misclassified
-
-The existing expansion entry reads:
-
-```ts
-{ id: 'avengers-ks', name: 'Avengers (KS Exclusives)', type: 'promo' }
-```
-
-This is wrong on two levels:
-
-1. **The Avengers core box is `avengers-core`** (Marvel United Core Box). There
-   is no separate "Avengers KS box" — the Avengers content lives in the retail
-   core box. Naming this `avengers-ks` implies a relationship that does not exist.
-
-2. **The current occupants (Black Dwarf, Ebony Maw, Proxima Midnight) are Black
-   Order characters** from the **Infinity Gauntlet** expansion — a S1 KS-only
-   expansion (not at retail). They have nothing to do with an "Avengers" label.
-
-### Proposed split
-
-| New expansion ID | Name | Content |
-|---|---|---|
-| `infinity-gauntlet` | The Infinity Gauntlet | Black Dwarf, Ebony Maw, Proxima Midnight (and any other Infinity Gauntlet content) |
-| `s1-promo-box` | S1 KS Promo Box | Nick Fury, Hawkeye (heroes) + Corvus Glaive (villain) + Yondu + Adam Warlock |
-
-The `avengers-ks` ID should be retired entirely.
-
----
-
-## S1 Promo Box Character Re-assignments
-
-Per the HoU article, these five characters are S1 KS Promo Box content — not
-stretch goals. They are currently misassigned:
-
-| Character | Current `expansionId` | Correct `expansionId` |
-|---|---|---|
-| Nick Fury | `season-1-stretch-goals` | `s1-promo-box` |
-| Hawkeye | `season-1-stretch-goals` | `s1-promo-box` |
-| Corvus Glaive | `season-1-stretch-goals` | `s1-promo-box` |
-| Adam Warlock | `season-1-stretch-goals` | `s1-promo-box` |
-| Yondu | `guardians` (already flagged above) | `s1-promo-box` |
-
----
-
 ## S2 Villain Trio Re-assignment
 
 Per the HoU article, Pyro, Blob, and Toad are a distinct **"Pyro, Blob, Toad
@@ -173,11 +159,10 @@ KS-only mutant content), or create a dedicated `s2-villain-set` expansion if
 ## Implementation Order
 
 1. **Data fix** — Silver Surfer `expansionId` → `'fantastic-four'`
-2. **Expansion rename** — retire `avengers-ks`; add `infinity-gauntlet` and
-   `s1-promo-box` to `expansions.ts`
-3. **Data fix** — move Black Dwarf, Ebony Maw, Proxima Midnight → `infinity-gauntlet`
-4. **Data fix** — move Nick Fury, Hawkeye, Corvus Glaive, Adam Warlock, Yondu
-   → `s1-promo-box`
+2. **Data fix** — Yondu `expansionId` → `'season-1-stretch-goals'`
+3. **Expansion rename** — `avengers-ks` → `infinity-gauntlet` in `expansions.ts`;
+   update `expansionId` on Black Dwarf, Ebony Maw, Proxima Midnight in `villains.ts`
+4. **Data fix** — Thanos `expansionId` → `'infinity-gauntlet'`
 5. **Data fix** — move Pyro, Blob, Toad → `mutant-promos` (or `s2-villain-set`)
 6. **Type change** — add `ksExclusive?: boolean` to `Character`
 7. **Data update** — set `ksExclusive: true` on the 7 characters listed above
