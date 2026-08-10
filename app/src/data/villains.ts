@@ -25,9 +25,9 @@ export const villains: Character[] = [
   // ── Guardians of the Galaxy ──────────────────────────────────────────────
   { id: 'ronan',               name: 'Ronan',              role: 'villain', expansionId: 'guardians' },
 
-  // ── Dark City ────────────────────────────────────────────────────────────
-  { id: 'kingpin',             name: 'Kingpin',            role: 'villain', expansionId: 'dark-city' },
-  { id: 'bullseye',            name: 'Bullseye',           role: 'villain', expansionId: 'dark-city' },
+  // ── Season 1 Stretch Goals ───────────────────────────────────────────────
+  { id: 'kingpin',             name: 'Kingpin',            role: 'villain', expansionId: 'avengers-ks' },
+  { id: 'bullseye',            name: 'Bullseye',           role: 'villain', expansionId: 'avengers-ks' },
 
   // ── X-MEN: The Horsemen of Apocalypse ───────────────────────────────────
   { id: 'famine',              name: 'Famine',             role: 'villain', expansionId: 'horsemen' },
@@ -105,42 +105,52 @@ export const villains: Character[] = [
   { id: 'sandman',             name: 'Sandman',            role: 'villain', expansionId: 'spider-foes' },
   { id: 'vulture',             name: 'Vulture',            role: 'villain', expansionId: 'spider-foes' },
 
-  // ── Marvel United: Omniverse ─────────────────────────────────────────────
-  { id: 'abomination',         name: 'Abomination',        role: 'villain', expansionId: 'omniverse' },
-  { id: 'absorbing-man',       name: 'Absorbing Man',      role: 'villain', expansionId: 'omniverse' },
-  { id: 'air-walker',          name: 'Air-Walker',         role: 'villain', expansionId: 'omniverse' },
-  { id: 'annihilus',           name: 'Annihilus',          role: 'villain', expansionId: 'omniverse' },
-  { id: 'apocalypse-aoa',      name: 'Apocalypse (Age of Apocalypse)', role: 'villain', expansionId: 'omniverse' },
-  { id: 'blastaar',            name: 'Blastaar',           role: 'villain', expansionId: 'omniverse' },
-  { id: 'bulldozer',           name: 'Bulldozer',          role: 'villain', expansionId: 'omniverse' },
-  { id: 'chameleon',           name: 'Chameleon',          role: 'villain', expansionId: 'omniverse' },
-  { id: 'crimson-dynamo',      name: 'Crimson Dynamo',     role: 'villain', expansionId: 'omniverse' },
-  { id: 'crossbones',          name: 'Crossbones',         role: 'villain', expansionId: 'omniverse' },
-  { id: 'dark-beast',          name: 'Dark Beast',         role: 'villain', expansionId: 'omniverse' },
-  { id: 'enchantress',         name: 'Enchantress',        role: 'villain', expansionId: 'omniverse' },
-  { id: 'fin-fang-foom',       name: 'Fin Fang Foom',      role: 'villain', expansionId: 'omniverse' },
-  { id: 'firelord',            name: 'Firelord',           role: 'villain', expansionId: 'omniverse' },
-  { id: 'galactus',            name: 'Galactus',           role: 'villain', expansionId: 'omniverse' },
-  { id: 'gorr',                name: 'Gorr',               role: 'villain', expansionId: 'omniverse' },
-  { id: 'high-evolutionary',   name: 'High Evolutionary',  role: 'villain', expansionId: 'omniverse' },
-  { id: 'hobgoblin',           name: 'Hobgoblin',          role: 'villain', expansionId: 'omniverse' },
-  { id: 'iron-patriot',        name: 'Iron Patriot',       role: 'villain', expansionId: 'omniverse' },
-  { id: 'klaw',                name: 'Klaw',               role: 'villain', expansionId: 'omniverse' },
-  { id: 'knull',               name: 'Knull',              role: 'villain', expansionId: 'omniverse' },
-  { id: 'lizard',              name: 'Lizard',             role: 'villain', expansionId: 'omniverse' },
-  { id: 'maximus',             name: 'Maximus',            role: 'villain', expansionId: 'omniverse' },
-  { id: 'mole-man',            name: 'Mole Man',           role: 'villain', expansionId: 'omniverse' },
-  { id: 'nemesis',             name: 'Nemesis',            role: 'villain', expansionId: 'omniverse' },
-  { id: 'piledriver',          name: 'Piledriver',         role: 'villain', expansionId: 'omniverse' },
-  { id: 'purple-man',          name: 'Purple Man',         role: 'villain', expansionId: 'omniverse' },
-  { id: 'queen-veranke',       name: 'Queen Veranke',      role: 'villain', expansionId: 'omniverse' },
-  { id: 'shocker',             name: 'Shocker',            role: 'villain', expansionId: 'omniverse' },
-  { id: 'skrulls',             name: 'Skrulls',            role: 'villain', expansionId: 'omniverse' },
-  { id: 'terrax',              name: 'Terrax',             role: 'villain', expansionId: 'omniverse' },
-  { id: 'thunderball',         name: 'Thunderball',        role: 'villain', expansionId: 'omniverse' },
-  { id: 'titania',             name: 'Titania',            role: 'villain', expansionId: 'omniverse' },
-  { id: 'vulcan',              name: 'Vulcan',             role: 'villain', expansionId: 'omniverse' },
-  { id: 'wrecker',             name: 'Wrecker',            role: 'villain', expansionId: 'omniverse' },
+  // ── Secret Invasion ──────────────────────────────────────────────────────
+  { id: 'queen-veranke',       name: 'Queen Veranke',      role: 'villain', expansionId: 'secret-invasion' },
+  { id: 'skrulls',             name: 'Skrulls',            role: 'villain', expansionId: 'secret-invasion' },
+
+  // ── War of Kings ─────────────────────────────────────────────────────────
+  { id: 'vulcan',              name: 'Vulcan',             role: 'villain', expansionId: 'war-of-kings' },
+
+  // ── X-Men: The Age of Apocalypse ─────────────────────────────────────────
+  { id: 'apocalypse-aoa',      name: 'Apocalypse (Age of Apocalypse)', role: 'villain', expansionId: 'age-of-apocalypse' },
+  { id: 'dark-beast',          name: 'Dark Beast',         role: 'villain', expansionId: 'age-of-apocalypse' },
+  { id: 'nemesis',             name: 'Nemesis',            role: 'villain', expansionId: 'age-of-apocalypse' },
+
+  // ── Annihilation ─────────────────────────────────────────────────────────
+  { id: 'annihilus',           name: 'Annihilus',          role: 'villain', expansionId: 'annihilation' },
+
+  // ── The Coming of Galactus ───────────────────────────────────────────────
+  { id: 'air-walker',          name: 'Air-Walker',         role: 'villain', expansionId: 'coming-of-galactus' },
+  { id: 'firelord',            name: 'Firelord',           role: 'villain', expansionId: 'coming-of-galactus' },
+  { id: 'galactus',            name: 'Galactus',           role: 'villain', expansionId: 'coming-of-galactus' },
+  { id: 'terrax',              name: 'Terrax',             role: 'villain', expansionId: 'coming-of-galactus' },
+
+  // ── Season 3 Stretch Goals ───────────────────────────────────────────────
+  { id: 'abomination',         name: 'Abomination',        role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'absorbing-man',       name: 'Absorbing Man',      role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'blastaar',            name: 'Blastaar',           role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'bulldozer',           name: 'Bulldozer',          role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'chameleon',           name: 'Chameleon',          role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'crimson-dynamo',      name: 'Crimson Dynamo',     role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'crossbones',          name: 'Crossbones',         role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'enchantress',         name: 'Enchantress',        role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'fin-fang-foom',       name: 'Fin Fang Foom',      role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'gorr',                name: 'Gorr',               role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'high-evolutionary',   name: 'High Evolutionary',  role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'hobgoblin',           name: 'Hobgoblin',          role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'iron-patriot',        name: 'Iron Patriot',       role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'klaw',                name: 'Klaw',               role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'knull',               name: 'Knull',              role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'lizard',              name: 'Lizard',             role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'maximus',             name: 'Maximus',            role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'mole-man',            name: 'Mole Man',           role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'piledriver',          name: 'Piledriver',         role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'purple-man',          name: 'Purple Man',         role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'shocker',             name: 'Shocker',            role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'thunderball',         name: 'Thunderball',        role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'titania',             name: 'Titania',            role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'wrecker',             name: 'Wrecker',            role: 'villain', expansionId: 'season-3-stretch-goals' },
 
   // ── Avengers (KS Exclusives) ─────────────────────────────────────────────
   { id: 'baron-zemo',          name: 'Baron Zemo',         role: 'villain', expansionId: 'avengers-ks' },

@@ -17,8 +17,6 @@ The two campaigns already in this repository were trimmed to a more playable foo
 
 ## New Campaign Sketches
 
----
-
 ### Two-Expansion Campaigns *(a full evening)*
 
 | Campaign Name | Theme | # of Expansions | List of Expansions | Suggested Heroes | Suggested Villains |

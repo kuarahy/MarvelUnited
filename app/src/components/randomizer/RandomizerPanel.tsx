@@ -1,9 +1,9 @@
 import { useRandomizer } from '../../hooks'
 import { expansions } from '../../data'
 import { RollButton } from './RollButton'
-import { ResultCard } from './ResultCard'
 import { CharacterResultCard } from './CharacterResultCard'
 import { TeamResultCard } from './TeamResultCard'
+import { SetResultCard } from './SetResultCard'
 
 function resolveExpansionName(expansionId: string): string | undefined {
   return expansions.find((e) => e.id === expansionId)?.name
@@ -16,7 +16,7 @@ export function RandomizerPanel() {
   return (
     <div className="flex flex-col gap-6">
       <section>
-        <h2 className="text-lg font-bold text-gray-700 mb-3">Characters</h2>
+        <h2 className="text-lg font-bold text-gray-700 mb-3">Randomize One Hero or Villain</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div className="flex flex-col gap-3">
             <RollButton label="Roll Hero" onClick={rollHero} />
@@ -38,7 +38,7 @@ export function RandomizerPanel() {
       </section>
 
       <section>
-        <h2 className="text-lg font-bold text-gray-700 mb-3">Team</h2>
+        <h2 className="text-lg font-bold text-gray-700 mb-3">Randomize a Team</h2>
         <div className="flex flex-col gap-3">
           <RollButton label="Roll Team of 4" onClick={rollTeam} />
           <TeamResultCard team={team} />
@@ -46,10 +46,10 @@ export function RandomizerPanel() {
       </section>
 
       <section>
-        <h2 className="text-lg font-bold text-gray-700 mb-3">Expansion</h2>
+        <h2 className="text-lg font-bold text-gray-700 mb-3">Set</h2>
         <div className="flex flex-col gap-3">
-          <RollButton label="Roll Expansion" onClick={rollExpansion} />
-          <ResultCard label="Expansion" value={expansion?.name ?? null} />
+          <RollButton label="Roll Set" onClick={rollExpansion} />
+          <SetResultCard set={expansion} />
         </div>
       </section>
     </div>

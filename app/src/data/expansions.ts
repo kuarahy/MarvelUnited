@@ -9,12 +9,11 @@ export const expansions: Expansion[] = [
 
   // ── Retail Expansions ────────────────────────────────────────────────────
   { id: 'spider-verse',    name: 'Enter the Spider-Verse',               type: 'expansion' },
-  { id: 'tales-of-asgard', name: 'Tales of Asgard',                     type: 'expansion' },
+  { id: 'tales-of-asgard', name: 'Tales of Asgard',                      type: 'expansion' },
   { id: 'guardians',       name: 'Guardians of the Galaxy',              type: 'expansion' },
-  { id: 'dark-city',       name: 'Dark City',                            type: 'expansion' },
   { id: 'horsemen',        name: 'X-MEN: The Horsemen of Apocalypse',    type: 'expansion' },
-  { id: 'xmen-blue',       name: 'X-MEN Blue Team',                     type: 'expansion' },
-  { id: 'xmen-gold',       name: 'X-MEN Gold Team',                     type: 'expansion' },
+  { id: 'xmen-blue',       name: 'X-MEN Blue Team',                      type: 'expansion' },
+  { id: 'xmen-gold',       name: 'X-MEN Gold Team',                      type: 'expansion' },
   { id: 'deadpool',        name: 'Deadpool',                             type: 'expansion' },
   { id: 'black-panther',   name: 'Rise of the Black Panther',            type: 'expansion' },
   { id: 'civil-war',       name: 'Civil War',                            type: 'expansion' },
@@ -27,11 +26,18 @@ export const expansions: Expansion[] = [
   { id: 'world-war-hulk',  name: 'World War Hulk',                       type: 'expansion' },
   { id: 'witching-hour',   name: 'Witching Hour',                        type: 'expansion' },
   { id: 'pet-companions',  name: 'Pet Companions',                       type: 'expansion' },
-  { id: 'omniverse',       name: 'Marvel United: Omniverse',             type: 'expansion' },
+
+  // ── Multiverse KS Exclusives ─────────────────────────────────────────────
+  { id: 'secret-invasion',     name: 'Secret Invasion',                  type: 'expansion' },
+  { id: 'war-of-kings',        name: 'War of Kings',                     type: 'expansion' },
+  { id: 'age-of-apocalypse',   name: 'X-Men: The Age of Apocalypse',     type: 'expansion' },
+  { id: 'annihilation',        name: 'Annihilation',                     type: 'expansion' },
+  { id: 'coming-of-galactus',  name: 'The Coming of Galactus',           type: 'expansion' },
 
   // ── KS Exclusive Packs ───────────────────────────────────────────────────
   { id: 'avengers-ks',     name: 'Avengers (KS Exclusives)',             type: 'promo' },
   { id: 'spider-foes',     name: "Spider-Man's Greatest Foes",           type: 'promo' },
   // Remaining X-Men mutant promos (will redistribute over time)
   { id: 'mutant-promos',   name: 'X-MEN Mutant Promos',                  type: 'promo' },
+  { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',        type: 'promo' },
 ]
