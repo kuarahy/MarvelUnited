@@ -87,7 +87,7 @@ export const villains: Character[] = [
   { id: 'scarlet-witch-fc',    name: 'Scarlet Witch (First Class)', role: 'villain', expansionId: 'first-class' },
 
   // ── Fantastic Four ───────────────────────────────────────────────────────
-  // Doctor Doom plays as anti-hero/hero above; no additional villain variant
+  { id: 'doctor-doom-v',       name: 'Doctor Doom',        role: 'villain', expansionId: 'fantastic-four' },
 
   // ── Maximum Carnage ──────────────────────────────────────────────────────
   { id: 'carnage',             name: 'Carnage',            role: 'villain', expansionId: 'maximum-carnage' },
