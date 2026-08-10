@@ -28,6 +28,8 @@ function filterByOwned<T extends { expansionId: string }>(
   const filtered = pool.filter((c) => ownedIds.has(c.expansionId))
   return filtered.length > 0 ? filtered : fallback
 }
+
+export interface RandomizerState {
   hero: Character | null
   villain: Character | null
   team: Character[]
@@ -39,15 +41,6 @@ export interface RandomizerActions {
   rollVillain: () => void
   rollTeam: () => void
   rollExpansion: () => void
-}
-
-function filterByOwned<T extends { expansionId: string }>(
-  pool: T[],
-  ownedIds: Set<string>,
-  fallback: T[],
-): T[] {
-  const filtered = pool.filter((c) => ownedIds.has(c.expansionId))
-  return filtered.length > 0 ? filtered : fallback
 }
 
 export function useRandomizer(ownedIds?: Set<string>): RandomizerState & RandomizerActions {
