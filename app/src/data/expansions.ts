@@ -23,9 +23,9 @@ export const expansions: Expansion[] = [
   { id: 'world-war-hulk',  name: 'World War Hulk',                       type: 'expansion' },
   { id: 'x-force',         name: 'X-Force',                              type: 'expansion' },
   { id: 'first-class',     name: 'X-Men: First Class',                   type: 'expansion' },
-  { id: 'xmen-blue',       name: 'X-MEN Blue Team',                      type: 'expansion' },
-  { id: 'xmen-gold',       name: 'X-MEN Gold Team',                      type: 'expansion' },
-  { id: 'horsemen',        name: 'X-MEN: The Horsemen of Apocalypse',    type: 'expansion' },
+  { id: 'xmen-blue',       name: 'X-Men: Blue Team',                      type: 'expansion' },
+  { id: 'xmen-gold',       name: 'X-Men: Gold Team',                      type: 'expansion' },
+  { id: 'horsemen',        name: 'X-Men: The Horsemen of Apocalypse',    type: 'expansion' },
 
   // ── Multiverse KS Exclusives ─────────────────────────────────────────────
   { id: 'annihilation',        name: 'Annihilation',                     type: 'expansion' },
@@ -39,5 +39,5 @@ export const expansions: Expansion[] = [
   { id: 'spider-foes',          name: 'Return of the Sinister Six',      type: 'promo' },
   // Remaining X-Men mutant promos (will redistribute over time)
   { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',        type: 'promo' },
-  { id: 'mutant-promos',        name: 'X-MEN Mutant Promos',             type: 'promo' },
+  { id: 'mutant-promos',        name: 'X-Men: Mutant Promos',             type: 'promo' },
 ]
