@@ -55,8 +55,7 @@ export const villains: Character[] = [
 
   // ── X-Men Gold Team ──────────────────────────────────────────────────────
   { id: 'sebastian-shaw',      name: 'Sebastian Shaw',     role: 'villain', expansionId: 'xmen-gold' },
-  { id: 'super-skrull',        name: 'Super-Skrull',       role: 'villain', expansionId: 'xmen-gold' },
-
+  
   // ── Deadpool ─────────────────────────────────────────────────────────────
   { id: 'deadpool-v',          name: 'Deadpool',           role: 'villain', expansionId: 'deadpool' },
   { id: 'deadpool-challenge',  name: 'Deadpool (Challenge)', role: 'villain', expansionId: 'deadpool' },
@@ -87,6 +86,7 @@ export const villains: Character[] = [
   { id: 'scarlet-witch-fc',    name: 'Scarlet Witch (First Class)', role: 'villain', expansionId: 'first-class' },
 
   // ── Fantastic Four ───────────────────────────────────────────────────────
+  { id: 'super-skrull',        name: 'Super-Skrull',       role: 'villain', expansionId: 'fantastic-four' },
   { id: 'doctor-doom-v',       name: 'Doctor Doom',        role: 'villain', expansionId: 'fantastic-four' },
 
   // ── Maximum Carnage ──────────────────────────────────────────────────────
