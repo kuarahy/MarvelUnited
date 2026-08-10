@@ -7,8 +7,9 @@ interface Tab {
 
 const TABS: Tab[] = [
   { id: 'randomizer', label: 'Randomizer' },
-  { id: 'campaigns', label: 'Campaigns' },
-  { id: 'scenarios', label: 'Scenarios' },
+  // Not ready for prod yet — re-enable when content is ready:
+  // { id: 'campaigns', label: 'Campaigns' },
+  // { id: 'scenarios', label: 'Scenarios' },
 ]
 
 interface TabNavProps {
