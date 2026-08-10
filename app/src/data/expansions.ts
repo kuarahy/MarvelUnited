@@ -7,20 +7,20 @@ export const expansions: Expansion[] = [
   { id: 'spider-geddon',   name: 'Spider-Geddon',                        type: 'core' },
   { id: 'xmen-core',       name: 'X-Men Core Box',                       type: 'core' },
 
-  // ── Expansions (retail + KS exclusives, A–Z) ────────────────────────────
+  // ── Expansions (retail only, A–Z) ────────────────────────────────────────
   { id: 'annihilation',        name: 'Annihilation',                     type: 'expansion' },
   { id: 'civil-war',           name: 'Civil War',                        type: 'expansion' },
-  { id: 'dofp',                name: 'Days of Future Past',              type: 'expansion' },
+  { id: 'dofp',                name: 'Days of Future Past',              type: 'promo' },
   { id: 'deadpool',            name: 'Deadpool',                         type: 'expansion' },
   { id: 'spider-verse',        name: 'Enter the Spider-Verse',           type: 'expansion' },
-  { id: 'fantastic-four',      name: 'Fantastic Four',                   type: 'expansion' },
+  { id: 'fantastic-four',      name: 'Fantastic Four',                   type: 'promo' },
   { id: 'guardians',           name: 'Guardians of the Galaxy',          type: 'expansion' },
   { id: 'maximum-carnage',     name: 'Maximum Carnage',                  type: 'expansion' },
   { id: 'pet-companions',      name: 'Pet Companions',                   type: 'expansion' },
-  { id: 'phoenix-five',        name: 'Phoenix Five',                     type: 'expansion' },
+  { id: 'phoenix-five',        name: 'Phoenix Five',                     type: 'promo' },
   { id: 'black-panther',       name: 'Rise of the Black Panther',        type: 'expansion' },
-  { id: 'season-1-stretch-goals', name: 'Season 1 Stretch Goals',          type: 'expansion' },
-  { id: 'season-2-stretch-goals', name: 'Season 2 Stretch Goals',          type: 'expansion' },
+  { id: 'season-1-stretch-goals', name: 'Season 1 Stretch Goals',          type: 'promo' },
+  { id: 'season-2-stretch-goals', name: 'Season 2 Stretch Goals',          type: 'promo' },
   { id: 'secret-invasion',     name: 'Secret Invasion',                  type: 'expansion' },
   { id: 'tales-of-asgard',     name: 'Tales of Asgard',                  type: 'expansion' },
   { id: 'coming-of-galactus',  name: 'The Coming of Galactus',           type: 'expansion' },
@@ -29,10 +29,10 @@ export const expansions: Expansion[] = [
   { id: 'world-war-hulk',      name: 'World War Hulk',                   type: 'expansion' },
   { id: 'x-force',             name: 'X-Force',                          type: 'expansion' },
   { id: 'xmen-blue',           name: 'X-Men: Blue Team',                 type: 'expansion' },
-  { id: 'first-class',         name: 'X-Men: First Class',               type: 'expansion' },
+  { id: 'first-class',         name: 'X-Men: First Class',               type: 'promo' },
   { id: 'xmen-gold',           name: 'X-Men: Gold Team',                 type: 'expansion' },
   { id: 'age-of-apocalypse',   name: 'X-Men: The Age of Apocalypse',     type: 'expansion' },
-  { id: 'horsemen',            name: 'X-Men: The Horsemen of Apocalypse',type: 'expansion' },
+  { id: 'horsemen',            name: 'X-Men: The Horsemen of Apocalypse',type: 'promo' },
 
 
   // ── KS Exclusive Packs ───────────────────────────────────────────────────
