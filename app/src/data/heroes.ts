@@ -41,11 +41,11 @@ export const heroes: Character[] = [
   { id: 'spider-man',          name: 'Spider-Man',         role: 'hero',      expansionId: 'spider-verse' },
   { id: 'miles-morales',       name: 'Miles Morales',      role: 'hero',      expansionId: 'spider-verse' },
   { id: 'ghost-spider',        name: 'Ghost-Spider',       role: 'hero',      expansionId: 'spider-verse' },
-  { id: 'spider-ham',          name: 'Spider-Ham',         role: 'hero',      expansionId: 'spider-verse',       ksExclusive: true },
+  { id: 'spider-ham',          name: 'Spider-Ham',         role: 'hero',      expansionId: 'spider-verse-ks' },
 
   // ── Tales of Asgard ──────────────────────────────────────────────────────
   { id: 'thor',                name: 'Thor',               role: 'hero',      expansionId: 'tales-of-asgard' },
-  { id: 'beta-ray-bill',       name: 'Beta Ray Bill',      role: 'hero',      expansionId: 'tales-of-asgard',    ksExclusive: true },
+  { id: 'beta-ray-bill',       name: 'Beta Ray Bill',      role: 'hero',      expansionId: 'tales-of-asgard-ks' },
   { id: 'korg',                name: 'Korg',               role: 'hero',      expansionId: 'tales-of-asgard' },
   { id: 'valkyrie',            name: 'Valkyrie',           role: 'hero',      expansionId: 'tales-of-asgard' },
 
