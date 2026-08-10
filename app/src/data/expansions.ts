@@ -19,6 +19,8 @@ export const expansions: Expansion[] = [
   { id: 'pet-companions',      name: 'Pet Companions',                   type: 'expansion' },
   { id: 'phoenix-five',        name: 'Phoenix Five',                     type: 'expansion' },
   { id: 'black-panther',       name: 'Rise of the Black Panther',        type: 'expansion' },
+  { id: 'season-1-stretch-goals', name: 'Season 1 Stretch Goals',          type: 'expansion' },
+  { id: 'season-2-stretch-goals', name: 'Season 2 Stretch Goals',          type: 'expansion' },
   { id: 'secret-invasion',     name: 'Secret Invasion',                  type: 'expansion' },
   { id: 'tales-of-asgard',     name: 'Tales of Asgard',                  type: 'expansion' },
   { id: 'coming-of-galactus',  name: 'The Coming of Galactus',           type: 'expansion' },
@@ -32,10 +34,11 @@ export const expansions: Expansion[] = [
   { id: 'age-of-apocalypse',   name: 'X-Men: The Age of Apocalypse',     type: 'expansion' },
   { id: 'horsemen',            name: 'X-Men: The Horsemen of Apocalypse',type: 'expansion' },
 
+
   // ── KS Exclusive Packs ───────────────────────────────────────────────────
   { id: 'avengers-ks',          name: 'Avengers (KS Exclusives)',        type: 'promo' },
   { id: 'spider-foes',          name: 'Return of the Sinister Six',      type: 'promo' },
-  // Remaining X-Men mutant promos (will redistribute over time)
   { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',        type: 'promo' },
+  // Remaining X-Men mutant promos (will redistribute over time)
   { id: 'mutant-promos',        name: 'X-Men: Mutant Promos',            type: 'promo' },
 ]

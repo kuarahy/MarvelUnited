@@ -26,8 +26,8 @@ export const villains: Character[] = [
   { id: 'ronan',               name: 'Ronan',              role: 'villain', expansionId: 'guardians' },
 
   // ── Season 1 Stretch Goals ───────────────────────────────────────────────
-  { id: 'kingpin',             name: 'Kingpin',            role: 'villain', expansionId: 'avengers-ks' },
-  { id: 'bullseye',            name: 'Bullseye',           role: 'villain', expansionId: 'avengers-ks' },
+  { id: 'kingpin',             name: 'Kingpin',            role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'bullseye',            name: 'Bullseye',           role: 'villain', expansionId: 'season-1-stretch-goals' },
 
   // ── X-MEN: The Horsemen of Apocalypse ───────────────────────────────────
   { id: 'famine',              name: 'Famine',             role: 'villain', expansionId: 'horsemen' },
@@ -43,11 +43,15 @@ export const villains: Character[] = [
 
   // ── X-Men Blue Team ──────────────────────────────────────────────────────
   { id: 'mister-sinister',     name: 'Mister Sinister',    role: 'villain', expansionId: 'xmen-blue' },
-  { id: 'callisto',            name: 'Callisto',           role: 'villain', expansionId: 'xmen-blue' },
-  { id: 'dormammu',            name: 'Dormammu',           role: 'villain', expansionId: 'xmen-blue' },
   { id: 'thanos',              name: 'Thanos',             role: 'villain', expansionId: 'xmen-blue' },
-  { id: 'modok',               name: 'M.O.D.O.K.',        role: 'villain', expansionId: 'xmen-blue' },
-  { id: 'venom-v',             name: 'Venom',              role: 'villain', expansionId: 'xmen-blue' },
+
+  // ── Season 1 Stretch Goals (continued) ───────────────────────────────────
+  { id: 'dormammu',            name: 'Dormammu',           role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'modok',               name: 'M.O.D.O.K.',        role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'venom-v',             name: 'Venom',              role: 'villain', expansionId: 'season-1-stretch-goals' },
+
+  // ── Season 2 Stretch Goals (continued) ───────────────────────────────────
+  { id: 'callisto',            name: 'Callisto',           role: 'villain', expansionId: 'season-2-stretch-goals' },
 
   // ── X-Men Gold Team ──────────────────────────────────────────────────────
   { id: 'sebastian-shaw',      name: 'Sebastian Shaw',     role: 'villain', expansionId: 'xmen-gold' },
@@ -153,33 +157,35 @@ export const villains: Character[] = [
   { id: 'wrecker',             name: 'Wrecker',            role: 'villain', expansionId: 'season-3-stretch-goals' },
 
   // ── Avengers (KS Exclusives) ─────────────────────────────────────────────
-  { id: 'baron-zemo',          name: 'Baron Zemo',         role: 'villain', expansionId: 'avengers-ks' },
+  { id: 'baron-zemo',          name: 'Baron Zemo',         role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'corvus-glaive',       name: 'Corvus Glaive',      role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'kang',                name: 'Kang',               role: 'villain', expansionId: 'season-1-stretch-goals' },
+
+  // ── Avengers (KS Exclusives) ─────────────────────────────────────────────
   { id: 'black-dwarf',         name: 'Black Dwarf',        role: 'villain', expansionId: 'avengers-ks' },
-  { id: 'corvus-glaive',       name: 'Corvus Glaive',      role: 'villain', expansionId: 'avengers-ks' },
   { id: 'ebony-maw',           name: 'Ebony Maw',          role: 'villain', expansionId: 'avengers-ks' },
-  { id: 'kang',                name: 'Kang',               role: 'villain', expansionId: 'avengers-ks' },
   { id: 'proxima-midnight',    name: 'Proxima Midnight',   role: 'villain', expansionId: 'avengers-ks' },
 
-  // ── X-Men Mutant Promos ──────────────────────────────────────────────────
-  { id: 'avalanche',           name: 'Avalanche',          role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'deathbird',           name: 'Deathbird',          role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'mastermind',          name: 'Mastermind',         role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'lady-deathstrike',    name: 'Lady Deathstrike',   role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'shadow-king',         name: 'Shadow King',        role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'silver-samurai',      name: 'Silver Samurai',     role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'omega-red',           name: 'Omega Red',          role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'arcade',              name: 'Arcade',             role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'sauron',              name: 'Sauron',             role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'pyro',                name: 'Pyro',               role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'toad',                name: 'Toad',               role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'blob',                name: 'Blob',               role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'mojo',                name: 'Mojo',               role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'brood-queen',         name: 'Brood Queen',        role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'onslaught',           name: 'Onslaught',          role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'dark-phoenix',        name: 'Dark Phoenix',       role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'legion-v',            name: 'Legion',             role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'emma-frost-promo',    name: 'Emma Frost',         role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'marrow-v',            name: 'Marrow',             role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'spiral-v',            name: 'Spiral',             role: 'villain', expansionId: 'mutant-promos' },
-  { id: 'namor-promo',         name: 'Namor',              role: 'villain', expansionId: 'mutant-promos' },
+  // ── Season 2 Stretch Goals ────────────────────────────────────────────────────────────────────
+  { id: 'avalanche',           name: 'Avalanche',          role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'deathbird',           name: 'Deathbird',          role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'mastermind',          name: 'Mastermind',         role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'lady-deathstrike',    name: 'Lady Deathstrike',   role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'shadow-king',         name: 'Shadow King',        role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'silver-samurai',      name: 'Silver Samurai',     role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'omega-red',           name: 'Omega Red',          role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'arcade',              name: 'Arcade',             role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'sauron',              name: 'Sauron',             role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'pyro',                name: 'Pyro',               role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'toad',                name: 'Toad',               role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'blob',                name: 'Blob',               role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'mojo',                name: 'Mojo',               role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'brood-queen',         name: 'Brood Queen',        role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'onslaught',           name: 'Onslaught',          role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'dark-phoenix',        name: 'Dark Phoenix',       role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'legion-v',            name: 'Legion',             role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'emma-frost-promo',    name: 'Emma Frost',         role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'marrow-v',            name: 'Marrow',             role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'spiral-v',            name: 'Spiral',             role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'namor-promo',         name: 'Namor',              role: 'villain', expansionId: 'season-2-stretch-goals' },
 ]
