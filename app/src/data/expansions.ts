@@ -36,8 +36,8 @@ export const expansions: Expansion[] = [
 
 
   // ── KS Exclusive Packs ───────────────────────────────────────────────────
-  { id: 'spider-verse-ks',       name: 'Enter the Spider-Verse (KS)',      type: 'promo' },
-  { id: 'tales-of-asgard-ks',    name: 'Tales of Asgard (KS)',             type: 'promo' },
+  { id: 'spider-verse-ks',       name: 'Enter the Spider-Verse (KS)',      type: 'promo', parentId: 'spider-verse' },
+  { id: 'tales-of-asgard-ks',    name: 'Tales of Asgard (KS)',             type: 'promo', parentId: 'tales-of-asgard' },
   { id: 'infinity-gauntlet',     name: 'The Infinity Gauntlet',           type: 'promo' },
   { id: 'spider-foes',          name: 'Return of the Sinister Six',      type: 'promo' },
   { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',        type: 'promo' },

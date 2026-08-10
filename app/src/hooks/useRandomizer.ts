@@ -8,8 +8,26 @@ import { villains } from '../data/villains'
 const charRepo = new CharacterRepository()
 const expansionRepo = new ExpansionRepository()
 const service = new RandomizerService(charRepo, expansionRepo)
+const allExpansions = expansionRepo.getAll()
 
-export interface RandomizerState {
+/** Expands owned IDs to include parent expansions for KS variants. */
+function resolveOwnedIds(ownedIds: Set<string>): Set<string> {
+  const resolved = new Set(ownedIds)
+  for (const id of ownedIds) {
+    const parentId = allExpansions.find((e) => e.id === id)?.parentId
+    if (parentId) resolved.add(parentId)
+  }
+  return resolved
+}
+
+function filterByOwned<T extends { expansionId: string }>(
+  pool: T[],
+  ownedIds: Set<string>,
+  fallback: T[],
+): T[] {
+  const filtered = pool.filter((c) => ownedIds.has(c.expansionId))
+  return filtered.length > 0 ? filtered : fallback
+}
   hero: Character | null
   villain: Character | null
   team: Character[]
@@ -38,27 +56,27 @@ export function useRandomizer(ownedIds?: Set<string>): RandomizerState & Randomi
   const [team, setTeam] = useState<Character[]>([])
   const [expansion, setExpansion] = useState<Expansion | null>(null)
 
+  const resolvedIds = ownedIds ? resolveOwnedIds(ownedIds) : undefined
+
   const rollHero = useCallback(() => {
-    const pool = ownedIds ? filterByOwned(heroes, ownedIds, heroes) : undefined
+    const pool = resolvedIds ? filterByOwned(heroes, resolvedIds, heroes) : undefined
     setHero(service.rollHero(pool))
-  }, [ownedIds])
+  }, [resolvedIds])
 
   const rollVillain = useCallback(() => {
-    const pool = ownedIds ? filterByOwned(villains, ownedIds, villains) : undefined
+    const pool = resolvedIds ? filterByOwned(villains, resolvedIds, villains) : undefined
     setVillain(service.rollVillain(pool))
-  }, [ownedIds])
+  }, [resolvedIds])
 
   const rollTeam = useCallback(() => {
-    const pool = ownedIds ? filterByOwned(heroes, ownedIds, heroes) : undefined
+    const pool = resolvedIds ? filterByOwned(heroes, resolvedIds, heroes) : undefined
     setTeam(service.rollTeam(pool))
-  }, [ownedIds])
+  }, [resolvedIds])
 
   const rollExpansion = useCallback(() => {
-    const allExpansions = expansionRepo.getAll()
-    const pool = ownedIds
-      ? allExpansions.filter((e) => ownedIds.has(e.id))
-      : undefined
-    const resolvedPool = pool && pool.length > 0 ? pool : allExpansions
+    const allExp = expansionRepo.getAll()
+    const pool = ownedIds ? allExp.filter((e) => ownedIds.has(e.id)) : undefined
+    const resolvedPool = pool && pool.length > 0 ? pool : allExp
     setExpansion(service.rollExpansion(resolvedPool))
   }, [ownedIds])
 
