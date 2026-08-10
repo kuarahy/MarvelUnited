@@ -12,12 +12,12 @@ export const heroes: Character[] = [
 
   // ── X-Men Core Box ───────────────────────────────────────────────────────
   { id: 'professor-x',         name: 'Professor X',        role: 'hero',      expansionId: 'xmen-core' },
+  { id: 'beast',               name: 'Beast',              role: 'hero',      expansionId: 'xmen-core' },
   { id: 'cyclops',             name: 'Cyclops',            role: 'hero',      expansionId: 'xmen-core' },
   { id: 'jean-grey',           name: 'Jean Grey',          role: 'hero',      expansionId: 'xmen-core' },
   { id: 'wolverine',           name: 'Wolverine',          role: 'hero',      expansionId: 'xmen-core' },
   { id: 'storm',               name: 'Storm',              role: 'hero',      expansionId: 'xmen-core' },
-  { id: 'mohawk-storm',        name: 'Storm (Mohawk)',      role: 'hero',      expansionId: 'xmen-core' },
-
+  
   // ── Spider-Geddon Core Box ───────────────────────────────────────────────
   { id: 'peni-parker',         name: 'Peni Parker',        role: 'hero',      expansionId: 'spider-geddon' },
   { id: 'scarlet-spider',      name: 'Scarlet Spider',     role: 'hero',      expansionId: 'spider-geddon' },
@@ -89,9 +89,6 @@ export const heroes: Character[] = [
   { id: 'colossus',            name: 'Colossus',           role: 'hero',      expansionId: 'xmen-gold' },
   { id: 'iceman',              name: 'Iceman',             role: 'hero',      expansionId: 'xmen-gold' },
   { id: 'forge',               name: 'Forge',              role: 'hero',      expansionId: 'xmen-gold' },
-  { id: 'beast',               name: 'Beast',              role: 'hero',      expansionId: 'xmen-gold' },
-  { id: 'kitty-pryde',         name: 'Kitty Pryde',        role: 'hero',      expansionId: 'xmen-gold' },
-  { id: 'northstar',           name: 'Northstar',          role: 'hero',      expansionId: 'season-2-stretch-goals' },
 
   // ── Deadpool ─────────────────────────────────────────────────────────────
   { id: 'deadpool',            name: 'Deadpool',           role: 'hero',      expansionId: 'deadpool' },
@@ -298,5 +295,8 @@ export const heroes: Character[] = [
   { id: 'legion',              name: 'Legion',             role: 'anti-hero', expansionId: 'season-2-stretch-goals' },
   { id: 'marrow',              name: 'Marrow',             role: 'anti-hero', expansionId: 'season-2-stretch-goals' },
   { id: 'spiral',              name: 'Spiral',             role: 'anti-hero', expansionId: 'season-2-stretch-goals' },
+  { id: 'mohawk-storm',        name: 'Storm (Mohawk)',      role: 'hero',      expansionId: 'season-2-stretch-goals' },
   { id: 'namor',               name: 'Namor',              role: 'anti-hero', expansionId: 'season-2-stretch-goals' },
+  { id: 'kitty-pryde',         name: 'Kitty Pryde',        role: 'hero',      expansionId: 'season-2-stretch-goals' },
+  { id: 'northstar',           name: 'Northstar',          role: 'hero',      expansionId: 'season-2-stretch-goals' },
 ]
