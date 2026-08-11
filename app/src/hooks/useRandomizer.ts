@@ -23,8 +23,9 @@ function ownedKsParentIds(ownedIds: Set<string>): Set<string> {
 /**
  * Retail ownership → characters in that box except ksExclusive.
  * KS ownership (parentId link) → full retail roster plus KS exclusives.
+ * alsoIn → unlocked when that alternate expansion (or its KS variant) is owned.
  */
-function filterByOwned<T extends { expansionId: string; ksExclusive?: boolean }>(
+function filterByOwned<T extends { expansionId: string; ksExclusive?: boolean; alsoIn?: string }>(
   pool: T[],
   ownedIds: Set<string>,
   fallback: T[],
@@ -33,6 +34,7 @@ function filterByOwned<T extends { expansionId: string; ksExclusive?: boolean }>
   const filtered = pool.filter((c) => {
     if (ksParents.has(c.expansionId)) return true
     if (ownedIds.has(c.expansionId)) return !c.ksExclusive
+    if (c.alsoIn && (ownedIds.has(c.alsoIn) || ksParents.has(c.alsoIn))) return true
     return false
   })
   return filtered.length > 0 ? filtered : fallback
