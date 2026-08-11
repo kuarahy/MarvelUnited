@@ -32,7 +32,6 @@ export const heroes: Character[] = [
   { id: 'captain-carter',      name: 'Captain Carter',     role: 'hero',      expansionId: 'multiverse-core' },
   { id: 'loki',                name: 'Loki',               role: 'hero',      expansionId: 'multiverse-core' },
   { id: 'black-panther-shuri', name: 'Black Panther (Shuri)', role: 'hero',   expansionId: 'multiverse-core' },
-  { id: 'spider-man-2099',     name: 'Spider-Man 2099',    role: 'hero',      expansionId: 'multiverse-core' },
   { id: 'mighty-thor',         name: 'Mighty Thor',        role: 'hero',      expansionId: 'multiverse-core' },
   { id: 'ironheart',           name: 'Ironheart',          role: 'hero',      expansionId: 'multiverse-core' },
   { id: 'cosmic-ghost-rider',  name: 'Cosmic Ghost Rider', role: 'anti-hero', expansionId: 'multiverse-core' },
@@ -41,17 +40,17 @@ export const heroes: Character[] = [
   { id: 'spider-man',          name: 'Spider-Man',         role: 'hero',      expansionId: 'spider-verse' },
   { id: 'miles-morales',       name: 'Miles Morales',      role: 'hero',      expansionId: 'spider-verse' },
   { id: 'ghost-spider',        name: 'Ghost-Spider',       role: 'hero',      expansionId: 'spider-verse' },
-  { id: 'spider-ham',          name: 'Spider-Ham',         role: 'hero',      expansionId: 'spider-verse-ks' },
+  { id: 'spider-ham',          name: 'Spider-Ham',         role: 'hero',      expansionId: 'spider-verse', ksExclusive: true },
 
   // ── Tales of Asgard ──────────────────────────────────────────────────────
   { id: 'thor',                name: 'Thor',               role: 'hero',      expansionId: 'tales-of-asgard' },
-  { id: 'beta-ray-bill',       name: 'Beta Ray Bill',      role: 'hero',      expansionId: 'tales-of-asgard-ks' },
+  { id: 'beta-ray-bill',       name: 'Beta Ray Bill',      role: 'hero',      expansionId: 'tales-of-asgard', ksExclusive: true },
   { id: 'korg',                name: 'Korg',               role: 'hero',      expansionId: 'tales-of-asgard' },
   { id: 'valkyrie',            name: 'Valkyrie',           role: 'hero',      expansionId: 'tales-of-asgard' },
 
   // ── Guardians of the Galaxy ──────────────────────────────────────────────
   { id: 'star-lord',           name: 'Star-Lord',          role: 'hero',      expansionId: 'guardians' },
-  { id: 'gamora',              name: 'Gamora',             role: 'hero',      expansionId: 'guardians',          ksExclusive: true },
+  { id: 'gamora',              name: 'Gamora',             role: 'hero',      expansionId: 'guardians', ksExclusive: true },
   { id: 'groot',               name: 'Groot',              role: 'hero',      expansionId: 'guardians' },
   { id: 'rocket',              name: 'Rocket',             role: 'hero',      expansionId: 'guardians' },
   { id: 'drax',                name: 'Drax The Destroyer', role: 'hero',      expansionId: 'guardians' },
@@ -75,7 +74,7 @@ export const heroes: Character[] = [
   { id: 'apocalypse',          name: 'Apocalypse',         role: 'anti-hero', expansionId: 'horsemen' },
 
   // ── X-Men Blue Team ──────────────────────────────────────────────────────
-  { id: 'banshee',             name: 'Banshee',            role: 'hero',      expansionId: 'xmen-blue',          ksExclusive: true },
+  { id: 'banshee',             name: 'Banshee',            role: 'hero',      expansionId: 'xmen-blue', ksExclusive: true },
   { id: 'psylocke',            name: 'Psylocke',           role: 'hero',      expansionId: 'xmen-blue' },
   { id: 'jubilee',             name: 'Jubilee',            role: 'hero',      expansionId: 'xmen-blue' },
   { id: 'rogue',               name: 'Rogue',              role: 'hero',      expansionId: 'xmen-blue' },
@@ -88,11 +87,11 @@ export const heroes: Character[] = [
   { id: 'bishop',              name: 'Bishop',             role: 'hero',      expansionId: 'xmen-gold' },
   { id: 'colossus',            name: 'Colossus',           role: 'hero',      expansionId: 'xmen-gold' },
   { id: 'iceman',              name: 'Iceman',             role: 'hero',      expansionId: 'xmen-gold' },
-  { id: 'forge',               name: 'Forge',              role: 'hero',      expansionId: 'xmen-gold',          ksExclusive: true },
+  { id: 'forge',               name: 'Forge',              role: 'hero',      expansionId: 'xmen-gold', ksExclusive: true },
 
   // ── Deadpool ─────────────────────────────────────────────────────────────
   { id: 'deadpool',            name: 'Deadpool',           role: 'hero',      expansionId: 'deadpool' },
-  { id: 'lady-deadpool',       name: 'Lady Deadpool',      role: 'hero',      expansionId: 'deadpool',           ksExclusive: true },
+  { id: 'lady-deadpool',       name: 'Lady Deadpool',      role: 'hero',      expansionId: 'deadpool', ksExclusive: true },
   { id: 'bob-agent-of-hydra',  name: 'Bob, Agent of Hydra',role: 'anti-hero', expansionId: 'deadpool' },
   { id: 'deadpool-unicorn',    name: 'Deadpool in a Unicorn', role: 'hero',   expansionId: 'deadpool' },
 
@@ -125,7 +124,7 @@ export const heroes: Character[] = [
 
   // ── Days of Future Past ──────────────────────────────────────────────────
   { id: 'logan',               name: 'Logan',              role: 'hero',      expansionId: 'dofp' },
-  { id: 'old-man-logan',       name: 'Old Man Logan',      role: 'hero',      expansionId: 'dofp',               ksExclusive: true },
+  { id: 'old-man-logan',       name: 'Old Man Logan',      role: 'hero',      expansionId: 'dofp', ksExclusive: true },
 
   // ── X-Men: First Class ───────────────────────────────────────────────────
   { id: 'angel-first-class',   name: 'Angel (First Class)', role: 'hero',     expansionId: 'first-class' },
@@ -254,6 +253,7 @@ export const heroes: Character[] = [
   { id: 'shang-chi',           name: 'Shang Chi',          role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'she-hulk',            name: 'She Hulk',           role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'spider-woman',        name: 'Spider-Woman',       role: 'hero',      expansionId: 'season-1-stretch-goals' },
+  { id: 'spider-man-2099',     name: 'Spider-Man 2099',    role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'squirrel-girl',       name: 'Squirrel Girl',      role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'vision',              name: 'Vision',             role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'war-machine',         name: 'War Machine',        role: 'hero',      expansionId: 'season-1-stretch-goals' },

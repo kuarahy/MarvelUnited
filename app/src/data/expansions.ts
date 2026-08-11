@@ -19,8 +19,6 @@ export const expansions: Expansion[] = [
   { id: 'pet-companions',      name: 'Pet Companions',                   type: 'promo' },
   { id: 'phoenix-five',        name: 'Phoenix Five',                     type: 'promo' },
   { id: 'black-panther',       name: 'Rise of the Black Panther',        type: 'expansion' },
-  { id: 'season-1-stretch-goals', name: 'Season 1 Stretch Goals',          type: 'promo' },
-  { id: 'season-2-stretch-goals', name: 'Season 2 Stretch Goals',          type: 'promo' },
   { id: 'secret-invasion',     name: 'Secret Invasion',                  type: 'expansion' },
   { id: 'tales-of-asgard',     name: 'Tales of Asgard',                  type: 'expansion' },
   { id: 'coming-of-galactus',  name: 'The Coming of Galactus',           type: 'expansion' },
@@ -35,12 +33,18 @@ export const expansions: Expansion[] = [
   { id: 'horsemen',            name: 'X-Men: The Horsemen of Apocalypse',type: 'promo' },
 
 
-  // ── KS Exclusive Packs ───────────────────────────────────────────────────
+  // ── KS Exclusive Packs (parentId = retail box; includes retail roster + KS extras) ──
+  { id: 'deadpool-ks',           name: 'Deadpool (KS)',                    type: 'promo', parentId: 'deadpool' },
+  { id: 'dofp-ks',               name: 'Days of Future Past (KS)',         type: 'promo', parentId: 'dofp' },
   { id: 'spider-verse-ks',       name: 'Enter the Spider-Verse (KS)',      type: 'promo', parentId: 'spider-verse' },
+  { id: 'guardians-ks',          name: 'Guardians of the Galaxy (KS)',     type: 'promo', parentId: 'guardians' },
   { id: 'tales-of-asgard-ks',    name: 'Tales of Asgard (KS)',             type: 'promo', parentId: 'tales-of-asgard' },
-  { id: 'infinity-gauntlet',     name: 'The Infinity Gauntlet',           type: 'promo' },
-  { id: 'spider-foes',          name: 'Return of the Sinister Six',      type: 'promo' },
-  { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',        type: 'promo' },
-  // Remaining X-Men mutant promos (will redistribute over time)
-  { id: 'mutant-promos',        name: 'X-Men: Mutant Promos',            type: 'promo' },
+  { id: 'infinity-gauntlet',     name: 'The Infinity Gauntlet',            type: 'promo' },
+  { id: 'spider-foes',           name: 'Return of the Sinister Six',       type: 'promo' },
+  { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',         type: 'promo' },
+  { id: 'season-1-stretch-goals', name: 'Season 1 Stretch Goals',          type: 'promo' },
+  { id: 'season-2-stretch-goals', name: 'Season 2 Stretch Goals',          type: 'promo' },
+  { id: 'xmen-blue-ks',          name: 'X-Men: Blue Team (KS)',            type: 'promo', parentId: 'xmen-blue' },
+  { id: 'xmen-gold-ks',          name: 'X-Men: Gold Team (KS)',            type: 'promo', parentId: 'xmen-gold' },
+    { id: 'xmen-core-ks',       name: 'X-Men Core Box (KS)',                type: 'promo', parentId: 'xmen-core' },
 ]

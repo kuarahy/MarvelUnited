@@ -10,22 +10,39 @@ const expansionRepo = new ExpansionRepository()
 const service = new RandomizerService(charRepo, expansionRepo)
 const allExpansions = expansionRepo.getAll()
 
-/** Expands owned IDs to include parent expansions for KS variants. */
-function resolveOwnedIds(ownedIds: Set<string>): Set<string> {
-  const resolved = new Set(ownedIds)
+/** Parent expansion IDs for which the user owns the KS variant. */
+function ownedKsParentIds(ownedIds: Set<string>): Set<string> {
+  const parents = new Set<string>()
   for (const id of ownedIds) {
     const parentId = allExpansions.find((e) => e.id === id)?.parentId
-    if (parentId) resolved.add(parentId)
+    if (parentId) parents.add(parentId)
   }
-  return resolved
+  return parents
 }
 
-function filterByOwned<T extends { expansionId: string }>(
+/**
+ * Retail ownership → characters in that box except ksExclusive.
+ * KS ownership (parentId link) → full retail roster plus KS exclusives.
+ * Direct ownership of a KS pack expansionId → always included.
+ * alsoIn → unlocked when that alternate expansion (or its KS variant) is owned.
+ */
+function filterByOwned<T extends { expansionId: string; ksExclusive?: boolean; alsoIn?: string }>(
   pool: T[],
   ownedIds: Set<string>,
   fallback: T[],
 ): T[] {
-  const filtered = pool.filter((c) => ownedIds.has(c.expansionId))
+  const ksParents = ownedKsParentIds(ownedIds)
+  const filtered = pool.filter((c) => {
+    if (ksParents.has(c.expansionId)) return true
+    if (ownedIds.has(c.expansionId)) {
+      const exp = allExpansions.find((e) => e.id === c.expansionId)
+      // expansionId is already a KS pack — owning it unlocks the character
+      if (exp?.parentId) return true
+      return !c.ksExclusive
+    }
+    if (c.alsoIn && (ownedIds.has(c.alsoIn) || ksParents.has(c.alsoIn))) return true
+    return false
+  })
   return filtered.length > 0 ? filtered : fallback
 }
 
@@ -49,22 +66,20 @@ export function useRandomizer(ownedIds?: Set<string>): RandomizerState & Randomi
   const [team, setTeam] = useState<Character[]>([])
   const [expansion, setExpansion] = useState<Expansion | null>(null)
 
-  const resolvedIds = ownedIds ? resolveOwnedIds(ownedIds) : undefined
-
   const rollHero = useCallback(() => {
-    const pool = resolvedIds ? filterByOwned(heroes, resolvedIds, heroes) : undefined
+    const pool = ownedIds ? filterByOwned(heroes, ownedIds, heroes) : undefined
     setHero(service.rollHero(pool))
-  }, [resolvedIds])
+  }, [ownedIds])
 
   const rollVillain = useCallback(() => {
-    const pool = resolvedIds ? filterByOwned(villains, resolvedIds, villains) : undefined
+    const pool = ownedIds ? filterByOwned(villains, ownedIds, villains) : undefined
     setVillain(service.rollVillain(pool))
-  }, [resolvedIds])
+  }, [ownedIds])
 
   const rollTeam = useCallback(() => {
-    const pool = resolvedIds ? filterByOwned(heroes, resolvedIds, heroes) : undefined
+    const pool = ownedIds ? filterByOwned(heroes, ownedIds, heroes) : undefined
     setTeam(service.rollTeam(pool))
-  }, [resolvedIds])
+  }, [ownedIds])
 
   const rollExpansion = useCallback(() => {
     const allExp = expansionRepo.getAll()
