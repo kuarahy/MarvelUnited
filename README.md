@@ -57,6 +57,7 @@ A 4-act Avengers campaign starting at street level and escalating to cosmic thre
 - [x] Add images to every expansion, hero, villain, and fields
 - [x] Collection filter to sort by
 - [x] Add name and links social media, donation boxes, etc (no ads! :D)
+- [ ] Locations randomizer will be added for v2
 - [ ] Add suggestions or automated connections to Random Scenarios
 - [ ] Release PDFs to communities with images, making it easy for people to play with
 

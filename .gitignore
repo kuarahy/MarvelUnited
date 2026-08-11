@@ -32,3 +32,4 @@ scripts/audit-errors.txt
 scripts/wiki-expansions.json
 scripts/wiki-expansions-err.txt
 scripts/fetch-images-log.txt
+.env*
