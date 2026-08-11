@@ -46,6 +46,4 @@ export const expansions: Expansion[] = [
   { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',         type: 'promo' },
   { id: 'xmen-blue-ks',          name: 'X-Men: Blue Team (KS)',            type: 'promo', parentId: 'xmen-blue' },
   { id: 'xmen-gold-ks',          name: 'X-Men: Gold Team (KS)',            type: 'promo', parentId: 'xmen-gold' },
-  // Remaining X-Men mutant promos (will redistribute over time)
-  { id: 'mutant-promos',         name: 'X-Men: Mutant Promos',             type: 'promo' },
 ]
