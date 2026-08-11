@@ -23,6 +23,7 @@ function ownedKsParentIds(ownedIds: Set<string>): Set<string> {
 /**
  * Retail ownership → characters in that box except ksExclusive.
  * KS ownership (parentId link) → full retail roster plus KS exclusives.
+ * Direct ownership of a KS pack expansionId → always included.
  * alsoIn → unlocked when that alternate expansion (or its KS variant) is owned.
  */
 function filterByOwned<T extends { expansionId: string; ksExclusive?: boolean; alsoIn?: string }>(
@@ -33,7 +34,12 @@ function filterByOwned<T extends { expansionId: string; ksExclusive?: boolean; a
   const ksParents = ownedKsParentIds(ownedIds)
   const filtered = pool.filter((c) => {
     if (ksParents.has(c.expansionId)) return true
-    if (ownedIds.has(c.expansionId)) return !c.ksExclusive
+    if (ownedIds.has(c.expansionId)) {
+      const exp = allExpansions.find((e) => e.id === c.expansionId)
+      // expansionId is already a KS pack — owning it unlocks the character
+      if (exp?.parentId) return true
+      return !c.ksExclusive
+    }
     if (c.alsoIn && (ownedIds.has(c.alsoIn) || ksParents.has(c.alsoIn))) return true
     return false
   })
