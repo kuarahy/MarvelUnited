@@ -19,8 +19,6 @@ export const expansions: Expansion[] = [
   { id: 'pet-companions',      name: 'Pet Companions',                   type: 'promo' },
   { id: 'phoenix-five',        name: 'Phoenix Five',                     type: 'promo' },
   { id: 'black-panther',       name: 'Rise of the Black Panther',        type: 'expansion' },
-  { id: 'season-1-stretch-goals', name: 'Season 1 Stretch Goals',          type: 'promo' },
-  { id: 'season-2-stretch-goals', name: 'Season 2 Stretch Goals',          type: 'promo' },
   { id: 'secret-invasion',     name: 'Secret Invasion',                  type: 'expansion' },
   { id: 'tales-of-asgard',     name: 'Tales of Asgard',                  type: 'expansion' },
   { id: 'coming-of-galactus',  name: 'The Coming of Galactus',           type: 'expansion' },
@@ -44,6 +42,9 @@ export const expansions: Expansion[] = [
   { id: 'infinity-gauntlet',     name: 'The Infinity Gauntlet',            type: 'promo' },
   { id: 'spider-foes',           name: 'Return of the Sinister Six',       type: 'promo' },
   { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',         type: 'promo' },
+  { id: 'season-1-stretch-goals', name: 'Season 1 Stretch Goals',          type: 'promo' },
+  { id: 'season-2-stretch-goals', name: 'Season 2 Stretch Goals',          type: 'promo' },
   { id: 'xmen-blue-ks',          name: 'X-Men: Blue Team (KS)',            type: 'promo', parentId: 'xmen-blue' },
   { id: 'xmen-gold-ks',          name: 'X-Men: Gold Team (KS)',            type: 'promo', parentId: 'xmen-gold' },
+  { id: 'avengers-core-ks',   name: 'Marvel United Core Box (KS)',          type: 'promo', parentId: 'avengers-core' },
 ]
