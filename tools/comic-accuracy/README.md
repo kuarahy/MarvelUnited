@@ -11,8 +11,24 @@ Use it to flag cross-comically accurate (or inaccurate) pairings when building c
 
 **Requirements:** Node.js ≥ 18. No npm install needed — zero external dependencies.
 
+### Look up relations (offline)
+
 ```bash
 cd tools/comic-accuracy
+
+# Ranked partners for one character
+npm run relations -- "Iron Man"
+
+# Shared comics between two characters
+npm run relations -- "Dark Phoenix" "Cyclops"
+npm run relations -- "Dark Phoenix" "Miles Morales"
+```
+
+Pair mode prints `sharedComics: N` (or `n/a` when one/both are unmatched). Options: `--limit N`, `--min N`, `--json`.
+
+### Rebuild the dataset
+
+```bash
 node build.js
 ```
 
@@ -79,8 +95,8 @@ const strongPairs = data.pairs.filter(p => p.sharedComics >= 20);
     "generated": "2026-08-09",
     "datasetCoverage": "1961–2002",
     "totalMuCharacters": 347,
-    "matchedCharacters": 198,
-    "unmatchedCharacters": 149
+    "matchedCharacters": 221,
+    "unmatchedCharacters": 126
   },
   "matchedNames": {
     // MU display name → dataset node id used for the lookup
@@ -89,13 +105,17 @@ const strongPairs = data.pairs.filter(p => p.sharedComics >= 20);
   },
   "unmatched": ["America Chavez", "Groot", "Miles Morales", ...],
   "pairs": [
-    // Flat list, sorted by sharedComics descending
+    // Flat list, sorted by sharedComics descending (one preferred MU name per dataset node)
     { "hero1": "Human Torch", "hero2": "The Thing", "sharedComics": 744 }
   ],
   "byCharacter": {
-    // Nested lookup, inner objects also sorted by count descending
+    // Nested lookup — every MU alias that shares a dataset node gets a full entry
+    "Iron Man": {
+      "Captain America": 446,
+      "Thor": 344
+    },
     "Iron Man (Civil War)": {
-      "Captain America (Sam Wilson)": 446,
+      "Captain America": 446,
       "Thor": 344
     }
   }
@@ -106,7 +126,7 @@ const strongPairs = data.pairs.filter(p => p.sharedComics >= 20);
 
 ## Coverage
 
-**198 of 347 MU characters** matched to the dataset. **4,571 pairs** computed.
+**221 of 347 MU characters** matched to the dataset. **~4,800 pairs** computed.
 
 The dataset covers ~327 of the most frequently appearing characters from **13,000+ comics, 1961–2002**.
 
@@ -116,9 +136,9 @@ Characters in `unmatched` fall into three buckets:
 |---|---|
 | Introduced after 2002 | America Chavez, Rocket, Groot, Miles Morales, Ironheart |
 | Pre-2002 but below dataset threshold | Blade, Venom, Carnage, Rhino, Electro, Mysterio |
-| MU-specific variants with no direct entry | Dark Phoenix, Colossus (Phoenix Five), Onslaught |
+| MU-specific variants with no direct entry | Onslaught, Lady Deadpool, Ghost-Spider |
 
-These are documented gaps, not errors. Use [Marvel Fandom](https://marvel.fandom.com) or [Comic Vine](https://comicvine.gamespot.com) for manual research on unmatched characters.
+Identity aliases (Dark Phoenix → Jean Grey, Cable → Nathan Summers, Yellow Jacket → Hank Pym, etc.) are mapped via `OVERRIDES` in `build.js` and share relations with their dataset node.
 
 ---
 

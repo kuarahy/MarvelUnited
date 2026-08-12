@@ -106,6 +106,32 @@ const OVERRIDES = {
   'Moonstone':            'Moonstone Ii / Karla S',
   'Namor (Phoenix Five)': 'Sub-mariner / Namor Ma',
   'Logan':                'Wolverine / Logan',
+  // Unmatched aliases / identity variants that exist in the 1961–2002 dataset
+  'Agatha Harkness':      'Harkness, Agatha',
+  'Archangel':            'Angel / Warren Kenneth',
+  'Baron Zemo':           'Citizen V Ii / Helmut',
+  'Boom-Boom':            'Boomer / Tabitha Smith',
+  'Cable':                'Summers, Nathan Chri',
+  'Dark Beast':           'Beast / Henry &hank& P',
+  'Dark Phoenix':         'Marvel Girl / Jean Grey',
+  'Darkchild':            'Magik / Illyana Rasput',
+  'Emperor Doom':         'Dr. Doom / Victor Von',
+  'Gladiator Hulk':       'Hulk / Dr. Robert Bruce Banner',
+  'Grey-Hulk':            'Hulk / Dr. Robert Bruce Banner',
+  'Hepzibah':             "Mam'selle Hepzibah",
+  'Iron Spider':          'Spider-man / Peter Parker',
+  'Kang':                 'Pharaoh Rama-tut',
+  'Kid Loki':             'Loki [asgardian]',
+  'Old Man Logan':        'Wolverine / Logan',
+  'Red Hulk':             'Ross, Gen. Thaddeus',       // Thunderbolt Ross
+  'Ronin':                'Hawk',                      // Clint Barton
+  'Scarlet Spider':       'Spider-man Clone / Ben',
+  'Sebastian Shaw':       'Black King / Sebastian',
+  'Spectrum':             'Captain Marvel Ii / Mo',    // Monica Rambeau
+  'Superior Spider-Man':  'Dr. Octopus / Otto Oct',    // Otto in Peter's body
+  'Symbiote Spider-Man':  'Spider-man / Peter Parker',
+  'Weapon X':             'Wolverine / Logan',
+  'Yellow Jacket':        'Ant-man / Dr. Henry J.',   // Hank Pym
 };
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -147,14 +173,35 @@ function parseCSV(text) {
 
 /** Normalise a name to its primary alias for fuzzy matching. */
 function normalise(name) {
-  return name
-    .split('/')[0]          // take alias part
-    .split(',')[0]          // take first part if "Lastname, Firstname" format
+  let s = name
+    .split('/')[0]           // take alias part before "/"
+    .replace(/\(.*?\)/g, '') // strip (Civil War), (Phoenix Five), etc.
     .replace(/\[.*?\]/g, '') // strip [inhuman], [asgardian] etc.
+    .trim();
+
+  // "Lastname, Firstname …" → "Firstname Lastname"
+  if (s.includes(',')) {
+    const [last, ...rest] = s.split(',');
+    const first = rest.join(' ').trim();
+    s = first ? `${first} ${last.trim()}` : last.trim();
+  }
+
+  return s
     .replace(/[^a-z0-9\s]/gi, ' ')
     .toLowerCase()
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/** Prefer the shortest MU display name without parentheticals (canonical form). */
+function preferredMuName(names) {
+  return [...names].sort((a, b) => {
+    const aParen = /\(/.test(a) ? 1 : 0;
+    const bParen = /\(/.test(b) ? 1 : 0;
+    if (aParen !== bParen) return aParen - bParen;
+    if (a.length !== b.length) return a.length - b.length;
+    return a.localeCompare(b);
+  })[0];
 }
 
 /** Find the best dataset node Id for a given MU character name. */
@@ -163,18 +210,23 @@ function findMatch(muName, datasetNormMap) {
   if (OVERRIDES[muName]) return OVERRIDES[muName];
 
   const target = normalise(muName);
+  if (!target) return null;
 
   // 2. Exact normalised match
   if (datasetNormMap.has(target)) return datasetNormMap.get(target);
 
-  // 3. Starts-with match (longest wins)
+  // 3. Starts-with match (longest wins) — require meaningful length to avoid
+  //    false positives like "M" → "Medusa"
   let best = null;
   let bestLen = 0;
-  for (const [norm, original] of datasetNormMap) {
-    if (norm.startsWith(target) || target.startsWith(norm)) {
-      if (norm.length > bestLen) {
-        bestLen = norm.length;
-        best = original;
+  if (target.length >= 4) {
+    for (const [norm, original] of datasetNormMap) {
+      if (norm.length < 4) continue;
+      if (norm.startsWith(target) || target.startsWith(norm)) {
+        if (norm.length > bestLen) {
+          bestLen = norm.length;
+          best = original;
+        }
       }
     }
   }
@@ -230,22 +282,39 @@ async function main() {
   console.log(`   ${unmatched.length} unmatched (likely post-2002 or niche)`);
   if (unmatched.length) console.log(`   Unmatched: ${unmatched.join(', ')}`);
 
-  // ── Build reverse lookup: datasetId → MU display name ─────────────────────
-  const datasetIdToMu = new Map(matched.map(([mu, ds]) => [ds, mu]));
+  // ── Group all MU names that share a dataset node ──────────────────────────
+  // Previously only the last MU name per dataset Id received relations, so
+  // canonical names (Iron Man, Spider-Man, Hulk…) lost their byCharacter entries
+  // to variants like "Iron Man (Civil War)".
+  const datasetIdToMuNames = new Map();
+  for (const [mu, ds] of matched) {
+    if (!datasetIdToMuNames.has(ds)) datasetIdToMuNames.set(ds, []);
+    datasetIdToMuNames.get(ds).push(mu);
+  }
 
-  // ── Build co-appearance lookup filtered to MU characters only ─────────────
-  const coAppearances = {};
-
+  // ── Build dataset-level edge weights, then fan out to every MU alias ───────
+  const datasetPairs = new Map(); // dsA → Map(dsB → weight)
   for (const { Source, Target, Weight } of edges) {
-    const muA = datasetIdToMu.get(Source);
-    const muB = datasetIdToMu.get(Target);
-    if (!muA || !muB) continue;
-
+    if (!datasetIdToMuNames.has(Source) || !datasetIdToMuNames.has(Target)) continue;
     const w = parseInt(Weight, 10);
-    if (!coAppearances[muA]) coAppearances[muA] = {};
-    if (!coAppearances[muB]) coAppearances[muB] = {};
-    coAppearances[muA][muB] = w;
-    coAppearances[muB][muA] = w;
+    if (!datasetPairs.has(Source)) datasetPairs.set(Source, new Map());
+    if (!datasetPairs.has(Target)) datasetPairs.set(Target, new Map());
+    datasetPairs.get(Source).set(Target, w);
+    datasetPairs.get(Target).set(Source, w);
+  }
+
+  const coAppearances = {};
+  for (const [dsA, targets] of datasetPairs) {
+    for (const muA of datasetIdToMuNames.get(dsA)) {
+      if (!coAppearances[muA]) coAppearances[muA] = {};
+      for (const [dsB, w] of targets) {
+        // dsA !== dsB always here (no self-edges), so same-person MU variants
+        // that share a dataset node never appear as each other's partners.
+        for (const muB of datasetIdToMuNames.get(dsB)) {
+          coAppearances[muA][muB] = w;
+        }
+      }
+    }
   }
 
   // Sort inner objects by count descending for readability
@@ -255,16 +324,17 @@ async function main() {
     );
   }
 
-  // ── Build flat list sorted by weight descending ────────────────────────────
+  // ── Flat pairs: one row per dataset-id pair using preferred MU names ───────
   const pairs = [];
   const seen = new Set();
-  for (const [a, targets] of Object.entries(coAppearances)) {
-    for (const [b, w] of Object.entries(targets)) {
-      const key = [a, b].sort().join('||');
-      if (!seen.has(key)) {
-        seen.add(key);
-        pairs.push({ hero1: a, hero2: b, sharedComics: w });
-      }
+  for (const [dsA, targets] of datasetPairs) {
+    for (const [dsB, w] of targets) {
+      const key = [dsA, dsB].sort().join('||');
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const hero1 = preferredMuName(datasetIdToMuNames.get(dsA));
+      const hero2 = preferredMuName(datasetIdToMuNames.get(dsB));
+      pairs.push({ hero1, hero2, sharedComics: w });
     }
   }
   pairs.sort((a, b) => b.sharedComics - a.sharedComics);
@@ -283,7 +353,9 @@ async function main() {
       unmatchedCharacters: unmatched.length,
       note:
         'Unmatched characters were introduced after 2002 or appear fewer than 5 times ' +
-        'in the dataset. sharedComics = number of individual comic issues both characters appeared in.',
+        'in the dataset. sharedComics = number of individual comic issues both characters appeared in. ' +
+        'MU variants that share a dataset node each get a full byCharacter entry; ' +
+        'pairs uses one preferred (shortest, non-parenthetical) MU name per dataset node.',
     },
     matchedNames: Object.fromEntries(matched),
     unmatched: unmatched.sort(),
