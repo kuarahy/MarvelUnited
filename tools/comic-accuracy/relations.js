@@ -39,7 +39,22 @@ function normalise(name) {
     .trim();
 }
 
-/** Parse CLI args into character name tokens (strips stray commas). */
+/** Collapse spaces so "Spiderman" ≈ "Spider Man" ≈ "Spider-Man". */
+function compact(name) {
+  return normalise(name).replace(/\s+/g, '');
+}
+
+function parseIntArg(raw, fallback) {
+  const n = parseInt(raw, 10);
+  return Number.isFinite(n) && n > 0 ? n : fallback;
+}
+
+/**
+ * Parse CLI args into character name tokens (strips stray commas).
+ *
+ * Note: npm steals `--limit` (it's an npm config key), so prefer `--top` / `-n`
+ * when calling via `npm run relations -- …`.
+ */
 function parseNames(argv) {
   const flags = new Set();
   const names = [];
@@ -53,20 +68,27 @@ function parseNames(argv) {
       json = true;
       continue;
     }
-    if (a === '--limit') {
-      limit = parseInt(argv[++i], 10) || 25;
+    // --top / -n preferred for npm; --limit kept for direct node invocation
+    if (a === '--top' || a === '-n' || a === '--limit') {
+      limit = parseIntArg(argv[++i], 25);
+      continue;
+    }
+    if (a.startsWith('--top=')) {
+      limit = parseIntArg(a.slice('--top='.length), 25);
       continue;
     }
     if (a.startsWith('--limit=')) {
-      limit = parseInt(a.slice('--limit='.length), 10) || 25;
+      limit = parseIntArg(a.slice('--limit='.length), 25);
       continue;
     }
     if (a === '--min') {
-      min = parseInt(argv[++i], 10) || 0;
+      const n = parseInt(argv[++i], 10);
+      min = Number.isFinite(n) && n >= 0 ? n : 0;
       continue;
     }
     if (a.startsWith('--min=')) {
-      min = parseInt(a.slice('--min='.length), 10) || 0;
+      const n = parseInt(a.slice('--min='.length), 10);
+      min = Number.isFinite(n) && n >= 0 ? n : 0;
       continue;
     }
     if (a.startsWith('-')) {
@@ -78,6 +100,12 @@ function parseNames(argv) {
       const t = part.trim();
       if (t) names.push(t);
     }
+  }
+
+  // npm eats `--limit`, leaving a bare number as a fake "second character".
+  // Treat a trailing all-digits token as --top when only one real name remains.
+  if (names.length === 2 && /^\d+$/.test(names[1])) {
+    limit = parseIntArg(names.pop(), limit);
   }
 
   return { names, limit, min, json, flags };
@@ -113,43 +141,62 @@ function resolveName(query, data) {
   }
 
   const qn = normalise(query);
+  const qc = compact(query);
   if (!qn) return { key: query, status: 'unknown', candidates: [] };
 
-  // Exact normalised
-  if (byNorm.has(qn)) {
-    const keys = byNorm.get(qn);
+  function preferKey(keys) {
     const matched = keys.filter((k) => data.matchedNames?.[k]);
-    if (matched.length === 1) return { key: matched[0], status: 'matched' };
-    if (matched.length > 1) {
-      // Prefer shortest non-parenthetical
-      const preferred = matched.sort((a, b) => {
-        const ap = /\(/.test(a) ? 1 : 0;
-        const bp = /\(/.test(b) ? 1 : 0;
-        if (ap !== bp) return ap - bp;
-        return a.length - b.length || a.localeCompare(b);
-      })[0];
-      return { key: preferred, status: 'matched', aliases: matched };
-    }
-    return { key: keys[0], status: 'unmatched' };
+    const pool = matched.length ? matched : keys;
+    return [...pool].sort((a, b) => {
+      const ap = /\(/.test(a) ? 1 : 0;
+      const bp = /\(/.test(b) ? 1 : 0;
+      if (ap !== bp) return ap - bp;
+      return a.length - b.length || a.localeCompare(b);
+    })[0];
   }
 
-  // Fuzzy contains
+  function statusFor(key) {
+    return data.matchedNames?.[key] ? 'matched' : 'unmatched';
+  }
+
+  // Exact normalised (spaces preserved)
+  if (byNorm.has(qn)) {
+    const keys = byNorm.get(qn);
+    const key = preferKey(keys);
+    return { key, status: statusFor(key), aliases: keys };
+  }
+
+  // Compact match: "Spiderman" → "Spider-Man"
+  const compactHits = allKeys.filter((k) => compact(k) === qc);
+  if (compactHits.length) {
+    const matched = compactHits.filter((k) => data.matchedNames?.[k]);
+    const pool = matched.length ? matched : compactHits;
+    if (pool.length === 1) return { key: pool[0], status: statusFor(pool[0]) };
+    return { key: query, status: 'ambiguous', candidates: pool.slice(0, 12) };
+  }
+
+  // Fuzzy contains — require meaningful length so "m" never matches "spiderman"
+  const MIN = 4;
   const candidates = allKeys.filter((k) => {
     const kn = normalise(k);
-    return kn.includes(qn) || qn.includes(kn) || k.toLowerCase().includes(query.toLowerCase());
+    const kc = compact(k);
+    if (kn.length >= MIN && qn.length >= MIN && (kn.includes(qn) || qn.includes(kn))) return true;
+    if (kc.length >= MIN && qc.length >= MIN && (kc.includes(qc) || qc.includes(kc))) return true;
+    return false;
   });
 
   const matchedCands = candidates.filter((k) => data.matchedNames?.[k]);
   if (matchedCands.length === 1) return { key: matchedCands[0], status: 'matched' };
   if (candidates.length === 1) {
     const k = candidates[0];
-    return {
-      key: k,
-      status: data.matchedNames?.[k] ? 'matched' : 'unmatched',
-    };
+    return { key: k, status: statusFor(k) };
   }
   if (candidates.length > 1) {
-    return { key: query, status: 'ambiguous', candidates: candidates.slice(0, 12) };
+    return {
+      key: query,
+      status: 'ambiguous',
+      candidates: (matchedCands.length ? matchedCands : candidates).slice(0, 12),
+    };
   }
 
   return { key: query, status: 'unknown', candidates: [] };
@@ -273,13 +320,16 @@ function main() {
 
   if (!names.length || names[0] === '--help' || names[0] === '-h') {
     console.log(`Usage:
-  node relations.js <character> [--limit N] [--min N] [--json]
+  node relations.js <character> [--top N] [--min N] [--json]
   node relations.js <characterA> <characterB> [--json]
 
 Examples:
   npm run relations -- "Iron Man"
+  npm run relations -- "Iron Man" --top 100
   npm run relations -- "Dark Phoenix" "Cyclops"
-  npm run relations -- "Dark Phoenix" "Miles Morales"`);
+  npm run relations -- "Dark Phoenix" "Miles Morales"
+
+Note: npm steals --limit (npm config). Use --top / -n / --top=100 instead.`);
     process.exit(names.length ? 0 : 1);
   }
 

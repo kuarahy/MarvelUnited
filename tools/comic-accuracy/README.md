@@ -24,7 +24,8 @@ cd tools/comic-accuracy
 
 # Ranked partners for one character
 npm run relations -- "Iron Man"
-npm run relations -- "Iron Man" --limit 10 --min 20
+npm run relations -- "Iron Man" --top 100
+npm run relations -- "Iron Man" --top 10 --min 20
 
 # Shared comics between two characters
 npm run relations -- "Dark Phoenix" "Cyclops"
@@ -40,9 +41,11 @@ npm run relations -- "Dark Phoenix" "Cyclops" --json
 | Partners | one name | Ranked table of MU partners + `sharedComics` |
 | Pair | two names | `sharedComics: N`, or `n/a` if either is unmatched |
 
-**Flags:** `--limit N` (default 25), `--min N` (min sharedComics to show), `--json`.
+**Flags:** `--top N` / `-n N` (default 25), `--min N` (min sharedComics to show), `--json`.
 
-Names are resolved with exact match, then normalised / fuzzy match. Ambiguous queries print candidates and exit `1`. Unmatched characters (no 1961–2002 coverage) exit `2`.
+> npm steals `--limit` (it’s an npm config key), so use `--top` when calling via `npm run`. Direct `node relations.js … --limit 100` still works.
+
+Names resolve with exact match, hyphen/space-insensitive compact match (`Spiderman` → `Spider-Man`), then fuzzy match. Ambiguous queries print candidates and exit `1`. Unmatched characters (no 1961–2002 coverage) exit `2`.
 
 Example pair output:
 
