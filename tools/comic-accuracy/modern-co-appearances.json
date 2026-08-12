@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "generated": null,
+    "source": "comicvine",
+    "dateWindow": "cover_date >= 2003-01-01",
+    "charactersProcessed": 0,
+    "pairsFound": 0,
+    "spikeMode": false,
+    "note": "Run: node build-modern-comicvine.js  (requires COMIC_VINE_API_KEY and populated cv-ids.json)"
+  },
+  "pairs": [],
+  "byCharacter": {}
+}

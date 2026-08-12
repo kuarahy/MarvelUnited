@@ -116,6 +116,23 @@ function loadData() {
   return JSON.parse(raw);
 }
 
+/** Load modern-co-appearances.json if available; returns null if absent or empty. */
+function loadModernData() {
+  const f = path.join(__dirname, 'modern-co-appearances.json');
+  try {
+    const parsed = JSON.parse(readFileSync(f, 'utf8'));
+    // Treat the stub (no pairs, no generated date) as absent
+    if (!parsed.meta?.generated || !Object.keys(parsed.byCharacter ?? {}).length) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function modernSharedComics(modern, a, b) {
+  return modern?.byCharacter?.[a]?.[b] ?? modern?.byCharacter?.[b]?.[a] ?? null;
+}
+
 /**
  * Resolve a user-typed name to an exact MU key in the dataset.
  * Returns { key, status: 'matched'|'unmatched'|'ambiguous'|'unknown', candidates? }
@@ -206,12 +223,15 @@ function sharedComics(data, a, b) {
   return data.byCharacter?.[a]?.[b] ?? data.byCharacter?.[b]?.[a] ?? 0;
 }
 
-function printPartners(data, key, { limit, min, json }) {
+function printPartners(data, modern, key, { limit, min, json }) {
   const partners = Object.entries(data.byCharacter?.[key] ?? {})
     .filter(([, w]) => w >= min)
     .slice(0, limit);
 
   const datasetId = data.matchedNames[key];
+  const modernPartners = modern
+    ? Object.entries(modern.byCharacter?.[key] ?? {}).sort(([, a], [, b]) => b - a)
+    : null;
 
   if (json) {
     console.log(
@@ -219,8 +239,18 @@ function printPartners(data, key, { limit, min, json }) {
         {
           character: key,
           datasetId,
-          partnerCount: Object.keys(data.byCharacter?.[key] ?? {}).length,
-          partners: Object.fromEntries(partners),
+          legacy: {
+            coverage: data.meta?.datasetCoverage ?? '1961–2002',
+            partnerCount: Object.keys(data.byCharacter?.[key] ?? {}).length,
+            partners: Object.fromEntries(partners),
+          },
+          modern: modern
+            ? {
+                coverage: `cover_date >= ${modern.meta?.dateWindow?.replace('cover_date >= ', '') ?? '2003-01-01'}`,
+                partnerCount: Object.keys(modern.byCharacter?.[key] ?? {}).length,
+                partners: Object.fromEntries((modernPartners ?? []).slice(0, limit)),
+              }
+            : null,
         },
         null,
         2
@@ -230,24 +260,39 @@ function printPartners(data, key, { limit, min, json }) {
   }
 
   console.log(`${key}  →  ${datasetId}`);
-  console.log(`Coverage: ${data.meta?.datasetCoverage ?? '1961–2002'}`);
+  console.log(`Legacy coverage: ${data.meta?.datasetCoverage ?? '1961–2002'}`);
   const total = Object.keys(data.byCharacter?.[key] ?? {}).length;
-  console.log(`${total} partners` + (min ? ` (showing sharedComics ≥ ${min})` : ''));
+  console.log(`${total} legacy partners` + (min ? ` (showing sharedComics ≥ ${min})` : ''));
   console.log('');
   if (!partners.length) {
-    console.log('(no partners above threshold)');
-    return;
+    console.log('(no legacy partners above threshold)');
+  } else {
+    console.log(' #  Partner                              Comics');
+    console.log('──  ───────────────────────────────────  ──────');
+    partners.forEach(([name, w], i) => {
+      const n = String(i + 1).padStart(2);
+      const p = name.padEnd(37).slice(0, 37);
+      console.log(`${n}  ${p}  ${String(w).padStart(6)}`);
+    });
   }
-  console.log(' #  Partner                              Comics');
-  console.log('──  ───────────────────────────────────  ──────');
-  partners.forEach(([name, w], i) => {
-    const n = String(i + 1).padStart(2);
-    const p = name.padEnd(37).slice(0, 37);
-    console.log(`${n}  ${p}  ${String(w).padStart(6)}`);
-  });
+
+  if (modern) {
+    const modernTop = (modernPartners ?? []).filter(([, w]) => w >= min).slice(0, limit);
+    console.log('');
+    console.log(`Modern partners (comicvine, cover_date ≥ 2003): ${modernTop.length ? '' : 'none yet'}`);
+    if (modernTop.length) {
+      console.log(' #  Partner                              Comics');
+      console.log('──  ───────────────────────────────────  ──────');
+      modernTop.forEach(([name, w], i) => {
+        const n = String(i + 1).padStart(2);
+        const p = name.padEnd(37).slice(0, 37);
+        console.log(`${n}  ${p}  ${String(w).padStart(6)}`);
+      });
+    }
+  }
 }
 
-function printPair(data, a, b, { json }) {
+function printPair(data, modern, a, b, { json }) {
   const aRes = resolveName(a, data);
   const bRes = resolveName(b, data);
 
@@ -268,14 +313,17 @@ function printPair(data, a, b, { json }) {
     process.exit(1);
   }
 
-  const uncovered = [];
-  if (aRes.status === 'unmatched') uncovered.push(aRes.key);
-  if (bRes.status === 'unmatched') uncovered.push(bRes.key);
+  const legacyUncovered = [];
+  if (aRes.status === 'unmatched') legacyUncovered.push(aRes.key);
+  if (bRes.status === 'unmatched') legacyUncovered.push(bRes.key);
 
-  const value =
+  const legacyValue =
     aRes.status === 'matched' && bRes.status === 'matched'
       ? sharedComics(data, aRes.key, bRes.key)
       : null;
+
+  const modernValue = modern ? modernSharedComics(modern, aRes.key, bRes.key) : undefined;
+  const modernCoverage = modern?.meta?.dateWindow ?? 'cover_date >= 2003-01-01';
 
   if (json) {
     console.log(
@@ -283,12 +331,13 @@ function printPair(data, a, b, { json }) {
         {
           hero1: aRes.key,
           hero2: bRes.key,
-          sharedComics: value,
-          uncovered,
-          note:
-            value === null
-              ? 'One or both characters have no 1961–2002 dataset coverage'
-              : undefined,
+          legacySharedComics: legacyValue,
+          modernSharedComics: modernValue !== undefined ? (modernValue ?? 0) : null,
+          legacyUncovered: legacyUncovered.length ? legacyUncovered : undefined,
+          sources: {
+            legacy: `1961–2002, Marvel Universe Social Network (Rosselló, 2002)`,
+            modern: modern ? `${modernCoverage}, Comic Vine` : 'not built — run build-modern-comicvine.js',
+          },
         },
         null,
         2
@@ -297,21 +346,30 @@ function printPair(data, a, b, { json }) {
     return;
   }
 
-  if (uncovered.length) {
-    console.log(`${aRes.key}  ↔  ${bRes.key}`);
-    console.log(`sharedComics: n/a`);
+  console.log(`${aRes.key}  ↔  ${bRes.key}`);
+
+  if (legacyUncovered.length) {
+    console.log(`legacySharedComics: n/a`);
     console.log(
-      `No dataset coverage for: ${uncovered.join(', ')} ` +
-        `(post-2002 or below the top-327 threshold — relations cannot be inferred without another source).`
+      `  (no 1961–2002 coverage for: ${legacyUncovered.join(', ')} — post-2002 or below top-327 threshold)`
     );
-    process.exitCode = 2;
-    return;
+  } else {
+    console.log(`legacySharedComics: ${legacyValue}`);
+    if (legacyValue === 0) console.log('  (no documented co-appearance in the 1961–2002 dataset)');
   }
 
-  console.log(`${aRes.key}  ↔  ${bRes.key}`);
-  console.log(`sharedComics: ${value}`);
-  if (value === 0) {
-    console.log('(no documented co-appearance in the 1961–2002 dataset)');
+  if (modern === null) {
+    console.log(`modernSharedComics: n/a   (run build-modern-comicvine.js to populate)`);
+  } else if (modernValue === null) {
+    console.log(`modernSharedComics: 0   (${modernCoverage}, not in same issue)`);
+  } else {
+    console.log(`modernSharedComics: ${modernValue}   (${modernCoverage})`);
+  }
+
+  if (legacyValue === 0 && (modernValue === null || modernValue === 0)) {
+    process.exitCode = 2;
+  } else if (legacyValue === null && (modernValue === null || modernValue === 0)) {
+    process.exitCode = 2;
   }
 }
 
@@ -334,6 +392,7 @@ Note: npm steals --limit (npm config). Use --top / -n / --top=100 instead.`);
   }
 
   const data = loadData();
+  const modern = loadModernData();
 
   if (names.length === 1) {
     const res = resolveName(names[0], data);
@@ -346,20 +405,37 @@ Note: npm steals --limit (npm config). Use --top / -n / --top=100 instead.`);
       process.exit(1);
     }
     if (res.status === 'unmatched') {
+      const modernPartners = modern
+        ? Object.entries(modern.byCharacter?.[res.key] ?? {}).sort(([, a], [, b]) => b - a)
+        : null;
       console.log(`${res.key}`);
-      console.log('Status: unmatched');
-      console.log(
-        'No 1961–2002 co-appearance data (introduced after 2002 or below dataset threshold).'
-      );
+      console.log('legacyStatus: unmatched');
+      console.log('  (no 1961–2002 data — introduced after 2002 or below dataset threshold)');
+      if (modernPartners?.length) {
+        const modernCoverage = modern.meta?.dateWindow ?? 'cover_date >= 2003-01-01';
+        console.log('');
+        console.log(`Modern partners (comicvine, ${modernCoverage}): ${modernPartners.length}`);
+        console.log(' #  Partner                              Comics');
+        console.log('──  ───────────────────────────────────  ──────');
+        modernPartners.slice(0, limit).forEach(([name, w], i) => {
+          const n = String(i + 1).padStart(2);
+          const p = name.padEnd(37).slice(0, 37);
+          console.log(`${n}  ${p}  ${String(w).padStart(6)}`);
+        });
+      } else if (modern) {
+        console.log('modernStatus: not in modern-co-appearances.json yet — run build-modern-comicvine.js');
+      } else {
+        console.log('modernStatus: n/a — run build-modern-comicvine.js to populate');
+      }
       process.exitCode = 2;
       return;
     }
-    printPartners(data, res.key, { limit, min, json });
+    printPartners(data, modern, res.key, { limit, min, json });
     return;
   }
 
   if (names.length === 2) {
-    printPair(data, names[0], names[1], { json });
+    printPair(data, modern, names[0], names[1], { json });
     return;
   }
 
