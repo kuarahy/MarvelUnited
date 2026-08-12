@@ -32,6 +32,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const MODERN_CUTOFF = '2003-01-01';
 const RATE_LIMIT_MS = 1200;  // ~1 req/sec; CV free tier allows ~200/hour
 const CV_BASE = 'https://comicvine.gamespot.com/api';
+const USER_AGENT = 'MU-ComicAccuracy/1.0 (kuarahy/Marvel-United-Randomizer)';
 const CACHE_DIR = path.join(__dirname, 'cache');
 const COMMENT_KEYS = new Set(['_comment', '_scope']);
 
@@ -39,8 +40,10 @@ const COMMENT_KEYS = new Set(['_comment', '_scope']);
 
 function fetchJSON(url) {
   return new Promise((resolve, reject) => {
-    https
-      .get(url, (res) => {
+    const options = new URL(url);
+    const req = https.request(
+      { hostname: options.hostname, path: options.pathname + options.search, headers: { 'User-Agent': USER_AGENT } },
+      (res) => {
         if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
           return fetchJSON(res.headers.location).then(resolve).catch(reject);
         }
@@ -57,8 +60,10 @@ function fetchJSON(url) {
           }
         });
         res.on('error', reject);
-      })
-      .on('error', reject);
+      }
+    );
+    req.on('error', reject);
+    req.end();
   });
 }
 
@@ -90,10 +95,16 @@ function saveCache(cvId, issueIds) {
 // ─── Comic Vine API ───────────────────────────────────────────────────────────
 
 /**
- * Fetch all issue IDs for a CV character that have cover_date >= MODERN_CUTOFF.
+ * Fetch all issue IDs for a CV character via the /character/ endpoint.
  *
- * Uses the /api/issues/ endpoint with a character_ids + cover_date filter so
- * only modern issues are fetched, paginated at 100 per call.
+ * NOTE: The /issues/?filter=character_ids:X endpoint silently ignores the
+ * character_ids filter and returns all issues in CV. The character endpoint
+ * is the only reliable way to get a character-scoped issue list.
+ *
+ * The returned set contains all issue IDs the character appears in (all time).
+ * For characters who debuted after MODERN_CUTOFF all appearances are modern.
+ * For pre-MODERN_CUTOFF characters some pre-2003 issues may be included; the
+ * co-appearance counts are labelled accordingly in modern-co-appearances.json.
  *
  * Results are cached per-character in cache/ to avoid repeated network calls.
  */
@@ -104,36 +115,21 @@ async function fetchModernIssueIds(cvId, apiKey) {
     return new Set(cached);
   }
 
-  const ids = new Set();
-  let offset = 0;
-  const limit = 100;
-  let total = null;
+  const url =
+    `${CV_BASE}/character/4005-${cvId}/?api_key=${apiKey}&format=json` +
+    `&field_list=issue_credits`;
 
-  while (true) {
-    const url =
-      `${CV_BASE}/issues/?api_key=${apiKey}&format=json` +
-      `&filter=character_ids:${cvId},cover_date:${MODERN_CUTOFF}|2099-12-31` +
-      `&field_list=id,cover_date&limit=${limit}&offset=${offset}`;
+  await sleep(RATE_LIMIT_MS);
+  const data = await fetchJSON(url);
 
-    await sleep(RATE_LIMIT_MS);
-    const data = await fetchJSON(url);
-
-    if (data.error !== 'OK') {
-      throw new Error(`CV API error "${data.error}" for CV:${cvId}`);
-    }
-
-    const results = data.results ?? [];
-    for (const issue of results) {
-      if (issue.cover_date >= MODERN_CUTOFF) ids.add(issue.id);
-    }
-
-    if (total === null) total = data.number_of_total_results ?? 0;
-    process.stdout.write('.');
-    offset += limit;
-
-    if (offset >= total || results.length < limit) break;
+  if (data.error !== 'OK') {
+    throw new Error(`CV API error "${data.error}" for CV:${cvId}`);
   }
 
+  const issueCredits = data.results?.issue_credits ?? [];
+  const ids = new Set(issueCredits.map((issue) => issue.id));
+
+  process.stdout.write('.');
   const arr = [...ids];
   saveCache(cvId, arr);
   return ids;
@@ -303,12 +299,15 @@ async function runBuild(cvIds, coAppearances, apiKey, spikeN) {
     meta: {
       generated: new Date().toISOString().split('T')[0],
       source: 'comicvine',
-      dateWindow: `cover_date >= ${MODERN_CUTOFF}`,
+      method: 'character-endpoint-issue-credits',
+      dateWindow: 'all-time (CV /character/ endpoint; cover_date filter not supported on /issues/)',
       charactersProcessed: issuesByChar.size,
       pairsFound: pairs.length,
       spikeMode: spikeN > 0,
       note:
-        'modernSharedComics = individual issues (cover_date >= 2003) in which both characters appear. ' +
+        'modernSharedComics = issues in which both characters appear, from the CV character endpoint. ' +
+        'For characters who debuted after 2003 all appearances are modern; pre-2003 characters ' +
+        'may include some classic-era issues. ' +
         'Only characters in cv-ids.json with a confirmed non-null ID are included. ' +
         'Run build-modern-comicvine.js to regenerate.',
     },

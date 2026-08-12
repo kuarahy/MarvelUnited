@@ -105,32 +105,44 @@ Extends coverage to the post-2002 gap using the [Comic Vine API](https://comicvi
 ```bash
 cd tools/comic-accuracy
 
-# 1. Get a free Comic Vine API key and export it
+# 1. Get a free Comic Vine API key (https://comicvine.gamespot.com/api/)
+#    Set it as an environment variable — never commit it:
+
+# PowerShell (Windows)
+$env:COMIC_VINE_API_KEY = "your_key_here"
+
+# Bash/macOS/Linux
 export COMIC_VINE_API_KEY=your_key_here
 
-# 2. Resolve MU names → CV character IDs (review suggestions before proceeding)
-npm run resolve           # writes auto-suggestions into cv-ids.json
-# -- or --
-node build-modern-comicvine.js --resolve --dry-run  # print only, don't write
+# Alternatively copy .env.example → .env and fill in the key (sourced automatically)
 
-# 3. Manually verify cv-ids.json entries (wrong versions are common)
-#    e.g. "Venom" could resolve to Eddie Brock, Flash Thompson, or the symbiote
+# 2. Dry-run: print CV search suggestions without writing
+node build-modern-comicvine.js --resolve --dry-run
 
-# 4. Run a spike on 20 characters first to validate hit rate
+# 3. Write auto-suggestions into cv-ids.json (review afterwards!)
+npm run resolve
+
+# 4. Manually correct wrong IDs in cv-ids.json.
+#    The first CV search result is often the wrong publisher / version.
+#    e.g. "Rocket" resolves to a Milestone Comics character — set manually to CV:32814
+
+# 5. Validate on a small subset first
 node build-modern-comicvine.js --spike 20
 
-# 5. Full build once you're happy with the spike
+# 6. Full build once satisfied
 npm run build-modern
 ```
 
 ### How it works
 
 1. Read `cv-ids.json` (MU name → Comic Vine character ID)
-2. For each character with a non-null ID, fetch their issue appearances filtered by `cover_date >= 2003-01-01` via the Comic Vine issues endpoint (paginated at 100/req)
+2. For each character with a non-null ID, call the CV `/character/` endpoint to get all their issue IDs in one request (the `/issues/` endpoint's `character_ids` filter is silently ignored by CV)
 3. Compute pairwise intersection: `modernSharedComics(A,B) = |issues(A) ∩ issues(B)|`
 4. Write `modern-co-appearances.json`
 
 API calls are rate-limited to ~1 req/sec. Results are cached per-character in `cache/` (gitignored) — reruns only re-fetch missing or deleted entries.
+
+> **Date accuracy:** For characters who debuted after 2003 (Miles Morales, Silk, Gwenpool, etc.) all their issue credits are modern. For pre-2003 characters their count includes some classic-era issues. CV’s `/issues/` endpoint silently ignores the `character_ids` filter, making server-side date filtering impractical.
 
 ### cv-ids.json
 
@@ -152,6 +164,98 @@ Add matched legacy characters (Iron Man, Thor, Spider-Man…) to compute cross-e
 - Auto-resolved IDs (`--resolve`) use the top CV search result — verify for alternate versions (Hawkeye → Clint Barton vs Kate Bishop, Mighty Thor → Jane Foster vs Thor Odinson, etc.)
 - Issue credit quality varies; some comics are under-tagged on Comic Vine
 - `modernSharedComics` counts individual issue appearances, not story arcs
+
+---
+
+## Command reference
+
+### `relations.js` — offline lookup
+
+```bash
+# Single character: ranked partner list
+node relations.js "Iron Man"
+node relations.js "Iron Man" --top 50
+node relations.js "Iron Man" --top 20 --min 10
+node relations.js "Iron Man" --json
+
+# Two characters: pair summary
+node relations.js "Dark Phoenix" "Cyclops"
+node relations.js "Miles Morales" "Spider-Man" --json
+
+# Via npm (--top instead of --limit, which npm intercepts)
+npm run relations -- "Iron Man" --top 10
+npm run relations -- "Dark Phoenix" "Cyclops"
+```
+
+| Flag | Alias | Default | Description |
+|---|---|---|---|
+| `--top N` | `-n N` | 25 | Max partners to show |
+| `--min N` | | 1 | Min shared comics to include |
+| `--json` | | false | Machine-readable output |
+
+Exit codes: `0` = success, `1` = ambiguous/bad name, `2` = no coverage in any source.
+
+---
+
+### `build.js` — rebuild legacy dataset (1961–2002)
+
+```bash
+node build.js
+# or: npm run build
+```
+
+Network-only (no API key needed). Fetches upstream co-appearance CSV and MU box JSONs, then writes `co-appearances.json`. Runs in ~10 s.
+
+---
+
+### `build-modern-comicvine.js` — Comic Vine pipeline
+
+```bash
+# REQUIRED environment variable:
+$env:COMIC_VINE_API_KEY = "your_key_here"          # PowerShell
+export COMIC_VINE_API_KEY=your_key_here             # bash
+
+# ─── Resolve mode ──────────────────────────────────────────────────────────
+# Search Comic Vine for each null entry in cv-ids.json.
+# Prints top 5 candidate IDs + descriptions for manual review.
+node build-modern-comicvine.js --resolve
+npm run resolve
+
+# Dry-run: print suggestions only, do not write cv-ids.json
+node build-modern-comicvine.js --resolve --dry-run
+
+# ─── Spike mode ────────────────────────────────────────────────────────────
+# Process only the first N characters (default: 10) — fast sanity-check.
+node build-modern-comicvine.js --spike 20
+node build-modern-comicvine.js --spike 5
+
+# ─── Full build ────────────────────────────────────────────────────────────
+# Fetch issue appearances for all non-null IDs, compute pairings,
+# write modern-co-appearances.json.
+node build-modern-comicvine.js
+npm run build-modern
+```
+
+| Flag | Description |
+|---|---|
+| `--resolve` | Search CV API for null IDs; auto-pick top result and write to `cv-ids.json` |
+| `--dry-run` | (with `--resolve`) Print candidates only; do not write anything |
+| `--spike N` | Process first N characters; useful for validating cache + API access |
+
+**Rate limit:** ~1 req/sec (1 200 ms gap). The CV free tier allows ~200 req/hour.  
+**Cache:** Per-character issue lists are stored in `cache/cv-{id}-modern.json` (gitignored). Reruns skip cached entries.  
+**API note:** CV’s `/issues/?filter=character_ids:X` silently ignores the character filter. The build uses `/character/4005-{id}/` instead, which returns the full issue credit list in one request.  
+**Typical full-build time:** 3–4 min (1 API call per character, ~125 calls total).
+
+---
+
+### `generate-groups.js` — villain hero groups
+
+```bash
+node generate-groups.js
+```
+
+Reads `co-appearances.json` and writes [`TOP-GROUPS.md`](./TOP-GROUPS.md): for each MU villain, the top comic-accurate heroes to face them.
 
 ---
 
