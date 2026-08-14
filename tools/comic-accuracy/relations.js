@@ -31,6 +31,11 @@ const MU_BOX_URLS = [
 
 const LOYALTY_CACHE = path.join(__dirname, 'cache', 'mu-loyalty.json');
 
+// Real-name → dataset key, for characters whose MU card name differs from their common name.
+const NAME_ALIASES = new Map([
+  ['jane foster', 'Mighty Thor'],
+]);
+
 function fetchText(url) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http;
@@ -271,6 +276,10 @@ function resolveName(query, data) {
     };
   }
 
+  // Last resort: check manual aliases (e.g. "Jane Foster" → "Mighty Thor")
+  const aliasTarget = NAME_ALIASES.get(qn);
+  if (aliasTarget) return resolveName(aliasTarget, data);
+
   return { key: query, status: 'unknown', candidates: [] };
 }
 
@@ -475,7 +484,9 @@ Flags:
       const modernPartners = modern
         ? Object.entries(modern.byCharacter?.[res.key] ?? {}).sort(([, a], [, b]) => b - a)
         : null;
-      console.log(`${res.key}`);
+      const realName = [...NAME_ALIASES.entries()].find(([, v]) => v === res.key)?.[0]
+        ?.replace(/\b\w/g, c => c.toUpperCase());
+      console.log(realName ? `${res.key}  →  ${realName}` : `${res.key}`);
       console.log('legacyStatus: unmatched');
       console.log('  (no 1961–2002 data — introduced after 2002 or below dataset threshold)');
       if (modernPartners?.length) {
