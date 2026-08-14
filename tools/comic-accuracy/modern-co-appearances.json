@@ -1,39 +1,34 @@
 {
   "meta": {
-    "generated": "2026-08-12",
+    "generated": "2026-08-14",
     "source": "comicvine",
     "method": "character-endpoint-issue-credits",
     "dateWindow": "all-time (CV /character/ endpoint; cover_date filter not supported on /issues/)",
     "charactersProcessed": 125,
-    "pairsFound": 5945,
+    "pairsFound": 5935,
     "spikeMode": false,
     "note": "modernSharedComics = issues in which both characters appear, from the CV character endpoint. For characters who debuted after 2003 all appearances are modern; pre-2003 characters may include some classic-era issues. Only characters in cv-ids.json with a confirmed non-null ID are included. Run build-modern-comicvine.js to regenerate."
   },
   "pairs": [
     {
       "hero1": "Cyborg Spider-Man",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 3231
-    },
-    {
-      "hero1": "Cyborg Spider-Man",
       "hero2": "Iron Patriot",
-      "modernSharedComics": 1863
+      "modernSharedComics": 1864
     },
     {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Venom",
-      "modernSharedComics": 1727
+      "modernSharedComics": 1728
     },
     {
       "hero1": "Agent Venom",
       "hero2": "Cyborg Spider-Man",
-      "modernSharedComics": 1696
+      "modernSharedComics": 1697
     },
     {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Ghost-Spider",
-      "modernSharedComics": 1465
+      "modernSharedComics": 1467
     },
     {
       "hero1": "Cyborg Spider-Man",
@@ -81,14 +76,9 @@
       "modernSharedComics": 698
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Winter Soldier",
-      "modernSharedComics": 698
-    },
-    {
       "hero1": "Warpath",
       "hero2": "X-23",
-      "modernSharedComics": 690
+      "modernSharedComics": 691
     },
     {
       "hero1": "Scorpion",
@@ -98,7 +88,7 @@
     {
       "hero1": "Pixie",
       "hero2": "X-23",
-      "modernSharedComics": 651
+      "modernSharedComics": 652
     },
     {
       "hero1": "Rocket",
@@ -113,22 +103,17 @@
     {
       "hero1": "Agent Venom",
       "hero2": "Venom",
-      "modernSharedComics": 612
+      "modernSharedComics": 613
     },
     {
       "hero1": "Chamber",
       "hero2": "M",
-      "modernSharedComics": 611
-    },
-    {
-      "hero1": "Iron Patriot",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 601
+      "modernSharedComics": 612
     },
     {
       "hero1": "Pixie",
       "hero2": "Warpath",
-      "modernSharedComics": 593
+      "modernSharedComics": 594
     },
     {
       "hero1": "Cyborg Spider-Man",
@@ -151,11 +136,6 @@
       "modernSharedComics": 577
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Venom",
-      "modernSharedComics": 576
-    },
-    {
       "hero1": "Ghost-Spider",
       "hero2": "Iron Patriot",
       "modernSharedComics": 572
@@ -168,7 +148,7 @@
     {
       "hero1": "Bullseye",
       "hero2": "Iron Patriot",
-      "modernSharedComics": 502
+      "modernSharedComics": 503
     },
     {
       "hero1": "Carnage",
@@ -183,7 +163,7 @@
     {
       "hero1": "Bullseye",
       "hero2": "Cyborg Spider-Man",
-      "modernSharedComics": 484
+      "modernSharedComics": 485
     },
     {
       "hero1": "Agent Venom",
@@ -191,14 +171,9 @@
       "modernSharedComics": 483
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Valkyrie",
-      "modernSharedComics": 482
-    },
-    {
       "hero1": "Blink",
       "hero2": "Morph",
-      "modernSharedComics": 474
+      "modernSharedComics": 475
     },
     {
       "hero1": "Cyborg Spider-Man",
@@ -241,11 +216,6 @@
       "modernSharedComics": 426
     },
     {
-      "hero1": "Maria Hill",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 424
-    },
-    {
       "hero1": "Bullseye",
       "hero2": "Scorpion",
       "modernSharedComics": 411
@@ -253,7 +223,7 @@
     {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Valkyrie",
-      "modernSharedComics": 395
+      "modernSharedComics": 396
     },
     {
       "hero1": "Ares",
@@ -281,6 +251,11 @@
       "modernSharedComics": 371
     },
     {
+      "hero1": "Cyborg Spider-Man",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 368
+    },
+    {
       "hero1": "Iron Patriot",
       "hero2": "Sentry",
       "modernSharedComics": 363
@@ -298,7 +273,7 @@
     {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Warpath",
-      "modernSharedComics": 352
+      "modernSharedComics": 353
     },
     {
       "hero1": "Daken",
@@ -329,11 +304,6 @@
       "hero1": "Cyborg Spider-Man",
       "hero2": "X-23",
       "modernSharedComics": 324
-    },
-    {
-      "hero1": "Hope Summers",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 321
     },
     {
       "hero1": "Ares",
@@ -371,13 +341,13 @@
       "modernSharedComics": 309
     },
     {
-      "hero1": "Electro",
-      "hero2": "Kraven",
-      "modernSharedComics": 306
-    },
-    {
       "hero1": "Ghost-Spider",
       "hero2": "Miles Morales",
+      "modernSharedComics": 307
+    },
+    {
+      "hero1": "Electro",
+      "hero2": "Kraven",
       "modernSharedComics": 306
     },
     {
@@ -406,11 +376,6 @@
       "modernSharedComics": 304
     },
     {
-      "hero1": "Ghost-Spider",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 301
-    },
-    {
       "hero1": "Ares",
       "hero2": "Scorpion",
       "modernSharedComics": 294
@@ -419,11 +384,6 @@
       "hero1": "M",
       "hero2": "Pixie",
       "modernSharedComics": 292
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Warpath",
-      "modernSharedComics": 291
     },
     {
       "hero1": "Bullseye",
@@ -441,6 +401,11 @@
       "modernSharedComics": 287
     },
     {
+      "hero1": "Cyborg Spider-Man",
+      "hero2": "Kate Bishop",
+      "modernSharedComics": 287
+    },
+    {
       "hero1": "Daken",
       "hero2": "Sentry",
       "modernSharedComics": 287
@@ -452,11 +417,6 @@
     },
     {
       "hero1": "Cyborg Spider-Man",
-      "hero2": "Kate Bishop",
-      "modernSharedComics": 286
-    },
-    {
-      "hero1": "Cyborg Spider-Man",
       "hero2": "Man-Thing",
       "modernSharedComics": 286
     },
@@ -464,11 +424,6 @@
       "hero1": "Bullseye",
       "hero2": "Elektra",
       "modernSharedComics": 285
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Sentry",
-      "modernSharedComics": 284
     },
     {
       "hero1": "Cyborg Spider-Man",
@@ -491,18 +446,8 @@
       "modernSharedComics": 281
     },
     {
-      "hero1": "M.O.D.O.K.",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 281
-    },
-    {
       "hero1": "Daken",
       "hero2": "Scorpion",
-      "modernSharedComics": 280
-    },
-    {
-      "hero1": "Electro",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 280
     },
     {
@@ -526,11 +471,6 @@
       "modernSharedComics": 274
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Scorpion",
-      "modernSharedComics": 273
-    },
-    {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Wiccan",
       "modernSharedComics": 271
@@ -546,16 +486,6 @@
       "modernSharedComics": 270
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Pixie",
-      "modernSharedComics": 270
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Rhino",
-      "modernSharedComics": 268
-    },
-    {
       "hero1": "Agent Venom",
       "hero2": "Vulture",
       "modernSharedComics": 262
@@ -566,29 +496,9 @@
       "modernSharedComics": 259
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Shang Chi",
-      "modernSharedComics": 259
-    },
-    {
-      "hero1": "Agent Venom",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 257
-    },
-    {
       "hero1": "Hope Summers",
       "hero2": "M",
       "modernSharedComics": 257
-    },
-    {
-      "hero1": "Jessica Jones",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 257
-    },
-    {
-      "hero1": "Ares",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 255
     },
     {
       "hero1": "Cyborg Spider-Man",
@@ -611,24 +521,9 @@
       "modernSharedComics": 250
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Miles Morales",
-      "modernSharedComics": 250
-    },
-    {
-      "hero1": "Kraven",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 249
-    },
-    {
       "hero1": "Stature",
       "hero2": "Wiccan",
       "modernSharedComics": 249
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Vulture",
-      "modernSharedComics": 248
     },
     {
       "hero1": "Cyborg Spider-Man",
@@ -651,29 +546,14 @@
       "modernSharedComics": 244
     },
     {
-      "hero1": "Bullseye",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 243
-    },
-    {
       "hero1": "Iron Patriot",
       "hero2": "Mysterio",
-      "modernSharedComics": 238
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "X-23",
       "modernSharedComics": 238
     },
     {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Howard The Duck",
       "modernSharedComics": 237
-    },
-    {
-      "hero1": "Man-Thing",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 235
     },
     {
       "hero1": "Blade",
@@ -711,11 +591,6 @@
       "modernSharedComics": 228
     },
     {
-      "hero1": "Daken",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 227
-    },
-    {
       "hero1": "Ghost-Spider",
       "hero2": "Rhino",
       "modernSharedComics": 226
@@ -736,11 +611,6 @@
       "modernSharedComics": 222
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Super-Skrull",
-      "modernSharedComics": 222
-    },
-    {
       "hero1": "Fantomex",
       "hero2": "M",
       "modernSharedComics": 221
@@ -751,29 +621,9 @@
       "modernSharedComics": 219
     },
     {
-      "hero1": "Elektra",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 217
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Rocket",
-      "modernSharedComics": 216
-    },
-    {
-      "hero1": "Blade",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 215
-    },
-    {
       "hero1": "Mysterio",
       "hero2": "Rhino",
       "modernSharedComics": 214
-    },
-    {
-      "hero1": "Abomination",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 213
     },
     {
       "hero1": "Cyborg Spider-Man",
@@ -818,27 +668,12 @@
     {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Dormammu",
-      "modernSharedComics": 207
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Star-Lord",
-      "modernSharedComics": 207
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Wiccan",
-      "modernSharedComics": 207
+      "modernSharedComics": 208
     },
     {
       "hero1": "Kraven",
       "hero2": "Rhino",
       "modernSharedComics": 203
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Stature",
-      "modernSharedComics": 202
     },
     {
       "hero1": "Rhino",
@@ -848,11 +683,6 @@
     {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Spider-Ham",
-      "modernSharedComics": 200
-    },
-    {
-      "hero1": "Immortus",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 200
     },
     {
@@ -876,18 +706,8 @@
       "modernSharedComics": 194
     },
     {
-      "hero1": "Annihilus",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 192
-    },
-    {
-      "hero1": "Dormammu",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 192
-    },
-    {
       "hero1": "Mighty Thor",
-      "hero2": "Mysterio",
+      "hero2": "Miles Morales",
       "modernSharedComics": 192
     },
     {
@@ -898,11 +718,6 @@
     {
       "hero1": "Arcade",
       "hero2": "Cyborg Spider-Man",
-      "modernSharedComics": 190
-    },
-    {
-      "hero1": "Mastermind",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 190
     },
     {
@@ -941,18 +756,13 @@
       "modernSharedComics": 185
     },
     {
-      "hero1": "Electro",
-      "hero2": "Scorpion",
-      "modernSharedComics": 181
-    },
-    {
-      "hero1": "Groot",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 181
-    },
-    {
       "hero1": "Nimrod",
       "hero2": "X-23",
+      "modernSharedComics": 182
+    },
+    {
+      "hero1": "Electro",
+      "hero2": "Scorpion",
       "modernSharedComics": 181
     },
     {
@@ -976,14 +786,14 @@
       "modernSharedComics": 176
     },
     {
-      "hero1": "Annihilus",
-      "hero2": "Cyborg Spider-Man",
-      "modernSharedComics": 172
-    },
-    {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Mastermind",
-      "modernSharedComics": 172
+      "modernSharedComics": 174
+    },
+    {
+      "hero1": "Annihilus",
+      "hero2": "Cyborg Spider-Man",
+      "modernSharedComics": 173
     },
     {
       "hero1": "Scorpion",
@@ -1001,11 +811,6 @@
       "modernSharedComics": 170
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Taskmaster",
-      "modernSharedComics": 170
-    },
-    {
       "hero1": "Miles Morales",
       "hero2": "Venom",
       "modernSharedComics": 170
@@ -1019,11 +824,6 @@
       "hero1": "Rocket",
       "hero2": "Venom",
       "modernSharedComics": 169
-    },
-    {
-      "hero1": "Kate Bishop",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 167
     },
     {
       "hero1": "Bullseye",
@@ -1043,7 +843,7 @@
     {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Goliath",
-      "modernSharedComics": 164
+      "modernSharedComics": 165
     },
     {
       "hero1": "Maria Hill",
@@ -1071,11 +871,6 @@
       "modernSharedComics": 157
     },
     {
-      "hero1": "Doop",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 157
-    },
-    {
       "hero1": "Jessica Jones",
       "hero2": "Maria Hill",
       "modernSharedComics": 156
@@ -1083,11 +878,6 @@
     {
       "hero1": "Cyborg Spider-Man",
       "hero2": "M",
-      "modernSharedComics": 155
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Squirrel Girl",
       "modernSharedComics": 155
     },
     {
@@ -1151,16 +941,6 @@
       "modernSharedComics": 146
     },
     {
-      "hero1": "Howard The Duck",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 145
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Ronan",
-      "modernSharedComics": 144
-    },
-    {
       "hero1": "Daken",
       "hero2": "Lady Deathstrike",
       "modernSharedComics": 142
@@ -1209,11 +989,6 @@
       "hero1": "Kraven",
       "hero2": "Scorpion",
       "modernSharedComics": 137
-    },
-    {
-      "hero1": "Fin Fang Foom",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 136
     },
     {
       "hero1": "Hope Summers",
@@ -1308,7 +1083,7 @@
     {
       "hero1": "Iron Patriot",
       "hero2": "Warpath",
-      "modernSharedComics": 130
+      "modernSharedComics": 131
     },
     {
       "hero1": "Ghost-Spider",
@@ -1373,7 +1148,7 @@
     {
       "hero1": "America Chavez",
       "hero2": "Kate Bishop",
-      "modernSharedComics": 123
+      "modernSharedComics": 124
     },
     {
       "hero1": "Jessica Jones",
@@ -1396,6 +1171,11 @@
       "modernSharedComics": 122
     },
     {
+      "hero1": "Cyborg Spider-Man",
+      "hero2": "Fin Fang Foom",
+      "modernSharedComics": 122
+    },
+    {
       "hero1": "Doop",
       "hero2": "Hope Summers",
       "modernSharedComics": 122
@@ -1406,18 +1186,13 @@
       "modernSharedComics": 122
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Shuri",
-      "modernSharedComics": 122
-    },
-    {
-      "hero1": "Cyborg Spider-Man",
-      "hero2": "Fin Fang Foom",
-      "modernSharedComics": 121
-    },
-    {
       "hero1": "Lady Deathstrike",
       "hero2": "Pixie",
+      "modernSharedComics": 120
+    },
+    {
+      "hero1": "Nimrod",
+      "hero2": "Warpath",
       "modernSharedComics": 120
     },
     {
@@ -1431,11 +1206,6 @@
       "modernSharedComics": 119
     },
     {
-      "hero1": "Nimrod",
-      "hero2": "Warpath",
-      "modernSharedComics": 119
-    },
-    {
       "hero1": "Rocket",
       "hero2": "X-23",
       "modernSharedComics": 119
@@ -1443,21 +1213,6 @@
     {
       "hero1": "Bullseye",
       "hero2": "Taskmaster",
-      "modernSharedComics": 118
-    },
-    {
-      "hero1": "Chamber",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 118
-    },
-    {
-      "hero1": "Fantomex",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 118
-    },
-    {
-      "hero1": "M",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 118
     },
     {
@@ -1506,11 +1261,6 @@
       "modernSharedComics": 115
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Onslaught",
-      "modernSharedComics": 115
-    },
-    {
       "hero1": "Miles Morales",
       "hero2": "Silk",
       "modernSharedComics": 115
@@ -1533,11 +1283,6 @@
     {
       "hero1": "Iron Patriot",
       "hero2": "Stature",
-      "modernSharedComics": 114
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Shocker",
       "modernSharedComics": 114
     },
     {
@@ -1576,11 +1321,6 @@
       "modernSharedComics": 112
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Moon Girl & Devil Dinosaur",
-      "modernSharedComics": 112
-    },
-    {
       "hero1": "Stature",
       "hero2": "Winter Soldier",
       "modernSharedComics": 111
@@ -1616,6 +1356,11 @@
       "modernSharedComics": 109
     },
     {
+      "hero1": "Mastermind",
+      "hero2": "Shadow King",
+      "modernSharedComics": 109
+    },
+    {
       "hero1": "Chameleon",
       "hero2": "Iron Patriot",
       "modernSharedComics": 108
@@ -1623,11 +1368,6 @@
     {
       "hero1": "Jessica Jones",
       "hero2": "Sentry",
-      "modernSharedComics": 108
-    },
-    {
-      "hero1": "Mastermind",
-      "hero2": "Shadow King",
       "modernSharedComics": 108
     },
     {
@@ -1649,11 +1389,6 @@
       "hero1": "M.O.D.O.K.",
       "hero2": "Winter Soldier",
       "modernSharedComics": 107
-    },
-    {
-      "hero1": "Carnage",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 106
     },
     {
       "hero1": "Cyborg Spider-Man",
@@ -1706,16 +1441,6 @@
       "modernSharedComics": 104
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Nimrod",
-      "modernSharedComics": 104
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Terrax",
-      "modernSharedComics": 104
-    },
-    {
       "hero1": "Agent Venom",
       "hero2": "Groot",
       "modernSharedComics": 103
@@ -1726,11 +1451,6 @@
       "modernSharedComics": 103
     },
     {
-      "hero1": "Blink",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 103
-    },
-    {
       "hero1": "Bullseye",
       "hero2": "Jessica Jones",
       "modernSharedComics": 103
@@ -1738,11 +1458,6 @@
     {
       "hero1": "Doop",
       "hero2": "Maria Hill",
-      "modernSharedComics": 103
-    },
-    {
-      "hero1": "Goliath",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 103
     },
     {
@@ -1806,6 +1521,11 @@
       "modernSharedComics": 101
     },
     {
+      "hero1": "Bullseye",
+      "hero2": "Warpath",
+      "modernSharedComics": 101
+    },
+    {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Immortus",
       "modernSharedComics": 101
@@ -1816,18 +1536,8 @@
       "modernSharedComics": 101
     },
     {
-      "hero1": "Bullseye",
-      "hero2": "Warpath",
-      "modernSharedComics": 100
-    },
-    {
       "hero1": "Daken",
       "hero2": "Fantomex",
-      "modernSharedComics": 100
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Yondu",
       "modernSharedComics": 100
     },
     {
@@ -1866,11 +1576,6 @@
       "modernSharedComics": 98
     },
     {
-      "hero1": "Chameleon",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 98
-    },
-    {
       "hero1": "Daken",
       "hero2": "Shadow King",
       "modernSharedComics": 98
@@ -1906,13 +1611,13 @@
       "modernSharedComics": 97
     },
     {
-      "hero1": "Lady Deathstrike",
-      "hero2": "Venom",
+      "hero1": "Kate Bishop",
+      "hero2": "Miles Morales",
       "modernSharedComics": 97
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Morbius",
+      "hero1": "Lady Deathstrike",
+      "hero2": "Venom",
       "modernSharedComics": 97
     },
     {
@@ -1931,13 +1636,8 @@
       "modernSharedComics": 96
     },
     {
-      "hero1": "Kate Bishop",
-      "hero2": "Miles Morales",
-      "modernSharedComics": 96
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Patriot",
+      "hero1": "Lady Deathstrike",
+      "hero2": "Mojo",
       "modernSharedComics": 96
     },
     {
@@ -1961,13 +1661,8 @@
       "modernSharedComics": 95
     },
     {
-      "hero1": "Lady Deathstrike",
-      "hero2": "Mojo",
-      "modernSharedComics": 95
-    },
-    {
       "hero1": "Mighty Thor",
-      "hero2": "Morph",
+      "hero2": "Winter Soldier",
       "modernSharedComics": 95
     },
     {
@@ -2013,11 +1708,6 @@
     {
       "hero1": "Chameleon",
       "hero2": "Scorpion",
-      "modernSharedComics": 93
-    },
-    {
-      "hero1": "Crossbones",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 93
     },
     {
@@ -2073,11 +1763,6 @@
     {
       "hero1": "America Chavez",
       "hero2": "Wiccan",
-      "modernSharedComics": 90
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Throg",
       "modernSharedComics": 90
     },
     {
@@ -2161,11 +1846,6 @@
       "modernSharedComics": 87
     },
     {
-      "hero1": "Lady Deathstrike",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 87
-    },
-    {
       "hero1": "Blastaar",
       "hero2": "Cyborg Spider-Man",
       "modernSharedComics": 86
@@ -2179,11 +1859,6 @@
       "hero1": "Maria Hill",
       "hero2": "Miles Morales",
       "modernSharedComics": 86
-    },
-    {
-      "hero1": "Arcade",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 85
     },
     {
       "hero1": "Black Dwarf",
@@ -2219,11 +1894,6 @@
       "hero1": "Taskmaster",
       "hero2": "Winter Soldier",
       "modernSharedComics": 85
-    },
-    {
-      "hero1": "Captain Carter",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 84
     },
     {
       "hero1": "Chameleon",
@@ -2281,23 +1951,23 @@
       "modernSharedComics": 83
     },
     {
+      "hero1": "Nimrod",
+      "hero2": "Pixie",
+      "modernSharedComics": 83
+    },
+    {
       "hero1": "Bullseye",
       "hero2": "Stature",
       "modernSharedComics": 82
     },
     {
+      "hero1": "Cyborg Spider-Man",
+      "hero2": "Shadow King",
+      "modernSharedComics": 82
+    },
+    {
       "hero1": "M.O.D.O.K.",
       "hero2": "Venom",
-      "modernSharedComics": 82
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Quake",
-      "modernSharedComics": 82
-    },
-    {
-      "hero1": "Nimrod",
-      "hero2": "Pixie",
       "modernSharedComics": 82
     },
     {
@@ -2308,11 +1978,6 @@
     {
       "hero1": "Cyborg Spider-Man",
       "hero2": "Purple Man",
-      "modernSharedComics": 81
-    },
-    {
-      "hero1": "Cyborg Spider-Man",
-      "hero2": "Shadow King",
       "modernSharedComics": 81
     },
     {
@@ -2331,6 +1996,11 @@
       "modernSharedComics": 81
     },
     {
+      "hero1": "Agent Venom",
+      "hero2": "Anti-Venom",
+      "modernSharedComics": 80
+    },
+    {
       "hero1": "Carnage",
       "hero2": "Rhino",
       "modernSharedComics": 80
@@ -2344,11 +2014,6 @@
       "hero1": "Cyborg Spider-Man",
       "hero2": "Shriek",
       "modernSharedComics": 80
-    },
-    {
-      "hero1": "Agent Venom",
-      "hero2": "Anti-Venom",
-      "modernSharedComics": 79
     },
     {
       "hero1": "Chameleon",
@@ -2396,6 +2061,11 @@
       "modernSharedComics": 77
     },
     {
+      "hero1": "Arcade",
+      "hero2": "Mastermind",
+      "modernSharedComics": 76
+    },
+    {
       "hero1": "Ares",
       "hero2": "Kate Bishop",
       "modernSharedComics": 76
@@ -2434,11 +2104,6 @@
       "hero1": "Rocket",
       "hero2": "Squirrel Girl",
       "modernSharedComics": 76
-    },
-    {
-      "hero1": "Arcade",
-      "hero2": "Mastermind",
-      "modernSharedComics": 75
     },
     {
       "hero1": "Cyborg Spider-Man",
@@ -2621,11 +2286,6 @@
       "modernSharedComics": 71
     },
     {
-      "hero1": "Crimson Dynamo",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 71
-    },
-    {
       "hero1": "Daken",
       "hero2": "Taskmaster",
       "modernSharedComics": 71
@@ -2646,28 +2306,13 @@
       "modernSharedComics": 71
     },
     {
-      "hero1": "Korg",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 71
-    },
-    {
       "hero1": "Man-Thing",
       "hero2": "Shang Chi",
       "modernSharedComics": 71
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Werewolf By Night",
-      "modernSharedComics": 71
-    },
-    {
       "hero1": "America Chavez",
       "hero2": "Cyborg Spider-Man",
-      "modernSharedComics": 70
-    },
-    {
-      "hero1": "America Chavez",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 70
     },
     {
@@ -2686,6 +2331,11 @@
       "modernSharedComics": 70
     },
     {
+      "hero1": "Mighty Thor",
+      "hero2": "Squirrel Girl",
+      "modernSharedComics": 70
+    },
+    {
       "hero1": "Silver Samurai",
       "hero2": "Warpath",
       "modernSharedComics": 70
@@ -2701,8 +2351,8 @@
       "modernSharedComics": 69
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Proxima Midnight",
+      "hero1": "Maria Hill",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 69
     },
     {
@@ -2751,14 +2401,14 @@
       "modernSharedComics": 68
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Queen Veranke",
-      "modernSharedComics": 68
-    },
-    {
       "hero1": "Miles Morales",
       "hero2": "Star-Lord",
       "modernSharedComics": 68
+    },
+    {
+      "hero1": "America Chavez",
+      "hero2": "Miles Morales",
+      "modernSharedComics": 67
     },
     {
       "hero1": "Jessica Jones",
@@ -2773,16 +2423,6 @@
     {
       "hero1": "Agent Venom",
       "hero2": "Morbius",
-      "modernSharedComics": 66
-    },
-    {
-      "hero1": "America Chavez",
-      "hero2": "Miles Morales",
-      "modernSharedComics": 66
-    },
-    {
-      "hero1": "Blastaar",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 66
     },
     {
@@ -2846,13 +2486,13 @@
       "modernSharedComics": 64
     },
     {
-      "hero1": "Kate Bishop",
-      "hero2": "Scorpion",
+      "hero1": "Iron Patriot",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 64
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Shadow King",
+      "hero1": "Kate Bishop",
+      "hero2": "Scorpion",
       "modernSharedComics": 64
     },
     {
@@ -2932,7 +2572,7 @@
     },
     {
       "hero1": "Mighty Thor",
-      "hero2": "Omega Red",
+      "hero2": "Venom",
       "modernSharedComics": 62
     },
     {
@@ -2973,6 +2613,11 @@
     {
       "hero1": "Kraven",
       "hero2": "Morbius",
+      "modernSharedComics": 61
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Star-Lord",
       "modernSharedComics": 61
     },
     {
@@ -3036,13 +2681,8 @@
       "modernSharedComics": 60
     },
     {
-      "hero1": "Maestro",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 60
-    },
-    {
       "hero1": "Mighty Thor",
-      "hero2": "Ursa Major",
+      "hero2": "Valkyrie",
       "modernSharedComics": 60
     },
     {
@@ -3068,11 +2708,6 @@
     {
       "hero1": "Captain Carter",
       "hero2": "Crossbones",
-      "modernSharedComics": 59
-    },
-    {
-      "hero1": "Corvus Glaive",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 59
     },
     {
@@ -3113,6 +2748,11 @@
     {
       "hero1": "Agent Venom",
       "hero2": "Valkyrie",
+      "modernSharedComics": 58
+    },
+    {
+      "hero1": "Anti-Venom",
+      "hero2": "Venom",
       "modernSharedComics": 58
     },
     {
@@ -3164,11 +2804,6 @@
       "hero1": "Star-Lord",
       "hero2": "Yondu",
       "modernSharedComics": 58
-    },
-    {
-      "hero1": "Anti-Venom",
-      "hero2": "Venom",
-      "modernSharedComics": 57
     },
     {
       "hero1": "Bullseye",
@@ -3251,6 +2886,11 @@
       "modernSharedComics": 56
     },
     {
+      "hero1": "Mighty Thor",
+      "hero2": "Rocket",
+      "modernSharedComics": 56
+    },
+    {
       "hero1": "Taskmaster",
       "hero2": "Wiccan",
       "modernSharedComics": 56
@@ -3306,11 +2946,6 @@
       "modernSharedComics": 55
     },
     {
-      "hero1": "Mighty Thor",
-      "hero2": "Silver Samurai",
-      "modernSharedComics": 55
-    },
-    {
       "hero1": "Nebula",
       "hero2": "Star-Lord",
       "modernSharedComics": 55
@@ -3343,6 +2978,11 @@
     {
       "hero1": "Daken",
       "hero2": "Wiccan",
+      "modernSharedComics": 54
+    },
+    {
+      "hero1": "Groot",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 54
     },
     {
@@ -3446,6 +3086,11 @@
       "modernSharedComics": 53
     },
     {
+      "hero1": "Gwenpool",
+      "hero2": "Kate Bishop",
+      "modernSharedComics": 53
+    },
+    {
       "hero1": "Howard The Duck",
       "hero2": "Winter Soldier",
       "modernSharedComics": 53
@@ -3453,11 +3098,6 @@
     {
       "hero1": "Jessica Jones",
       "hero2": "Purple Man",
-      "modernSharedComics": 53
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Nebula",
       "modernSharedComics": 53
     },
     {
@@ -3481,13 +3121,18 @@
       "modernSharedComics": 52
     },
     {
-      "hero1": "Iron Lad",
-      "hero2": "Kate Bishop",
+      "hero1": "Anti-Venom",
+      "hero2": "Cyborg Spider-Man",
       "modernSharedComics": 52
     },
     {
-      "hero1": "Ironheart",
-      "hero2": "Mighty Thor",
+      "hero1": "Arcade",
+      "hero2": "Mojo",
+      "modernSharedComics": 52
+    },
+    {
+      "hero1": "Iron Lad",
+      "hero2": "Kate Bishop",
       "modernSharedComics": 52
     },
     {
@@ -3498,11 +3143,6 @@
     {
       "hero1": "Lady Deathstrike",
       "hero2": "Scorpion",
-      "modernSharedComics": 52
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Spider-Ham",
       "modernSharedComics": 52
     },
     {
@@ -3519,16 +3159,6 @@
       "hero1": "Star-Lord",
       "hero2": "Winter Soldier",
       "modernSharedComics": 52
-    },
-    {
-      "hero1": "Anti-Venom",
-      "hero2": "Cyborg Spider-Man",
-      "modernSharedComics": 51
-    },
-    {
-      "hero1": "Arcade",
-      "hero2": "Mojo",
-      "modernSharedComics": 51
     },
     {
       "hero1": "Ares",
@@ -3548,11 +3178,6 @@
     {
       "hero1": "Man-Thing",
       "hero2": "Rhino",
-      "modernSharedComics": 51
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Red Guardian",
       "modernSharedComics": 51
     },
     {
@@ -3586,11 +3211,6 @@
       "modernSharedComics": 50
     },
     {
-      "hero1": "Gwenpool",
-      "hero2": "Kate Bishop",
-      "modernSharedComics": 50
-    },
-    {
       "hero1": "Hope Summers",
       "hero2": "Mastermind",
       "modernSharedComics": 50
@@ -3598,11 +3218,6 @@
     {
       "hero1": "Lady Deathstrike",
       "hero2": "Taskmaster",
-      "modernSharedComics": 50
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Mojo",
       "modernSharedComics": 50
     },
     {
@@ -3651,6 +3266,11 @@
       "modernSharedComics": 49
     },
     {
+      "hero1": "Jeffrey",
+      "hero2": "Kate Bishop",
+      "modernSharedComics": 49
+    },
+    {
       "hero1": "Korg",
       "hero2": "Sentry",
       "modernSharedComics": 49
@@ -3681,6 +3301,11 @@
       "modernSharedComics": 48
     },
     {
+      "hero1": "Dormammu",
+      "hero2": "Valkyrie",
+      "modernSharedComics": 48
+    },
+    {
       "hero1": "Electro",
       "hero2": "Elektra",
       "modernSharedComics": 48
@@ -3688,11 +3313,6 @@
     {
       "hero1": "Goliath",
       "hero2": "Winter Soldier",
-      "modernSharedComics": 48
-    },
-    {
-      "hero1": "Gorr",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 48
     },
     {
@@ -3771,13 +3391,13 @@
       "modernSharedComics": 47
     },
     {
-      "hero1": "Dormammu",
-      "hero2": "Electro",
+      "hero1": "Cyborg Spider-Man",
+      "hero2": "Gwenpool",
       "modernSharedComics": 47
     },
     {
       "hero1": "Dormammu",
-      "hero2": "Valkyrie",
+      "hero2": "Electro",
       "modernSharedComics": 47
     },
     {
@@ -3821,6 +3441,11 @@
       "modernSharedComics": 47
     },
     {
+      "hero1": "Mighty Thor",
+      "hero2": "X-23",
+      "modernSharedComics": 47
+    },
+    {
       "hero1": "Shang Chi",
       "hero2": "Super-Skrull",
       "modernSharedComics": 47
@@ -3838,11 +3463,6 @@
     {
       "hero1": "Carnage",
       "hero2": "Chameleon",
-      "modernSharedComics": 46
-    },
-    {
-      "hero1": "Cyborg Spider-Man",
-      "hero2": "Gwenpool",
       "modernSharedComics": 46
     },
     {
@@ -3883,11 +3503,6 @@
     {
       "hero1": "Iron Patriot",
       "hero2": "Omega Red",
-      "modernSharedComics": 46
-    },
-    {
-      "hero1": "Jeffrey",
-      "hero2": "Kate Bishop",
       "modernSharedComics": 46
     },
     {
@@ -3946,11 +3561,6 @@
       "modernSharedComics": 45
     },
     {
-      "hero1": "Elsa Bloodstone",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 45
-    },
-    {
       "hero1": "Goliath",
       "hero2": "Venom",
       "modernSharedComics": 45
@@ -3996,8 +3606,18 @@
       "modernSharedComics": 45
     },
     {
+      "hero1": "Agent Venom",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 44
+    },
+    {
       "hero1": "Annihilus",
       "hero2": "Terrax",
+      "modernSharedComics": 44
+    },
+    {
+      "hero1": "Arcade",
+      "hero2": "Lady Deathstrike",
       "modernSharedComics": 44
     },
     {
@@ -4071,8 +3691,18 @@
       "modernSharedComics": 44
     },
     {
+      "hero1": "Kate Bishop",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 44
+    },
+    {
       "hero1": "Man-Thing",
       "hero2": "Vulture",
+      "modernSharedComics": 44
+    },
+    {
+      "hero1": "Mastermind",
+      "hero2": "Mojo",
       "modernSharedComics": 44
     },
     {
@@ -4096,16 +3726,6 @@
       "modernSharedComics": 44
     },
     {
-      "hero1": "Arcade",
-      "hero2": "Lady Deathstrike",
-      "modernSharedComics": 43
-    },
-    {
-      "hero1": "Black Dwarf",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 43
-    },
-    {
       "hero1": "Bullseye",
       "hero2": "M.O.D.O.K.",
       "modernSharedComics": 43
@@ -4121,8 +3741,13 @@
       "modernSharedComics": 43
     },
     {
-      "hero1": "Mastermind",
-      "hero2": "Mojo",
+      "hero1": "Gwenpool",
+      "hero2": "Jeffrey",
+      "modernSharedComics": 43
+    },
+    {
+      "hero1": "Lady Deathstrike",
+      "hero2": "Mastermind",
       "modernSharedComics": 43
     },
     {
@@ -4177,6 +3802,11 @@
     },
     {
       "hero1": "Dormammu",
+      "hero2": "Ghost-Spider",
+      "modernSharedComics": 42
+    },
+    {
+      "hero1": "Dormammu",
       "hero2": "M.O.D.O.K.",
       "modernSharedComics": 42
     },
@@ -4188,11 +3818,6 @@
     {
       "hero1": "Kraven",
       "hero2": "Taskmaster",
-      "modernSharedComics": 42
-    },
-    {
-      "hero1": "Lady Deathstrike",
-      "hero2": "Mastermind",
       "modernSharedComics": 42
     },
     {
@@ -4226,13 +3851,13 @@
       "modernSharedComics": 41
     },
     {
-      "hero1": "Doppelganger",
-      "hero2": "Venom",
+      "hero1": "Blade",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 41
     },
     {
-      "hero1": "Dormammu",
-      "hero2": "Ghost-Spider",
+      "hero1": "Doppelganger",
+      "hero2": "Venom",
       "modernSharedComics": 41
     },
     {
@@ -4248,6 +3873,11 @@
     {
       "hero1": "Fantomex",
       "hero2": "Mojo",
+      "modernSharedComics": 41
+    },
+    {
+      "hero1": "Goliath",
+      "hero2": "Valkyrie",
       "modernSharedComics": 41
     },
     {
@@ -4336,18 +3966,13 @@
       "modernSharedComics": 40
     },
     {
-      "hero1": "Goliath",
-      "hero2": "Valkyrie",
-      "modernSharedComics": 40
-    },
-    {
-      "hero1": "Gwenpool",
-      "hero2": "Jeffrey",
-      "modernSharedComics": 40
-    },
-    {
       "hero1": "Howard The Duck",
       "hero2": "Scorpion",
+      "modernSharedComics": 40
+    },
+    {
+      "hero1": "Ironheart",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 40
     },
     {
@@ -4386,6 +4011,11 @@
       "modernSharedComics": 39
     },
     {
+      "hero1": "America Chavez",
+      "hero2": "Gwenpool",
+      "modernSharedComics": 39
+    },
+    {
       "hero1": "Arcade",
       "hero2": "M",
       "modernSharedComics": 39
@@ -4393,6 +4023,11 @@
     {
       "hero1": "Bullseye",
       "hero2": "Valkyrie",
+      "modernSharedComics": 39
+    },
+    {
+      "hero1": "Cyborg Spider-Man",
+      "hero2": "Jeffrey",
       "modernSharedComics": 39
     },
     {
@@ -4421,6 +4056,11 @@
       "modernSharedComics": 39
     },
     {
+      "hero1": "Gwenpool",
+      "hero2": "Miles Morales",
+      "modernSharedComics": 39
+    },
+    {
       "hero1": "Immortus",
       "hero2": "Yondu",
       "modernSharedComics": 39
@@ -4433,6 +4073,11 @@
     {
       "hero1": "M.O.D.O.K.",
       "hero2": "Warpath",
+      "modernSharedComics": 39
+    },
+    {
+      "hero1": "Man-Thing",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 39
     },
     {
@@ -4481,11 +4126,6 @@
       "modernSharedComics": 38
     },
     {
-      "hero1": "America Chavez",
-      "hero2": "Gwenpool",
-      "modernSharedComics": 38
-    },
-    {
       "hero1": "Anti-Venom",
       "hero2": "Carnage",
       "modernSharedComics": 38
@@ -4498,11 +4138,6 @@
     {
       "hero1": "Chamber",
       "hero2": "Elektra",
-      "modernSharedComics": 38
-    },
-    {
-      "hero1": "Cyborg Spider-Man",
-      "hero2": "Jeffrey",
       "modernSharedComics": 38
     },
     {
@@ -4526,11 +4161,6 @@
       "modernSharedComics": 38
     },
     {
-      "hero1": "Gwenpool",
-      "hero2": "Miles Morales",
-      "modernSharedComics": 38
-    },
-    {
       "hero1": "Howard The Duck",
       "hero2": "M.O.D.O.K.",
       "modernSharedComics": 38
@@ -4538,11 +4168,6 @@
     {
       "hero1": "Howard The Duck",
       "hero2": "Shang Chi",
-      "modernSharedComics": 38
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Okoye",
       "modernSharedComics": 38
     },
     {
@@ -4574,11 +4199,6 @@
       "hero1": "Venom",
       "hero2": "Yondu",
       "modernSharedComics": 38
-    },
-    {
-      "hero1": "Alligator Loki",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 37
     },
     {
       "hero1": "America Chavez",
@@ -4736,6 +4356,11 @@
       "modernSharedComics": 36
     },
     {
+      "hero1": "Ghost-Spider",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 36
+    },
+    {
       "hero1": "Groot",
       "hero2": "Valkyrie",
       "modernSharedComics": 36
@@ -4743,11 +4368,6 @@
     {
       "hero1": "Howard The Duck",
       "hero2": "Morbius",
-      "modernSharedComics": 36
-    },
-    {
-      "hero1": "Knull",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 36
     },
     {
@@ -5002,11 +4622,6 @@
     },
     {
       "hero1": "Ebony Maw",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 34
-    },
-    {
-      "hero1": "Ebony Maw",
       "hero2": "Rocket",
       "modernSharedComics": 34
     },
@@ -5043,11 +4658,6 @@
     {
       "hero1": "Man-Thing",
       "hero2": "Winter Soldier",
-      "modernSharedComics": 34
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Phyla-Vell",
       "modernSharedComics": 34
     },
     {
@@ -5191,11 +4801,6 @@
       "modernSharedComics": 33
     },
     {
-      "hero1": "Goose",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 33
-    },
-    {
       "hero1": "Hope Summers",
       "hero2": "Mojo",
       "modernSharedComics": 33
@@ -5261,6 +4866,11 @@
       "modernSharedComics": 33
     },
     {
+      "hero1": "America Chavez",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 32
+    },
+    {
       "hero1": "Arcade",
       "hero2": "Rhino",
       "modernSharedComics": 32
@@ -5298,6 +4908,11 @@
     {
       "hero1": "Ghost-Spider",
       "hero2": "Groot",
+      "modernSharedComics": 32
+    },
+    {
+      "hero1": "Ghost-Spider",
+      "hero2": "Kate Bishop",
       "modernSharedComics": 32
     },
     {
@@ -5348,6 +4963,11 @@
     {
       "hero1": "Maestro",
       "hero2": "Venom",
+      "modernSharedComics": 32
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Wiccan",
       "modernSharedComics": 32
     },
     {
@@ -5436,7 +5056,7 @@
       "modernSharedComics": 31
     },
     {
-      "hero1": "Brood Queen",
+      "hero1": "Bullseye",
       "hero2": "Mighty Thor",
       "modernSharedComics": 31
     },
@@ -5481,11 +5101,6 @@
       "modernSharedComics": 31
     },
     {
-      "hero1": "Ghost-Spider",
-      "hero2": "Kate Bishop",
-      "modernSharedComics": 31
-    },
-    {
       "hero1": "Groot",
       "hero2": "Jessica Jones",
       "modernSharedComics": 31
@@ -5518,6 +5133,11 @@
     {
       "hero1": "M.O.D.O.K.",
       "hero2": "Stature",
+      "modernSharedComics": 31
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Moon Girl & Devil Dinosaur",
       "modernSharedComics": 31
     },
     {
@@ -5672,12 +5292,17 @@
     },
     {
       "hero1": "Mastermind",
+      "hero2": "Valkyrie",
+      "modernSharedComics": 30
+    },
+    {
+      "hero1": "Mastermind",
       "hero2": "Winter Soldier",
       "modernSharedComics": 30
     },
     {
       "hero1": "Mighty Thor",
-      "hero2": "Purple Man",
+      "hero2": "Stature",
       "modernSharedComics": 30
     },
     {
@@ -5781,6 +5406,11 @@
       "modernSharedComics": 29
     },
     {
+      "hero1": "Bob, Agent Of Hydra",
+      "hero2": "Cyborg Spider-Man",
+      "modernSharedComics": 29
+    },
+    {
       "hero1": "Chamber",
       "hero2": "Howard The Duck",
       "modernSharedComics": 29
@@ -5818,6 +5448,11 @@
     {
       "hero1": "Daken",
       "hero2": "Patriot",
+      "modernSharedComics": 29
+    },
+    {
+      "hero1": "Dormammu",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 29
     },
     {
@@ -5867,6 +5502,11 @@
     },
     {
       "hero1": "Howard The Duck",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 29
+    },
+    {
+      "hero1": "Howard The Duck",
       "hero2": "Moon Girl & Devil Dinosaur",
       "modernSharedComics": 29
     },
@@ -5901,8 +5541,8 @@
       "modernSharedComics": 29
     },
     {
-      "hero1": "Mastermind",
-      "hero2": "Valkyrie",
+      "hero1": "Mighty Thor",
+      "hero2": "Taskmaster",
       "modernSharedComics": 29
     },
     {
@@ -5978,11 +5618,6 @@
     {
       "hero1": "Blade",
       "hero2": "Squirrel Girl",
-      "modernSharedComics": 28
-    },
-    {
-      "hero1": "Bob, Agent Of Hydra",
-      "hero2": "Cyborg Spider-Man",
       "modernSharedComics": 28
     },
     {
@@ -6073,6 +5708,11 @@
     {
       "hero1": "Maria Hill",
       "hero2": "Shuri",
+      "modernSharedComics": 28
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Throg",
       "modernSharedComics": 28
     },
     {
@@ -6246,6 +5886,11 @@
       "modernSharedComics": 27
     },
     {
+      "hero1": "Ghost-Spider",
+      "hero2": "Valkyrie",
+      "modernSharedComics": 27
+    },
+    {
       "hero1": "Goliath",
       "hero2": "Jessica Jones",
       "modernSharedComics": 27
@@ -6281,11 +5926,6 @@
       "modernSharedComics": 27
     },
     {
-      "hero1": "Killmonger",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 27
-    },
-    {
       "hero1": "Kraven",
       "hero2": "M.O.D.O.K.",
       "modernSharedComics": 27
@@ -6308,11 +5948,6 @@
     {
       "hero1": "Maestro",
       "hero2": "Maria Hill",
-      "modernSharedComics": 27
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Vulcan",
       "modernSharedComics": 27
     },
     {
@@ -6477,6 +6112,11 @@
     },
     {
       "hero1": "Electro",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 26
+    },
+    {
+      "hero1": "Electro",
       "hero2": "Silk",
       "modernSharedComics": 26
     },
@@ -6493,11 +6133,6 @@
     {
       "hero1": "Fin Fang Foom",
       "hero2": "Howard The Duck",
-      "modernSharedComics": 26
-    },
-    {
-      "hero1": "Ghost-Spider",
-      "hero2": "Valkyrie",
       "modernSharedComics": 26
     },
     {
@@ -6538,6 +6173,11 @@
     {
       "hero1": "Jessica Jones",
       "hero2": "M.O.D.O.K.",
+      "modernSharedComics": 26
+    },
+    {
+      "hero1": "Jessica Jones",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 26
     },
     {
@@ -6706,6 +6346,11 @@
       "modernSharedComics": 25
     },
     {
+      "hero1": "Dormammu",
+      "hero2": "Mastermind",
+      "modernSharedComics": 25
+    },
+    {
       "hero1": "Electro",
       "hero2": "Spot",
       "modernSharedComics": 25
@@ -6723,11 +6368,6 @@
     {
       "hero1": "Elektra",
       "hero2": "Valkyrie",
-      "modernSharedComics": 25
-    },
-    {
-      "hero1": "Famine",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 25
     },
     {
@@ -6781,8 +6421,18 @@
       "modernSharedComics": 25
     },
     {
+      "hero1": "Kraven",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 25
+    },
+    {
       "hero1": "M",
       "hero2": "Man-Thing",
+      "modernSharedComics": 25
+    },
+    {
+      "hero1": "M.O.D.O.K.",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 25
     },
     {
@@ -6798,6 +6448,11 @@
     {
       "hero1": "Mastermind",
       "hero2": "Venom",
+      "modernSharedComics": 25
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Shang Chi",
       "modernSharedComics": 25
     },
     {
@@ -6962,11 +6617,6 @@
     },
     {
       "hero1": "Dormammu",
-      "hero2": "Mastermind",
-      "modernSharedComics": 24
-    },
-    {
-      "hero1": "Dormammu",
       "hero2": "Werewolf By Night",
       "modernSharedComics": 24
     },
@@ -7053,11 +6703,6 @@
     {
       "hero1": "Mastermind",
       "hero2": "Vulcan",
-      "modernSharedComics": 24
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Spot",
       "modernSharedComics": 24
     },
     {
@@ -7156,6 +6801,11 @@
       "modernSharedComics": 23
     },
     {
+      "hero1": "Ares",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 23
+    },
+    {
       "hero1": "Blade",
       "hero2": "Goliath",
       "modernSharedComics": 23
@@ -7168,11 +6818,6 @@
     {
       "hero1": "Blastaar",
       "hero2": "Terrax",
-      "modernSharedComics": 23
-    },
-    {
-      "hero1": "Bob, Agent Of Hydra",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 23
     },
     {
@@ -7231,6 +6876,11 @@
       "modernSharedComics": 23
     },
     {
+      "hero1": "Fin Fang Foom",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 23
+    },
+    {
       "hero1": "Ghost-Spider",
       "hero2": "Stature",
       "modernSharedComics": 23
@@ -7268,11 +6918,6 @@
     {
       "hero1": "Immortus",
       "hero2": "Star-Lord",
-      "modernSharedComics": 23
-    },
-    {
-      "hero1": "Iron Lad",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 23
     },
     {
@@ -7323,6 +6968,11 @@
     {
       "hero1": "Mastermind",
       "hero2": "Shang Chi",
+      "modernSharedComics": 23
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Sentry",
       "modernSharedComics": 23
     },
     {
@@ -7561,11 +7211,6 @@
       "modernSharedComics": 22
     },
     {
-      "hero1": "Jeffrey",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 22
-    },
-    {
       "hero1": "Jessica Jones",
       "hero2": "Pixie",
       "modernSharedComics": 22
@@ -7588,6 +7233,11 @@
     {
       "hero1": "Mastermind",
       "hero2": "Sentry",
+      "modernSharedComics": 22
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Vulture",
       "modernSharedComics": 22
     },
     {
@@ -7663,11 +7313,6 @@
     {
       "hero1": "Agent Venom",
       "hero2": "Ebony Maw",
-      "modernSharedComics": 21
-    },
-    {
-      "hero1": "Air-Walker",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 21
     },
     {
@@ -7762,6 +7407,11 @@
     },
     {
       "hero1": "Crossbones",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 21
+    },
+    {
+      "hero1": "Crossbones",
       "hero2": "Mysterio",
       "modernSharedComics": 21
     },
@@ -7793,6 +7443,11 @@
     {
       "hero1": "Ebony Maw",
       "hero2": "Venom",
+      "modernSharedComics": 21
+    },
+    {
+      "hero1": "Elsa Bloodstone",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 21
     },
     {
@@ -7853,11 +7508,6 @@
     {
       "hero1": "Groot",
       "hero2": "Shuri",
-      "modernSharedComics": 21
-    },
-    {
-      "hero1": "Gwenpool",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 21
     },
     {
@@ -7941,6 +7591,11 @@
       "modernSharedComics": 21
     },
     {
+      "hero1": "Mighty Thor",
+      "hero2": "Proxima Midnight",
+      "modernSharedComics": 21
+    },
+    {
       "hero1": "Moon Girl & Devil Dinosaur",
       "hero2": "Quake",
       "modernSharedComics": 21
@@ -8016,6 +7671,16 @@
       "modernSharedComics": 20
     },
     {
+      "hero1": "America Chavez",
+      "hero2": "Jeffrey",
+      "modernSharedComics": 20
+    },
+    {
+      "hero1": "Annihilus",
+      "hero2": "Dormammu",
+      "modernSharedComics": 20
+    },
+    {
       "hero1": "Annihilus",
       "hero2": "Howard The Duck",
       "modernSharedComics": 20
@@ -8023,6 +7688,11 @@
     {
       "hero1": "Annihilus",
       "hero2": "Maria Hill",
+      "modernSharedComics": 20
+    },
+    {
+      "hero1": "Annihilus",
+      "hero2": "Valkyrie",
       "modernSharedComics": 20
     },
     {
@@ -8237,17 +7907,17 @@
     },
     {
       "hero1": "Mastermind",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 20
+    },
+    {
+      "hero1": "Mastermind",
       "hero2": "Rhino",
       "modernSharedComics": 20
     },
     {
       "hero1": "Mighty Thor",
-      "hero2": "Morlun",
-      "modernSharedComics": 20
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Silk",
+      "hero2": "Scorpion",
       "modernSharedComics": 20
     },
     {
@@ -8332,27 +8002,12 @@
     },
     {
       "hero1": "America Chavez",
-      "hero2": "Jeffrey",
-      "modernSharedComics": 19
-    },
-    {
-      "hero1": "America Chavez",
       "hero2": "Shang Chi",
       "modernSharedComics": 19
     },
     {
       "hero1": "America Chavez",
       "hero2": "Venom",
-      "modernSharedComics": 19
-    },
-    {
-      "hero1": "Annihilus",
-      "hero2": "Dormammu",
-      "modernSharedComics": 19
-    },
-    {
-      "hero1": "Annihilus",
-      "hero2": "Valkyrie",
       "modernSharedComics": 19
     },
     {
@@ -8441,8 +8096,28 @@
       "modernSharedComics": 19
     },
     {
+      "hero1": "Elektra",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 19
+    },
+    {
+      "hero1": "Elsa Bloodstone",
+      "hero2": "Jeffrey",
+      "modernSharedComics": 19
+    },
+    {
+      "hero1": "Elsa Bloodstone",
+      "hero2": "Kate Bishop",
+      "modernSharedComics": 19
+    },
+    {
       "hero1": "Fin Fang Foom",
       "hero2": "Star-Lord",
+      "modernSharedComics": 19
+    },
+    {
+      "hero1": "Ghost-Spider",
+      "hero2": "Mastermind",
       "modernSharedComics": 19
     },
     {
@@ -8476,6 +8151,11 @@
       "modernSharedComics": 19
     },
     {
+      "hero1": "Immortus",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 19
+    },
+    {
       "hero1": "Iron Patriot",
       "hero2": "Ironheart",
       "modernSharedComics": 19
@@ -8488,6 +8168,11 @@
     {
       "hero1": "Iron Patriot",
       "hero2": "Star-Lord",
+      "modernSharedComics": 19
+    },
+    {
+      "hero1": "Jeffrey",
+      "hero2": "Miles Morales",
       "modernSharedComics": 19
     },
     {
@@ -8682,6 +8367,11 @@
     },
     {
       "hero1": "Dormammu",
+      "hero2": "Goliath",
+      "modernSharedComics": 18
+    },
+    {
+      "hero1": "Dormammu",
       "hero2": "M",
       "modernSharedComics": 18
     },
@@ -8727,12 +8417,7 @@
     },
     {
       "hero1": "Elsa Bloodstone",
-      "hero2": "Jeffrey",
-      "modernSharedComics": 18
-    },
-    {
-      "hero1": "Elsa Bloodstone",
-      "hero2": "Kate Bishop",
+      "hero2": "Miles Morales",
       "modernSharedComics": 18
     },
     {
@@ -8756,11 +8441,6 @@
       "modernSharedComics": 18
     },
     {
-      "hero1": "Ghost-Spider",
-      "hero2": "Mastermind",
-      "modernSharedComics": 18
-    },
-    {
       "hero1": "Goliath",
       "hero2": "Lady Deathstrike",
       "modernSharedComics": 18
@@ -8778,6 +8458,11 @@
     {
       "hero1": "Groot",
       "hero2": "Spider-Ham",
+      "modernSharedComics": 18
+    },
+    {
+      "hero1": "Gwenpool",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 18
     },
     {
@@ -8813,11 +8498,6 @@
     {
       "hero1": "Iron Patriot",
       "hero2": "Yondu",
-      "modernSharedComics": 18
-    },
-    {
-      "hero1": "Jeffrey",
-      "hero2": "Miles Morales",
       "modernSharedComics": 18
     },
     {
@@ -8878,6 +8558,11 @@
     {
       "hero1": "Maria Hill",
       "hero2": "Ronan",
+      "modernSharedComics": 18
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Rhino",
       "modernSharedComics": 18
     },
     {
@@ -8956,6 +8641,11 @@
       "modernSharedComics": 17
     },
     {
+      "hero1": "Abomination",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 17
+    },
+    {
       "hero1": "Agent Venom",
       "hero2": "Chamber",
       "modernSharedComics": 17
@@ -8978,6 +8668,11 @@
     {
       "hero1": "Annihilus",
       "hero2": "Ares",
+      "modernSharedComics": 17
+    },
+    {
+      "hero1": "Annihilus",
+      "hero2": "Ghost-Spider",
       "modernSharedComics": 17
     },
     {
@@ -9087,11 +8782,6 @@
     },
     {
       "hero1": "Dormammu",
-      "hero2": "Goliath",
-      "modernSharedComics": 17
-    },
-    {
-      "hero1": "Dormammu",
       "hero2": "Rocket",
       "modernSharedComics": 17
     },
@@ -9118,11 +8808,6 @@
     {
       "hero1": "Elektra",
       "hero2": "Spot",
-      "modernSharedComics": 17
-    },
-    {
-      "hero1": "Elsa Bloodstone",
-      "hero2": "Miles Morales",
       "modernSharedComics": 17
     },
     {
@@ -9207,6 +8892,11 @@
     },
     {
       "hero1": "Korg",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 17
+    },
+    {
+      "hero1": "Korg",
       "hero2": "Queen Veranke",
       "modernSharedComics": 17
     },
@@ -9268,6 +8958,11 @@
     {
       "hero1": "Maria Hill",
       "hero2": "Purple Man",
+      "modernSharedComics": 17
+    },
+    {
+      "hero1": "Miles Morales",
+      "hero2": "Mojo",
       "modernSharedComics": 17
     },
     {
@@ -9457,12 +9152,12 @@
     },
     {
       "hero1": "Annihilus",
-      "hero2": "Ghost-Spider",
+      "hero2": "Kraven",
       "modernSharedComics": 16
     },
     {
       "hero1": "Annihilus",
-      "hero2": "Kraven",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 16
     },
     {
@@ -9527,7 +9222,17 @@
     },
     {
       "hero1": "Bob, Agent Of Hydra",
+      "hero2": "Bullseye",
+      "modernSharedComics": 16
+    },
+    {
+      "hero1": "Bob, Agent Of Hydra",
       "hero2": "Venom",
+      "modernSharedComics": 16
+    },
+    {
+      "hero1": "Bob, Agent Of Hydra",
+      "hero2": "Warpath",
       "modernSharedComics": 16
     },
     {
@@ -9543,6 +9248,11 @@
     {
       "hero1": "Bullseye",
       "hero2": "Werewolf By Night",
+      "modernSharedComics": 16
+    },
+    {
+      "hero1": "Captain Carter",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 16
     },
     {
@@ -9657,6 +9367,11 @@
     },
     {
       "hero1": "Goliath",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 16
+    },
+    {
+      "hero1": "Goliath",
       "hero2": "Ronan",
       "modernSharedComics": 16
     },
@@ -9741,8 +9456,8 @@
       "modernSharedComics": 16
     },
     {
-      "hero1": "Miles Morales",
-      "hero2": "Mojo",
+      "hero1": "Mighty Thor",
+      "hero2": "Terrax",
       "modernSharedComics": 16
     },
     {
@@ -9877,6 +9592,11 @@
     },
     {
       "hero1": "Annihilus",
+      "hero2": "Goliath",
+      "modernSharedComics": 15
+    },
+    {
+      "hero1": "Annihilus",
       "hero2": "Kate Bishop",
       "modernSharedComics": 15
     },
@@ -9927,17 +9647,7 @@
     },
     {
       "hero1": "Bob, Agent Of Hydra",
-      "hero2": "Bullseye",
-      "modernSharedComics": 15
-    },
-    {
-      "hero1": "Bob, Agent Of Hydra",
       "hero2": "Sentry",
-      "modernSharedComics": 15
-    },
-    {
-      "hero1": "Bob, Agent Of Hydra",
-      "hero2": "Warpath",
       "modernSharedComics": 15
     },
     {
@@ -9978,6 +9688,11 @@
     {
       "hero1": "Chamber",
       "hero2": "Werewolf By Night",
+      "modernSharedComics": 15
+    },
+    {
+      "hero1": "Corvus Glaive",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 15
     },
     {
@@ -10062,6 +9777,11 @@
     },
     {
       "hero1": "Fin Fang Foom",
+      "hero2": "Ghost-Spider",
+      "modernSharedComics": 15
+    },
+    {
+      "hero1": "Fin Fang Foom",
       "hero2": "Shocker",
       "modernSharedComics": 15
     },
@@ -10078,6 +9798,11 @@
     {
       "hero1": "Fin Fang Foom",
       "hero2": "Wiccan",
+      "modernSharedComics": 15
+    },
+    {
+      "hero1": "Ghost-Spider",
+      "hero2": "Shadow King",
       "modernSharedComics": 15
     },
     {
@@ -10236,6 +9961,16 @@
       "modernSharedComics": 15
     },
     {
+      "hero1": "Mighty Thor",
+      "hero2": "Okoye",
+      "modernSharedComics": 15
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Shocker",
+      "modernSharedComics": 15
+    },
+    {
       "hero1": "Miles Morales",
       "hero2": "Quake",
       "modernSharedComics": 15
@@ -10332,11 +10067,6 @@
     },
     {
       "hero1": "Annihilus",
-      "hero2": "Goliath",
-      "modernSharedComics": 14
-    },
-    {
-      "hero1": "Annihilus",
       "hero2": "Jessica Jones",
       "modernSharedComics": 14
     },
@@ -10398,6 +10128,11 @@
     {
       "hero1": "Blink",
       "hero2": "Iron Lad",
+      "modernSharedComics": 14
+    },
+    {
+      "hero1": "Bob, Agent Of Hydra",
+      "hero2": "Iron Patriot",
       "modernSharedComics": 14
     },
     {
@@ -10526,11 +10261,6 @@
       "modernSharedComics": 14
     },
     {
-      "hero1": "Fin Fang Foom",
-      "hero2": "Ghost-Spider",
-      "modernSharedComics": 14
-    },
-    {
       "hero1": "Ghost-Spider",
       "hero2": "M",
       "modernSharedComics": 14
@@ -10543,11 +10273,6 @@
     {
       "hero1": "Ghost-Spider",
       "hero2": "Pixie",
-      "modernSharedComics": 14
-    },
-    {
-      "hero1": "Ghost-Spider",
-      "hero2": "Shadow King",
       "modernSharedComics": 14
     },
     {
@@ -10643,6 +10368,21 @@
     {
       "hero1": "Maria Hill",
       "hero2": "Ursa Major",
+      "modernSharedComics": 14
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Patriot",
+      "modernSharedComics": 14
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Ronan",
+      "modernSharedComics": 14
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Super-Skrull",
       "modernSharedComics": 14
     },
     {
@@ -10822,11 +10562,6 @@
     },
     {
       "hero1": "Bob, Agent Of Hydra",
-      "hero2": "Iron Patriot",
-      "modernSharedComics": 13
-    },
-    {
-      "hero1": "Bob, Agent Of Hydra",
       "hero2": "M.O.D.O.K.",
       "modernSharedComics": 13
     },
@@ -10898,11 +10633,6 @@
     {
       "hero1": "Chameleon",
       "hero2": "Lady Deathstrike",
-      "modernSharedComics": 13
-    },
-    {
-      "hero1": "Cosmic Ghost Rider",
-      "hero2": "Mighty Thor",
       "modernSharedComics": 13
     },
     {
@@ -10993,6 +10723,11 @@
     {
       "hero1": "Fin Fang Foom",
       "hero2": "Sentry",
+      "modernSharedComics": 13
+    },
+    {
+      "hero1": "Ghost-Spider",
+      "hero2": "Goliath",
       "modernSharedComics": 13
     },
     {
@@ -11162,7 +10897,7 @@
     },
     {
       "hero1": "Mighty Thor",
-      "hero2": "Shriek",
+      "hero2": "Silk",
       "modernSharedComics": 13
     },
     {
@@ -11567,12 +11302,17 @@
     },
     {
       "hero1": "Ghost-Spider",
-      "hero2": "Goliath",
+      "hero2": "Gwenpool",
       "modernSharedComics": 12
     },
     {
       "hero1": "Ghost-Spider",
       "hero2": "Ironheart",
+      "modernSharedComics": 12
+    },
+    {
+      "hero1": "Ghost-Spider",
+      "hero2": "Jeffrey",
       "modernSharedComics": 12
     },
     {
@@ -11672,6 +11412,11 @@
     },
     {
       "hero1": "Knull",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 12
+    },
+    {
+      "hero1": "Knull",
       "hero2": "Rhino",
       "modernSharedComics": 12
     },
@@ -11698,6 +11443,11 @@
     {
       "hero1": "Kraven",
       "hero2": "Warpath",
+      "modernSharedComics": 12
+    },
+    {
+      "hero1": "Lady Deathstrike",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 12
     },
     {
@@ -11728,11 +11478,6 @@
     {
       "hero1": "Mastermind",
       "hero2": "Yondu",
-      "modernSharedComics": 12
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "Skrulls",
       "modernSharedComics": 12
     },
     {
@@ -12002,6 +11747,11 @@
     },
     {
       "hero1": "Blade",
+      "hero2": "Shadow King",
+      "modernSharedComics": 11
+    },
+    {
+      "hero1": "Blade",
       "hero2": "White Widow",
       "modernSharedComics": 11
     },
@@ -12142,11 +11892,6 @@
     },
     {
       "hero1": "Demogoblin",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 11
-    },
-    {
-      "hero1": "Demogoblin",
       "hero2": "Rhino",
       "modernSharedComics": 11
     },
@@ -12228,16 +11973,6 @@
     {
       "hero1": "Fin Fang Foom",
       "hero2": "Scorpion",
-      "modernSharedComics": 11
-    },
-    {
-      "hero1": "Ghost-Spider",
-      "hero2": "Gwenpool",
-      "modernSharedComics": 11
-    },
-    {
-      "hero1": "Ghost-Spider",
-      "hero2": "Jeffrey",
       "modernSharedComics": 11
     },
     {
@@ -12363,11 +12098,6 @@
     {
       "hero1": "Mastermind",
       "hero2": "Scorpion",
-      "modernSharedComics": 11
-    },
-    {
-      "hero1": "Mighty Thor",
-      "hero2": "White Widow",
       "modernSharedComics": 11
     },
     {
@@ -12621,11 +12351,6 @@
       "modernSharedComics": 10
     },
     {
-      "hero1": "Anti-Venom",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 10
-    },
-    {
       "hero1": "Arcade",
       "hero2": "Groot",
       "modernSharedComics": 10
@@ -12668,11 +12393,6 @@
     {
       "hero1": "Blade",
       "hero2": "Fantomex",
-      "modernSharedComics": 10
-    },
-    {
-      "hero1": "Blade",
-      "hero2": "Shadow King",
       "modernSharedComics": 10
     },
     {
@@ -12906,6 +12626,11 @@
       "modernSharedComics": 10
     },
     {
+      "hero1": "Ebony Maw",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 10
+    },
+    {
       "hero1": "Electro",
       "hero2": "Korg",
       "modernSharedComics": 10
@@ -13081,6 +12806,11 @@
       "modernSharedComics": 10
     },
     {
+      "hero1": "Killmonger",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 10
+    },
+    {
       "hero1": "Knull",
       "hero2": "Sentry",
       "modernSharedComics": 10
@@ -13137,6 +12867,11 @@
     },
     {
       "hero1": "M",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 10
+    },
+    {
+      "hero1": "M",
       "hero2": "Miles Morales",
       "modernSharedComics": 10
     },
@@ -13148,6 +12883,11 @@
     {
       "hero1": "M",
       "hero2": "Vulture",
+      "modernSharedComics": 10
+    },
+    {
+      "hero1": "Maestro",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 10
     },
     {
@@ -13402,6 +13142,11 @@
     },
     {
       "hero1": "Annihilus",
+      "hero2": "Mastermind",
+      "modernSharedComics": 9
+    },
+    {
+      "hero1": "Annihilus",
       "hero2": "Moon Girl & Devil Dinosaur",
       "modernSharedComics": 9
     },
@@ -13483,6 +13228,11 @@
     {
       "hero1": "Black Dwarf",
       "hero2": "Brood Queen",
+      "modernSharedComics": 9
+    },
+    {
+      "hero1": "Black Dwarf",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 9
     },
     {
@@ -13602,6 +13352,11 @@
     },
     {
       "hero1": "Chameleon",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 9
+    },
+    {
+      "hero1": "Chameleon",
       "hero2": "Morlun",
       "modernSharedComics": 9
     },
@@ -13637,6 +13392,11 @@
     },
     {
       "hero1": "Crimson Dynamo",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 9
+    },
+    {
+      "hero1": "Crimson Dynamo",
       "hero2": "Omega Red",
       "modernSharedComics": 9
     },
@@ -13668,6 +13428,11 @@
     {
       "hero1": "Daken",
       "hero2": "Goliath",
+      "modernSharedComics": 9
+    },
+    {
+      "hero1": "Daken",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 9
     },
     {
@@ -13782,6 +13547,16 @@
     },
     {
       "hero1": "Fin Fang Foom",
+      "hero2": "Gwenpool",
+      "modernSharedComics": 9
+    },
+    {
+      "hero1": "Fin Fang Foom",
+      "hero2": "Kate Bishop",
+      "modernSharedComics": 9
+    },
+    {
+      "hero1": "Fin Fang Foom",
       "hero2": "Silver Samurai",
       "modernSharedComics": 9
     },
@@ -13798,6 +13573,11 @@
     {
       "hero1": "Goose",
       "hero2": "M.O.D.O.K.",
+      "modernSharedComics": 9
+    },
+    {
+      "hero1": "Gorr",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 9
     },
     {
@@ -13927,7 +13707,12 @@
     },
     {
       "hero1": "Mighty Thor",
-      "hero2": "Nemesis",
+      "hero2": "Shuri",
+      "modernSharedComics": 9
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Ursa Major",
       "modernSharedComics": 9
     },
     {
@@ -14218,11 +14003,6 @@
     {
       "hero1": "Annihilus",
       "hero2": "M",
-      "modernSharedComics": 8
-    },
-    {
-      "hero1": "Annihilus",
-      "hero2": "Mastermind",
       "modernSharedComics": 8
     },
     {
@@ -14567,16 +14347,6 @@
     },
     {
       "hero1": "Fin Fang Foom",
-      "hero2": "Gwenpool",
-      "modernSharedComics": 8
-    },
-    {
-      "hero1": "Fin Fang Foom",
-      "hero2": "Kate Bishop",
-      "modernSharedComics": 8
-    },
-    {
-      "hero1": "Fin Fang Foom",
       "hero2": "Lady Deathstrike",
       "modernSharedComics": 8
     },
@@ -14643,6 +14413,11 @@
     {
       "hero1": "Groot",
       "hero2": "Werewolf By Night",
+      "modernSharedComics": 8
+    },
+    {
+      "hero1": "Gwenpool",
+      "hero2": "Mojo",
       "modernSharedComics": 8
     },
     {
@@ -14862,7 +14637,7 @@
     },
     {
       "hero1": "Mighty Thor",
-      "hero2": "Peni Parker",
+      "hero2": "Quake",
       "modernSharedComics": 8
     },
     {
@@ -15632,6 +15407,11 @@
     },
     {
       "hero1": "Goose",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 7
+    },
+    {
+      "hero1": "Goose",
       "hero2": "Venom",
       "modernSharedComics": 7
     },
@@ -15927,7 +15707,7 @@
     },
     {
       "hero1": "Mighty Thor",
-      "hero2": "Spider-Punk",
+      "hero2": "Pixie",
       "modernSharedComics": 7
     },
     {
@@ -16207,6 +15987,11 @@
     },
     {
       "hero1": "Alligator Loki",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 6
+    },
+    {
+      "hero1": "Alligator Loki",
       "hero2": "Miles Morales",
       "modernSharedComics": 6
     },
@@ -16278,6 +16063,11 @@
     {
       "hero1": "Arcade",
       "hero2": "Jessica Jones",
+      "modernSharedComics": 6
+    },
+    {
+      "hero1": "Arcade",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 6
     },
     {
@@ -16482,6 +16272,11 @@
     },
     {
       "hero1": "Carnage",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 6
+    },
+    {
+      "hero1": "Carnage",
       "hero2": "Pixie",
       "modernSharedComics": 6
     },
@@ -16611,11 +16406,6 @@
       "modernSharedComics": 6
     },
     {
-      "hero1": "Doppelganger",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 6
-    },
-    {
       "hero1": "Dormammu",
       "hero2": "Gwenpool",
       "modernSharedComics": 6
@@ -16692,12 +16482,22 @@
     },
     {
       "hero1": "Fantomex",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 6
+    },
+    {
+      "hero1": "Fantomex",
       "hero2": "Quake",
       "modernSharedComics": 6
     },
     {
       "hero1": "Fin Fang Foom",
       "hero2": "Goose",
+      "modernSharedComics": 6
+    },
+    {
+      "hero1": "Fin Fang Foom",
+      "hero2": "Jeffrey",
       "modernSharedComics": 6
     },
     {
@@ -16728,6 +16528,11 @@
     {
       "hero1": "Ghost-Spider",
       "hero2": "Throg",
+      "modernSharedComics": 6
+    },
+    {
+      "hero1": "Goliath",
+      "hero2": "Mastermind",
       "modernSharedComics": 6
     },
     {
@@ -16763,11 +16568,6 @@
     {
       "hero1": "Gwenpool",
       "hero2": "Ironheart",
-      "modernSharedComics": 6
-    },
-    {
-      "hero1": "Gwenpool",
-      "hero2": "Mojo",
       "modernSharedComics": 6
     },
     {
@@ -16916,11 +16716,6 @@
       "modernSharedComics": 6
     },
     {
-      "hero1": "Lady Deadpool",
-      "hero2": "Mighty Thor",
-      "modernSharedComics": 6
-    },
-    {
       "hero1": "Lady Deathstrike",
       "hero2": "Ronan",
       "modernSharedComics": 6
@@ -16968,6 +16763,16 @@
     {
       "hero1": "Mastermind",
       "hero2": "Super-Skrull",
+      "modernSharedComics": 6
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Mysterio",
+      "modernSharedComics": 6
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Nebula",
       "modernSharedComics": 6
     },
     {
@@ -17198,6 +17003,11 @@
     {
       "hero1": "Shadow King",
       "hero2": "Terrax",
+      "modernSharedComics": 6
+    },
+    {
+      "hero1": "Shadow King",
+      "hero2": "Valkyrie",
       "modernSharedComics": 6
     },
     {
@@ -17437,6 +17247,11 @@
     },
     {
       "hero1": "America Chavez",
+      "hero2": "Elsa Bloodstone",
+      "modernSharedComics": 5
+    },
+    {
+      "hero1": "America Chavez",
       "hero2": "Iron Lad",
       "modernSharedComics": 5
     },
@@ -17468,6 +17283,11 @@
     {
       "hero1": "America Chavez",
       "hero2": "Warpath",
+      "modernSharedComics": 5
+    },
+    {
+      "hero1": "Annihilus",
+      "hero2": "Shadow King",
       "modernSharedComics": 5
     },
     {
@@ -17841,6 +17661,11 @@
       "modernSharedComics": 5
     },
     {
+      "hero1": "Cosmic Ghost Rider",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 5
+    },
+    {
       "hero1": "Crimson Dynamo",
       "hero2": "Dormammu",
       "modernSharedComics": 5
@@ -17927,6 +17752,11 @@
     },
     {
       "hero1": "Doop",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 5
+    },
+    {
+      "hero1": "Doop",
       "hero2": "Shuri",
       "modernSharedComics": 5
     },
@@ -17992,6 +17822,11 @@
     },
     {
       "hero1": "Elsa Bloodstone",
+      "hero2": "Gwenpool",
+      "modernSharedComics": 5
+    },
+    {
+      "hero1": "Elsa Bloodstone",
       "hero2": "Ironheart",
       "modernSharedComics": 5
     },
@@ -18047,11 +17882,6 @@
     },
     {
       "hero1": "Fin Fang Foom",
-      "hero2": "Jeffrey",
-      "modernSharedComics": 5
-    },
-    {
-      "hero1": "Fin Fang Foom",
       "hero2": "Spot",
       "modernSharedComics": 5
     },
@@ -18092,11 +17922,6 @@
     },
     {
       "hero1": "Goliath",
-      "hero2": "Mastermind",
-      "modernSharedComics": 5
-    },
-    {
-      "hero1": "Goliath",
       "hero2": "Moon Girl & Devil Dinosaur",
       "modernSharedComics": 5
     },
@@ -18108,6 +17933,11 @@
     {
       "hero1": "Goliath",
       "hero2": "Nebula",
+      "modernSharedComics": 5
+    },
+    {
+      "hero1": "Goliath",
+      "hero2": "Shadow King",
       "modernSharedComics": 5
     },
     {
@@ -18426,6 +18256,21 @@
       "modernSharedComics": 5
     },
     {
+      "hero1": "Mighty Thor",
+      "hero2": "Phyla-Vell",
+      "modernSharedComics": 5
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Warpath",
+      "modernSharedComics": 5
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Yondu",
+      "modernSharedComics": 5
+    },
+    {
       "hero1": "Miles Morales",
       "hero2": "Silver Samurai",
       "modernSharedComics": 5
@@ -18718,11 +18563,6 @@
     {
       "hero1": "Shadow King",
       "hero2": "Taskmaster",
-      "modernSharedComics": 5
-    },
-    {
-      "hero1": "Shadow King",
-      "hero2": "Valkyrie",
       "modernSharedComics": 5
     },
     {
@@ -18907,11 +18747,6 @@
     },
     {
       "hero1": "America Chavez",
-      "hero2": "Elsa Bloodstone",
-      "modernSharedComics": 4
-    },
-    {
-      "hero1": "America Chavez",
       "hero2": "Korg",
       "modernSharedComics": 4
     },
@@ -18953,11 +18788,6 @@
     {
       "hero1": "Annihilus",
       "hero2": "Purple Man",
-      "modernSharedComics": 4
-    },
-    {
-      "hero1": "Annihilus",
-      "hero2": "Shadow King",
       "modernSharedComics": 4
     },
     {
@@ -19467,6 +19297,11 @@
     },
     {
       "hero1": "Dormammu",
+      "hero2": "Shadow King",
+      "modernSharedComics": 4
+    },
+    {
+      "hero1": "Dormammu",
       "hero2": "Ursa Major",
       "modernSharedComics": 4
     },
@@ -19542,12 +19377,12 @@
     },
     {
       "hero1": "Elsa Bloodstone",
-      "hero2": "Gwenpool",
+      "hero2": "Lady Deathstrike",
       "modernSharedComics": 4
     },
     {
       "hero1": "Elsa Bloodstone",
-      "hero2": "Lady Deathstrike",
+      "hero2": "Mojo",
       "modernSharedComics": 4
     },
     {
@@ -19643,11 +19478,6 @@
     {
       "hero1": "Goliath",
       "hero2": "Purple Man",
-      "modernSharedComics": 4
-    },
-    {
-      "hero1": "Goliath",
-      "hero2": "Shadow King",
       "modernSharedComics": 4
     },
     {
@@ -19767,6 +19597,11 @@
     },
     {
       "hero1": "Iron Lad",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 4
+    },
+    {
+      "hero1": "Iron Lad",
       "hero2": "Rocket",
       "modernSharedComics": 4
     },
@@ -19788,6 +19623,11 @@
     {
       "hero1": "Ironheart",
       "hero2": "Valkyrie",
+      "modernSharedComics": 4
+    },
+    {
+      "hero1": "Jeffrey",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 4
     },
     {
@@ -20013,6 +19853,26 @@
     {
       "hero1": "Mastermind",
       "hero2": "Red Guardian",
+      "modernSharedComics": 4
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Omega Red",
+      "modernSharedComics": 4
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Queen Veranke",
+      "modernSharedComics": 4
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Spider-Ham",
+      "modernSharedComics": 4
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Werewolf By Night",
       "modernSharedComics": 4
     },
     {
@@ -20503,6 +20363,11 @@
     {
       "hero1": "America Chavez",
       "hero2": "Hope Summers",
+      "modernSharedComics": 3
+    },
+    {
+      "hero1": "America Chavez",
+      "hero2": "Mojo",
       "modernSharedComics": 3
     },
     {
@@ -21292,11 +21157,6 @@
     },
     {
       "hero1": "Dormammu",
-      "hero2": "Shadow King",
-      "modernSharedComics": 3
-    },
-    {
-      "hero1": "Dormammu",
       "hero2": "Spot",
       "modernSharedComics": 3
     },
@@ -21388,11 +21248,6 @@
     {
       "hero1": "Elektra",
       "hero2": "Vulcan",
-      "modernSharedComics": 3
-    },
-    {
-      "hero1": "Elsa Bloodstone",
-      "hero2": "Mojo",
       "modernSharedComics": 3
     },
     {
@@ -21632,6 +21487,11 @@
     },
     {
       "hero1": "Hope Summers",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 3
+    },
+    {
+      "hero1": "Hope Summers",
       "hero2": "Moon Girl & Devil Dinosaur",
       "modernSharedComics": 3
     },
@@ -21823,6 +21683,11 @@
     {
       "hero1": "Jessica Jones",
       "hero2": "Terrax",
+      "modernSharedComics": 3
+    },
+    {
+      "hero1": "Kate Bishop",
+      "hero2": "Mojo",
       "modernSharedComics": 3
     },
     {
@@ -22107,7 +21972,27 @@
     },
     {
       "hero1": "Mighty Thor",
-      "hero2": "War",
+      "hero2": "Mojo",
+      "modernSharedComics": 3
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Onslaught",
+      "modernSharedComics": 3
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Purple Man",
+      "modernSharedComics": 3
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Red Guardian",
+      "modernSharedComics": 3
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Shriek",
       "modernSharedComics": 3
     },
     {
@@ -22882,11 +22767,6 @@
     },
     {
       "hero1": "America Chavez",
-      "hero2": "Mojo",
-      "modernSharedComics": 2
-    },
-    {
-      "hero1": "America Chavez",
       "hero2": "Nebula",
       "modernSharedComics": 2
     },
@@ -23003,6 +22883,11 @@
     {
       "hero1": "Anti-Venom",
       "hero2": "Maria Hill",
+      "modernSharedComics": 2
+    },
+    {
+      "hero1": "Anti-Venom",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 2
     },
     {
@@ -23187,6 +23072,11 @@
     },
     {
       "hero1": "Blastaar",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 2
+    },
+    {
+      "hero1": "Blastaar",
       "hero2": "Omega Red",
       "modernSharedComics": 2
     },
@@ -23228,6 +23118,11 @@
     {
       "hero1": "Blink",
       "hero2": "Knull",
+      "modernSharedComics": 2
+    },
+    {
+      "hero1": "Blink",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 2
     },
     {
@@ -24597,6 +24492,11 @@
     },
     {
       "hero1": "Jeffrey",
+      "hero2": "Mojo",
+      "modernSharedComics": 2
+    },
+    {
+      "hero1": "Jeffrey",
       "hero2": "Mysterio",
       "modernSharedComics": 2
     },
@@ -24888,6 +24788,31 @@
     {
       "hero1": "Mastermind",
       "hero2": "War",
+      "modernSharedComics": 2
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Morbius",
+      "modernSharedComics": 2
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Shadow King",
+      "modernSharedComics": 2
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Silver Samurai",
+      "modernSharedComics": 2
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Spot",
+      "modernSharedComics": 2
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "White Widow",
       "modernSharedComics": 2
     },
     {
@@ -26347,6 +26272,11 @@
     },
     {
       "hero1": "Bob, Agent Of Hydra",
+      "hero2": "Mighty Thor",
+      "modernSharedComics": 1
+    },
+    {
+      "hero1": "Bob, Agent Of Hydra",
       "hero2": "Omega Red",
       "modernSharedComics": 1
     },
@@ -27128,6 +27058,11 @@
     {
       "hero1": "Demogoblin",
       "hero2": "Maria Hill",
+      "modernSharedComics": 1
+    },
+    {
+      "hero1": "Demogoblin",
+      "hero2": "Mighty Thor",
       "modernSharedComics": 1
     },
     {
@@ -28252,11 +28187,6 @@
     },
     {
       "hero1": "Kate Bishop",
-      "hero2": "Mojo",
-      "modernSharedComics": 1
-    },
-    {
-      "hero1": "Kate Bishop",
       "hero2": "Onslaught",
       "modernSharedComics": 1
     },
@@ -28763,6 +28693,26 @@
     {
       "hero1": "Mastermind",
       "hero2": "Spot",
+      "modernSharedComics": 1
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Nemesis",
+      "modernSharedComics": 1
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Nimrod",
+      "modernSharedComics": 1
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Skrulls",
+      "modernSharedComics": 1
+    },
+    {
+      "hero1": "Mighty Thor",
+      "hero2": "Spider-Punk",
       "modernSharedComics": 1
     },
     {
@@ -29738,7 +29688,6 @@
   ],
   "byCharacter": {
     "Abomination": {
-      "Mighty Thor": 213,
       "Cyborg Spider-Man": 177,
       "Rhino": 98,
       "M.O.D.O.K.": 96,
@@ -29769,6 +29718,7 @@
       "Mastermind": 19,
       "Taskmaster": 18,
       "Ghost-Spider": 17,
+      "Mighty Thor": 17,
       "Carnage": 16,
       "Jessica Jones": 16,
       "Maestro": 16,
@@ -29850,12 +29800,11 @@
       "Throg": 1
     },
     "Agent Venom": {
-      "Cyborg Spider-Man": 1696,
-      "Venom": 612,
+      "Cyborg Spider-Man": 1697,
+      "Venom": 613,
       "Ghost-Spider": 483,
       "Iron Patriot": 428,
       "Vulture": 262,
-      "Mighty Thor": 257,
       "Electro": 212,
       "Kraven": 209,
       "Mysterio": 177,
@@ -29868,7 +29817,7 @@
       "Groot": 103,
       "Star-Lord": 103,
       "Elektra": 88,
-      "Anti-Venom": 79,
+      "Anti-Venom": 80,
       "Miles Morales": 68,
       "Morbius": 66,
       "Valkyrie": 58,
@@ -29876,6 +29825,7 @@
       "Bullseye": 47,
       "Jessica Jones": 47,
       "Shang Chi": 45,
+      "Mighty Thor": 44,
       "Man-Thing": 40,
       "Taskmaster": 39,
       "Winter Soldier": 38,
@@ -29968,7 +29918,6 @@
     },
     "Air-Walker": {
       "Terrax": 33,
-      "Mighty Thor": 21,
       "Cyborg Spider-Man": 16,
       "Nebula": 16,
       "Super-Skrull": 16,
@@ -30041,13 +29990,13 @@
       "X-23": 1
     },
     "Alligator Loki": {
-      "Mighty Thor": 37,
       "Throg": 27,
       "Jeffrey": 23,
       "Goose": 15,
       "Kate Bishop": 7,
       "Squirrel Girl": 7,
       "America Chavez": 6,
+      "Mighty Thor": 6,
       "Miles Morales": 6,
       "Rocket": 6,
       "Cyborg Spider-Man": 5,
@@ -30079,15 +30028,15 @@
       "Ronan": 1
     },
     "America Chavez": {
-      "Kate Bishop": 123,
+      "Kate Bishop": 124,
       "Wiccan": 90,
       "Cyborg Spider-Man": 70,
-      "Mighty Thor": 70,
-      "Miles Morales": 66,
+      "Miles Morales": 67,
       "Squirrel Girl": 56,
       "Star-Lord": 42,
-      "Gwenpool": 38,
+      "Gwenpool": 39,
       "Rocket": 37,
+      "Mighty Thor": 32,
       "Maria Hill": 30,
       "Winter Soldier": 29,
       "Groot": 27,
@@ -30099,7 +30048,7 @@
       "Ironheart": 21,
       "Patriot": 21,
       "Shuri": 21,
-      "Jeffrey": 19,
+      "Jeffrey": 20,
       "Shang Chi": 19,
       "Venom": 19,
       "Elektra": 18,
@@ -30140,6 +30089,7 @@
       "Annihilus": 5,
       "Blink": 5,
       "Chamber": 5,
+      "Elsa Bloodstone": 5,
       "Iron Lad": 5,
       "Lady Deathstrike": 5,
       "Maestro": 5,
@@ -30149,7 +30099,6 @@
       "Warpath": 5,
       "Abomination": 4,
       "Brood Queen": 4,
-      "Elsa Bloodstone": 4,
       "Korg": 4,
       "Mysterio": 4,
       "Okoye": 4,
@@ -30162,6 +30111,7 @@
       "Corvus Glaive": 3,
       "Goliath": 3,
       "Hope Summers": 3,
+      "Mojo": 3,
       "Shriek": 3,
       "Throg": 3,
       "Werewolf By Night": 3,
@@ -30169,7 +30119,6 @@
       "Yondu": 3,
       "Ebony Maw": 2,
       "Knull": 2,
-      "Mojo": 2,
       "Nebula": 2,
       "Onslaught": 2,
       "Queen Veranke": 2,
@@ -30186,8 +30135,7 @@
       "Vulcan": 1
     },
     "Annihilus": {
-      "Mighty Thor": 192,
-      "Cyborg Spider-Man": 172,
+      "Cyborg Spider-Man": 173,
       "Ronan": 109,
       "Blastaar": 102,
       "Super-Skrull": 93,
@@ -30217,24 +30165,25 @@
       "Mysterio": 22,
       "Immortus": 21,
       "Sentry": 21,
+      "Dormammu": 20,
       "Howard The Duck": 20,
       "Maria Hill": 20,
-      "Dormammu": 19,
-      "Valkyrie": 19,
+      "Valkyrie": 20,
       "Man-Thing": 18,
       "Shuri": 18,
       "Ares": 17,
+      "Ghost-Spider": 17,
       "Scorpion": 17,
       "Blink": 16,
-      "Ghost-Spider": 16,
       "Kraven": 16,
+      "Mighty Thor": 16,
       "Miles Morales": 16,
       "Morbius": 16,
       "Stature": 16,
       "Air-Walker": 15,
       "Arcade": 15,
+      "Goliath": 15,
       "Kate Bishop": 15,
-      "Goliath": 14,
       "Jessica Jones": 14,
       "Wiccan": 14,
       "X-23": 13,
@@ -30245,12 +30194,12 @@
       "Fin Fang Foom": 10,
       "Taskmaster": 10,
       "Doop": 9,
+      "Mastermind": 9,
       "Moon Girl & Devil Dinosaur": 9,
       "Squirrel Girl": 9,
       "Warpath": 9,
       "Daken": 8,
       "M": 8,
-      "Mastermind": 8,
       "Morph": 8,
       "Onslaught": 8,
       "Queen Veranke": 8,
@@ -30267,10 +30216,10 @@
       "Silver Samurai": 6,
       "Spider-Ham": 6,
       "America Chavez": 5,
+      "Shadow King": 5,
       "Ironheart": 4,
       "Okoye": 4,
       "Purple Man": 4,
-      "Shadow King": 4,
       "White Widow": 4,
       "Cosmic Ghost Rider": 3,
       "Crossbones": 3,
@@ -30302,13 +30251,12 @@
     },
     "Arcade": {
       "Cyborg Spider-Man": 190,
-      "Mighty Thor": 85,
-      "Mastermind": 75,
+      "Mastermind": 76,
       "Warpath": 74,
       "X-23": 61,
-      "Mojo": 51,
+      "Mojo": 52,
+      "Lady Deathstrike": 44,
       "Taskmaster": 44,
-      "Lady Deathstrike": 43,
       "Iron Patriot": 42,
       "Venom": 41,
       "M": 39,
@@ -30368,6 +30316,7 @@
       "Blastaar": 6,
       "Famine": 6,
       "Jessica Jones": 6,
+      "Mighty Thor": 6,
       "Red Guardian": 6,
       "Silk": 6,
       "Brood Queen": 5,
@@ -30416,7 +30365,6 @@
       "Scorpion": 294,
       "Bullseye": 287,
       "Daken": 270,
-      "Mighty Thor": 255,
       "Winter Soldier": 171,
       "Queen Veranke": 105,
       "Maria Hill": 99,
@@ -30439,6 +30387,7 @@
       "Squirrel Girl": 26,
       "Silver Samurai": 25,
       "Shang Chi": 24,
+      "Mighty Thor": 23,
       "Howard The Duck": 22,
       "Electro": 21,
       "Hope Summers": 21,
@@ -30520,7 +30469,6 @@
       "Proxima Midnight": 85,
       "Corvus Glaive": 74,
       "Ebony Maw": 70,
-      "Mighty Thor": 43,
       "Shang Chi": 30,
       "Star-Lord": 26,
       "Shuri": 24,
@@ -30531,6 +30479,7 @@
       "Groot": 13,
       "Cyborg Spider-Man": 12,
       "Brood Queen": 9,
+      "Mighty Thor": 9,
       "Maria Hill": 8,
       "Cosmic Ghost Rider": 6,
       "Nebula": 6,
@@ -30600,7 +30549,6 @@
     },
     "Blade": {
       "Cyborg Spider-Man": 234,
-      "Mighty Thor": 215,
       "Morbius": 104,
       "Man-Thing": 88,
       "Venom": 83,
@@ -30613,6 +30561,7 @@
       "Miles Morales": 49,
       "Pixie": 49,
       "Jessica Jones": 47,
+      "Mighty Thor": 41,
       "Shang Chi": 36,
       "Bullseye": 33,
       "Daken": 31,
@@ -30663,10 +30612,10 @@
       "Abomination": 11,
       "Chameleon": 11,
       "Goose": 11,
+      "Shadow King": 11,
       "White Widow": 11,
       "Annihilus": 10,
       "Fantomex": 10,
-      "Shadow King": 10,
       "Knull": 9,
       "Proxima Midnight": 9,
       "Spot": 9,
@@ -30722,7 +30671,6 @@
     "Blastaar": {
       "Annihilus": 102,
       "Cyborg Spider-Man": 86,
-      "Mighty Thor": 66,
       "Ronan": 51,
       "Star-Lord": 42,
       "Super-Skrull": 34,
@@ -30791,6 +30739,7 @@
       "Elsa Bloodstone": 2,
       "Iron Lad": 2,
       "Jessica Jones": 2,
+      "Mighty Thor": 2,
       "Omega Red": 2,
       "Patriot": 2,
       "Queen Veranke": 2,
@@ -30816,12 +30765,11 @@
       "White Widow": 1
     },
     "Blink": {
-      "Morph": 474,
+      "Morph": 475,
       "X-23": 186,
       "Warpath": 165,
       "M": 163,
       "Cyborg Spider-Man": 141,
-      "Mighty Thor": 103,
       "Chamber": 101,
       "Hope Summers": 98,
       "Doop": 93,
@@ -30901,6 +30849,7 @@
       "Crossbones": 2,
       "Immortus": 2,
       "Knull": 2,
+      "Mighty Thor": 2,
       "Miles Morales": 2,
       "Morlun": 2,
       "Nebula": 2,
@@ -30924,17 +30873,16 @@
       "Throg": 1
     },
     "Bob, Agent Of Hydra": {
-      "Cyborg Spider-Man": 28,
+      "Cyborg Spider-Man": 29,
       "Taskmaster": 26,
       "Winter Soldier": 24,
-      "Mighty Thor": 23,
       "Daken": 19,
+      "Bullseye": 16,
       "Venom": 16,
-      "Bullseye": 15,
+      "Warpath": 16,
       "Sentry": 15,
-      "Warpath": 15,
       "Werewolf By Night": 15,
-      "Iron Patriot": 13,
+      "Iron Patriot": 14,
       "M.O.D.O.K.": 13,
       "Blade": 12,
       "Scorpion": 11,
@@ -30988,24 +30936,24 @@
       "Kate Bishop": 1,
       "Killmonger": 1,
       "Kraven": 1,
+      "Mighty Thor": 1,
       "Omega Red": 1,
       "Shadow King": 1,
       "Shuri": 1
     },
     "Bullseye": {
-      "Iron Patriot": 502,
-      "Cyborg Spider-Man": 484,
+      "Iron Patriot": 503,
+      "Cyborg Spider-Man": 485,
       "Venom": 454,
       "Scorpion": 411,
       "Daken": 304,
       "Sentry": 288,
       "Ares": 287,
       "Elektra": 285,
-      "Mighty Thor": 243,
       "Winter Soldier": 166,
       "Taskmaster": 118,
       "Jessica Jones": 103,
-      "Warpath": 100,
+      "Warpath": 101,
       "X-23": 98,
       "Ghost-Spider": 88,
       "Maria Hill": 86,
@@ -31035,6 +30983,7 @@
       "Howard The Duck": 34,
       "Blade": 33,
       "Silver Samurai": 32,
+      "Mighty Thor": 31,
       "Annihilus": 30,
       "Blink": 26,
       "Morbius": 26,
@@ -31052,11 +31001,11 @@
       "Groot": 19,
       "Star-Lord": 19,
       "Moon Girl & Devil Dinosaur": 17,
+      "Bob, Agent Of Hydra": 16,
       "Spot": 16,
       "Werewolf By Night": 16,
       "America Chavez": 15,
       "Blastaar": 15,
-      "Bob, Agent Of Hydra": 15,
       "Fin Fang Foom": 15,
       "Elsa Bloodstone": 14,
       "Ronan": 14,
@@ -31114,11 +31063,11 @@
     },
     "Captain Carter": {
       "Winter Soldier": 95,
-      "Mighty Thor": 84,
       "Crossbones": 59,
       "Cyborg Spider-Man": 49,
       "Ghost-Spider": 17,
       "Maria Hill": 17,
+      "Mighty Thor": 16,
       "Venom": 16,
       "M.O.D.O.K.": 14,
       "Rhino": 13,
@@ -31217,7 +31166,6 @@
       "Iron Patriot": 138,
       "Agent Venom": 134,
       "Ghost-Spider": 114,
-      "Mighty Thor": 106,
       "Rhino": 80,
       "Vulture": 80,
       "Electro": 76,
@@ -31281,6 +31229,7 @@
       "Gwenpool": 6,
       "Hope Summers": 6,
       "Mastermind": 6,
+      "Mighty Thor": 6,
       "Pixie": 6,
       "Stature": 6,
       "Wiccan": 6,
@@ -31328,13 +31277,12 @@
       "Vulcan": 1
     },
     "Chamber": {
-      "M": 611,
+      "M": 612,
       "Warpath": 311,
       "Pixie": 244,
       "Doop": 188,
       "Cyborg Spider-Man": 152,
       "X-23": 131,
-      "Mighty Thor": 118,
       "Hope Summers": 115,
       "Blink": 101,
       "Omega Red": 98,
@@ -31444,7 +31392,6 @@
       "Agent Venom": 122,
       "Kraven": 122,
       "Iron Patriot": 108,
-      "Mighty Thor": 98,
       "Scorpion": 93,
       "Ghost-Spider": 84,
       "Venom": 84,
@@ -31475,6 +31422,7 @@
       "Shang Chi": 10,
       "Arcade": 9,
       "Crossbones": 9,
+      "Mighty Thor": 9,
       "Morlun": 9,
       "Sentry": 9,
       "X-23": 9,
@@ -31540,7 +31488,6 @@
       "Proxima Midnight": 113,
       "Black Dwarf": 74,
       "Ebony Maw": 74,
-      "Mighty Thor": 59,
       "Shuri": 33,
       "Terrax": 30,
       "Star-Lord": 28,
@@ -31550,6 +31497,7 @@
       "Annihilus": 22,
       "Cyborg Spider-Man": 21,
       "Ronan": 16,
+      "Mighty Thor": 15,
       "Super-Skrull": 15,
       "Miles Morales": 14,
       "Nebula": 9,
@@ -31622,7 +31570,6 @@
       "Vulcan": 1
     },
     "Crimson Dynamo": {
-      "Mighty Thor": 71,
       "Ursa Major": 63,
       "Cyborg Spider-Man": 54,
       "Red Guardian": 20,
@@ -31645,6 +31592,7 @@
       "Goliath": 9,
       "Kraven": 9,
       "Man-Thing": 9,
+      "Mighty Thor": 9,
       "Omega Red": 9,
       "Taskmaster": 9,
       "Vulture": 9,
@@ -31715,7 +31663,6 @@
     "Crossbones": {
       "Winter Soldier": 116,
       "Cyborg Spider-Man": 110,
-      "Mighty Thor": 93,
       "Bullseye": 59,
       "Captain Carter": 59,
       "Taskmaster": 55,
@@ -31734,6 +31681,7 @@
       "Kate Bishop": 25,
       "Electro": 24,
       "Shocker": 23,
+      "Mighty Thor": 21,
       "Mysterio": 21,
       "Purple Man": 21,
       "Kraven": 19,
@@ -31825,11 +31773,10 @@
       "Vulcan": 1
     },
     "Cyborg Spider-Man": {
-      "Mighty Thor": 3231,
-      "Iron Patriot": 1863,
-      "Venom": 1727,
-      "Agent Venom": 1696,
-      "Ghost-Spider": 1465,
+      "Iron Patriot": 1864,
+      "Venom": 1728,
+      "Agent Venom": 1697,
+      "Ghost-Spider": 1467,
       "Vulture": 973,
       "Electro": 873,
       "Rhino": 792,
@@ -31841,19 +31788,20 @@
       "Sentry": 592,
       "Jessica Jones": 530,
       "Carnage": 497,
-      "Bullseye": 484,
+      "Bullseye": 485,
       "Shocker": 461,
       "Maria Hill": 430,
       "Elektra": 426,
-      "Valkyrie": 395,
+      "Valkyrie": 396,
       "Chameleon": 389,
-      "Warpath": 352,
+      "Mighty Thor": 368,
+      "Warpath": 353,
       "Morbius": 343,
       "X-23": 324,
       "Ares": 320,
       "Shang Chi": 311,
       "Stature": 288,
-      "Kate Bishop": 286,
+      "Kate Bishop": 287,
       "Man-Thing": 286,
       "Queen Veranke": 283,
       "Pixie": 281,
@@ -31868,16 +31816,16 @@
       "Hope Summers": 229,
       "Patriot": 213,
       "Silk": 209,
-      "Dormammu": 207,
+      "Dormammu": 208,
       "Spider-Ham": 200,
       "Arcade": 190,
       "Groot": 187,
       "Star-Lord": 185,
       "Abomination": 177,
-      "Annihilus": 172,
-      "Mastermind": 172,
+      "Mastermind": 174,
+      "Annihilus": 173,
       "Morph": 170,
-      "Goliath": 164,
+      "Goliath": 165,
       "M": 155,
       "Super-Skrull": 154,
       "Chamber": 152,
@@ -31887,7 +31835,7 @@
       "Werewolf By Night": 134,
       "Moon Girl & Devil Dinosaur": 126,
       "Silver Samurai": 125,
-      "Fin Fang Foom": 121,
+      "Fin Fang Foom": 122,
       "Morlun": 119,
       "Mojo": 116,
       "Shuri": 116,
@@ -31903,8 +31851,8 @@
       "Ironheart": 95,
       "Yondu": 91,
       "Blastaar": 86,
+      "Shadow King": 82,
       "Purple Man": 81,
-      "Shadow King": 81,
       "Shriek": 80,
       "Korg": 75,
       "America Chavez": 70,
@@ -31917,17 +31865,17 @@
       "Onslaught": 55,
       "Crimson Dynamo": 54,
       "Knull": 53,
-      "Anti-Venom": 51,
+      "Anti-Venom": 52,
       "Captain Carter": 49,
       "Elsa Bloodstone": 47,
-      "Gwenpool": 46,
+      "Gwenpool": 47,
       "Goose": 42,
-      "Jeffrey": 38,
+      "Jeffrey": 39,
       "Peni Parker": 37,
       "Ursa Major": 37,
       "Iron Lad": 36,
       "Throg": 34,
-      "Bob, Agent Of Hydra": 28,
+      "Bob, Agent Of Hydra": 29,
       "Phyla-Vell": 28,
       "Okoye": 26,
       "Famine": 25,
@@ -31960,7 +31908,6 @@
       "Cyborg Spider-Man": 250,
       "Warpath": 234,
       "Hope Summers": 231,
-      "Mighty Thor": 227,
       "Pixie": 222,
       "M": 160,
       "Winter Soldier": 154,
@@ -32018,6 +31965,7 @@
       "Shang Chi": 10,
       "Ghost-Spider": 9,
       "Goliath": 9,
+      "Mighty Thor": 9,
       "Yondu": 9,
       "Annihilus": 8,
       "Elsa Bloodstone": 8,
@@ -32078,7 +32026,6 @@
       "Electro": 19,
       "Ghost-Spider": 17,
       "Agent Venom": 16,
-      "Mighty Thor": 11,
       "Rhino": 11,
       "Scorpion": 11,
       "Kraven": 10,
@@ -32130,6 +32077,7 @@
       "Korg": 1,
       "M": 1,
       "Maria Hill": 1,
+      "Mighty Thor": 1,
       "Miles Morales": 1,
       "Moon Girl & Devil Dinosaur": 1,
       "Phyla-Vell": 1,
@@ -32144,7 +32092,6 @@
     "Doop": {
       "Pixie": 219,
       "Chamber": 188,
-      "Mighty Thor": 157,
       "Cyborg Spider-Man": 140,
       "X-23": 132,
       "Fantomex": 131,
@@ -32206,6 +32153,7 @@
       "Agent Venom": 5,
       "Ghost-Spider": 5,
       "Immortus": 5,
+      "Mighty Thor": 5,
       "Shuri": 5,
       "Blastaar": 4,
       "Demogoblin": 4,
@@ -32243,16 +32191,15 @@
       "Stature": 1
     },
     "Dormammu": {
-      "Cyborg Spider-Man": 207,
-      "Mighty Thor": 192,
+      "Cyborg Spider-Man": 208,
       "Iron Patriot": 85,
       "Man-Thing": 55,
       "Winter Soldier": 53,
       "Venom": 50,
+      "Valkyrie": 48,
       "Electro": 47,
-      "Valkyrie": 47,
+      "Ghost-Spider": 42,
       "M.O.D.O.K.": 42,
-      "Ghost-Spider": 41,
       "Kraven": 41,
       "Mysterio": 38,
       "Vulture": 38,
@@ -32265,26 +32212,27 @@
       "Sentry": 31,
       "Immortus": 30,
       "Super-Skrull": 30,
+      "Mighty Thor": 29,
       "Fin Fang Foom": 28,
       "Taskmaster": 27,
       "Agent Venom": 26,
       "Ares": 26,
       "Elektra": 25,
+      "Mastermind": 25,
       "Jessica Jones": 24,
-      "Mastermind": 24,
       "Werewolf By Night": 24,
       "Morbius": 23,
       "Shang Chi": 22,
       "Shocker": 21,
+      "Annihilus": 20,
       "Daken": 20,
-      "Annihilus": 19,
       "Blade": 19,
       "Howard The Duck": 19,
       "Carnage": 18,
+      "Goliath": 18,
       "M": 18,
       "Squirrel Girl": 18,
       "Terrax": 18,
-      "Goliath": 17,
       "Rocket": 17,
       "Ronan": 17,
       "Doop": 16,
@@ -32332,12 +32280,12 @@
       "Iron Lad": 4,
       "Mojo": 4,
       "Patriot": 4,
+      "Shadow King": 4,
       "Ursa Major": 4,
       "Alligator Loki": 3,
       "Brood Queen": 3,
       "Captain Carter": 3,
       "Doppelganger": 3,
-      "Shadow King": 3,
       "Spot": 3,
       "Vulcan": 3,
       "Black Dwarf": 2,
@@ -32365,7 +32313,6 @@
       "Corvus Glaive": 74,
       "Black Dwarf": 70,
       "Star-Lord": 37,
-      "Mighty Thor": 34,
       "Rocket": 34,
       "Groot": 29,
       "Ronan": 26,
@@ -32379,6 +32326,7 @@
       "Annihilus": 11,
       "Brood Queen": 10,
       "Cyborg Spider-Man": 10,
+      "Mighty Thor": 10,
       "Nebula": 8,
       "Maria Hill": 7,
       "Cosmic Ghost Rider": 4,
@@ -32439,7 +32387,6 @@
       "Mysterio": 314,
       "Kraven": 306,
       "Rhino": 287,
-      "Mighty Thor": 280,
       "Agent Venom": 212,
       "Venom": 211,
       "Ghost-Spider": 191,
@@ -32470,6 +32417,7 @@
       "Annihilus": 27,
       "Shang Chi": 27,
       "Wiccan": 27,
+      "Mighty Thor": 26,
       "Silk": 26,
       "Spot": 25,
       "Crossbones": 24,
@@ -32551,7 +32499,6 @@
     "Elektra": {
       "Cyborg Spider-Man": 426,
       "Bullseye": 285,
-      "Mighty Thor": 217,
       "Venom": 162,
       "Iron Patriot": 110,
       "Shang Chi": 102,
@@ -32602,6 +32549,7 @@
       "Carnage": 20,
       "Super-Skrull": 20,
       "Fin Fang Foom": 19,
+      "Mighty Thor": 19,
       "America Chavez": 18,
       "Arcade": 18,
       "Goliath": 18,
@@ -32671,19 +32619,19 @@
     },
     "Elsa Bloodstone": {
       "Cyborg Spider-Man": 47,
-      "Mighty Thor": 45,
       "Werewolf By Night": 40,
       "Blade": 29,
       "Fin Fang Foom": 27,
       "Man-Thing": 27,
       "X-23": 23,
       "Morbius": 22,
+      "Mighty Thor": 21,
       "Moon Girl & Devil Dinosaur": 21,
       "Valkyrie": 21,
       "Winter Soldier": 21,
-      "Jeffrey": 18,
-      "Kate Bishop": 18,
-      "Miles Morales": 17,
+      "Jeffrey": 19,
+      "Kate Bishop": 19,
+      "Miles Morales": 18,
       "Venom": 17,
       "Jessica Jones": 16,
       "Bullseye": 14,
@@ -32720,8 +32668,10 @@
       "Korg": 6,
       "Shriek": 6,
       "Star-Lord": 6,
+      "America Chavez": 5,
       "Blink": 5,
       "Ghost-Spider": 5,
+      "Gwenpool": 5,
       "Ironheart": 5,
       "Kraven": 5,
       "Mastermind": 5,
@@ -32730,18 +32680,16 @@
       "Super-Skrull": 5,
       "Taskmaster": 5,
       "Abomination": 4,
-      "America Chavez": 4,
       "Chameleon": 4,
       "Crimson Dynamo": 4,
       "Goose": 4,
-      "Gwenpool": 4,
       "Lady Deathstrike": 4,
+      "Mojo": 4,
       "Mysterio": 4,
       "Throg": 4,
       "Annihilus": 3,
       "Bob, Agent Of Hydra": 3,
       "Chamber": 3,
-      "Mojo": 3,
       "Nimrod": 3,
       "Shocker": 3,
       "Ursa Major": 3,
@@ -32768,7 +32716,6 @@
     "Famine": {
       "Warpath": 47,
       "Cyborg Spider-Man": 25,
-      "Mighty Thor": 25,
       "Fantomex": 21,
       "Shadow King": 17,
       "Silver Samurai": 15,
@@ -32834,8 +32781,7 @@
       "Winter Soldier": 1
     },
     "Fin Fang Foom": {
-      "Mighty Thor": 136,
-      "Cyborg Spider-Man": 121,
+      "Cyborg Spider-Man": 122,
       "Moon Girl & Devil Dinosaur": 47,
       "M.O.D.O.K.": 43,
       "Groot": 40,
@@ -32854,6 +32800,7 @@
       "Howard The Duck": 26,
       "Rhino": 25,
       "Hope Summers": 24,
+      "Mighty Thor": 23,
       "Rocket": 22,
       "Vulture": 20,
       "Elektra": 19,
@@ -32864,13 +32811,13 @@
       "Jessica Jones": 16,
       "Bullseye": 15,
       "Electro": 15,
+      "Ghost-Spider": 15,
       "Shocker": 15,
       "Valkyrie": 15,
       "Werewolf By Night": 15,
       "Wiccan": 15,
       "Agent Venom": 14,
       "Blink": 14,
-      "Ghost-Spider": 14,
       "Morbius": 13,
       "Sentry": 13,
       "Kraven": 12,
@@ -32884,9 +32831,9 @@
       "Shang Chi": 10,
       "Terrax": 10,
       "America Chavez": 9,
+      "Gwenpool": 9,
+      "Kate Bishop": 9,
       "Silver Samurai": 9,
-      "Gwenpool": 8,
-      "Kate Bishop": 8,
       "Lady Deathstrike": 8,
       "M": 8,
       "Mastermind": 8,
@@ -32903,12 +32850,12 @@
       "Warpath": 7,
       "Crimson Dynamo": 6,
       "Goose": 6,
+      "Jeffrey": 6,
       "Omega Red": 6,
       "Shadow King": 6,
       "Shuri": 6,
       "Super-Skrull": 6,
       "Ares": 5,
-      "Jeffrey": 5,
       "Spot": 5,
       "Stature": 5,
       "Vulcan": 5,
@@ -32943,11 +32890,10 @@
       "Queen Veranke": 1
     },
     "Ghost-Spider": {
-      "Cyborg Spider-Man": 1465,
+      "Cyborg Spider-Man": 1467,
       "Iron Patriot": 572,
       "Agent Venom": 483,
-      "Miles Morales": 306,
-      "Mighty Thor": 301,
+      "Miles Morales": 307,
       "Venom": 279,
       "Kraven": 274,
       "Vulture": 246,
@@ -32969,19 +32915,20 @@
       "Man-Thing": 46,
       "Sentry": 46,
       "Jessica Jones": 44,
-      "Dormammu": 41,
+      "Dormammu": 42,
       "Squirrel Girl": 37,
+      "Mighty Thor": 36,
       "Howard The Duck": 35,
       "Arcade": 34,
       "Rocket": 34,
       "Warpath": 34,
       "X-23": 33,
       "Groot": 32,
-      "Kate Bishop": 31,
+      "Kate Bishop": 32,
       "Blade": 30,
       "Shang Chi": 29,
       "Maria Hill": 28,
-      "Valkyrie": 26,
+      "Valkyrie": 27,
       "Peni Parker": 25,
       "Blink": 24,
       "Stature": 23,
@@ -32990,31 +32937,31 @@
       "Taskmaster": 22,
       "Queen Veranke": 21,
       "Star-Lord": 20,
+      "Mastermind": 19,
       "Ares": 18,
       "M.O.D.O.K.": 18,
-      "Mastermind": 18,
       "Abomination": 17,
+      "Annihilus": 17,
       "Captain Carter": 17,
       "Demogoblin": 17,
       "Nimrod": 17,
       "America Chavez": 16,
-      "Annihilus": 16,
       "Moon Girl & Devil Dinosaur": 16,
       "Super-Skrull": 16,
-      "Fin Fang Foom": 14,
+      "Fin Fang Foom": 15,
+      "Shadow King": 15,
       "M": 14,
       "Omega Red": 14,
       "Pixie": 14,
-      "Shadow King": 14,
       "Chamber": 13,
+      "Goliath": 13,
       "Lady Deathstrike": 13,
       "Red Guardian": 13,
       "Shuri": 13,
       "Spot": 13,
-      "Goliath": 12,
+      "Gwenpool": 12,
       "Ironheart": 12,
-      "Gwenpool": 11,
-      "Jeffrey": 11,
+      "Jeffrey": 12,
       "Knull": 11,
       "Mojo": 11,
       "Shriek": 11,
@@ -33059,8 +33006,7 @@
       "Vulcan": 1
     },
     "Goliath": {
-      "Cyborg Spider-Man": 164,
-      "Mighty Thor": 103,
+      "Cyborg Spider-Man": 165,
       "Sentry": 71,
       "Stature": 57,
       "Iron Patriot": 55,
@@ -33070,7 +33016,7 @@
       "Wiccan": 47,
       "Maria Hill": 46,
       "Venom": 45,
-      "Valkyrie": 40,
+      "Valkyrie": 41,
       "Scorpion": 39,
       "Bullseye": 34,
       "Man-Thing": 34,
@@ -33088,22 +33034,23 @@
       "Werewolf By Night": 21,
       "Howard The Duck": 20,
       "Shocker": 20,
+      "Dormammu": 18,
       "Elektra": 18,
       "Lady Deathstrike": 18,
-      "Dormammu": 17,
       "Morbius": 17,
       "Agent Venom": 16,
+      "Mighty Thor": 16,
       "Ronan": 16,
+      "Annihilus": 15,
       "Korg": 15,
       "Kraven": 15,
       "Red Guardian": 15,
       "Abomination": 14,
-      "Annihilus": 14,
       "Yondu": 14,
       "Crossbones": 13,
+      "Ghost-Spider": 13,
       "M": 13,
       "Elsa Bloodstone": 12,
-      "Ghost-Spider": 12,
       "Immortus": 12,
       "Mysterio": 12,
       "Shuri": 12,
@@ -33121,14 +33068,15 @@
       "Blink": 6,
       "Chamber": 6,
       "Doop": 6,
+      "Mastermind": 6,
       "Terrax": 6,
       "Arcade": 5,
       "Iron Lad": 5,
       "Maestro": 5,
-      "Mastermind": 5,
       "Moon Girl & Devil Dinosaur": 5,
       "Morph": 5,
       "Nebula": 5,
+      "Shadow King": 5,
       "Star-Lord": 5,
       "White Widow": 5,
       "Air-Walker": 4,
@@ -33136,7 +33084,6 @@
       "Morlun": 4,
       "Okoye": 4,
       "Purple Man": 4,
-      "Shadow King": 4,
       "Vulcan": 4,
       "America Chavez": 3,
       "Captain Carter": 3,
@@ -33170,7 +33117,6 @@
     },
     "Goose": {
       "Cyborg Spider-Man": 42,
-      "Mighty Thor": 33,
       "Jeffrey": 29,
       "Rocket": 25,
       "Winter Soldier": 19,
@@ -33187,6 +33133,7 @@
       "Miles Morales": 8,
       "Ghost-Spider": 7,
       "Howard The Duck": 7,
+      "Mighty Thor": 7,
       "Venom": 7,
       "Wiccan": 7,
       "Fin Fang Foom": 6,
@@ -33259,7 +33206,6 @@
       "Rocket": 732,
       "Star-Lord": 577,
       "Cyborg Spider-Man": 187,
-      "Mighty Thor": 181,
       "Venom": 134,
       "Agent Venom": 103,
       "Phyla-Vell": 96,
@@ -33267,6 +33213,7 @@
       "Ronan": 83,
       "Miles Morales": 66,
       "Howard The Duck": 58,
+      "Mighty Thor": 54,
       "Squirrel Girl": 54,
       "Annihilus": 50,
       "Nebula": 47,
@@ -33374,11 +33321,11 @@
     },
     "Gwenpool": {
       "X-23": 57,
-      "Kate Bishop": 50,
-      "Cyborg Spider-Man": 46,
-      "Jeffrey": 40,
-      "America Chavez": 38,
-      "Miles Morales": 38,
+      "Kate Bishop": 53,
+      "Cyborg Spider-Man": 47,
+      "Jeffrey": 43,
+      "America Chavez": 39,
+      "Miles Morales": 39,
       "M": 28,
       "M.O.D.O.K.": 26,
       "Warpath": 25,
@@ -33386,10 +33333,10 @@
       "Squirrel Girl": 24,
       "Groot": 22,
       "Hope Summers": 22,
-      "Mighty Thor": 21,
       "Venom": 21,
       "Daken": 20,
       "Pixie": 20,
+      "Mighty Thor": 18,
       "Chamber": 16,
       "Fantomex": 16,
       "Moon Girl & Devil Dinosaur": 16,
@@ -33397,34 +33344,34 @@
       "Jessica Jones": 13,
       "Lady Deathstrike": 13,
       "Blink": 12,
+      "Ghost-Spider": 12,
       "Vulcan": 12,
       "Wiccan": 12,
-      "Ghost-Spider": 11,
       "Omega Red": 11,
       "Star-Lord": 11,
       "Doop": 10,
       "Winter Soldier": 10,
-      "Fin Fang Foom": 8,
+      "Fin Fang Foom": 9,
+      "Mojo": 8,
       "Rhino": 8,
       "Iron Patriot": 7,
       "Taskmaster": 7,
       "Carnage": 6,
       "Dormammu": 6,
       "Ironheart": 6,
-      "Mojo": 6,
       "Silk": 6,
       "Vulture": 6,
       "Alligator Loki": 5,
       "Arcade": 5,
       "Blade": 5,
       "Elektra": 5,
+      "Elsa Bloodstone": 5,
       "Kraven": 5,
       "Morph": 5,
       "Spider-Ham": 5,
       "War": 5,
       "Agent Venom": 4,
       "Bullseye": 4,
-      "Elsa Bloodstone": 4,
       "Goose": 4,
       "Annihilus": 3,
       "Doppelganger": 3,
@@ -33473,7 +33420,6 @@
       "Pixie": 589,
       "X-23": 486,
       "Warpath": 454,
-      "Mighty Thor": 321,
       "M": 257,
       "Daken": 231,
       "Cyborg Spider-Man": 229,
@@ -33548,6 +33494,7 @@
       "Korg": 3,
       "Kraven": 3,
       "Lady Deadpool": 3,
+      "Mighty Thor": 3,
       "Moon Girl & Devil Dinosaur": 3,
       "Purple Man": 3,
       "Queen Veranke": 3,
@@ -33575,7 +33522,6 @@
     },
     "Howard The Duck": {
       "Cyborg Spider-Man": 237,
-      "Mighty Thor": 145,
       "Man-Thing": 114,
       "Venom": 69,
       "Rocket": 66,
@@ -33601,6 +33547,7 @@
       "Miles Morales": 31,
       "Agent Venom": 30,
       "Chamber": 29,
+      "Mighty Thor": 29,
       "Moon Girl & Devil Dinosaur": 29,
       "Kraven": 27,
       "Werewolf By Night": 27,
@@ -33694,7 +33641,6 @@
       "White Widow": 1
     },
     "Immortus": {
-      "Mighty Thor": 200,
       "Cyborg Spider-Man": 101,
       "Winter Soldier": 49,
       "Yondu": 39,
@@ -33710,6 +33656,7 @@
       "Annihilus": 21,
       "Iron Patriot": 21,
       "Man-Thing": 19,
+      "Mighty Thor": 19,
       "Taskmaster": 17,
       "Stature": 16,
       "Crimson Dynamo": 15,
@@ -33791,7 +33738,6 @@
       "Kate Bishop": 52,
       "Cyborg Spider-Man": 36,
       "Jessica Jones": 33,
-      "Mighty Thor": 23,
       "Valkyrie": 18,
       "Sentry": 16,
       "Winter Soldier": 15,
@@ -33822,6 +33768,7 @@
       "Quake": 5,
       "Dormammu": 4,
       "Fin Fang Foom": 4,
+      "Mighty Thor": 4,
       "Rocket": 4,
       "Shang Chi": 4,
       "Star-Lord": 4,
@@ -33866,12 +33813,11 @@
       "White Widow": 1
     },
     "Iron Patriot": {
-      "Cyborg Spider-Man": 1863,
+      "Cyborg Spider-Man": 1864,
       "Venom": 765,
-      "Mighty Thor": 601,
       "Scorpion": 580,
       "Ghost-Spider": 572,
-      "Bullseye": 502,
+      "Bullseye": 503,
       "Agent Venom": 428,
       "Sentry": 363,
       "Vulture": 363,
@@ -33889,7 +33835,7 @@
       "Jessica Jones": 137,
       "Maria Hill": 136,
       "Taskmaster": 133,
-      "Warpath": 130,
+      "Warpath": 131,
       "Stature": 114,
       "Elektra": 110,
       "Chameleon": 108,
@@ -33903,6 +33849,7 @@
       "Morbius": 73,
       "M.O.D.O.K.": 69,
       "Quake": 65,
+      "Mighty Thor": 64,
       "Abomination": 62,
       "Howard The Duck": 60,
       "Spider-Ham": 60,
@@ -33952,8 +33899,8 @@
       "Shuri": 16,
       "Anti-Venom": 15,
       "White Widow": 15,
+      "Bob, Agent Of Hydra": 14,
       "Doop": 14,
-      "Bob, Agent Of Hydra": 13,
       "Killmonger": 13,
       "Crimson Dynamo": 12,
       "Elsa Bloodstone": 12,
@@ -33987,7 +33934,7 @@
     "Ironheart": {
       "Miles Morales": 135,
       "Cyborg Spider-Man": 95,
-      "Mighty Thor": 52,
+      "Mighty Thor": 40,
       "X-23": 35,
       "Taskmaster": 28,
       "Shuri": 27,
@@ -34087,23 +34034,22 @@
       "Warpath": 1
     },
     "Jeffrey": {
-      "Kate Bishop": 46,
-      "Gwenpool": 40,
-      "Cyborg Spider-Man": 38,
+      "Kate Bishop": 49,
+      "Gwenpool": 43,
+      "Cyborg Spider-Man": 39,
       "Rocket": 33,
       "Squirrel Girl": 32,
       "Goose": 29,
       "Alligator Loki": 23,
-      "Mighty Thor": 22,
-      "America Chavez": 19,
-      "Elsa Bloodstone": 18,
-      "Miles Morales": 18,
+      "America Chavez": 20,
+      "Elsa Bloodstone": 19,
+      "Miles Morales": 19,
       "Throg": 17,
       "Venom": 17,
       "Winter Soldier": 15,
       "Moon Girl & Devil Dinosaur": 13,
+      "Ghost-Spider": 12,
       "Groot": 12,
-      "Ghost-Spider": 11,
       "Howard The Duck": 9,
       "M.O.D.O.K.": 8,
       "Peni Parker": 8,
@@ -34111,15 +34057,17 @@
       "Wiccan": 8,
       "Blade": 7,
       "Shuri": 7,
-      "Fin Fang Foom": 5,
+      "Fin Fang Foom": 6,
       "Jessica Jones": 5,
       "X-23": 5,
+      "Mighty Thor": 4,
       "Fantomex": 3,
       "Ironheart": 3,
       "Agent Venom": 2,
       "Bullseye": 2,
       "Carnage": 2,
       "Korg": 2,
+      "Mojo": 2,
       "Mysterio": 2,
       "Patriot": 2,
       "Scorpion": 2,
@@ -34143,7 +34091,6 @@
     },
     "Jessica Jones": {
       "Cyborg Spider-Man": 530,
-      "Mighty Thor": 257,
       "Maria Hill": 156,
       "Winter Soldier": 146,
       "Iron Patriot": 137,
@@ -34184,6 +34131,7 @@
       "Vulture": 31,
       "Goliath": 27,
       "M.O.D.O.K.": 26,
+      "Mighty Thor": 26,
       "Mysterio": 26,
       "Dormammu": 24,
       "America Chavez": 23,
@@ -34260,17 +34208,16 @@
     },
     "Kate Bishop": {
       "Wiccan": 327,
-      "Cyborg Spider-Man": 286,
+      "Cyborg Spider-Man": 287,
       "Patriot": 281,
       "Stature": 247,
-      "Mighty Thor": 167,
       "Maria Hill": 136,
-      "America Chavez": 123,
+      "America Chavez": 124,
       "Winter Soldier": 115,
       "Sentry": 113,
       "Jessica Jones": 107,
       "Iron Patriot": 102,
-      "Miles Morales": 96,
+      "Miles Morales": 97,
       "Venom": 93,
       "Ares": 76,
       "Bullseye": 74,
@@ -34279,17 +34226,18 @@
       "Scorpion": 64,
       "X-23": 59,
       "Squirrel Girl": 54,
+      "Gwenpool": 53,
       "Iron Lad": 52,
       "Goliath": 50,
-      "Gwenpool": 50,
-      "Jeffrey": 46,
+      "Jeffrey": 49,
+      "Mighty Thor": 44,
       "M.O.D.O.K.": 37,
       "Quake": 37,
       "Howard The Duck": 34,
       "Rocket": 33,
+      "Ghost-Spider": 32,
       "Star-Lord": 32,
       "Valkyrie": 32,
-      "Ghost-Spider": 31,
       "Pixie": 30,
       "Daken": 29,
       "Groot": 29,
@@ -34303,8 +34251,8 @@
       "Ironheart": 20,
       "Ronan": 20,
       "Vulture": 20,
+      "Elsa Bloodstone": 19,
       "Blade": 18,
-      "Elsa Bloodstone": 18,
       "Warpath": 17,
       "Lady Deathstrike": 16,
       "M": 16,
@@ -34321,12 +34269,12 @@
       "Maestro": 10,
       "Arcade": 9,
       "Chamber": 9,
+      "Fin Fang Foom": 9,
       "Hope Summers": 9,
       "Throg": 9,
       "Yondu": 9,
       "Abomination": 8,
       "Blink": 8,
-      "Fin Fang Foom": 8,
       "Kraven": 8,
       "Morbius": 8,
       "White Widow": 8,
@@ -34356,6 +34304,7 @@
       "Cosmic Ghost Rider": 3,
       "Doppelganger": 3,
       "Ebony Maw": 3,
+      "Mojo": 3,
       "Shadow King": 3,
       "Ursa Major": 3,
       "Knull": 2,
@@ -34369,7 +34318,6 @@
       "Chameleon": 1,
       "Crimson Dynamo": 1,
       "Killmonger": 1,
-      "Mojo": 1,
       "Onslaught": 1,
       "Peni Parker": 1,
       "Spider-Punk": 1,
@@ -34378,10 +34326,10 @@
     "Killmonger": {
       "Shuri": 52,
       "Okoye": 35,
-      "Mighty Thor": 27,
       "Cyborg Spider-Man": 15,
       "Venom": 15,
       "Iron Patriot": 13,
+      "Mighty Thor": 10,
       "America Chavez": 7,
       "Ironheart": 7,
       "Winter Soldier": 7,
@@ -34451,12 +34399,12 @@
     "Knull": {
       "Venom": 73,
       "Cyborg Spider-Man": 53,
-      "Mighty Thor": 36,
       "Carnage": 30,
       "Miles Morales": 25,
       "Rocket": 16,
       "Agent Venom": 15,
       "Scorpion": 13,
+      "Mighty Thor": 12,
       "Rhino": 12,
       "Ghost-Spider": 11,
       "Hope Summers": 10,
@@ -34534,7 +34482,6 @@
     },
     "Korg": {
       "Cyborg Spider-Man": 75,
-      "Mighty Thor": 71,
       "Sentry": 49,
       "Ares": 28,
       "Winter Soldier": 24,
@@ -34543,6 +34490,7 @@
       "Abomination": 20,
       "Maria Hill": 18,
       "M.O.D.O.K.": 17,
+      "Mighty Thor": 17,
       "Queen Veranke": 17,
       "Warpath": 17,
       "Goliath": 15,
@@ -34640,7 +34588,6 @@
       "Electro": 306,
       "Vulture": 306,
       "Ghost-Spider": 274,
-      "Mighty Thor": 249,
       "Mysterio": 224,
       "Agent Venom": 209,
       "Rhino": 203,
@@ -34666,6 +34613,7 @@
       "Arcade": 31,
       "Howard The Duck": 27,
       "M.O.D.O.K.": 27,
+      "Mighty Thor": 25,
       "Rocket": 24,
       "Maria Hill": 23,
       "Sentry": 22,
@@ -34758,9 +34706,8 @@
       "M": 123,
       "Pixie": 120,
       "Venom": 97,
-      "Mojo": 95,
+      "Mojo": 96,
       "Hope Summers": 89,
-      "Mighty Thor": 87,
       "Fantomex": 76,
       "Shadow King": 75,
       "Silver Samurai": 75,
@@ -34770,9 +34717,9 @@
       "Scorpion": 52,
       "Taskmaster": 50,
       "Iron Patriot": 46,
+      "Arcade": 44,
       "Elektra": 44,
-      "Arcade": 43,
-      "Mastermind": 42,
+      "Mastermind": 43,
       "Blink": 40,
       "Doop": 36,
       "Winter Soldier": 36,
@@ -34806,6 +34753,7 @@
       "Mysterio": 13,
       "Ursa Major": 13,
       "Kraven": 12,
+      "Mighty Thor": 12,
       "Ares": 11,
       "Queen Veranke": 11,
       "Rocket": 11,
@@ -34860,7 +34808,7 @@
       "Yondu": 1
     },
     "M": {
-      "Chamber": 611,
+      "Chamber": 612,
       "Warpath": 459,
       "X-23": 458,
       "Pixie": 292,
@@ -34871,7 +34819,6 @@
       "Cyborg Spider-Man": 155,
       "Omega Red": 134,
       "Lady Deathstrike": 123,
-      "Mighty Thor": 118,
       "Mastermind": 107,
       "Shadow King": 101,
       "Doop": 97,
@@ -34923,6 +34870,7 @@
       "Agent Venom": 10,
       "Bob, Agent Of Hydra": 10,
       "Kraven": 10,
+      "Mighty Thor": 10,
       "Miles Morales": 10,
       "Morbius": 10,
       "Vulture": 10,
@@ -34976,7 +34924,6 @@
       "Yondu": 1
     },
     "M.O.D.O.K.": {
-      "Mighty Thor": 281,
       "Cyborg Spider-Man": 255,
       "Winter Soldier": 107,
       "Abomination": 96,
@@ -35012,6 +34959,7 @@
       "Jessica Jones": 26,
       "M": 26,
       "Shocker": 26,
+      "Mighty Thor": 25,
       "America Chavez": 24,
       "Annihilus": 24,
       "Moon Girl & Devil Dinosaur": 24,
@@ -35092,7 +35040,6 @@
     },
     "Maestro": {
       "Cyborg Spider-Man": 63,
-      "Mighty Thor": 60,
       "Winter Soldier": 35,
       "Venom": 32,
       "Maria Hill": 27,
@@ -35113,6 +35060,7 @@
       "Sentry": 11,
       "Iron Patriot": 10,
       "Kate Bishop": 10,
+      "Mighty Thor": 10,
       "Morbius": 10,
       "Wiccan": 10,
       "Rocket": 9,
@@ -35192,7 +35140,6 @@
     },
     "Man-Thing": {
       "Cyborg Spider-Man": 286,
-      "Mighty Thor": 235,
       "Howard The Duck": 114,
       "Venom": 103,
       "Werewolf By Night": 92,
@@ -35213,6 +35160,7 @@
       "Shocker": 42,
       "Agent Venom": 40,
       "Fin Fang Foom": 39,
+      "Mighty Thor": 39,
       "Bullseye": 38,
       "X-23": 37,
       "Crossbones": 36,
@@ -35305,7 +35253,6 @@
     },
     "Maria Hill": {
       "Cyborg Spider-Man": 430,
-      "Mighty Thor": 424,
       "Winter Soldier": 200,
       "Sentry": 164,
       "Jessica Jones": 156,
@@ -35329,6 +35276,7 @@
       "Squirrel Girl": 75,
       "Shang Chi": 72,
       "Valkyrie": 72,
+      "Mighty Thor": 69,
       "Star-Lord": 58,
       "Daken": 56,
       "Hope Summers": 56,
@@ -35417,14 +35365,13 @@
       "Spider-Ham": 1
     },
     "Mastermind": {
-      "Mighty Thor": 190,
-      "Cyborg Spider-Man": 172,
+      "Cyborg Spider-Man": 174,
       "Warpath": 116,
-      "Shadow King": 108,
+      "Shadow King": 109,
       "M": 107,
       "Morph": 89,
       "Pixie": 78,
-      "Arcade": 75,
+      "Arcade": 76,
       "Chamber": 71,
       "Daken": 57,
       "Onslaught": 57,
@@ -35433,16 +35380,16 @@
       "Hope Summers": 50,
       "Blink": 47,
       "X-23": 46,
-      "Mojo": 43,
-      "Lady Deathstrike": 42,
+      "Mojo": 44,
+      "Lady Deathstrike": 43,
       "Iron Patriot": 35,
+      "Valkyrie": 30,
       "Winter Soldier": 30,
-      "Valkyrie": 29,
       "Doop": 28,
       "Fantomex": 27,
       "Nimrod": 26,
+      "Dormammu": 25,
       "Venom": 25,
-      "Dormammu": 24,
       "Immortus": 24,
       "Vulcan": 24,
       "Man-Thing": 23,
@@ -35450,9 +35397,10 @@
       "Shang Chi": 23,
       "Elektra": 22,
       "Sentry": 22,
+      "Mighty Thor": 20,
       "Rhino": 20,
       "Abomination": 19,
-      "Ghost-Spider": 18,
+      "Ghost-Spider": 19,
       "Blade": 16,
       "Electro": 16,
       "Kraven": 15,
@@ -35464,12 +35412,12 @@
       "Agent Venom": 10,
       "Bullseye": 10,
       "Vulture": 10,
+      "Annihilus": 9,
       "Howard The Duck": 9,
       "Moon Girl & Devil Dinosaur": 9,
       "Terrax": 9,
       "Werewolf By Night": 9,
       "Wiccan": 9,
-      "Annihilus": 8,
       "Fin Fang Foom": 8,
       "M.O.D.O.K.": 8,
       "Star-Lord": 8,
@@ -35482,12 +35430,12 @@
       "Stature": 7,
       "Blastaar": 6,
       "Carnage": 6,
+      "Goliath": 6,
       "Super-Skrull": 6,
       "Captain Carter": 5,
       "Chameleon": 5,
       "Crimson Dynamo": 5,
       "Elsa Bloodstone": 5,
-      "Goliath": 5,
       "Rocket": 5,
       "Ronan": 5,
       "Crossbones": 4,
@@ -35523,140 +35471,129 @@
       "Spot": 1
     },
     "Mighty Thor": {
-      "Cyborg Spider-Man": 3231,
-      "Winter Soldier": 698,
-      "Iron Patriot": 601,
-      "Venom": 576,
-      "Valkyrie": 482,
-      "Maria Hill": 424,
-      "Hope Summers": 321,
-      "Ghost-Spider": 301,
-      "Warpath": 291,
-      "Sentry": 284,
-      "M.O.D.O.K.": 281,
-      "Electro": 280,
-      "Scorpion": 273,
-      "Pixie": 270,
-      "Rhino": 268,
-      "Shang Chi": 259,
-      "Agent Venom": 257,
-      "Jessica Jones": 257,
-      "Ares": 255,
-      "Miles Morales": 250,
-      "Kraven": 249,
-      "Vulture": 248,
-      "Bullseye": 243,
-      "X-23": 238,
-      "Man-Thing": 235,
-      "Daken": 227,
-      "Super-Skrull": 222,
-      "Elektra": 217,
-      "Rocket": 216,
-      "Blade": 215,
-      "Abomination": 213,
-      "Star-Lord": 207,
-      "Wiccan": 207,
-      "Stature": 202,
-      "Immortus": 200,
-      "Annihilus": 192,
-      "Dormammu": 192,
-      "Mysterio": 192,
-      "Mastermind": 190,
-      "Groot": 181,
-      "Taskmaster": 170,
-      "Kate Bishop": 167,
-      "Doop": 157,
-      "Squirrel Girl": 155,
-      "Howard The Duck": 145,
-      "Ronan": 144,
-      "Fin Fang Foom": 136,
-      "Shuri": 122,
-      "Chamber": 118,
-      "Fantomex": 118,
-      "M": 118,
-      "Onslaught": 115,
-      "Shocker": 114,
-      "Moon Girl & Devil Dinosaur": 112,
-      "Carnage": 106,
-      "Nimrod": 104,
-      "Terrax": 104,
-      "Blink": 103,
-      "Goliath": 103,
-      "Yondu": 100,
-      "Chameleon": 98,
-      "Morbius": 97,
-      "Patriot": 96,
-      "Morph": 95,
-      "Crossbones": 93,
-      "Throg": 90,
-      "Lady Deathstrike": 87,
-      "Arcade": 85,
-      "Captain Carter": 84,
-      "Quake": 82,
-      "Crimson Dynamo": 71,
-      "Korg": 71,
-      "Werewolf By Night": 71,
-      "America Chavez": 70,
-      "Proxima Midnight": 69,
-      "Queen Veranke": 68,
-      "Blastaar": 66,
-      "Shadow King": 64,
-      "Omega Red": 62,
-      "Maestro": 60,
-      "Ursa Major": 60,
-      "Corvus Glaive": 59,
-      "Silver Samurai": 55,
-      "Nebula": 53,
-      "Ironheart": 52,
-      "Spider-Ham": 52,
-      "Red Guardian": 51,
-      "Mojo": 50,
-      "Gorr": 48,
-      "Elsa Bloodstone": 45,
-      "Black Dwarf": 43,
-      "Okoye": 38,
-      "Alligator Loki": 37,
-      "Knull": 36,
-      "Ebony Maw": 34,
-      "Phyla-Vell": 34,
-      "Goose": 33,
-      "Brood Queen": 31,
-      "Purple Man": 30,
-      "Killmonger": 27,
-      "Vulcan": 27,
-      "Famine": 25,
-      "Spot": 24,
-      "Bob, Agent Of Hydra": 23,
-      "Iron Lad": 23,
-      "Jeffrey": 22,
-      "Air-Walker": 21,
-      "Gwenpool": 21,
-      "Morlun": 20,
-      "Silk": 20,
-      "Cosmic Ghost Rider": 13,
-      "Shriek": 13,
-      "Skrulls": 12,
-      "Demogoblin": 11,
-      "White Widow": 11,
-      "Anti-Venom": 10,
-      "Nemesis": 9,
-      "Peni Parker": 8,
-      "Spider-Punk": 7,
-      "Doppelganger": 6,
-      "Lady Deadpool": 6,
-      "War": 3
+      "Cyborg Spider-Man": 368,
+      "Miles Morales": 192,
+      "Winter Soldier": 95,
+      "Squirrel Girl": 70,
+      "Maria Hill": 69,
+      "Iron Patriot": 64,
+      "Venom": 62,
+      "Star-Lord": 61,
+      "Valkyrie": 60,
+      "Rocket": 56,
+      "Groot": 54,
+      "X-23": 47,
+      "Agent Venom": 44,
+      "Kate Bishop": 44,
+      "Blade": 41,
+      "Ironheart": 40,
+      "Man-Thing": 39,
+      "Ghost-Spider": 36,
+      "America Chavez": 32,
+      "Wiccan": 32,
+      "Bullseye": 31,
+      "Moon Girl & Devil Dinosaur": 31,
+      "Stature": 30,
+      "Dormammu": 29,
+      "Howard The Duck": 29,
+      "Taskmaster": 29,
+      "Throg": 28,
+      "Electro": 26,
+      "Jessica Jones": 26,
+      "Kraven": 25,
+      "M.O.D.O.K.": 25,
+      "Shang Chi": 25,
+      "Ares": 23,
+      "Fin Fang Foom": 23,
+      "Sentry": 23,
+      "Vulture": 22,
+      "Crossbones": 21,
+      "Elsa Bloodstone": 21,
+      "Proxima Midnight": 21,
+      "Mastermind": 20,
+      "Scorpion": 20,
+      "Elektra": 19,
+      "Immortus": 19,
+      "Gwenpool": 18,
+      "Rhino": 18,
+      "Abomination": 17,
+      "Korg": 17,
+      "Annihilus": 16,
+      "Captain Carter": 16,
+      "Goliath": 16,
+      "Terrax": 16,
+      "Corvus Glaive": 15,
+      "Okoye": 15,
+      "Shocker": 15,
+      "Patriot": 14,
+      "Ronan": 14,
+      "Super-Skrull": 14,
+      "Silk": 13,
+      "Knull": 12,
+      "Lady Deathstrike": 12,
+      "Ebony Maw": 10,
+      "Killmonger": 10,
+      "M": 10,
+      "Maestro": 10,
+      "Black Dwarf": 9,
+      "Chameleon": 9,
+      "Crimson Dynamo": 9,
+      "Daken": 9,
+      "Gorr": 9,
+      "Shuri": 9,
+      "Ursa Major": 9,
+      "Quake": 8,
+      "Goose": 7,
+      "Pixie": 7,
+      "Alligator Loki": 6,
+      "Arcade": 6,
+      "Carnage": 6,
+      "Fantomex": 6,
+      "Mysterio": 6,
+      "Nebula": 6,
+      "Cosmic Ghost Rider": 5,
+      "Doop": 5,
+      "Phyla-Vell": 5,
+      "Warpath": 5,
+      "Yondu": 5,
+      "Iron Lad": 4,
+      "Jeffrey": 4,
+      "Omega Red": 4,
+      "Queen Veranke": 4,
+      "Spider-Ham": 4,
+      "Werewolf By Night": 4,
+      "Hope Summers": 3,
+      "Mojo": 3,
+      "Onslaught": 3,
+      "Purple Man": 3,
+      "Red Guardian": 3,
+      "Shriek": 3,
+      "Anti-Venom": 2,
+      "Blastaar": 2,
+      "Blink": 2,
+      "Morbius": 2,
+      "Shadow King": 2,
+      "Silver Samurai": 2,
+      "Spot": 2,
+      "White Widow": 2,
+      "Bob, Agent Of Hydra": 1,
+      "Demogoblin": 1,
+      "Nemesis": 1,
+      "Nimrod": 1,
+      "Skrulls": 1,
+      "Spider-Punk": 1
     },
     "Miles Morales": {
       "Cyborg Spider-Man": 635,
-      "Ghost-Spider": 306,
-      "Mighty Thor": 250,
+      "Ghost-Spider": 307,
+      "Mighty Thor": 192,
       "Iron Patriot": 179,
       "Venom": 170,
       "Ironheart": 135,
       "Silk": 115,
       "X-23": 105,
       "Squirrel Girl": 98,
-      "Kate Bishop": 96,
+      "Kate Bishop": 97,
       "Taskmaster": 89,
       "Maria Hill": 86,
       "Rhino": 83,
@@ -35665,7 +35602,7 @@
       "Rocket": 73,
       "Agent Venom": 68,
       "Star-Lord": 68,
-      "America Chavez": 66,
+      "America Chavez": 67,
       "Groot": 66,
       "Jessica Jones": 65,
       "Kraven": 65,
@@ -35677,9 +35614,9 @@
       "Winter Soldier": 53,
       "Blade": 49,
       "Carnage": 49,
+      "Gwenpool": 39,
       "Shocker": 39,
       "Wiccan": 39,
-      "Gwenpool": 38,
       "Morlun": 38,
       "Elektra": 37,
       "Shuri": 35,
@@ -35698,15 +35635,15 @@
       "Ares": 20,
       "Bullseye": 20,
       "Spot": 20,
+      "Jeffrey": 19,
       "Pixie": 19,
-      "Jeffrey": 18,
+      "Elsa Bloodstone": 18,
       "Man-Thing": 18,
       "Doop": 17,
-      "Elsa Bloodstone": 17,
+      "Mojo": 17,
       "Abomination": 16,
       "Annihilus": 16,
       "Chameleon": 16,
-      "Mojo": 16,
       "Anti-Venom": 15,
       "Quake": 15,
       "Corvus Glaive": 14,
@@ -35761,17 +35698,16 @@
     },
     "Mojo": {
       "Cyborg Spider-Man": 116,
-      "Lady Deathstrike": 95,
+      "Lady Deathstrike": 96,
       "Warpath": 89,
       "Omega Red": 67,
       "Blink": 59,
       "M": 58,
       "Morph": 54,
       "Shadow King": 54,
-      "Arcade": 51,
-      "Mighty Thor": 50,
+      "Arcade": 52,
       "X-23": 48,
-      "Mastermind": 43,
+      "Mastermind": 44,
       "Fantomex": 41,
       "Venom": 35,
       "Hope Summers": 33,
@@ -35787,9 +35723,9 @@
       "M.O.D.O.K.": 18,
       "Iron Patriot": 17,
       "Man-Thing": 17,
+      "Miles Morales": 17,
       "Vulture": 17,
       "Elektra": 16,
-      "Miles Morales": 16,
       "Morbius": 16,
       "Onslaught": 16,
       "Kraven": 15,
@@ -35806,6 +35742,7 @@
       "Valkyrie": 9,
       "Agent Venom": 8,
       "Chameleon": 8,
+      "Gwenpool": 8,
       "Jessica Jones": 8,
       "Shocker": 8,
       "Brood Queen": 7,
@@ -35816,7 +35753,6 @@
       "Terrax": 7,
       "Annihilus": 6,
       "Demogoblin": 6,
-      "Gwenpool": 6,
       "Moon Girl & Devil Dinosaur": 6,
       "Sentry": 6,
       "Super-Skrull": 6,
@@ -35830,18 +35766,21 @@
       "Spot": 5,
       "Ares": 4,
       "Dormammu": 4,
+      "Elsa Bloodstone": 4,
       "Fin Fang Foom": 4,
       "Werewolf By Night": 4,
       "Yondu": 4,
-      "Elsa Bloodstone": 3,
+      "America Chavez": 3,
       "Immortus": 3,
+      "Kate Bishop": 3,
+      "Mighty Thor": 3,
       "Morlun": 3,
       "Purple Man": 3,
       "Winter Soldier": 3,
-      "America Chavez": 2,
       "Black Dwarf": 2,
       "Ebony Maw": 2,
       "Goliath": 2,
+      "Jeffrey": 2,
       "Nebula": 2,
       "Phyla-Vell": 2,
       "Shuri": 2,
@@ -35855,7 +35794,6 @@
       "Crimson Dynamo": 1,
       "Doppelganger": 1,
       "Ironheart": 1,
-      "Kate Bishop": 1,
       "Knull": 1,
       "Korg": 1,
       "Patriot": 1,
@@ -35868,12 +35806,12 @@
     },
     "Moon Girl & Devil Dinosaur": {
       "Cyborg Spider-Man": 126,
-      "Mighty Thor": 112,
       "Miles Morales": 54,
       "Venom": 48,
       "Fin Fang Foom": 47,
       "Winter Soldier": 39,
       "Jessica Jones": 31,
+      "Mighty Thor": 31,
       "X-23": 31,
       "Howard The Duck": 29,
       "Iron Patriot": 29,
@@ -35986,7 +35924,6 @@
       "Cyborg Spider-Man": 343,
       "Werewolf By Night": 108,
       "Blade": 104,
-      "Mighty Thor": 97,
       "Venom": 94,
       "Man-Thing": 84,
       "Vulture": 83,
@@ -36075,6 +36012,7 @@
       "Hope Summers": 2,
       "Immortus": 2,
       "Ironheart": 2,
+      "Mighty Thor": 2,
       "Okoye": 2,
       "Onslaught": 2,
       "Queen Veranke": 2,
@@ -36105,7 +36043,6 @@
       "Agent Venom": 26,
       "Electro": 24,
       "Mysterio": 23,
-      "Mighty Thor": 20,
       "Spider-Punk": 18,
       "Carnage": 14,
       "Shocker": 13,
@@ -36184,9 +36121,8 @@
       "Warpath": 1
     },
     "Morph": {
-      "Blink": 474,
+      "Blink": 475,
       "Cyborg Spider-Man": 170,
-      "Mighty Thor": 95,
       "X-23": 94,
       "M": 93,
       "Mastermind": 89,
@@ -36277,7 +36213,6 @@
       "Kraven": 224,
       "Rhino": 214,
       "Ghost-Spider": 196,
-      "Mighty Thor": 192,
       "Agent Venom": 177,
       "Venom": 148,
       "Scorpion": 128,
@@ -36338,6 +36273,7 @@
       "Wiccan": 7,
       "Crimson Dynamo": 6,
       "Maria Hill": 6,
+      "Mighty Thor": 6,
       "Purple Man": 6,
       "Silver Samurai": 6,
       "Star-Lord": 6,
@@ -36390,7 +36326,6 @@
     "Nebula": {
       "Cyborg Spider-Man": 59,
       "Star-Lord": 55,
-      "Mighty Thor": 53,
       "Groot": 47,
       "Rocket": 44,
       "Ronan": 29,
@@ -36430,6 +36365,7 @@
       "Black Dwarf": 6,
       "Man-Thing": 6,
       "Maria Hill": 6,
+      "Mighty Thor": 6,
       "Agent Venom": 5,
       "Bullseye": 5,
       "Crimson Dynamo": 5,
@@ -36493,7 +36429,6 @@
       "Spider-Ham": 1
     },
     "Nemesis": {
-      "Mighty Thor": 9,
       "Cyborg Spider-Man": 7,
       "Chamber": 3,
       "M": 3,
@@ -36512,6 +36447,7 @@
       "Goliath": 1,
       "Howard The Duck": 1,
       "Man-Thing": 1,
+      "Mighty Thor": 1,
       "Omega Red": 1,
       "Rocket": 1,
       "Spider-Ham": 1,
@@ -36521,11 +36457,10 @@
       "Winter Soldier": 1
     },
     "Nimrod": {
-      "X-23": 181,
+      "X-23": 182,
       "Hope Summers": 136,
-      "Warpath": 119,
-      "Mighty Thor": 104,
-      "Pixie": 82,
+      "Warpath": 120,
+      "Pixie": 83,
       "Cyborg Spider-Man": 68,
       "M": 59,
       "Lady Deathstrike": 58,
@@ -36594,6 +36529,7 @@
       "Groot": 1,
       "Howard The Duck": 1,
       "Knull": 1,
+      "Mighty Thor": 1,
       "Onslaught": 1,
       "Phyla-Vell": 1,
       "Queen Veranke": 1,
@@ -36608,10 +36544,10 @@
     },
     "Okoye": {
       "Shuri": 76,
-      "Mighty Thor": 38,
       "Killmonger": 35,
       "Cyborg Spider-Man": 26,
       "Blade": 17,
+      "Mighty Thor": 15,
       "Ironheart": 12,
       "Miles Morales": 11,
       "Rocket": 11,
@@ -36706,7 +36642,6 @@
       "Silver Samurai": 88,
       "Pixie": 78,
       "Mojo": 67,
-      "Mighty Thor": 62,
       "Shadow King": 61,
       "Hope Summers": 57,
       "Mastermind": 55,
@@ -36765,6 +36700,7 @@
       "Spot": 5,
       "Star-Lord": 5,
       "America Chavez": 4,
+      "Mighty Thor": 4,
       "Purple Man": 4,
       "Shuri": 4,
       "Super-Skrull": 4,
@@ -36796,7 +36732,6 @@
       "Spider-Ham": 1
     },
     "Onslaught": {
-      "Mighty Thor": 115,
       "Warpath": 72,
       "Mastermind": 57,
       "Cyborg Spider-Man": 55,
@@ -36853,6 +36788,7 @@
       "Crossbones": 3,
       "Fin Fang Foom": 3,
       "Iron Lad": 3,
+      "Mighty Thor": 3,
       "Red Guardian": 3,
       "Shang Chi": 3,
       "Vulture": 3,
@@ -36900,7 +36836,6 @@
       "Stature": 230,
       "Cyborg Spider-Man": 213,
       "Sentry": 120,
-      "Mighty Thor": 96,
       "Winter Soldier": 90,
       "Maria Hill": 88,
       "Iron Patriot": 79,
@@ -36923,6 +36858,7 @@
       "Crossbones": 18,
       "Electro": 18,
       "Vulture": 17,
+      "Mighty Thor": 14,
       "Ronan": 14,
       "Squirrel Girl": 14,
       "X-23": 14,
@@ -37007,7 +36943,6 @@
       "Groot": 96,
       "Ronan": 54,
       "Super-Skrull": 45,
-      "Mighty Thor": 34,
       "Blastaar": 29,
       "Annihilus": 28,
       "Cyborg Spider-Man": 28,
@@ -37042,6 +36977,7 @@
       "Daken": 5,
       "Immortus": 5,
       "Iron Patriot": 5,
+      "Mighty Thor": 5,
       "Bullseye": 4,
       "Ebony Maw": 4,
       "Electro": 4,
@@ -37104,12 +37040,11 @@
       "White Widow": 1
     },
     "Pixie": {
-      "X-23": 651,
-      "Warpath": 593,
+      "X-23": 652,
+      "Warpath": 594,
       "Hope Summers": 589,
       "M": 292,
       "Cyborg Spider-Man": 281,
-      "Mighty Thor": 270,
       "Chamber": 244,
       "Daken": 222,
       "Doop": 219,
@@ -37121,7 +37056,7 @@
       "Shadow King": 90,
       "Sentry": 85,
       "Venom": 85,
-      "Nimrod": 82,
+      "Nimrod": 83,
       "Mastermind": 78,
       "Omega Red": 78,
       "Vulcan": 73,
@@ -37167,6 +37102,7 @@
       "Ronan": 8,
       "Brood Queen": 7,
       "Famine": 7,
+      "Mighty Thor": 7,
       "Quake": 7,
       "Vulture": 7,
       "Annihilus": 6,
@@ -37220,7 +37156,6 @@
       "Corvus Glaive": 113,
       "Ebony Maw": 93,
       "Black Dwarf": 85,
-      "Mighty Thor": 69,
       "Shuri": 39,
       "Shang Chi": 38,
       "Star-Lord": 36,
@@ -37230,6 +37165,7 @@
       "Ronan": 23,
       "Super-Skrull": 23,
       "Cyborg Spider-Man": 22,
+      "Mighty Thor": 21,
       "Groot": 20,
       "Maria Hill": 13,
       "Miles Morales": 13,
@@ -37302,7 +37238,6 @@
       "Cyborg Spider-Man": 81,
       "Jessica Jones": 53,
       "Electro": 31,
-      "Mighty Thor": 30,
       "Bullseye": 26,
       "Elektra": 25,
       "Venom": 25,
@@ -37361,6 +37296,7 @@
       "Hope Summers": 3,
       "Immortus": 3,
       "Lady Deathstrike": 3,
+      "Mighty Thor": 3,
       "Mojo": 3,
       "Patriot": 3,
       "Silver Samurai": 3,
@@ -37397,7 +37333,6 @@
     "Quake": {
       "Maria Hill": 106,
       "Cyborg Spider-Man": 104,
-      "Mighty Thor": 82,
       "Iron Patriot": 65,
       "Winter Soldier": 62,
       "Ares": 51,
@@ -37428,6 +37363,7 @@
       "Goliath": 9,
       "Silver Samurai": 9,
       "Man-Thing": 8,
+      "Mighty Thor": 8,
       "Pixie": 7,
       "Dormammu": 6,
       "Electro": 6,
@@ -37489,7 +37425,6 @@
       "Ares": 105,
       "Maria Hill": 93,
       "Kate Bishop": 68,
-      "Mighty Thor": 68,
       "Jessica Jones": 67,
       "Patriot": 64,
       "Wiccan": 62,
@@ -37536,6 +37471,7 @@
       "Vulture": 5,
       "Groot": 4,
       "M": 4,
+      "Mighty Thor": 4,
       "Phyla-Vell": 4,
       "Pixie": 4,
       "Warpath": 4,
@@ -37576,7 +37512,6 @@
     },
     "Red Guardian": {
       "Cyborg Spider-Man": 58,
-      "Mighty Thor": 51,
       "Winter Soldier": 43,
       "White Widow": 22,
       "Crimson Dynamo": 20,
@@ -37641,6 +37576,7 @@
       "Korg": 3,
       "Lady Deathstrike": 3,
       "Maestro": 3,
+      "Mighty Thor": 3,
       "Onslaught": 3,
       "Patriot": 3,
       "Phyla-Vell": 3,
@@ -37679,7 +37615,6 @@
       "Vulture": 305,
       "Electro": 287,
       "Iron Patriot": 270,
-      "Mighty Thor": 268,
       "Venom": 253,
       "Ghost-Spider": 226,
       "Mysterio": 214,
@@ -37727,6 +37662,7 @@
       "Ares": 18,
       "Groot": 18,
       "Maestro": 18,
+      "Mighty Thor": 18,
       "Wiccan": 18,
       "M": 17,
       "Warpath": 17,
@@ -37797,7 +37733,6 @@
       "Groot": 732,
       "Star-Lord": 648,
       "Cyborg Spider-Man": 253,
-      "Mighty Thor": 216,
       "Venom": 169,
       "Agent Venom": 124,
       "X-23": 119,
@@ -37806,6 +37741,7 @@
       "Squirrel Girl": 76,
       "Miles Morales": 73,
       "Howard The Duck": 66,
+      "Mighty Thor": 56,
       "Annihilus": 54,
       "Winter Soldier": 54,
       "Super-Skrull": 52,
@@ -37915,7 +37851,6 @@
       "White Widow": 1
     },
     "Ronan": {
-      "Mighty Thor": 144,
       "Star-Lord": 118,
       "Super-Skrull": 114,
       "Rocket": 110,
@@ -37956,6 +37891,7 @@
       "Bullseye": 14,
       "Immortus": 14,
       "M.O.D.O.K.": 14,
+      "Mighty Thor": 14,
       "Patriot": 14,
       "Taskmaster": 13,
       "Abomination": 12,
@@ -38027,7 +37963,6 @@
       "Sentry": 305,
       "Ares": 294,
       "Daken": 280,
-      "Mighty Thor": 273,
       "Vulture": 229,
       "Rhino": 202,
       "Electro": 181,
@@ -38073,6 +38008,7 @@
       "Arcade": 21,
       "Blink": 21,
       "Spot": 21,
+      "Mighty Thor": 20,
       "Shriek": 20,
       "Blade": 19,
       "Hope Summers": 19,
@@ -38145,7 +38081,6 @@
       "Scorpion": 305,
       "Bullseye": 288,
       "Daken": 287,
-      "Mighty Thor": 284,
       "Winter Soldier": 190,
       "Queen Veranke": 189,
       "Maria Hill": 164,
@@ -38185,6 +38120,7 @@
       "Super-Skrull": 24,
       "Hope Summers": 23,
       "M": 23,
+      "Mighty Thor": 23,
       "Mysterio": 23,
       "Purple Man": 23,
       "Ronan": 23,
@@ -38255,18 +38191,17 @@
     },
     "Shadow King": {
       "Warpath": 147,
-      "Mastermind": 108,
+      "Mastermind": 109,
       "M": 101,
       "Daken": 98,
       "Chamber": 95,
       "Fantomex": 94,
       "Pixie": 90,
-      "Cyborg Spider-Man": 81,
+      "Cyborg Spider-Man": 82,
       "Lady Deathstrike": 75,
       "Blink": 74,
       "X-23": 73,
       "Hope Summers": 68,
-      "Mighty Thor": 64,
       "Morph": 64,
       "Omega Red": 61,
       "Mojo": 54,
@@ -38280,12 +38215,12 @@
       "Famine": 17,
       "Venom": 16,
       "Vulcan": 16,
+      "Ghost-Spider": 15,
       "Sentry": 15,
-      "Ghost-Spider": 14,
       "Bullseye": 13,
       "Elektra": 12,
       "M.O.D.O.K.": 12,
-      "Blade": 10,
+      "Blade": 11,
       "Maria Hill": 10,
       "Star-Lord": 10,
       "Vulture": 9,
@@ -38297,27 +38232,27 @@
       "Fin Fang Foom": 6,
       "Shuri": 6,
       "Terrax": 6,
+      "Valkyrie": 6,
       "War": 6,
       "Wiccan": 6,
       "Abomination": 5,
+      "Annihilus": 5,
       "Ares": 5,
       "Carnage": 5,
+      "Goliath": 5,
       "Groot": 5,
       "Kraven": 5,
       "Man-Thing": 5,
       "Scorpion": 5,
       "Taskmaster": 5,
-      "Valkyrie": 5,
       "Winter Soldier": 5,
       "Yondu": 5,
-      "Annihilus": 4,
       "Crimson Dynamo": 4,
+      "Dormammu": 4,
       "Electro": 4,
-      "Goliath": 4,
       "Shocker": 4,
       "Super-Skrull": 4,
       "Chameleon": 3,
-      "Dormammu": 3,
       "Ebony Maw": 3,
       "Immortus": 3,
       "Jessica Jones": 3,
@@ -38333,6 +38268,7 @@
       "Elsa Bloodstone": 2,
       "Goose": 2,
       "Howard The Duck": 2,
+      "Mighty Thor": 2,
       "Moon Girl & Devil Dinosaur": 2,
       "Red Guardian": 2,
       "Ursa Major": 2,
@@ -38359,7 +38295,6 @@
     },
     "Shang Chi": {
       "Cyborg Spider-Man": 311,
-      "Mighty Thor": 259,
       "Elektra": 102,
       "Maria Hill": 72,
       "Man-Thing": 71,
@@ -38390,6 +38325,7 @@
       "Electro": 27,
       "M.O.D.O.K.": 27,
       "Goliath": 25,
+      "Mighty Thor": 25,
       "Terrax": 25,
       "Ares": 24,
       "Miles Morales": 24,
@@ -38481,7 +38417,6 @@
       "Venom": 134,
       "Agent Venom": 131,
       "Scorpion": 126,
-      "Mighty Thor": 114,
       "Mysterio": 103,
       "Ghost-Spider": 102,
       "Chameleon": 79,
@@ -38516,6 +38451,7 @@
       "Arcade": 15,
       "Fin Fang Foom": 15,
       "Howard The Duck": 15,
+      "Mighty Thor": 15,
       "X-23": 15,
       "Star-Lord": 14,
       "Super-Skrull": 14,
@@ -38587,7 +38523,6 @@
       "White Widow": 1
     },
     "Shuri": {
-      "Mighty Thor": 122,
       "Cyborg Spider-Man": 116,
       "Okoye": 76,
       "Killmonger": 52,
@@ -38636,6 +38571,7 @@
       "Vulture": 11,
       "Lady Deathstrike": 10,
       "Phyla-Vell": 10,
+      "Mighty Thor": 9,
       "Scorpion": 9,
       "Shocker": 9,
       "Crossbones": 8,
@@ -38702,7 +38638,6 @@
       "Lady Deathstrike": 75,
       "Warpath": 70,
       "Mastermind": 55,
-      "Mighty Thor": 55,
       "Chamber": 48,
       "X-23": 46,
       "Shadow King": 45,
@@ -38787,6 +38722,7 @@
       "Agent Venom": 2,
       "Gwenpool": 2,
       "Knull": 2,
+      "Mighty Thor": 2,
       "Okoye": 2,
       "Shriek": 2,
       "Air-Walker": 1,
@@ -38801,7 +38737,6 @@
       "Throg": 1
     },
     "Skrulls": {
-      "Mighty Thor": 12,
       "Ares": 11,
       "Cyborg Spider-Man": 7,
       "Queen Veranke": 7,
@@ -38842,6 +38777,7 @@
       "M": 1,
       "M.O.D.O.K.": 1,
       "Maestro": 1,
+      "Mighty Thor": 1,
       "Moon Girl & Devil Dinosaur": 1,
       "Nebula": 1,
       "Phyla-Vell": 1,
@@ -38865,7 +38801,6 @@
       "Ghost-Spider": 112,
       "Miles Morales": 81,
       "Iron Patriot": 60,
-      "Mighty Thor": 52,
       "Spider-Punk": 51,
       "Kraven": 47,
       "Silk": 45,
@@ -38914,6 +38849,7 @@
       "Jessica Jones": 4,
       "Kate Bishop": 4,
       "Knull": 4,
+      "Mighty Thor": 4,
       "Morbius": 4,
       "Stature": 4,
       "Yondu": 3,
@@ -38975,7 +38911,6 @@
       "Electro": 10,
       "Howard The Duck": 8,
       "Taskmaster": 8,
-      "Mighty Thor": 7,
       "Scorpion": 7,
       "Shuri": 5,
       "Carnage": 4,
@@ -39002,6 +38937,7 @@
       "Jessica Jones": 1,
       "Kate Bishop": 1,
       "Maestro": 1,
+      "Mighty Thor": 1,
       "Moon Girl & Devil Dinosaur": 1,
       "Patriot": 1,
       "Proxima Midnight": 1,
@@ -39023,7 +38959,6 @@
       "Rhino": 25,
       "Shocker": 25,
       "Agent Venom": 24,
-      "Mighty Thor": 24,
       "Vulture": 24,
       "Scorpion": 21,
       "Miles Morales": 20,
@@ -39083,6 +39018,7 @@
       "Goose": 2,
       "Hope Summers": 2,
       "Knull": 2,
+      "Mighty Thor": 2,
       "Shuri": 2,
       "Throg": 2,
       "Valkyrie": 2,
@@ -39111,12 +39047,12 @@
     },
     "Squirrel Girl": {
       "Cyborg Spider-Man": 247,
-      "Mighty Thor": 155,
       "Jessica Jones": 102,
       "Miles Morales": 98,
       "Rocket": 76,
       "Maria Hill": 75,
       "Wiccan": 74,
+      "Mighty Thor": 70,
       "Howard The Duck": 65,
       "Venom": 61,
       "Iron Patriot": 58,
@@ -39225,7 +39161,6 @@
     "Star-Lord": {
       "Rocket": 648,
       "Groot": 577,
-      "Mighty Thor": 207,
       "Cyborg Spider-Man": 185,
       "Venom": 142,
       "Phyla-Vell": 125,
@@ -39235,6 +39170,7 @@
       "Annihilus": 73,
       "Miles Morales": 68,
       "Super-Skrull": 63,
+      "Mighty Thor": 61,
       "Maria Hill": 58,
       "Yondu": 58,
       "Nebula": 55,
@@ -39343,7 +39279,6 @@
       "Wiccan": 249,
       "Kate Bishop": 247,
       "Patriot": 230,
-      "Mighty Thor": 202,
       "Sentry": 117,
       "Iron Patriot": 114,
       "Maria Hill": 113,
@@ -39364,6 +39299,7 @@
       "M.O.D.O.K.": 31,
       "Valkyrie": 31,
       "Electro": 30,
+      "Mighty Thor": 30,
       "Super-Skrull": 30,
       "Elektra": 29,
       "Ronan": 28,
@@ -39449,7 +39385,6 @@
       "Morlun": 1
     },
     "Super-Skrull": {
-      "Mighty Thor": 222,
       "Cyborg Spider-Man": 154,
       "Ronan": 114,
       "Annihilus": 93,
@@ -39491,6 +39426,7 @@
       "Ares": 14,
       "Bullseye": 14,
       "Howard The Duck": 14,
+      "Mighty Thor": 14,
       "Queen Veranke": 14,
       "Shocker": 14,
       "Maria Hill": 13,
@@ -39562,7 +39498,6 @@
     },
     "Taskmaster": {
       "Cyborg Spider-Man": 276,
-      "Mighty Thor": 170,
       "Venom": 138,
       "Iron Patriot": 133,
       "Scorpion": 125,
@@ -39596,6 +39531,7 @@
       "Shang Chi": 36,
       "Chameleon": 35,
       "Squirrel Girl": 30,
+      "Mighty Thor": 29,
       "Ironheart": 28,
       "Dormammu": 27,
       "Bob, Agent Of Hydra": 26,
@@ -39680,7 +39616,6 @@
       "Throg": 1
     },
     "Terrax": {
-      "Mighty Thor": 104,
       "Cyborg Spider-Man": 99,
       "Annihilus": 44,
       "Star-Lord": 38,
@@ -39700,6 +39635,7 @@
       "Agent Venom": 19,
       "Nebula": 19,
       "Dormammu": 18,
+      "Mighty Thor": 16,
       "Rhino": 16,
       "Valkyrie": 16,
       "M.O.D.O.K.": 15,
@@ -39784,8 +39720,8 @@
       "White Widow": 1
     },
     "Throg": {
-      "Mighty Thor": 90,
       "Cyborg Spider-Man": 34,
+      "Mighty Thor": 28,
       "Alligator Loki": 27,
       "Valkyrie": 22,
       "Winter Soldier": 20,
@@ -39879,7 +39815,6 @@
     },
     "Ursa Major": {
       "Crimson Dynamo": 63,
-      "Mighty Thor": 60,
       "Cyborg Spider-Man": 37,
       "M": 29,
       "Omega Red": 22,
@@ -39904,6 +39839,7 @@
       "Rhino": 11,
       "Shang Chi": 10,
       "Venom": 10,
+      "Mighty Thor": 9,
       "Vulture": 9,
       "Electro": 7,
       "Goliath": 7,
@@ -39965,8 +39901,7 @@
       "Yondu": 1
     },
     "Valkyrie": {
-      "Mighty Thor": 482,
-      "Cyborg Spider-Man": 395,
+      "Cyborg Spider-Man": 396,
       "Winter Soldier": 106,
       "Venom": 102,
       "Jessica Jones": 83,
@@ -39975,17 +39910,18 @@
       "Hope Summers": 72,
       "Maria Hill": 72,
       "Man-Thing": 62,
+      "Mighty Thor": 60,
       "Pixie": 59,
       "Agent Venom": 58,
       "Shang Chi": 50,
       "Howard The Duck": 49,
-      "Dormammu": 47,
+      "Dormammu": 48,
       "Squirrel Girl": 45,
       "Taskmaster": 45,
       "Crossbones": 42,
       "Rhino": 42,
+      "Goliath": 41,
       "Rocket": 41,
-      "Goliath": 40,
       "Bullseye": 39,
       "Sentry": 38,
       "Yondu": 37,
@@ -39998,9 +39934,9 @@
       "Kate Bishop": 32,
       "Star-Lord": 32,
       "Stature": 31,
+      "Mastermind": 30,
       "X-23": 30,
-      "Mastermind": 29,
-      "Ghost-Spider": 26,
+      "Ghost-Spider": 27,
       "Lady Deathstrike": 26,
       "Vulture": 26,
       "Werewolf By Night": 26,
@@ -40017,7 +39953,7 @@
       "Throg": 22,
       "Elsa Bloodstone": 21,
       "Morbius": 21,
-      "Annihilus": 19,
+      "Annihilus": 20,
       "Iron Lad": 18,
       "Red Guardian": 18,
       "America Chavez": 17,
@@ -40049,9 +39985,9 @@
       "Shriek": 7,
       "Korg": 6,
       "Okoye": 6,
+      "Shadow King": 6,
       "Chameleon": 5,
       "Goose": 5,
-      "Shadow King": 5,
       "Silk": 5,
       "Spider-Ham": 5,
       "Ironheart": 4,
@@ -40083,11 +40019,10 @@
       "Spider-Punk": 1
     },
     "Venom": {
-      "Cyborg Spider-Man": 1727,
+      "Cyborg Spider-Man": 1728,
       "Iron Patriot": 765,
       "Scorpion": 660,
-      "Agent Venom": 612,
-      "Mighty Thor": 576,
+      "Agent Venom": 613,
       "Bullseye": 454,
       "Carnage": 371,
       "Sentry": 363,
@@ -40127,9 +40062,10 @@
       "Howard The Duck": 69,
       "M": 63,
       "Shang Chi": 63,
+      "Mighty Thor": 62,
       "Squirrel Girl": 61,
       "Abomination": 60,
-      "Anti-Venom": 57,
+      "Anti-Venom": 58,
       "Fantomex": 56,
       "Annihilus": 55,
       "Demogoblin": 53,
@@ -40212,7 +40148,6 @@
       "Kraven": 306,
       "Rhino": 305,
       "Agent Venom": 262,
-      "Mighty Thor": 248,
       "Ghost-Spider": 246,
       "Scorpion": 229,
       "Venom": 225,
@@ -40246,6 +40181,7 @@
       "Spot": 24,
       "Goliath": 23,
       "X-23": 23,
+      "Mighty Thor": 22,
       "Wiccan": 22,
       "Demogoblin": 21,
       "Squirrel Girl": 21,
@@ -40321,26 +40257,25 @@
       "Skrulls": 1
     },
     "Warpath": {
-      "X-23": 690,
-      "Pixie": 593,
+      "X-23": 691,
+      "Pixie": 594,
       "M": 459,
       "Hope Summers": 454,
-      "Cyborg Spider-Man": 352,
+      "Cyborg Spider-Man": 353,
       "Chamber": 311,
-      "Mighty Thor": 291,
       "Daken": 234,
       "Lady Deathstrike": 199,
       "Fantomex": 166,
       "Blink": 165,
       "Shadow King": 147,
       "Omega Red": 134,
-      "Iron Patriot": 130,
+      "Iron Patriot": 131,
       "Doop": 122,
-      "Nimrod": 119,
+      "Nimrod": 120,
       "Mastermind": 116,
       "Venom": 111,
       "Vulcan": 105,
-      "Bullseye": 100,
+      "Bullseye": 101,
       "Mojo": 89,
       "Morph": 89,
       "Sentry": 88,
@@ -40372,8 +40307,8 @@
       "Man-Thing": 17,
       "Rhino": 17,
       "Star-Lord": 17,
+      "Bob, Agent Of Hydra": 16,
       "Abomination": 15,
-      "Bob, Agent Of Hydra": 15,
       "Moon Girl & Devil Dinosaur": 14,
       "Shang Chi": 14,
       "Dormammu": 13,
@@ -40403,6 +40338,7 @@
       "Ronan": 7,
       "America Chavez": 5,
       "Chameleon": 5,
+      "Mighty Thor": 5,
       "Purple Man": 5,
       "Red Guardian": 5,
       "Super-Skrull": 5,
@@ -40434,7 +40370,6 @@
       "Cyborg Spider-Man": 134,
       "Morbius": 108,
       "Man-Thing": 92,
-      "Mighty Thor": 71,
       "Blade": 59,
       "Elsa Bloodstone": 40,
       "Howard The Duck": 27,
@@ -40498,6 +40433,7 @@
       "Famine": 4,
       "Hope Summers": 4,
       "Kate Bishop": 4,
+      "Mighty Thor": 4,
       "Mojo": 4,
       "America Chavez": 3,
       "Blastaar": 3,
@@ -40541,7 +40477,6 @@
       "Elsa Bloodstone": 12,
       "Jessica Jones": 12,
       "Blade": 11,
-      "Mighty Thor": 11,
       "Bullseye": 10,
       "Elektra": 10,
       "Quake": 10,
@@ -40597,6 +40532,7 @@
       "Ironheart": 2,
       "Killmonger": 2,
       "Korg": 2,
+      "Mighty Thor": 2,
       "Morlun": 2,
       "Nebula": 2,
       "Omega Red": 2,
@@ -40641,7 +40577,6 @@
       "Patriot": 282,
       "Cyborg Spider-Man": 271,
       "Stature": 249,
-      "Mighty Thor": 207,
       "Winter Soldier": 132,
       "Maria Hill": 125,
       "Sentry": 116,
@@ -40669,6 +40604,7 @@
       "Valkyrie": 34,
       "Dormammu": 33,
       "Warpath": 33,
+      "Mighty Thor": 32,
       "Blade": 31,
       "Doop": 30,
       "Immortus": 30,
@@ -40756,7 +40692,6 @@
     },
     "Winter Soldier": {
       "Cyborg Spider-Man": 698,
-      "Mighty Thor": 698,
       "Iron Patriot": 280,
       "Venom": 228,
       "Maria Hill": 200,
@@ -40774,6 +40709,7 @@
       "Valkyrie": 106,
       "X-23": 98,
       "Captain Carter": 95,
+      "Mighty Thor": 95,
       "Patriot": 90,
       "Elektra": 85,
       "Taskmaster": 85,
@@ -40878,18 +40814,17 @@
       "Spider-Punk": 1
     },
     "X-23": {
-      "Warpath": 690,
-      "Pixie": 651,
+      "Warpath": 691,
+      "Pixie": 652,
       "Hope Summers": 486,
       "M": 458,
       "Daken": 389,
       "Cyborg Spider-Man": 324,
       "Lady Deathstrike": 259,
-      "Mighty Thor": 238,
       "Fantomex": 209,
       "Blink": 186,
       "Venom": 186,
-      "Nimrod": 181,
+      "Nimrod": 182,
       "Iron Patriot": 152,
       "Maria Hill": 149,
       "Doop": 132,
@@ -40917,6 +40852,7 @@
       "Agent Venom": 52,
       "Mojo": 48,
       "Squirrel Girl": 48,
+      "Mighty Thor": 47,
       "Mastermind": 46,
       "Silver Samurai": 46,
       "Jessica Jones": 42,
@@ -40999,7 +40935,6 @@
       "Yondu": 1
     },
     "Yondu": {
-      "Mighty Thor": 100,
       "Cyborg Spider-Man": 91,
       "Star-Lord": 58,
       "Rocket": 41,
@@ -41051,6 +40986,7 @@
       "Onslaught": 6,
       "Captain Carter": 5,
       "Crossbones": 5,
+      "Mighty Thor": 5,
       "Patriot": 5,
       "Shadow King": 5,
       "Super-Skrull": 5,
@@ -41103,15 +41039,14 @@
       "X-23": 1
     },
     "Anti-Venom": {
-      "Agent Venom": 79,
-      "Venom": 57,
-      "Cyborg Spider-Man": 51,
+      "Agent Venom": 80,
+      "Venom": 58,
+      "Cyborg Spider-Man": 52,
       "Carnage": 38,
       "Iron Patriot": 15,
       "Miles Morales": 15,
       "Scorpion": 14,
       "Elektra": 12,
-      "Mighty Thor": 10,
       "Bullseye": 9,
       "Knull": 8,
       "Shocker": 6,
@@ -41135,6 +41070,7 @@
       "M.O.D.O.K.": 2,
       "Man-Thing": 2,
       "Maria Hill": 2,
+      "Mighty Thor": 2,
       "Sentry": 2,
       "Shriek": 2,
       "Spider-Punk": 2,
@@ -41169,7 +41105,6 @@
     },
     "Brood Queen": {
       "Annihilus": 35,
-      "Mighty Thor": 31,
       "Star-Lord": 30,
       "Rocket": 24,
       "Groot": 20,
@@ -41249,7 +41184,6 @@
       "Miles Morales": 7,
       "Scorpion": 7,
       "Kraven": 6,
-      "Mighty Thor": 6,
       "Chameleon": 5,
       "Morlun": 5,
       "Chamber": 4,
@@ -41321,7 +41255,6 @@
       "X-23": 209,
       "Warpath": 166,
       "Doop": 131,
-      "Mighty Thor": 118,
       "Daken": 100,
       "Chamber": 97,
       "Cyborg Spider-Man": 95,
@@ -41367,6 +41300,7 @@
       "America Chavez": 6,
       "Kate Bishop": 6,
       "Man-Thing": 6,
+      "Mighty Thor": 6,
       "Quake": 6,
       "Miles Morales": 5,
       "Werewolf By Night": 5,
@@ -41410,7 +41344,7 @@
       "White Widow": 1
     },
     "Gorr": {
-      "Mighty Thor": 48,
+      "Mighty Thor": 9,
       "Knull": 8,
       "Venom": 5,
       "Proxima Midnight": 4,
@@ -41462,7 +41396,6 @@
       "Iron Patriot": 8,
       "Jeffrey": 8,
       "Kraven": 8,
-      "Mighty Thor": 8,
       "Squirrel Girl": 7,
       "Mysterio": 4,
       "Rocket": 4,
@@ -41500,7 +41433,6 @@
       "Iron Patriot": 18,
       "Kraven": 17,
       "Vulture": 16,
-      "Mighty Thor": 13,
       "Electro": 12,
       "Ghost-Spider": 11,
       "Mysterio": 10,
@@ -41530,6 +41462,7 @@
       "Jessica Jones": 3,
       "M": 3,
       "M.O.D.O.K.": 3,
+      "Mighty Thor": 3,
       "Super-Skrull": 3,
       "Wiccan": 3,
       "X-23": 3,
@@ -41584,7 +41517,6 @@
       "Electro": 26,
       "Agent Venom": 24,
       "Rhino": 21,
-      "Mighty Thor": 20,
       "Mysterio": 20,
       "Chameleon": 17,
       "Peni Parker": 17,
@@ -41592,6 +41524,7 @@
       "Squirrel Girl": 14,
       "X-23": 14,
       "Carnage": 13,
+      "Mighty Thor": 13,
       "Scorpion": 11,
       "Moon Girl & Devil Dinosaur": 9,
       "Shocker": 8,
@@ -41657,7 +41590,6 @@
       "Blink": 44,
       "Chamber": 35,
       "Morph": 32,
-      "Mighty Thor": 27,
       "Cyborg Spider-Man": 24,
       "Mastermind": 24,
       "Lady Deathstrike": 21,
@@ -41744,7 +41676,6 @@
     "Cosmic Ghost Rider": {
       "Star-Lord": 17,
       "Groot": 14,
-      "Mighty Thor": 13,
       "Phyla-Vell": 13,
       "Cyborg Spider-Man": 11,
       "Blade": 8,
@@ -41753,6 +41684,7 @@
       "Proxima Midnight": 7,
       "Black Dwarf": 6,
       "Corvus Glaive": 6,
+      "Mighty Thor": 5,
       "Ebony Maw": 4,
       "Howard The Duck": 4,
       "Annihilus": 3,
@@ -41793,7 +41725,6 @@
       "Yondu": 1
     },
     "Lady Deadpool": {
-      "Mighty Thor": 6,
       "Bob, Agent Of Hydra": 5,
       "Ghost-Spider": 5,
       "Cyborg Spider-Man": 4,
@@ -41847,7 +41778,6 @@
       "Silver Samurai": 6,
       "Gwenpool": 5,
       "Fantomex": 4,
-      "Mighty Thor": 3,
       "Blink": 2,
       "Cyborg Spider-Man": 2,
       "Lady Deathstrike": 2,
