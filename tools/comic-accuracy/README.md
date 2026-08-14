@@ -19,7 +19,7 @@ Use it to flag cross-comically accurate (or inaccurate) pairings when building c
 
 ## Relations CLI (offline)
 
-Reads the committed [`co-appearances.json`](./co-appearances.json) — **no network**. Rebuild first only if you need fresher data.
+Reads the committed [`co-appearances.json`](./co-appearances.json) and [`modern-co-appearances.json`](./modern-co-appearances.json) — **no network**. Rebuild only if you need fresher data.
 
 ```bash
 cd tools/comic-accuracy
@@ -45,11 +45,11 @@ npm run relations -- "Dark Phoenix" "Cyclops" --json
 
 **Flags:** `--top N` / `-n N` (default 25), `--min N` (min sharedComics to show), `--json`.
 
-> npm steals `--limit` (it’s an npm config key), so use `--top` when calling via `npm run`. Direct `node relations.js … --limit 100` still works.
+> npm steals `--limit` (it's an npm config key), so use `--top` when calling via `npm run`. Direct `node relations.js … --limit 100` still works.
 
 Names resolve with exact match, hyphen/space-insensitive compact match (`Spiderman` → `Spider-Man`), then fuzzy match. Ambiguous queries print candidates and exit `1`. Unmatched characters with no coverage in either source exit `2`.
 
-Example pair output (after modern build):
+Example pair output:
 
 ```text
 Dark Phoenix  ↔  Cyclops
@@ -64,12 +64,6 @@ legacySharedComics: n/a
 modernSharedComics: 42   (cover_date >= 2003-01-01)
 ```
 
-```text
-Miles Morales  ↔  Spider-Man
-legacySharedComics: n/a
-  (no 1961–2002 coverage for: Miles Morales — post-2002 or below top-327 threshold)
-modernSharedComics: n/a   (run build-modern-comicvine.js to populate)
-```
 ---
 
 ## Rebuild the legacy dataset (1961–2002)
@@ -99,6 +93,10 @@ Matching improvements in `build.js`:
 ## Modern dataset (2003+) — Comic Vine
 
 Extends coverage to the post-2002 gap using the [Comic Vine API](https://comicvine.gamespot.com/api/).
+
+**`modern-co-appearances.json` is fully built and committed** (generated 2026-08-12): 125 characters processed, 5,945 pairs computed. `cv-ids.json` has 127 of 128 entries mapped — only `Sentinel` remains null.
+
+To rebuild or expand coverage, follow the steps below.
 
 ### Quickstart
 
@@ -142,17 +140,17 @@ npm run build-modern
 
 API calls are rate-limited to ~1 req/sec. Results are cached per-character in `cache/` (gitignored) — reruns only re-fetch missing or deleted entries.
 
-> **Date accuracy:** For characters who debuted after 2003 (Miles Morales, Silk, Gwenpool, etc.) all their issue credits are modern. For pre-2003 characters their count includes some classic-era issues. CV’s `/issues/` endpoint silently ignores the `character_ids` filter, making server-side date filtering impractical.
+> **Date accuracy:** For characters who debuted after 2003 (Miles Morales, Silk, Gwenpool, etc.) all their issue credits are modern. For pre-2003 characters their count includes some classic-era issues. CV's `/issues/` endpoint silently ignores the `character_ids` filter, making server-side date filtering impractical.
 
 ### cv-ids.json
 
-`cv-ids.json` maps every MU display name to its Comic Vine character ID. All 126 unmatched characters start as `null`. Use `--resolve` to get CV search suggestions, then verify each manually:
+`cv-ids.json` maps every MU display name to its Comic Vine character ID. **127 of 128 entries are mapped**; only `Sentinel` remains `null`. Use `--resolve` to get CV search suggestions for any remaining nulls, then verify each manually:
 
 ```jsonc
 {
   "Miles Morales": 1009652,   // confirmed: Miles Morales (Earth-1610) Spider-Man
   "Venom": 1009493,            // confirmed: Eddie Brock as Venom
-  "Ghost-Spider": null,        // still needs mapping
+  "Sentinel": null,            // no reliable CV match found yet
   ...
 }
 ```
@@ -244,7 +242,7 @@ npm run build-modern
 
 **Rate limit:** ~1 req/sec (1 200 ms gap). The CV free tier allows ~200 req/hour.  
 **Cache:** Per-character issue lists are stored in `cache/cv-{id}-modern.json` (gitignored). Reruns skip cached entries.  
-**API note:** CV’s `/issues/?filter=character_ids:X` silently ignores the character filter. The build uses `/character/4005-{id}/` instead, which returns the full issue credit list in one request.  
+**API note:** CV's `/issues/?filter=character_ids:X` silently ignores the character filter. The build uses `/character/4005-{id}/` instead, which returns the full issue credit list in one request.  
 **Typical full-build time:** 3–4 min (1 API call per character, ~125 calls total).
 
 ---
@@ -261,9 +259,11 @@ Reads `co-appearances.json` and writes [`TOP-GROUPS.md`](./TOP-GROUPS.md): for e
 
 ## Pre-built output
 
-[`co-appearances.json`](./co-appearances.json) (legacy, 1961–2002) is committed and ready to consult — **no script run needed** for routine lookups.
+Both datasets are committed and ready for offline lookups — **no script run needed**.
 
-[`modern-co-appearances.json`](./modern-co-appearances.json) (2003+) is a stub until you populate `cv-ids.json` and run `build-modern-comicvine.js`.
+[`co-appearances.json`](./co-appearances.json) — legacy (1961–2002): 221 characters, ~4,800 pairs.
+
+[`modern-co-appearances.json`](./modern-co-appearances.json) — modern (2003+): 125 characters, 5,945 pairs, generated 2026-08-12.
 
 Also available:
 
@@ -307,11 +307,13 @@ const strongPairs = data.pairs.filter(p => p.sharedComics >= 20);
 | 1 – 4 | Technically true, barely meaningful |
 | not present / `0` | No documented co-appearance in that window |
 | `n/a` — legacy | Character(s) unmatched in 1961–2002 dataset |
-| `n/a` — modern | `modern-co-appearances.json` not yet built |
+| `n/a` — modern | Character has no confirmed CV ID in `cv-ids.json` |
 
 ---
 
 ## Output structure
+
+### `co-appearances.json` (legacy)
 
 ```jsonc
 {
@@ -336,14 +338,30 @@ const strongPairs = data.pairs.filter(p => p.sharedComics >= 20);
   ],
   "byCharacter": {
     // Every MU alias that shares a dataset node gets a full entry
-    "Iron Man": {
-      "Captain America": 446,
-      "Thor": 344
-    },
-    "Iron Man (Civil War)": {
-      "Captain America": 446,
-      "Thor": 344
-    }
+    "Iron Man": { "Captain America": 446, "Thor": 344 },
+    "Iron Man (Civil War)": { "Captain America": 446, "Thor": 344 }
+  }
+}
+```
+
+### `modern-co-appearances.json` (Comic Vine)
+
+```jsonc
+{
+  "meta": {
+    "generated": "2026-08-12",
+    "source": "comicvine",
+    "method": "character-endpoint-issue-credits",
+    "dateWindow": "all-time (CV /character/ endpoint; cover_date filter not supported on /issues/)",
+    "charactersProcessed": 125,
+    "pairsFound": 5945,
+    "spikeMode": false
+  },
+  "pairs": [
+    { "hero1": "Spider-Man", "hero2": "Iron Man", "sharedComics": 312 }
+  ],
+  "byCharacter": {
+    "Miles Morales": { "Spider-Man": 42, "Iron Man": 18 }
   }
 }
 ```
@@ -352,21 +370,20 @@ const strongPairs = data.pairs.filter(p => p.sharedComics >= 20);
 
 ## Coverage
 
-**221 of 347 MU characters** matched to the dataset. **~4,800 pairs** computed.
+**Legacy (1961–2002):** 221 of 347 MU characters matched, ~4,800 pairs.  
+**Modern (2003+):** 125 characters with confirmed CV IDs, 5,945 pairs.
 
-The dataset covers ~327 of the most frequently appearing characters from **13,000+ comics, 1961–2002**.
+The legacy dataset covers ~327 of the most frequently appearing characters from **13,000+ comics, 1961–2002**.
 
-Characters in `unmatched` fall into three buckets:
+Characters unmatched in the legacy layer fall into three buckets:
 
-| Reason | Examples | Can we invent relations? |
+| Reason | Examples | Can we map them? |
 |---|---|---|
-| Introduced after 2002 | America Chavez, Rocket, Groot, Miles Morales, Ironheart | **No** — not in this dataset |
-| Pre-2002 but below top-327 cut | Blade, Venom, Carnage, Rhino, Electro, Mysterio | **No** — absent from the edge list |
-| MU-only variants with no node | Onslaught, Lady Deadpool, Ghost-Spider | Only if you map them via `OVERRIDES` to an existing node |
+| Introduced after 2002 | America Chavez, Rocket, Groot, Miles Morales, Ironheart | Via CV IDs in `cv-ids.json` (modern layer) |
+| Pre-2002 but below top-327 cut | Blade, Venom, Carnage, Rhino, Electro, Mysterio | Via CV IDs (modern); not in legacy edge list |
+| MU-only variants with no node | Onslaught, Lady Deadpool | Only via `OVERRIDES` to an existing legacy node |
 
-Identity aliases that *are* in the dataset (Dark Phoenix → Jean Grey, Cable → Nathan Summers, Baron Zemo → Citizen V, Spectrum → Monica Rambeau, etc.) are mapped in `OVERRIDES` and share that node’s relations.
-
-Post-2002 coverage would need a **different data source** (manual curated lists, Marvel API, Comic Vine, etc.). This tool will not fabricate edges.
+Identity aliases that *are* in the dataset (Dark Phoenix → Jean Grey, Cable → Nathan Summers, Baron Zemo → Citizen V, Spectrum → Monica Rambeau, etc.) are mapped in `OVERRIDES` and share that node's relations.
 
 ---
 
@@ -378,11 +395,13 @@ Post-2002 coverage would need a **different data source** (manual curated lists,
 | [melaniewalsh/sample-social-network-datasets](https://github.com/melaniewalsh/sample-social-network-datasets/tree/master/sample-datasets/marvel) | Legacy | Pre-computed co-appearance weights (CSV) |
 | [Rosselló, Alberich & Miro (2002)](https://arxiv.org/abs/cond-mat/0202174) | Legacy | Research paper — *"Marvel Universe looks almost like a real social network"* |
 | [Russ Chappell's Marvel Chronology Project](http://www.chronologyproject.com/) | Legacy | Primary source: every significant Marvel appearance catalogued |
-| [Comic Vine API](https://comicvine.gamespot.com/api/) | Modern | Issue credits with cover dates — 2003 → present |
+| [Comic Vine API](https://comicvine.gamespot.com/api/) | Modern | Issue credits — 2003 → present |
 
 ---
 
 ## Adding a missing character
+
+### Legacy dataset
 
 If a MU character exists in the nodes CSV under another name, add it to `OVERRIDES` at the top of `build.js`:
 
@@ -393,3 +412,7 @@ If a MU character exists in the nodes CSV under another name, add it to `OVERRID
 Dataset node ids use the format `Alias / Real Name` (truncated). Browse available names in the [nodes CSV](https://raw.githubusercontent.com/melaniewalsh/sample-social-network-datasets/master/sample-datasets/marvel/marvel-unimodal-nodes.csv).
 
 Then re-run `node build.js` to regenerate. Characters not present in the ~327-node dataset cannot be matched this way.
+
+### Modern dataset
+
+Add the character's Comic Vine ID to `cv-ids.json`, then re-run `npm run build-modern`. Use `npm run resolve` to search CV for candidates, or look up the ID at [comicvine.gamespot.com](https://comicvine.gamespot.com) — the numeric ID appears in the character URL (e.g. `…/4005-1234/` → ID `1234`).
