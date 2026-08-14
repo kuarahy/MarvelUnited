@@ -43,7 +43,7 @@ npm run relations -- "Dark Phoenix" "Cyclops" --json
 | Partners | one name | Ranked table of MU partners (legacy + modern if available) |
 | Pair | two names | `legacySharedComics` + `modernSharedComics`, or `n/a` if absent |
 
-**Flags:** `--top N` / `-n N` (default 25), `--min N` (min sharedComics to show), `--json`.
+**Flags:** `--top N` / `-n N` (default 25), `--min N` (min sharedComics to show), `--json`, `--antagonists` (villains only).
 
 > npm steals `--limit` (it's an npm config key), so use `--top` when calling via `npm run`. Direct `node relations.js … --limit 100` still works.
 
@@ -175,6 +175,8 @@ node relations.js "Iron Man"
 node relations.js "Iron Man" --top 50
 node relations.js "Iron Man" --top 20 --min 10
 node relations.js "Iron Man" --json
+node relations.js "Iron Man" --antagonists
+node relations.js "Miles Morales" --antagonists --top 15
 
 # Two characters: pair summary
 node relations.js "Dark Phoenix" "Cyclops"
@@ -182,6 +184,7 @@ node relations.js "Miles Morales" "Spider-Man" --json
 
 # Via npm (--top instead of --limit, which npm intercepts)
 npm run relations -- "Iron Man" --top 10
+npm run relations -- "Iron Man" --antagonists
 npm run relations -- "Dark Phoenix" "Cyclops"
 ```
 
@@ -190,6 +193,7 @@ npm run relations -- "Dark Phoenix" "Cyclops"
 | `--top N` | `-n N` | 25 | Max partners to show |
 | `--min N` | | 1 | Min shared comics to include |
 | `--json` | | false | Machine-readable output |
+| `--antagonists` | `--villains` | false | Filter partners to MU villains only (legacy + modern) |
 
 Exit codes: `0` = success, `1` = ambiguous/bad name, `2` = no coverage in any source.
 

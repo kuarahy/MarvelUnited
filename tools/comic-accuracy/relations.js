@@ -13,11 +13,62 @@
  * Two names → sharedComics between them (0 if none / uncovered)
  */
 
-import { readFileSync } from 'node:fs';
+import https from 'node:https';
+import http from 'node:http';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const MU_BOX_URLS = [
+  'https://raw.githubusercontent.com/OscarGarPer/Marvel-United-Json-Database/main/en/mun-ultimate.json',
+  'https://raw.githubusercontent.com/OscarGarPer/Marvel-United-Json-Database/main/en/mun-uncanny.json',
+  'https://raw.githubusercontent.com/OscarGarPer/Marvel-United-Json-Database/main/en/mun-spidergeddon.json',
+  'https://raw.githubusercontent.com/OscarGarPer/Marvel-United-Json-Database/main/en/mun-omniverse.json',
+  'https://raw.githubusercontent.com/OscarGarPer/Marvel-United-Json-Database/main/en/mun-pr02.json',
+];
+
+const LOYALTY_CACHE = path.join(__dirname, 'cache', 'mu-loyalty.json');
+
+function fetchText(url) {
+  return new Promise((resolve, reject) => {
+    const client = url.startsWith('https') ? https : http;
+    client.get(url, (res) => {
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        return fetchText(res.headers.location).then(resolve).catch(reject);
+      }
+      if (res.statusCode !== 200) return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
+      const chunks = [];
+      res.on('data', (c) => chunks.push(c));
+      res.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
+      res.on('error', reject);
+    }).on('error', reject);
+  });
+}
+
+/** Load villain/hero classification from cache; fetch box JSONs on first run. */
+async function loadLoyalty() {
+  if (existsSync(LOYALTY_CACHE)) {
+    const cached = JSON.parse(readFileSync(LOYALTY_CACHE, 'utf8'));
+    return { villains: new Set(cached.villains), heroes: new Set(cached.heroes) };
+  }
+  console.log('Fetching MU box JSONs to build loyalty index (cached after first run)…');
+  const villains = new Set();
+  const heroes = new Set();
+  for (const url of MU_BOX_URLS) {
+    const box = JSON.parse(await fetchText(url));
+    for (const c of (box.characters ?? [])) {
+      if (!c.name?.text || ['hidden', 'other'].includes(c.loyalty)) continue;
+      const name = c.name.text.trim();
+      if (c.loyalty === 'villain') villains.add(name);
+      else if (c.loyalty === 'hero') heroes.add(name);
+    }
+  }
+  mkdirSync(path.join(__dirname, 'cache'), { recursive: true });
+  writeFileSync(LOYALTY_CACHE, JSON.stringify({ villains: [...villains], heroes: [...heroes] }, null, 2));
+  return { villains, heroes };
+}
 
 function normalise(name) {
   let s = String(name)
@@ -61,11 +112,16 @@ function parseNames(argv) {
   let limit = 25;
   let min = 0;
   let json = false;
+  let antagonists = false;
 
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--json') {
       json = true;
+      continue;
+    }
+    if (a === '--antagonists' || a === '--villains') {
+      antagonists = true;
       continue;
     }
     // --top / -n preferred for npm; --limit kept for direct node invocation
@@ -108,7 +164,7 @@ function parseNames(argv) {
     limit = parseIntArg(names.pop(), limit);
   }
 
-  return { names, limit, min, json, flags };
+  return { names, limit, min, json, antagonists, flags };
 }
 
 function loadData() {
@@ -223,9 +279,9 @@ function sharedComics(data, a, b) {
   return data.byCharacter?.[a]?.[b] ?? data.byCharacter?.[b]?.[a] ?? 0;
 }
 
-function printPartners(data, modern, key, { limit, min, json }) {
+function printPartners(data, modern, key, { limit, min, json, villainSet = null }) {
   const partners = Object.entries(data.byCharacter?.[key] ?? {})
-    .filter(([, w]) => w >= min)
+    .filter(([name, w]) => w >= min && (!villainSet || villainSet.has(name)))
     .slice(0, limit);
 
   const datasetId = data.matchedNames[key];
@@ -261,8 +317,12 @@ function printPartners(data, modern, key, { limit, min, json }) {
 
   console.log(`${key}  →  ${datasetId}`);
   console.log(`Legacy coverage: ${data.meta?.datasetCoverage ?? '1961–2002'}`);
-  const total = Object.keys(data.byCharacter?.[key] ?? {}).length;
-  console.log(`${total} legacy partners` + (min ? ` (showing sharedComics ≥ ${min})` : ''));
+  const allLegacy = Object.entries(data.byCharacter?.[key] ?? {});
+  const filteredCount = villainSet
+    ? allLegacy.filter(([name, w]) => w >= min && villainSet.has(name)).length
+    : allLegacy.filter(([, w]) => w >= min).length;
+  const labelSuffix = villainSet ? ' villain' : '';
+  console.log(`${filteredCount} legacy${labelSuffix} partners` + (min ? ` (sharedComics ≥ ${min})` : ''));
   console.log('');
   if (!partners.length) {
     console.log('(no legacy partners above threshold)');
@@ -277,9 +337,12 @@ function printPartners(data, modern, key, { limit, min, json }) {
   }
 
   if (modern) {
-    const modernTop = (modernPartners ?? []).filter(([, w]) => w >= min).slice(0, limit);
+    const modernTop = (modernPartners ?? [])
+      .filter(([name, w]) => w >= min && (!villainSet || villainSet.has(name)))
+      .slice(0, limit);
+    const modernLabel = villainSet ? 'villain partners' : 'partners';
     console.log('');
-    console.log(`Modern partners (comicvine, cover_date ≥ 2003): ${modernTop.length ? '' : 'none yet'}`);
+    console.log(`Modern ${modernLabel} (comicvine, cover_date ≥ 2003): ${modernTop.length ? modernTop.length : 'none'}`);
     if (modernTop.length) {
       console.log(' #  Partner                              Comics');
       console.log('──  ───────────────────────────────────  ──────');
@@ -373,19 +436,23 @@ function printPair(data, modern, a, b, { json }) {
   }
 }
 
-function main() {
-  const { names, limit, min, json } = parseNames(process.argv.slice(2));
+async function main() {
+  const { names, limit, min, json, antagonists } = parseNames(process.argv.slice(2));
 
   if (!names.length || names[0] === '--help' || names[0] === '-h') {
     console.log(`Usage:
-  node relations.js <character> [--top N] [--min N] [--json]
+  node relations.js <character> [--top N] [--min N] [--json] [--antagonists]
   node relations.js <characterA> <characterB> [--json]
 
 Examples:
   npm run relations -- "Iron Man"
-  npm run relations -- "Iron Man" --top 100
+  npm run relations -- "Iron Man" --top 100 --antagonists
   npm run relations -- "Dark Phoenix" "Cyclops"
   npm run relations -- "Dark Phoenix" "Miles Morales"
+
+Flags:
+  --antagonists  Filter partner list to MU villains only (legacy + modern)
+  --villains     Alias for --antagonists
 
 Note: npm steals --limit (npm config). Use --top / -n / --top=100 instead.`);
     process.exit(names.length ? 0 : 1);
@@ -393,6 +460,8 @@ Note: npm steals --limit (npm config). Use --top / -n / --top=100 instead.`);
 
   const data = loadData();
   const modern = loadModernData();
+
+  const villainSet = antagonists ? (await loadLoyalty()).villains : null;
 
   if (names.length === 1) {
     const res = resolveName(names[0], data);
@@ -413,11 +482,15 @@ Note: npm steals --limit (npm config). Use --top / -n / --top=100 instead.`);
       console.log('  (no 1961–2002 data — introduced after 2002 or below dataset threshold)');
       if (modernPartners?.length) {
         const modernCoverage = modern.meta?.dateWindow ?? 'cover_date >= 2003-01-01';
+        const displayPartners = villainSet
+          ? modernPartners.filter(([name]) => villainSet.has(name))
+          : modernPartners;
+        const modernLabel = villainSet ? 'villain partners' : 'partners';
         console.log('');
-        console.log(`Modern partners (comicvine, ${modernCoverage}): ${modernPartners.length}`);
+        console.log(`Modern ${modernLabel} (comicvine, ${modernCoverage}): ${displayPartners.length}`);
         console.log(' #  Partner                              Comics');
         console.log('──  ───────────────────────────────────  ──────');
-        modernPartners.slice(0, limit).forEach(([name, w], i) => {
+        displayPartners.slice(0, limit).forEach(([name, w], i) => {
           const n = String(i + 1).padStart(2);
           const p = name.padEnd(37).slice(0, 37);
           console.log(`${n}  ${p}  ${String(w).padStart(6)}`);
@@ -430,7 +503,7 @@ Note: npm steals --limit (npm config). Use --top / -n / --top=100 instead.`);
       process.exitCode = 2;
       return;
     }
-    printPartners(data, modern, res.key, { limit, min, json });
+    printPartners(data, modern, res.key, { limit, min, json, villainSet });
     return;
   }
 
@@ -443,4 +516,4 @@ Note: npm steals --limit (npm config). Use --top / -n / --top=100 instead.`);
   process.exit(1);
 }
 
-main();
+main().catch((err) => { console.error(err.message ?? err); process.exit(1); });
