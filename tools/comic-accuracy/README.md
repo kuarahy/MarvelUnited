@@ -9,7 +9,7 @@ Use it to flag cross-comically accurate (or inaccurate) pairings when building c
 
 | Script | Command | Purpose |
 |---|---|---|
-| Relations CLI | `npm run relations -- …` | Offline partner list / pair lookup (legacy + modern) |
+| Relations CLI | `node relations.js …` | Offline partner list / pair lookup (legacy + modern) |
 | Build (legacy) | `npm run build` / `node build.js` | Refresh `co-appearances.json` from upstream (1961–2002) |
 | Build (modern) | `npm run build-modern` | Refresh `modern-co-appearances.json` from Comic Vine (2003+) |
 | Resolve CV IDs | `npm run resolve` | Search Comic Vine for null entries in `cv-ids.json` |
@@ -25,17 +25,21 @@ Reads the committed [`co-appearances.json`](./co-appearances.json) and [`modern-
 cd tools/comic-accuracy
 
 # Ranked partners for one character
-npm run relations -- "Iron Man"
-npm run relations -- "Iron Man" --top 100
-npm run relations -- "Iron Man" --top 10 --min 20
+node relations.js "Iron Man"
+node relations.js "Iron Man" --top 100
+node relations.js "Iron Man" --top 10 --min 20
+
+# Villains only
+node relations.js "Iron Man" --antagonists
+node relations.js "Miles Morales" --antagonists --top 15
 
 # Shared comics between two characters
-npm run relations -- "Dark Phoenix" "Cyclops"
-npm run relations -- "Dark Phoenix" "Miles Morales"
+node relations.js "Dark Phoenix" "Cyclops"
+node relations.js "Dark Phoenix" "Miles Morales"
 
 # Machine-readable
-npm run relations -- "Iron Man" --json
-npm run relations -- "Dark Phoenix" "Cyclops" --json
+node relations.js "Iron Man" --json
+node relations.js "Dark Phoenix" "Cyclops" --json
 ```
 
 | Mode | Args | Output |
@@ -43,9 +47,7 @@ npm run relations -- "Dark Phoenix" "Cyclops" --json
 | Partners | one name | Ranked table of MU partners (legacy + modern if available) |
 | Pair | two names | `legacySharedComics` + `modernSharedComics`, or `n/a` if absent |
 
-**Flags:** `--top N` / `-n N` (default 25), `--min N` (min sharedComics to show), `--json`, `--antagonists` (villains only).
-
-> npm steals `--limit` (it's an npm config key), so use `--top` when calling via `npm run`. Direct `node relations.js … --limit 100` still works.
+**Flags:** `--top N` / `-n N` (default 25), `--min N` (min sharedComics to show), `--json`, `--antagonists` / `--villains` (villains only).
 
 Names resolve with exact match, hyphen/space-insensitive compact match (`Spiderman` → `Spider-Man`), then fuzzy match. Ambiguous queries print candidates and exit `1`. Unmatched characters with no coverage in either source exit `2`.
 
@@ -181,11 +183,6 @@ node relations.js "Miles Morales" --antagonists --top 15
 # Two characters: pair summary
 node relations.js "Dark Phoenix" "Cyclops"
 node relations.js "Miles Morales" "Spider-Man" --json
-
-# Via npm (--top instead of --limit, which npm intercepts)
-npm run relations -- "Iron Man" --top 10
-npm run relations -- "Iron Man" --antagonists
-npm run relations -- "Dark Phoenix" "Cyclops"
 ```
 
 | Flag | Alias | Default | Description |

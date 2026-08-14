@@ -158,8 +158,7 @@ function parseNames(argv) {
     }
   }
 
-  // npm eats `--limit`, leaving a bare number as a fake "second character".
-  // Treat a trailing all-digits token as --top when only one real name remains.
+  // Guard against a bare trailing number being mistaken for a second character name.
   if (names.length === 2 && /^\d+$/.test(names[1])) {
     limit = parseIntArg(names.pop(), limit);
   }
@@ -445,16 +444,15 @@ async function main() {
   node relations.js <characterA> <characterB> [--json]
 
 Examples:
-  npm run relations -- "Iron Man"
-  npm run relations -- "Iron Man" --top 100 --antagonists
-  npm run relations -- "Dark Phoenix" "Cyclops"
-  npm run relations -- "Dark Phoenix" "Miles Morales"
+  node relations.js "Iron Man"
+  node relations.js "Iron Man" --top 100
+  node relations.js "Iron Man" --antagonists --top 10
+  node relations.js "Dark Phoenix" "Cyclops"
+  node relations.js "Miles Morales" "Spider-Man"
 
 Flags:
   --antagonists  Filter partner list to MU villains only (legacy + modern)
-  --villains     Alias for --antagonists
-
-Note: npm steals --limit (npm config). Use --top / -n / --top=100 instead.`);
+  --villains     Alias for --antagonists`);
     process.exit(names.length ? 0 : 1);
   }
 
