@@ -230,6 +230,13 @@ export const heroes: Character[] = [
   { id: 'white-widow',         name: 'White Widow',        role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
   { id: 'wiccan',              name: 'Wiccan',             role: 'hero',      expansionId: 'season-3-stretch-goals' },
   { id: 'wong',                name: 'Wong',               role: 'hero',      expansionId: 'season-3-stretch-goals' },
+  { id: 'captain-britain-betsy', name: 'Captain Britain (Betsy Braddock)', role: 'hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'havok-xfactor',       name: 'Havok (X-Factor)',   role: 'hero',      expansionId: 'season-3-stretch-goals' },
+  { id: 'captain-america-sam', name: 'Captain America (Sam Wilson)', role: 'hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'ghost-rider-blaze',   name: 'Ghost Rider (Johnny Blaze)', role: 'hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'darkstar',            name: 'Darkstar',           role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'ursa-major',          name: 'Ursa Major',         role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'red-guardian',        name: 'Red Guardian',       role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
 
   // ── Season 1 Stretch Goals ──────────────────────────────────────────────────────────────────
   { id: 'adam-warlock',        name: 'Adam Warlock',       role: 'hero',      expansionId: 'season-1-stretch-goals' },
