@@ -9,7 +9,7 @@ export const villains: Character[] = [
   // ── Spider-Geddon Core Box ───────────────────────────────────────────────
   { id: 'morlun',              name: 'Morlun',             role: 'villain', expansionId: 'spider-geddon' },
   { id: 'spot',                name: 'Spot',               role: 'villain', expansionId: 'spider-geddon' },
-  { id: 'anti-venom',        name: 'Anti-Venom',         role: 'villain', expansionId: 'spider-geddon' },
+  { id: 'anti-venom',          name: 'Anti-Venom',         role: 'villain', expansionId: 'spider-geddon' },
   { id: 'superior-spider-man', name: 'Superior Spider-Man', role: 'villain', expansionId: 'spider-geddon' },
 
   // ── Multiverse Core Box ──────────────────────────────────────────────────
@@ -17,13 +17,17 @@ export const villains: Character[] = [
   { id: 'immortus',            name: 'Immortus',           role: 'villain', expansionId: 'multiverse-core' },
   { id: 'maestro',             name: 'Maestro',            role: 'villain', expansionId: 'multiverse-core' },
   { id: 'cosmic-ghost-rider',  name: 'Cosmic Ghost Rider', role: 'villain', expansionId: 'multiverse-core' },
-  { id: 'bulldozer',             name: 'Bulldozer',          role: 'villain', expansionId: 'multiverse-core', ksExclusive: true },
+  { id: 'bulldozer',           name: 'Bulldozer',          role: 'villain', expansionId: 'multiverse-core', ksExclusive: true },
+  { id: 'piledriver',          name: 'Piledriver',         role: 'villain', expansionId: 'multiverse-core', ksExclusive: true },
+  { id: 'thunderball',         name: 'Thunderball',        role: 'villain', expansionId: 'multiverse-core', ksExclusive: true },
+  { id: 'wrecker',             name: 'Wrecker',            role: 'villain', expansionId: 'multiverse-core', ksExclusive: true },
+  { id: 'fin-fang-foom',       name: 'Fin Fang Foom',      role: 'villain', expansionId: 'multiverse-core', ksExclusive: true },
 
   // ── Enter the Spider-Verse ───────────────────────────────────────────────
   { id: 'green-goblin',        name: 'Green Goblin',       role: 'villain', expansionId: 'spider-verse' },
 
   // ── Tales of Asgard ──────────────────────────────────────────────────────
-  { id: 'loki',              name: 'Loki',               role: 'villain', expansionId: 'tales-of-asgard' },
+  { id: 'loki',                name: 'Loki',               role: 'villain', expansionId: 'tales-of-asgard' },
 
   // ── Guardians of the Galaxy ──────────────────────────────────────────────
   { id: 'ronan',               name: 'Ronan',              role: 'villain', expansionId: 'guardians' },
@@ -37,13 +41,13 @@ export const villains: Character[] = [
   { id: 'war',                 name: 'War',                role: 'villain', expansionId: 'horsemen' },
   { id: 'death',               name: 'Death',              role: 'villain', expansionId: 'horsemen' },
   { id: 'pestilence',          name: 'Pestilence',         role: 'villain', expansionId: 'horsemen' },
-  { id: 'apocalypse',        name: 'Apocalypse',         role: 'villain', expansionId: 'horsemen' },
+  { id: 'apocalypse',          name: 'Apocalypse',         role: 'villain', expansionId: 'horsemen' },
 
   // ── X-Men Core Box ───────────────────────────────────────────────────────
   { id: 'juggernaut',          name: 'Juggernaut',         role: 'villain', expansionId: 'xmen-core' },
   { id: 'sabretooth',          name: 'Sabretooth',         role: 'villain', expansionId: 'xmen-core' },
-  { id: 'mystique',          name: 'Mystique',           role: 'villain', expansionId: 'xmen-core' },
-  { id: 'magneto',           name: 'Magneto',            role: 'villain', expansionId: 'xmen-core' },
+  { id: 'mystique',            name: 'Mystique',           role: 'villain', expansionId: 'xmen-core' },
+  { id: 'magneto',             name: 'Magneto',            role: 'villain', expansionId: 'xmen-core' },
 
   // ── X-Men Blue Team ──────────────────────────────────────────────────────
   { id: 'mister-sinister',     name: 'Mister Sinister',    role: 'villain', expansionId: 'xmen-blue' },
@@ -61,19 +65,19 @@ export const villains: Character[] = [
   { id: 'sebastian-shaw',      name: 'Sebastian Shaw',     role: 'villain', expansionId: 'xmen-gold' },
   
   // ── Deadpool ─────────────────────────────────────────────────────────────
-  { id: 'deadpool',          name: 'Deadpool',           role: 'villain', expansionId: 'deadpool' },
+  { id: 'deadpool',            name: 'Deadpool',           role: 'villain', expansionId: 'deadpool' },
   { id: 'deadpool-challenge',  name: 'Deadpool (Challenge)', role: 'villain', expansionId: 'deadpool' },
-  { id: 'bob',               name: 'Bob, Agent of Hydra',role: 'villain', expansionId: 'deadpool' },
+  { id: 'bob',                 name: 'Bob, Agent of Hydra',role: 'villain', expansionId: 'deadpool' },
 
   // ── Rise of the Black Panther ────────────────────────────────────────────
   { id: 'killmonger',          name: 'Killmonger',         role: 'villain', expansionId: 'black-panther' },
 
   // ── Phoenix Five ─────────────────────────────────────────────────────────
-  { id: 'colossus',          name: 'Colossus',           role: 'villain', expansionId: 'phoenix-five' },
-  { id: 'cyclops',           name: 'Cyclops',            role: 'villain', expansionId: 'phoenix-five' },
-  { id: 'magik',             name: 'Magik',              role: 'villain', expansionId: 'phoenix-five' },
-  { id: 'emma-frost',        name: 'Emma Frost',         role: 'villain', expansionId: 'phoenix-five' },
-  { id: 'namor',             name: 'Namor',              role: 'villain', expansionId: 'phoenix-five' },
+  { id: 'colossus',            name: 'Colossus',           role: 'villain', expansionId: 'phoenix-five' },
+  { id: 'cyclops',             name: 'Cyclops',            role: 'villain', expansionId: 'phoenix-five' },
+  { id: 'magik',               name: 'Magik',              role: 'villain', expansionId: 'phoenix-five' },
+  { id: 'emma-frost',          name: 'Emma Frost',         role: 'villain', expansionId: 'phoenix-five' },
+  { id: 'namor',               name: 'Namor',              role: 'villain', expansionId: 'phoenix-five' },
 
   // ── X-Force ──────────────────────────────────────────────────────────────
   { id: 'stryfe',              name: 'Stryfe',             role: 'villain', expansionId: 'x-force' },
@@ -90,28 +94,28 @@ export const villains: Character[] = [
 
   // ── Fantastic Four ───────────────────────────────────────────────────────
   { id: 'super-skrull',        name: 'Super-Skrull',       role: 'villain', expansionId: 'fantastic-four', ksExclusive: true },
-  { id: 'doctor-doom',       name: 'Doctor Doom',        role: 'villain', expansionId: 'fantastic-four' },
+  { id: 'doctor-doom',         name: 'Doctor Doom',        role: 'villain', expansionId: 'fantastic-four' },
 
   // ── Maximum Carnage ──────────────────────────────────────────────────────
   { id: 'scream',              name: 'Scream',             role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'shriek',              name: 'Shriek',             role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'scorpion',            name: 'Scorpion',           role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'demogoblin-doppelganger', name: 'Demogoblin & Doppelganger', role: 'villain', expansionId: 'maximum-carnage' },
-  { id: 'morbius',           name: 'Morbius',            role: 'villain', expansionId: 'maximum-carnage' },
+  { id: 'morbius',             name: 'Morbius',            role: 'villain', expansionId: 'maximum-carnage' },
 
   // ── World War Hulk ───────────────────────────────────────────────────────
   { id: 'world-breaker-hulk',  name: 'World Breaker Hulk', role: 'villain', expansionId: 'world-war-hulk' },
   { id: 'the-void',            name: 'The Void',           role: 'villain', expansionId: 'world-war-hulk' },
-  { id: 'ares',              name: 'Ares',               role: 'villain', expansionId: 'world-war-hulk' },
-  { id: 'gladiator-hulk',    name: 'Gladiator Hulk',     role: 'villain', expansionId: 'world-war-hulk' },
-  { id: 'sentry',            name: 'Sentry',             role: 'villain', expansionId: 'world-war-hulk' },
+  { id: 'ares',                name: 'Ares',               role: 'villain', expansionId: 'world-war-hulk' },
+  { id: 'gladiator-hulk',      name: 'Gladiator Hulk',     role: 'villain', expansionId: 'world-war-hulk' },
+  { id: 'sentry',              name: 'Sentry',             role: 'villain', expansionId: 'world-war-hulk' },
 
   // ── Witching Hour ────────────────────────────────────────────────────────
-  { id: 'scarlet-witch',     name: 'Scarlet Witch',      role: 'villain', expansionId: 'witching-hour' },
-  { id: 'agatha-harkness',   name: 'Agatha Harkness',    role: 'villain', expansionId: 'witching-hour' },
-  { id: 'grey-hulk',         name: 'Grey-Hulk',          role: 'villain', expansionId: 'witching-hour' },
-  { id: 'juggernaut',   name: 'Juggernaut',         role: 'villain', expansionId: 'witching-hour' },
-  { id: 'mister-sinister', name: 'Mister Sinister', role: 'villain', expansionId: 'witching-hour' },
+  { id: 'scarlet-witch',       name: 'Scarlet Witch',      role: 'villain', expansionId: 'witching-hour' },
+  { id: 'agatha-harkness',     name: 'Agatha Harkness',    role: 'villain', expansionId: 'witching-hour' },
+  { id: 'grey-hulk',           name: 'Grey-Hulk',          role: 'villain', expansionId: 'witching-hour' },
+  { id: 'juggernaut',          name: 'Juggernaut',         role: 'villain', expansionId: 'witching-hour' },
+  { id: 'mister-sinister',     name: 'Mister Sinister', role: 'villain', expansionId: 'witching-hour' },
 
   // ── Spider-Man's Greatest Foes ───────────────────────────────────────────
   { id: 'doctor-octopus',      name: 'Doctor Octopus',     role: 'villain', expansionId: 'spider-foes' },
@@ -127,7 +131,7 @@ export const villains: Character[] = [
 
   // ── War of Kings ─────────────────────────────────────────────────────────
   { id: 'vulcan',              name: 'Vulcan',             role: 'villain', expansionId: 'war-of-kings' },
-  { id: 'gladiator',         name: 'Gladiator',          role: 'villain', expansionId: 'war-of-kings' },
+  { id: 'gladiator',           name: 'Gladiator',          role: 'villain', expansionId: 'war-of-kings' },
 
   // ── X-Men: The Age of Apocalypse ─────────────────────────────────────────
   { id: 'apocalypse-aoa',      name: 'Apocalypse (Age of Apocalypse)', role: 'villain', expansionId: 'age-of-apocalypse' },
@@ -142,7 +146,7 @@ export const villains: Character[] = [
   { id: 'firelord',            name: 'Firelord',           role: 'villain', expansionId: 'coming-of-galactus' },
   { id: 'galactus',            name: 'Galactus',           role: 'villain', expansionId: 'coming-of-galactus' },
   { id: 'terrax',              name: 'Terrax',             role: 'villain', expansionId: 'coming-of-galactus' },
-  { id: 'nova-frankie-raye', name: 'Nova (Frankie Raye)', role: 'villain', expansionId: 'coming-of-galactus' },
+  { id: 'nova-frankie-raye',   name: 'Nova (Frankie Raye)', role: 'villain', expansionId: 'coming-of-galactus' },
 
   // ── Season 3 Stretch Goals ───────────────────────────────────────────────
   { id: 'abomination',         name: 'Abomination',        role: 'villain', expansionId: 'season-3-stretch-goals' },
@@ -152,7 +156,6 @@ export const villains: Character[] = [
   { id: 'crimson-dynamo',      name: 'Crimson Dynamo',     role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'crossbones',          name: 'Crossbones',         role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'enchantress',         name: 'Enchantress',        role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'fin-fang-foom',       name: 'Fin Fang Foom',      role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'gorr',                name: 'Gorr',               role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'high-evolutionary',   name: 'High Evolutionary',  role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'hobgoblin',           name: 'Hobgoblin',          role: 'villain', expansionId: 'season-3-stretch-goals' },
@@ -162,21 +165,18 @@ export const villains: Character[] = [
   { id: 'lizard',              name: 'Lizard',             role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'maximus',             name: 'Maximus',            role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'mole-man',            name: 'Mole Man',           role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'piledriver',          name: 'Piledriver',         role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'purple-man',          name: 'Purple Man',         role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'shocker',             name: 'Shocker',            role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'thunderball',         name: 'Thunderball',        role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'titania',             name: 'Titania',            role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'wrecker',             name: 'Wrecker',            role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'daken',             name: 'Daken',              role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'darkchild',         name: 'Darkchild',          role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'moonstone',         name: 'Moonstone',          role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'us-agent',          name: 'U.S. Agent',         role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'white-widow',       name: 'White Widow',        role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'red-hulk',          name: 'Red Hulk',           role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'darkstar',          name: 'Darkstar',           role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'ursa-major',        name: 'Ursa Major',         role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'red-guardian',      name: 'Red Guardian',       role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'daken',               name: 'Daken',              role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'darkchild',           name: 'Darkchild',          role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'moonstone',           name: 'Moonstone',          role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'us-agent',            name: 'U.S. Agent',         role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'white-widow',         name: 'White Widow',        role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'red-hulk',            name: 'Red Hulk',           role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'darkstar',            name: 'Darkstar',           role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'ursa-major',          name: 'Ursa Major',         role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'red-guardian',        name: 'Red Guardian',       role: 'villain', expansionId: 'season-3-stretch-goals' },
 
   // ── Avengers (KS Exclusives) ─────────────────────────────────────────────
   { id: 'baron-zemo',          name: 'Baron Zemo',         role: 'villain', expansionId: 'season-1-stretch-goals' },
@@ -208,9 +208,9 @@ export const villains: Character[] = [
   { id: 'brood-queen',         name: 'Brood Queen',        role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'onslaught',           name: 'Onslaught',          role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'dark-phoenix',        name: 'Dark Phoenix',       role: 'villain', expansionId: 'season-2-stretch-goals' },
-  { id: 'legion',            name: 'Legion',             role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'legion',              name: 'Legion',             role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'emma-frost-promo',    name: 'Emma Frost',         role: 'villain', expansionId: 'season-2-stretch-goals' },
-  { id: 'marrow',            name: 'Marrow',             role: 'villain', expansionId: 'season-2-stretch-goals' },
-  { id: 'spiral',            name: 'Spiral',             role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'marrow',              name: 'Marrow',             role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'spiral',              name: 'Spiral',             role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'namor-promo',         name: 'Namor',              role: 'villain', expansionId: 'season-2-stretch-goals' },
 ]
