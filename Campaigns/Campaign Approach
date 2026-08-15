@@ -1,0 +1,8 @@
+### Campaign Structure
+
+A campaign has a few goals:
+
+- Make it easy to play Marvel United without too much setup, I believe 3-5 sets (including the core sets) might be the sweet spot
+- Substitution paths for boxes should be available so we don't make them too attached to our suggestions alone, so if they are not available, we should provide three suggestions that cannot belong to the same set but have to be related to the character, and fit the role (hero/anti-hero, or villain)
+    e.g. If no Mighty Thor, we can't suggest Multicore Core Set characters since she belongs to it, thus we fetch three relations to provide it e.g. Miles Morales, then a Miles Morales relation from the comic-accuracy tool, e.g. Kate Bishop, rinse, repeat.
+- 
