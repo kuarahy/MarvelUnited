@@ -17,6 +17,8 @@ export const heroes: Character[] = [
   { id: 'jean-grey',           name: 'Jean Grey',          role: 'hero',      expansionId: 'xmen-core' },
   { id: 'wolverine',           name: 'Wolverine',          role: 'hero',      expansionId: 'xmen-core' },
   { id: 'storm',               name: 'Storm',              role: 'hero',      expansionId: 'xmen-core' },
+  { id: 'mohawk-storm',        name: 'Storm (Mohawk)',     role: 'hero',      expansionId: 'xmen-core', ksExclusive: true },
+  { id: 'old-man-logan',       name: 'Old Man Logan',      role: 'hero',      expansionId: 'xmen-core', ksExclusive: true },
   
   // ── Spider-Geddon Core Box ───────────────────────────────────────────────
   { id: 'peni-parker',         name: 'Peni Parker',        role: 'hero',      expansionId: 'spider-geddon' },
@@ -121,7 +123,6 @@ export const heroes: Character[] = [
 
   // ── Days of Future Past ──────────────────────────────────────────────────
   { id: 'logan',               name: 'Logan',              role: 'hero',      expansionId: 'dofp' },
-  { id: 'old-man-logan',       name: 'Old Man Logan',      role: 'hero',      expansionId: 'dofp', ksExclusive: true },
 
   // ── X-Men: First Class ───────────────────────────────────────────────────
   { id: 'angel-first-class',   name: 'Angel (First Class)', role: 'hero',     expansionId: 'first-class' },
@@ -302,7 +303,6 @@ export const heroes: Character[] = [
   { id: 'legion',              name: 'Legion',             role: 'anti-hero', expansionId: 'season-2-stretch-goals' },
   { id: 'marrow',              name: 'Marrow',             role: 'anti-hero', expansionId: 'season-2-stretch-goals' },
   { id: 'spiral',              name: 'Spiral',             role: 'anti-hero', expansionId: 'season-2-stretch-goals' },
-  { id: 'mohawk-storm',        name: 'Storm (Mohawk)',      role: 'hero',      expansionId: 'season-2-stretch-goals' },
   { id: 'namor',               name: 'Namor',              role: 'anti-hero', expansionId: 'season-2-stretch-goals' },
   { id: 'kitty-pryde',         name: 'Kitty Pryde',        role: 'hero',      expansionId: 'season-2-stretch-goals' },
   { id: 'northstar',           name: 'Northstar',          role: 'hero',      expansionId: 'season-2-stretch-goals' },
