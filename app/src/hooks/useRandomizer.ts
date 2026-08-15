@@ -1,14 +1,16 @@
 import { useState, useCallback } from 'react'
-import type { Character, Expansion } from '../types'
+import type { Character, Expansion, Location } from '../types'
 import { RandomizerService } from '../services'
-import { CharacterRepository, ExpansionRepository } from '../repositories'
+import { CharacterRepository, ExpansionRepository, LocationRepository } from '../repositories'
 import { heroes } from '../data/heroes'
 import { villains } from '../data/villains'
 
 const charRepo = new CharacterRepository()
 const expansionRepo = new ExpansionRepository()
+const locationRepo = new LocationRepository()
 const service = new RandomizerService(charRepo, expansionRepo)
 const allExpansions = expansionRepo.getAll()
+const allLocations = locationRepo.getAll()
 
 /** Parent expansion IDs for which the user owns the KS variant. */
 function ownedKsParentIds(ownedIds: Set<string>): Set<string> {
@@ -46,11 +48,17 @@ function filterByOwned<T extends { expansionId: string; ksExclusive?: boolean; a
   return filtered.length > 0 ? filtered : fallback
 }
 
+function filterLocationsByOwned(ownedIds: Set<string>): Location[] {
+  const filtered = allLocations.filter((l) => ownedIds.has(l.expansionId))
+  return filtered.length >= LOCATIONS_COUNT ? filtered : allLocations
+}
+
 export interface RandomizerState {
   hero: Character | null
   villain: Character | null
   team: Character[]
   expansion: Expansion | null
+  locations: Location[]
 }
 
 export interface RandomizerActions {
@@ -58,6 +66,7 @@ export interface RandomizerActions {
   rollVillain: () => void
   rollTeam: () => void
   rollExpansion: () => void
+  rollLocations: () => void
 }
 
 export function useRandomizer(ownedIds?: Set<string>): RandomizerState & RandomizerActions {
@@ -65,6 +74,7 @@ export function useRandomizer(ownedIds?: Set<string>): RandomizerState & Randomi
   const [villain, setVillain] = useState<Character | null>(null)
   const [team, setTeam] = useState<Character[]>([])
   const [expansion, setExpansion] = useState<Expansion | null>(null)
+  const [locations, setLocations] = useState<Location[]>([])
 
   const rollHero = useCallback(() => {
     const pool = ownedIds ? filterByOwned(heroes, ownedIds, heroes) : undefined
@@ -88,5 +98,10 @@ export function useRandomizer(ownedIds?: Set<string>): RandomizerState & Randomi
     setExpansion(service.rollExpansion(resolvedPool))
   }, [ownedIds])
 
-  return { hero, villain, team, expansion, rollHero, rollVillain, rollTeam, rollExpansion }
+  const rollLocations = useCallback(() => {
+    const pool = ownedIds ? filterLocationsByOwned(ownedIds) : allLocations
+    setLocations(service.rollLocations(pool))
+  }, [ownedIds])
+
+  return { hero, villain, team, expansion, locations, rollHero, rollVillain, rollTeam, rollExpansion, rollLocations }
 }
