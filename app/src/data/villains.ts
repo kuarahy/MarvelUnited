@@ -9,7 +9,7 @@ export const villains: Character[] = [
   // ── Spider-Geddon Core Box ───────────────────────────────────────────────
   { id: 'morlun',              name: 'Morlun',             role: 'villain', expansionId: 'spider-geddon' },
   { id: 'spot',                name: 'Spot',               role: 'villain', expansionId: 'spider-geddon' },
-  { id: 'antienom',        name: 'Antienom',         role: 'villain', expansionId: 'spider-geddon' },
+  { id: 'anti-venom',        name: 'Anti-Venom',         role: 'villain', expansionId: 'spider-geddon' },
   { id: 'superior-spider-man', name: 'Superior Spider-Man', role: 'villain', expansionId: 'spider-geddon' },
 
   // ── Multiverse Core Box ──────────────────────────────────────────────────
@@ -18,8 +18,8 @@ export const villains: Character[] = [
   { id: 'maestro',             name: 'Maestro',            role: 'villain', expansionId: 'multiverse-core' },
   { id: 'cosmic-ghost-rider-blaze', name: 'Cosmic Ghost Rider (Johnny Blaze)', role: 'villain', expansionId: 'multiverse-core' },
 
-  // ── Enter the Spidererse ───────────────────────────────────────────────
-  { id: 'green-goblin',        name: 'Green Goblin',       role: 'villain', expansionId: 'spidererse' },
+  // ── Enter the Spider-Verse ───────────────────────────────────────────────
+  { id: 'green-goblin',        name: 'Green Goblin',       role: 'villain', expansionId: 'spider-verse' },
 
   // ── Tales of Asgard ──────────────────────────────────────────────────────
   { id: 'loki',              name: 'Loki',               role: 'villain', expansionId: 'tales-of-asgard' },
@@ -51,7 +51,7 @@ export const villains: Character[] = [
   // ── Season 1 Stretch Goals (continued) ───────────────────────────────────
   { id: 'dormammu',            name: 'Dormammu',           role: 'villain', expansionId: 'season-1-stretch-goals' },
   { id: 'modok',               name: 'M.O.D.O.K.',        role: 'villain', expansionId: 'season-1-stretch-goals' },
-  { id: 'venom',             name: 'Venom',              role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'venom',               name: 'Venom',              role: 'villain', expansionId: 'season-1-stretch-goals' },
 
   // ── Season 2 Stretch Goals (continued) ───────────────────────────────────
   { id: 'callisto',            name: 'Callisto',           role: 'villain', expansionId: 'season-2-stretch-goals' },
@@ -100,7 +100,7 @@ export const villains: Character[] = [
 
   // ── World War Hulk ───────────────────────────────────────────────────────
   { id: 'world-breaker-hulk',  name: 'World Breaker Hulk', role: 'villain', expansionId: 'world-war-hulk' },
-  { id: 'theoid',            name: 'The Void',           role: 'villain', expansionId: 'world-war-hulk' },
+  { id: 'the-void',            name: 'The Void',           role: 'villain', expansionId: 'world-war-hulk' },
   { id: 'ares',              name: 'Ares',               role: 'villain', expansionId: 'world-war-hulk' },
   { id: 'gladiator-hulk',    name: 'Gladiator Hulk',     role: 'villain', expansionId: 'world-war-hulk' },
   { id: 'sentry',            name: 'Sentry',             role: 'villain', expansionId: 'world-war-hulk' },
@@ -109,8 +109,8 @@ export const villains: Character[] = [
   { id: 'scarlet-witch',     name: 'Scarlet Witch',      role: 'villain', expansionId: 'witching-hour' },
   { id: 'agatha-harkness',   name: 'Agatha Harkness',    role: 'villain', expansionId: 'witching-hour' },
   { id: 'grey-hulk',         name: 'Grey-Hulk',          role: 'villain', expansionId: 'witching-hour' },
-  { id: 'juggernaut-hero',   name: 'Juggernaut',         role: 'villain', expansionId: 'witching-hour' },
-  { id: 'mister-sinister-hero', name: 'Mister Sinister', role: 'villain', expansionId: 'witching-hour' },
+  { id: 'juggernaut',   name: 'Juggernaut',         role: 'villain', expansionId: 'witching-hour' },
+  { id: 'mister-sinister', name: 'Mister Sinister', role: 'villain', expansionId: 'witching-hour' },
 
   // ── Spider-Man's Greatest Foes ───────────────────────────────────────────
   { id: 'doctor-octopus',      name: 'Doctor Octopus',     role: 'villain', expansionId: 'spider-foes' },
@@ -121,7 +121,7 @@ export const villains: Character[] = [
   { id: 'vulture',             name: 'Vulture',            role: 'villain', expansionId: 'spider-foes' },
 
   // ── Secret Invasion ──────────────────────────────────────────────────────
-  { id: 'queeneranke',       name: 'Queen Veranke',      role: 'villain', expansionId: 'secret-invasion' },
+  { id: 'queen-veranke',       name: 'Queen Veranke',      role: 'villain', expansionId: 'secret-invasion' },
   { id: 'skrulls',             name: 'Skrulls',            role: 'villain', expansionId: 'secret-invasion' },
 
   // ── War of Kings ─────────────────────────────────────────────────────────
