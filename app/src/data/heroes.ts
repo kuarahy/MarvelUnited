@@ -149,11 +149,11 @@ export const heroes: Character[] = [
   { id: 'sentry',              name: 'Sentry',             role: 'anti-hero', expansionId: 'world-war-hulk' },
 
   // ── Witching Hour ────────────────────────────────────────────────────────
-  { id: 'agatha-harkness',     name: 'Agatha Harkness',   role: 'anti-hero', expansionId: 'witching-hour' },
+  { id: 'agatha-harkness',     name: 'Agatha Harkness',    role: 'anti-hero', expansionId: 'witching-hour' },
   { id: 'deadpool-x-force',    name: 'Deadpool (X-Force)', role: 'hero',      expansionId: 'witching-hour' },
-  { id: 'grey-hulk',           name: 'Grey-Hulk',         role: 'anti-hero', expansionId: 'witching-hour' },
-  { id: 'juggernaut-hero',     name: 'Juggernaut',        role: 'anti-hero', expansionId: 'witching-hour' },
-  { id: 'mister-sinister-hero',name: 'Mister Sinister',   role: 'anti-hero', expansionId: 'witching-hour' },
+  { id: 'grey-hulk',           name: 'Grey-Hulk',          role: 'anti-hero', expansionId: 'witching-hour' },
+  { id: 'mister-sinister-hero',name: 'Mister Sinister',    role: 'anti-hero', expansionId: 'witching-hour' },
+  { id: 'juggernaut',          name: 'Juggernaut',         role: 'anti-hero', expansionId: 'witching-hour' },
 
   // ── Pet Companions ───────────────────────────────────────────────────────
   { id: 'lockheed',            name: 'Lockheed',           role: 'hero',      expansionId: 'pet-companions' },

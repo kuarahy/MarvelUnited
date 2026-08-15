@@ -113,10 +113,6 @@ export const villains: Character[] = [
 
   // ── Witching Hour ────────────────────────────────────────────────────────
   { id: 'scarlet-witch',       name: 'Scarlet Witch',      role: 'villain', expansionId: 'witching-hour' },
-  { id: 'agatha-harkness',     name: 'Agatha Harkness',    role: 'villain', expansionId: 'witching-hour' },
-  { id: 'grey-hulk',           name: 'Grey-Hulk',          role: 'villain', expansionId: 'witching-hour' },
-  { id: 'juggernaut',          name: 'Juggernaut',         role: 'villain', expansionId: 'witching-hour' },
-  { id: 'mister-sinister',     name: 'Mister Sinister', role: 'villain', expansionId: 'witching-hour' },
 
   // ── Spider-Man's Greatest Foes ───────────────────────────────────────────
   { id: 'doctor-octopus',      name: 'Doctor Octopus',     role: 'villain', expansionId: 'spider-foes' },
