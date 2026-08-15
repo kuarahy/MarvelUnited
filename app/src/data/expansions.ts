@@ -41,7 +41,7 @@ export const expansions: Expansion[] = [
   { id: 'world-war-hulk-ks',     name: 'World War Hulk (KS)',              type: 'promo', parentId: 'world-war-hulk' },
   { id: 'multiverse-core-ks',    name: 'Multiverse Core Box (KS)',         type: 'promo', parentId: 'multiverse-core' },
   { id: 'infinity-gauntlet',     name: 'The Infinity Gauntlet',            type: 'promo' },
-  { id: 'spider-foes',           name: 'Return of the Sinister Six',       type: 'promo' },
+  { id: 'return-of-the-sinister-six', name: 'Return of the Sinister Six',  type: 'promo' },
   { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',          type: 'promo' },
   { id: 'season-1-stretch-goals', name: 'Season 1 Stretch Goals',          type: 'promo' },
   { id: 'season-2-stretch-goals', name: 'Season 2 Stretch Goals',          type: 'promo' },

@@ -51,7 +51,6 @@ export const villains: Character[] = [
 
   // ── X-Men Blue Team ──────────────────────────────────────────────────────
   { id: 'mister-sinister',     name: 'Mister Sinister',    role: 'villain', expansionId: 'xmen-blue' },
-  { id: 'thanos',              name: 'Thanos',             role: 'villain', expansionId: 'infinity-gauntlet' },
 
   // ── Season 1 Stretch Goals (continued) ───────────────────────────────────
   { id: 'dormammu',            name: 'Dormammu',           role: 'villain', expansionId: 'season-1-stretch-goals' },
@@ -112,13 +111,13 @@ export const villains: Character[] = [
   // ── Witching Hour ────────────────────────────────────────────────────────
   { id: 'scarlet-witch',       name: 'Scarlet Witch',      role: 'villain', expansionId: 'witching-hour' },
 
-  // ── Spider-Man's Greatest Foes ───────────────────────────────────────────
-  { id: 'doctor-octopus',      name: 'Doctor Octopus',     role: 'villain', expansionId: 'spider-foes' },
-  { id: 'electro',             name: 'Electro',            role: 'villain', expansionId: 'spider-foes' },
-  { id: 'kraven',              name: 'Kraven',             role: 'villain', expansionId: 'spider-foes' },
-  { id: 'mysterio',            name: 'Mysterio',           role: 'villain', expansionId: 'spider-foes' },
-  { id: 'sandman',             name: 'Sandman',            role: 'villain', expansionId: 'spider-foes' },
-  { id: 'vulture',             name: 'Vulture',            role: 'villain', expansionId: 'spider-foes' },
+  // ── Return of the Sinister Six ───────────────────────────────────────────
+  { id: 'doctor-octopus',      name: 'Doctor Octopus',     role: 'villain', expansionId: 'return-of-the-sinister-six' },
+  { id: 'electro',             name: 'Electro',            role: 'villain', expansionId: 'return-of-the-sinister-six' },
+  { id: 'kraven',              name: 'Kraven',             role: 'villain', expansionId: 'return-of-the-sinister-six' },
+  { id: 'mysterio',            name: 'Mysterio',           role: 'villain', expansionId: 'return-of-the-sinister-six' },
+  { id: 'sandman',             name: 'Sandman',            role: 'villain', expansionId: 'return-of-the-sinister-six' },
+  { id: 'vulture',             name: 'Vulture',            role: 'villain', expansionId: 'return-of-the-sinister-six' },
 
   // ── Secret Invasion ──────────────────────────────────────────────────────
   { id: 'queen-veranke',       name: 'Queen Veranke',      role: 'villain', expansionId: 'secret-invasion' },
@@ -185,6 +184,7 @@ export const villains: Character[] = [
   { id: 'black-dwarf',         name: 'Black Dwarf',        role: 'villain', expansionId: 'infinity-gauntlet' },
   { id: 'ebony-maw',           name: 'Ebony Maw',          role: 'villain', expansionId: 'infinity-gauntlet' },
   { id: 'proxima-midnight',    name: 'Proxima Midnight',   role: 'villain', expansionId: 'infinity-gauntlet' },
+  { id: 'thanos',              name: 'Thanos',             role: 'villain', expansionId: 'infinity-gauntlet' },
 
   // ── Season 2 Stretch Goals ────────────────────────────────────────────────────────────────────
   { id: 'avalanche',           name: 'Avalanche',          role: 'villain', expansionId: 'season-2-stretch-goals' },
