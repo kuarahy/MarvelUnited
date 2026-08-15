@@ -33,7 +33,7 @@ export const expansions: Expansion[] = [
   { id: 'horsemen',            name: 'X-Men: The Horsemen of Apocalypse',type: 'promo' },
 
   // ── KS Exclusive Packs (parentId = retail box; includes retail roster + KS extras) ──
-  { id: 'civil-war',             name: 'Civil War',                        type: 'promo', parentId: 'civil-war' },
+  { id: 'civil-war',             name: 'Civil War (KS)',                   type: 'promo', parentId: 'civil-war' },
   { id: 'deadpool-ks',           name: 'Deadpool (KS)',                    type: 'promo', parentId: 'deadpool' },
   { id: 'dofp-ks',               name: 'Days of Future Past (KS)',         type: 'promo', parentId: 'dofp' },
   { id: 'spider-verse-ks',       name: 'Enter the Spider-Verse (KS)',      type: 'promo', parentId: 'spider-verse' },
