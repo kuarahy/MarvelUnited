@@ -19,6 +19,8 @@ export const heroes: Character[] = [
   { id: 'storm',               name: 'Storm',              role: 'hero',      expansionId: 'xmen-core' },
   { id: 'mohawk-storm',        name: 'Storm (Mohawk)',     role: 'hero',      expansionId: 'xmen-core', ksExclusive: true },
   { id: 'old-man-logan',       name: 'Old Man Logan',      role: 'hero',      expansionId: 'xmen-core', ksExclusive: true },
+  { id: 'mystique',            name: 'Mystique',           role: 'anti-hero', expansionId: 'xmen-core' },
+  { id: 'magneto',             name: 'Magneto',            role: 'anti-hero', expansionId: 'xmen-core' },
   
   // ── Spider-Geddon Core Box ───────────────────────────────────────────────
   { id: 'peni-parker',         name: 'Peni Parker',        role: 'hero',      expansionId: 'spider-geddon' },
@@ -79,8 +81,6 @@ export const heroes: Character[] = [
   { id: 'jubilee',             name: 'Jubilee',            role: 'hero',      expansionId: 'xmen-blue' },
   { id: 'rogue',               name: 'Rogue',              role: 'hero',      expansionId: 'xmen-blue' },
   { id: 'gambit',              name: 'Gambit',             role: 'hero',      expansionId: 'xmen-blue' },
-  { id: 'mystique',            name: 'Mystique',           role: 'anti-hero', expansionId: 'xmen-core' },
-  { id: 'magneto',             name: 'Magneto',            role: 'anti-hero', expansionId: 'xmen-core' },
 
   // ── X-Men Gold Team ──────────────────────────────────────────────────────
   { id: 'archangel',           name: 'Archangel',          role: 'hero',      expansionId: 'xmen-gold' },
