@@ -59,16 +59,15 @@ A 4-act Avengers campaign starting at street level and escalating to cosmic thre
 - [x] Add name and links social media, donation boxes, etc (no ads! :D)
 - [x] Tabs for Locatios added
 - [x] Filters cache
-- [ ] Tabs Campaigns, Scenarios, and Randomizers Tab to unity both
-- [ ] Campaign Randomizer
- - Toggle option for hero relation using comic-accuracy.
+- [ ] Tabs Campaigns, Scenarios, and Randomizers tab to unify both
+- [ ] Campaign Randomizer with [comic-accuracy](https://github.com/kuarahy/Marvel-United-Randomizer/tree/main/tools/comic-accuracy)
+ - Toggle option for hero relation using comic-accuracy. OFF randomizes all sets, ON turns relation on, with multiple levels of input based on historical comic book crossover values
+ - MCU movie order campaigns
+ - Cronological order campaigns
 - [ ] Release PDFs to communities with images, making it easy for people to play with
 - [ ] Locations randomizer will be added for v2
 - [ ] Add suggestions or automated connections to Random Scenarios using [comic-accuracy](https://github.com/kuarahy/Marvel-United-Randomizer/tree/main/tools/comic-accuracy).
 
-**Under Analysis:**
-- [ ] Linked Sources and weighted randomizations by using [comic-accuracy](https://github.com/kuarahy/Marvel-United-Randomizer/tree/main/tools/comic-accuracy). This would also need either an
-addition to comic-accuracy or handling input from users, which is not ideal for this project
 
 
 ---
