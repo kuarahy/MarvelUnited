@@ -50,7 +50,7 @@ A 4-act Avengers campaign starting at street level and escalating to cosmic thre
 **Required:** Marvel United base set  
 **Recommended expansions:** Spider-Man, Avengers, Guardians of the Galaxy
 
-## Approved Roadmap
+## 🗺️ Roadmap
 
 - [x] Convert code to a front-end centric code that can be deployed and read directly from Vercel, or similar
 - [x] Add more campaign boxes (Kickstarter Promo Box 2, The Infinity Gauntlet, Spider-Geddon)
@@ -60,6 +60,8 @@ A 4-act Avengers campaign starting at street level and escalating to cosmic thre
 - [x] Tabs for Locatios added
 - [x] Filters cache
 - [ ] Tabs Campaigns, Scenarios, and Randomizers Tab to unity both
+- [ ] Campaign Randomizer
+ - Toggle option for hero relation using comic-accuracy.
 - [ ] Release PDFs to communities with images, making it easy for people to play with
 - [ ] Locations randomizer will be added for v2
 - [ ] Add suggestions or automated connections to Random Scenarios using [comic-accuracy](https://github.com/kuarahy/Marvel-United-Randomizer/tree/main/tools/comic-accuracy).
