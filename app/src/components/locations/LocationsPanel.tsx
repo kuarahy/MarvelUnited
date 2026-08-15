@@ -1,18 +1,20 @@
 import { useRandomizer, useCollection } from '../../hooks'
-import { ExpansionRepository } from '../../repositories'
+import { ExpansionRepository, LocationRepository } from '../../repositories'
 import { RollButton, CollectionFilterPanel, LocationResultCard } from '../randomizer'
 
 const expansionRepo = new ExpansionRepository()
-const allExpansions = expansionRepo.getAll()
+const locationRepo = new LocationRepository()
+const locationExpansionIds = new Set(locationRepo.getAll().map((l) => l.expansionId))
+const locationExpansions = expansionRepo.getAll().filter((e) => locationExpansionIds.has(e.id))
 
 export function LocationsPanel() {
-  const collection = useCollection(allExpansions.map((e) => e.id), 'mu-randomizer:locations-owned-expansions')
+  const collection = useCollection(locationExpansions.map((e) => e.id), 'mu-randomizer:locations-owned-expansions')
   const { locations, rollLocations } = useRandomizer(collection.ownedIds)
 
   return (
     <div className="flex flex-col gap-6">
       <CollectionFilterPanel
-        expansions={allExpansions}
+        expansions={locationExpansions}
         ownedIds={collection.ownedIds}
         onToggle={collection.toggle}
         onSetAll={collection.setAll}
