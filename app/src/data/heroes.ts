@@ -53,9 +53,6 @@ export const heroes: Character[] = [
   { id: 'gamora',              name: 'Gamora',             role: 'hero',      expansionId: 'guardians', ksExclusive: true },
   { id: 'groot',               name: 'Groot',              role: 'hero',      expansionId: 'guardians' },
   { id: 'rocket',              name: 'Rocket',             role: 'hero',      expansionId: 'guardians' },
-  { id: 'drax',                name: 'Drax The Destroyer', role: 'hero',      expansionId: 'guardians' },
-  { id: 'mantis',              name: 'Mantis',             role: 'hero',      expansionId: 'guardians' },
-  { id: 'nebula',              name: 'Nebula',             role: 'hero',      expansionId: 'guardians' },
   { id: 'yondu',               name: 'Yondu',              role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'silver-surfer',       name: 'Silver Surfer',      role: 'hero',      expansionId: 'fantastic-four' },
 
@@ -68,7 +65,8 @@ export const heroes: Character[] = [
   { id: 'blade',               name: 'Blade',              role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'moon-knight',         name: 'Moon Knight',        role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'the-punisher',        name: 'The Punisher',       role: 'hero',      expansionId: 'season-1-stretch-goals' },
-
+  { id: 'nebula',              name: 'Nebula',             role: 'hero',      expansionId: 'season-1-stretch-goals' },
+  
   // ── X-MEN: The Horsemen of Apocalypse ───────────────────────────────────
   // (Apocalypse is listed as anti-hero in the DB — he's a playable hero in this expansion)
   { id: 'apocalypse',          name: 'Apocalypse',         role: 'anti-hero', expansionId: 'horsemen' },
@@ -79,8 +77,8 @@ export const heroes: Character[] = [
   { id: 'jubilee',             name: 'Jubilee',            role: 'hero',      expansionId: 'xmen-blue' },
   { id: 'rogue',               name: 'Rogue',              role: 'hero',      expansionId: 'xmen-blue' },
   { id: 'gambit',              name: 'Gambit',             role: 'hero',      expansionId: 'xmen-blue' },
-  { id: 'mystique',            name: 'Mystique',           role: 'anti-hero', expansionId: 'xmen-blue' },
-  { id: 'magneto',             name: 'Magneto',            role: 'anti-hero', expansionId: 'xmen-blue' },
+  { id: 'mystique',            name: 'Mystique',           role: 'anti-hero', expansionId: 'xmen-core' },
+  { id: 'magneto',             name: 'Magneto',            role: 'anti-hero', expansionId: 'xmen-core' },
 
   // ── X-Men Gold Team ──────────────────────────────────────────────────────
   { id: 'archangel',           name: 'Archangel',          role: 'hero',      expansionId: 'xmen-gold' },
@@ -99,7 +97,6 @@ export const heroes: Character[] = [
   { id: 'black-panther',       name: 'Black Panther',      role: 'hero',      expansionId: 'black-panther' },
   { id: 'winter-soldier',      name: 'Winter Soldier',     role: 'hero',      expansionId: 'black-panther' },
   { id: 'shuri',               name: 'Shuri',              role: 'hero',      expansionId: 'black-panther' },
-  { id: 'okoye',               name: 'Okoye',              role: 'hero',      expansionId: 'black-panther' },
 
   // ── Civil War ────────────────────────────────────────────────────────────
   { id: 'cap-classic',         name: 'Captain America (Classic)', role: 'hero', expansionId: 'civil-war' },
@@ -142,11 +139,10 @@ export const heroes: Character[] = [
 
   // ── Maximum Carnage ──────────────────────────────────────────────────────
   { id: 'morbius',             name: 'Morbius',            role: 'anti-hero', expansionId: 'maximum-carnage' },
-  { id: 'venom',               name: 'Venom',              role: 'anti-hero', expansionId: 'maximum-carnage' },
 
   // ── World War Hulk ───────────────────────────────────────────────────────
   { id: 'ares',                name: 'Ares',               role: 'anti-hero', expansionId: 'world-war-hulk' },
-  { id: 'doc-samson',          name: 'Doc Samson',         role: 'hero',      expansionId: 'world-war-hulk' },
+  { id: 'doc-samson',          name: 'Doc Samson',         role: 'hero',      expansionId: 'world-war-hulk', ksExclusive: true },
   { id: 'gladiator-hulk',      name: 'Gladiator Hulk',     role: 'anti-hero', expansionId: 'world-war-hulk' },
   { id: 'hercules',            name: 'Hercules',           role: 'hero',      expansionId: 'world-war-hulk' },
   { id: 'hulkbuster-iron-man', name: 'Hulkbuster Iron Man',role: 'hero',      expansionId: 'world-war-hulk' },
@@ -234,6 +230,13 @@ export const heroes: Character[] = [
   { id: 'white-widow',         name: 'White Widow',        role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
   { id: 'wiccan',              name: 'Wiccan',             role: 'hero',      expansionId: 'season-3-stretch-goals' },
   { id: 'wong',                name: 'Wong',               role: 'hero',      expansionId: 'season-3-stretch-goals' },
+  { id: 'captain-britain-betsy', name: 'Captain Britain (Betsy Braddock)', role: 'hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'havok-xfactor',       name: 'Havok (X-Factor)',   role: 'hero',      expansionId: 'season-3-stretch-goals' },
+  { id: 'captain-america-sam', name: 'Captain America (Sam Wilson)', role: 'hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'ghost-rider-blaze',   name: 'Ghost Rider (Johnny Blaze)', role: 'hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'darkstar',            name: 'Darkstar',           role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'ursa-major',          name: 'Ursa Major',         role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'red-guardian',        name: 'Red Guardian',       role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
 
   // ── Season 1 Stretch Goals ──────────────────────────────────────────────────────────────────
   { id: 'adam-warlock',        name: 'Adam Warlock',       role: 'hero',      expansionId: 'season-1-stretch-goals' },
@@ -257,6 +260,10 @@ export const heroes: Character[] = [
   { id: 'squirrel-girl',       name: 'Squirrel Girl',      role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'vision',              name: 'Vision',             role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'war-machine',         name: 'War Machine',        role: 'hero',      expansionId: 'season-1-stretch-goals' },
+  { id: 'drax',                name: 'Drax The Destroyer', role: 'hero',      expansionId: 'season-1-stretch-goals' },
+  { id: 'mantis',              name: 'Mantis',             role: 'hero',      expansionId: 'season-1-stretch-goals' },
+  { id: 'okoye',               name: 'Okoye',              role: 'hero',      expansionId: 'season-1-stretch-goals' },
+  { id: 'venom',               name: 'Venom',              role: 'anti-hero', expansionId: 'season-1-stretch-goals' },
 
   // ── Season 2 Stretch Goals ────────────────────────────────────────────────────────────────────
   { id: 'emma-frost',          name: 'Emma Frost',         role: 'anti-hero', expansionId: 'season-2-stretch-goals' },

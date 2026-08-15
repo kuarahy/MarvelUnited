@@ -39,6 +39,7 @@ export const expansions: Expansion[] = [
   { id: 'spider-verse-ks',       name: 'Enter the Spider-Verse (KS)',      type: 'promo', parentId: 'spider-verse' },
   { id: 'guardians-ks',          name: 'Guardians of the Galaxy (KS)',     type: 'promo', parentId: 'guardians' },
   { id: 'tales-of-asgard-ks',    name: 'Tales of Asgard (KS)',             type: 'promo', parentId: 'tales-of-asgard' },
+  { id: 'world-war-hulk-ks',     name: 'World War Hulk (KS)',              type: 'promo', parentId: 'world-war-hulk' },
   { id: 'infinity-gauntlet',     name: 'The Infinity Gauntlet',            type: 'promo' },
   { id: 'spider-foes',           name: 'Return of the Sinister Six',       type: 'promo' },
   { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',         type: 'promo' },
