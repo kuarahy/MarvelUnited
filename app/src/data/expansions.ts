@@ -46,5 +46,6 @@ export const expansions: Expansion[] = [
   { id: 'season-2-stretch-goals', name: 'Season 2 Stretch Goals',          type: 'promo' },
   { id: 'xmen-blue-ks',          name: 'X-Men: Blue Team (KS)',            type: 'promo', parentId: 'xmen-blue' },
   { id: 'xmen-gold-ks',          name: 'X-Men: Gold Team (KS)',            type: 'promo', parentId: 'xmen-gold' },
-  { id: 'xmen-core-ks',       name: 'X-Men Core Box (KS)',                type: 'promo', parentId: 'xmen-core' },
+  { id: 'xmen-core-ks',          name: 'X-Men Core Box (KS)',              type: 'promo', parentId: 'xmen-core' },
+  { id: 'fin-fang-foom',         name: 'Fin Fang Foom',                    type: 'promo' },
 ]
