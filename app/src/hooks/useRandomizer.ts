@@ -49,7 +49,8 @@ function filterByOwned<T extends { expansionId: string; ksExclusive?: boolean; a
 }
 
 function filterLocationsByOwned(ownedIds: Set<string>): Location[] {
-  const filtered = allLocations.filter((l) => ownedIds.has(l.expansionId))
+  const ksParents = ownedKsParentIds(ownedIds)
+  const filtered = allLocations.filter((l) => ownedIds.has(l.expansionId) || ksParents.has(l.expansionId))
   return filtered.length > 0 ? filtered : allLocations
 }
 

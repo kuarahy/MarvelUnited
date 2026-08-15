@@ -5,7 +5,9 @@ import { RollButton, CollectionFilterPanel, LocationResultCard } from '../random
 const expansionRepo = new ExpansionRepository()
 const locationRepo = new LocationRepository()
 const locationExpansionIds = new Set(locationRepo.getAll().map((l) => l.expansionId))
-const locationExpansions = expansionRepo.getAll().filter((e) => locationExpansionIds.has(e.id))
+const locationExpansions = expansionRepo.getAll().filter(
+  (e) => locationExpansionIds.has(e.id) || (e.parentId !== undefined && locationExpansionIds.has(e.parentId)),
+)
 
 export function LocationsPanel() {
   const collection = useCollection(locationExpansions.map((e) => e.id), 'mu-randomizer:locations-owned-expansions')
