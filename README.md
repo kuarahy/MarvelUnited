@@ -63,7 +63,7 @@ A 4-act Avengers campaign starting at street level and escalating to cosmic thre
 - [ ] Campaign Randomizer with [comic-accuracy](https://github.com/kuarahy/Marvel-United-Randomizer/tree/main/tools/comic-accuracy)
  - Toggle option for hero relation using comic-accuracy. OFF randomizes all sets, ON turns relation on, with multiple levels of input based on historical comic book crossover values
  - MCU movie order campaigns
- - Cronological order campaigns
+ - Chronological order campaigns
 - [ ] Release PDFs to communities with images, making it easy for people to play with
 - [ ] Locations randomizer will be added for v2
 - [ ] Add suggestions or automated connections to Random Scenarios using [comic-accuracy](https://github.com/kuarahy/Marvel-United-Randomizer/tree/main/tools/comic-accuracy).
