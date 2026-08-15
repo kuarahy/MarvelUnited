@@ -93,7 +93,6 @@ export const heroes: Character[] = [
   { id: 'deadpool',            name: 'Deadpool',           role: 'hero',      expansionId: 'deadpool' },
   { id: 'lady-deadpool',       name: 'Lady Deadpool',      role: 'hero',      expansionId: 'deadpool', ksExclusive: true },
   { id: 'bob-agent-of-hydra',  name: 'Bob, Agent of Hydra',role: 'anti-hero', expansionId: 'deadpool' },
-  { id: 'deadpool-unicorn',    name: 'Deadpool in a Unicorn', role: 'hero',   expansionId: 'deadpool' },
 
   // ── Rise of the Black Panther ────────────────────────────────────────────
   { id: 'black-panther',       name: 'Black Panther',      role: 'hero',      expansionId: 'black-panther' },
@@ -103,8 +102,8 @@ export const heroes: Character[] = [
   // ── Civil War ────────────────────────────────────────────────────────────
   { id: 'cap-classic',         name: 'Captain America (Classic)', role: 'hero', expansionId: 'civil-war' },
   { id: 'iron-man-civil-war',  name: 'Iron Man (Civil War)', role: 'hero',    expansionId: 'civil-war' },
-  { id: 'iron-spider',         name: 'Iron Spider',        role: 'hero',      expansionId: 'civil-war' },
-  { id: 'hulkling',            name: 'Hulkling',           role: 'hero',      expansionId: 'civil-war' },
+  { id: 'iron-spider',         name: 'Iron Spider',        role: 'hero',      expansionId: 'civil-war', ksExclusive: true },
+  { id: 'hulkling',            name: 'Hulkling',           role: 'hero',      expansionId: 'civil-war', ksExclusive: true },
   { id: 'goliath',             name: 'Goliath',            role: 'hero',      expansionId: 'civil-war' },
   { id: 'kate-bishop',         name: 'Kate Bishop',        role: 'hero',      expansionId: 'civil-war' },
   { id: 'spectrum',            name: 'Spectrum',           role: 'hero',      expansionId: 'civil-war' },
