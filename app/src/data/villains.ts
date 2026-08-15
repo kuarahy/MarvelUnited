@@ -16,7 +16,8 @@ export const villains: Character[] = [
   { id: 'emperor-doom',        name: 'Emperor Doom',       role: 'villain', expansionId: 'multiverse-core' },
   { id: 'immortus',            name: 'Immortus',           role: 'villain', expansionId: 'multiverse-core' },
   { id: 'maestro',             name: 'Maestro',            role: 'villain', expansionId: 'multiverse-core' },
-  { id: 'cosmic-ghost-rider-blaze', name: 'Cosmic Ghost Rider (Johnny Blaze)', role: 'villain', expansionId: 'multiverse-core' },
+  { id: 'cosmic-ghost-rider',  name: 'Cosmic Ghost Rider', role: 'villain', expansionId: 'multiverse-core' },
+  { id: 'bulldozer',             name: 'Bulldozer',          role: 'villain', expansionId: 'multiverse-core', ksExclusive: true },
 
   // ── Enter the Spider-Verse ───────────────────────────────────────────────
   { id: 'green-goblin',        name: 'Green Goblin',       role: 'villain', expansionId: 'spider-verse' },
@@ -147,7 +148,6 @@ export const villains: Character[] = [
   { id: 'abomination',         name: 'Abomination',        role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'absorbing-man',       name: 'Absorbing Man',      role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'blastaar',            name: 'Blastaar',           role: 'villain', expansionId: 'season-3-stretch-goals' },
-  { id: 'bulldozer',           name: 'Bulldozer',          role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'chameleon',           name: 'Chameleon',          role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'crimson-dynamo',      name: 'Crimson Dynamo',     role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'crossbones',          name: 'Crossbones',         role: 'villain', expansionId: 'season-3-stretch-goals' },

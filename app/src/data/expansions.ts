@@ -32,7 +32,6 @@ export const expansions: Expansion[] = [
   { id: 'age-of-apocalypse',   name: 'X-Men: The Age of Apocalypse',     type: 'expansion' },
   { id: 'horsemen',            name: 'X-Men: The Horsemen of Apocalypse',type: 'promo' },
 
-
   // ── KS Exclusive Packs (parentId = retail box; includes retail roster + KS extras) ──
   { id: 'deadpool-ks',           name: 'Deadpool (KS)',                    type: 'promo', parentId: 'deadpool' },
   { id: 'dofp-ks',               name: 'Days of Future Past (KS)',         type: 'promo', parentId: 'dofp' },
@@ -40,9 +39,10 @@ export const expansions: Expansion[] = [
   { id: 'guardians-ks',          name: 'Guardians of the Galaxy (KS)',     type: 'promo', parentId: 'guardians' },
   { id: 'tales-of-asgard-ks',    name: 'Tales of Asgard (KS)',             type: 'promo', parentId: 'tales-of-asgard' },
   { id: 'world-war-hulk-ks',     name: 'World War Hulk (KS)',              type: 'promo', parentId: 'world-war-hulk' },
+  { id: 'multiverse-core',       name: 'Multiverse Core Box',              type: 'core',  parentId: 'multiverse-core' },
   { id: 'infinity-gauntlet',     name: 'The Infinity Gauntlet',            type: 'promo' },
   { id: 'spider-foes',           name: 'Return of the Sinister Six',       type: 'promo' },
-  { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',         type: 'promo' },
+  { id: 'season-3-stretch-goals', name: 'Season 3 Stretch Goals',          type: 'promo' },
   { id: 'season-1-stretch-goals', name: 'Season 1 Stretch Goals',          type: 'promo' },
   { id: 'season-2-stretch-goals', name: 'Season 2 Stretch Goals',          type: 'promo' },
   { id: 'xmen-blue-ks',          name: 'X-Men: Blue Team (KS)',            type: 'promo', parentId: 'xmen-blue' },
