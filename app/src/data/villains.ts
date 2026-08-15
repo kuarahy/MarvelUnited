@@ -58,6 +58,7 @@ export const villains: Character[] = [
   // ── Deadpool ─────────────────────────────────────────────────────────────
   { id: 'deadpool-v',          name: 'Deadpool',           role: 'villain', expansionId: 'deadpool' },
   { id: 'deadpool-challenge',  name: 'Deadpool (Challenge)', role: 'villain', expansionId: 'deadpool' },
+  { id: 'bob-v',               name: 'Bob, Agent of Hydra',role: 'villain', expansionId: 'deadpool' },
 
   // ── Rise of the Black Panther ────────────────────────────────────────────
   { id: 'killmonger',          name: 'Killmonger',         role: 'villain', expansionId: 'black-panther' },

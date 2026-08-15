@@ -271,6 +271,7 @@
   "super-skrull":            { "slug": "Super-Skrull",                 "role": "villain" },
   "deadpool-v":              { "slug": "Deadpool_(Villain)",           "role": "villain" },
   "deadpool-challenge":      { "slug": "Deadpool_(Challenge)",         "role": "villain" },
+  "bob-v":                   { "slug": "Bob,_Agent_of_Hydra",          "role": "villain" },
   "killmonger":              { "slug": "Killmonger",                   "role": "villain" },
   "colossus-v":              { "slug": "Colossus_(Phoenix_Five)",      "role": "villain" },
   "cyclops-v":               { "slug": "Cyclops_(Phoenix_Five)",       "role": "villain" },
