@@ -57,7 +57,9 @@ A 4-act Avengers campaign starting at street level and escalating to cosmic thre
 - [x] Add images to every expansion, hero, villain, and fields
 - [x] Collection filter to sort by
 - [x] Add name and links social media, donation boxes, etc (no ads! :D)
-- [ ] Tabs for Locations, Campaigns, Scenarios, and Randomizers
+- [x] Tabs for Locatios added
+- [x] Filters cache
+- [ ] Tabs Campaigns, Scenarios, and Randomizers Tab to unity both
 - [ ] Release PDFs to communities with images, making it easy for people to play with
 - [ ] Locations randomizer will be added for v2
 - [ ] Add suggestions or automated connections to Random Scenarios using [comic-accuracy](https://github.com/kuarahy/Marvel-United-Randomizer/tree/main/tools/comic-accuracy).
