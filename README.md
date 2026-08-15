@@ -66,8 +66,6 @@ A 4-act Avengers campaign starting at street level and escalating to cosmic thre
 - [ ] Locations randomizer will be added for v2
 - [ ] Add suggestions or automated connections to Random Scenarios using [comic-accuracy](https://github.com/kuarahy/Marvel-United-Randomizer/tree/main/tools/comic-accuracy).
 
-- [ ] 
-
 **Under Analysis:**
 - [ ] Linked Sources and weighted randomizations by using [comic-accuracy](https://github.com/kuarahy/Marvel-United-Randomizer/tree/main/tools/comic-accuracy). This would also need either an
 addition to comic-accuracy or handling input from users, which is not ideal for this project
