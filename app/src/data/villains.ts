@@ -102,6 +102,7 @@ export const villains: Character[] = [
   { id: 'scorpion',            name: 'Scorpion',           role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'demogoblin-doppelganger', name: 'Demogoblin & Doppelganger', role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'morbius',             name: 'Morbius',            role: 'villain', expansionId: 'maximum-carnage' },
+  { id: 'new-sinister-six',        name: 'New Sinister Six',   role: 'villain', expansionId: 'maximum-carnage' },
 
   // ── World War Hulk ───────────────────────────────────────────────────────
   { id: 'world-breaker-hulk',  name: 'World Breaker Hulk', role: 'villain', expansionId: 'world-war-hulk' },
