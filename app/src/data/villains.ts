@@ -9,11 +9,14 @@ export const villains: Character[] = [
   // ── Spider-Geddon Core Box ───────────────────────────────────────────────
   { id: 'morlun',              name: 'Morlun',             role: 'villain', expansionId: 'spider-geddon' },
   { id: 'spot',                name: 'Spot',               role: 'villain', expansionId: 'spider-geddon' },
+  { id: 'anti-venom-v',        name: 'Anti-Venom',         role: 'villain', expansionId: 'spider-geddon' },
+  { id: 'superior-spider-man-v', name: 'Superior Spider-Man', role: 'villain', expansionId: 'spider-geddon' },
 
   // ── Multiverse Core Box ──────────────────────────────────────────────────
   { id: 'emperor-doom',        name: 'Emperor Doom',       role: 'villain', expansionId: 'multiverse-core' },
   { id: 'immortus',            name: 'Immortus',           role: 'villain', expansionId: 'multiverse-core' },
   { id: 'maestro',             name: 'Maestro',            role: 'villain', expansionId: 'multiverse-core' },
+  { id: 'cosmic-ghost-rider-v',name: 'Cosmic Ghost Rider', role: 'villain', expansionId: 'multiverse-core' },
 
   // ── Enter the Spider-Verse ───────────────────────────────────────────────
   { id: 'green-goblin',        name: 'Green Goblin',       role: 'villain', expansionId: 'spider-verse' },
@@ -33,6 +36,7 @@ export const villains: Character[] = [
   { id: 'war',                 name: 'War',                role: 'villain', expansionId: 'horsemen' },
   { id: 'death',               name: 'Death',              role: 'villain', expansionId: 'horsemen' },
   { id: 'pestilence',          name: 'Pestilence',         role: 'villain', expansionId: 'horsemen' },
+  { id: 'apocalypse-v',        name: 'Apocalypse',         role: 'villain', expansionId: 'horsemen' },
 
   // ── X-Men Core Box ───────────────────────────────────────────────────────
   { id: 'juggernaut',          name: 'Juggernaut',         role: 'villain', expansionId: 'xmen-core' },
@@ -92,13 +96,21 @@ export const villains: Character[] = [
   { id: 'shriek',              name: 'Shriek',             role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'scorpion',            name: 'Scorpion',           role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'demogoblin-doppelganger', name: 'Demogoblin & Doppelganger', role: 'villain', expansionId: 'maximum-carnage' },
+  { id: 'morbius-v',           name: 'Morbius',            role: 'villain', expansionId: 'maximum-carnage' },
 
   // ── World War Hulk ───────────────────────────────────────────────────────
   { id: 'world-breaker-hulk',  name: 'World Breaker Hulk', role: 'villain', expansionId: 'world-war-hulk' },
   { id: 'the-void',            name: 'The Void',           role: 'villain', expansionId: 'world-war-hulk' },
+  { id: 'ares-v',              name: 'Ares',               role: 'villain', expansionId: 'world-war-hulk' },
+  { id: 'gladiator-hulk-v',    name: 'Gladiator Hulk',     role: 'villain', expansionId: 'world-war-hulk' },
+  { id: 'sentry-v',            name: 'Sentry',             role: 'villain', expansionId: 'world-war-hulk' },
 
   // ── Witching Hour ────────────────────────────────────────────────────────
   { id: 'scarlet-witch-v',     name: 'Scarlet Witch',      role: 'villain', expansionId: 'witching-hour' },
+  { id: 'agatha-harkness-v',   name: 'Agatha Harkness',    role: 'villain', expansionId: 'witching-hour' },
+  { id: 'grey-hulk-v',         name: 'Grey-Hulk',          role: 'villain', expansionId: 'witching-hour' },
+  { id: 'juggernaut-hero-v',   name: 'Juggernaut',         role: 'villain', expansionId: 'witching-hour' },
+  { id: 'mister-sinister-hero-v', name: 'Mister Sinister', role: 'villain', expansionId: 'witching-hour' },
 
   // ── Spider-Man's Greatest Foes ───────────────────────────────────────────
   { id: 'doctor-octopus',      name: 'Doctor Octopus',     role: 'villain', expansionId: 'spider-foes' },
@@ -114,6 +126,7 @@ export const villains: Character[] = [
 
   // ── War of Kings ─────────────────────────────────────────────────────────
   { id: 'vulcan',              name: 'Vulcan',             role: 'villain', expansionId: 'war-of-kings' },
+  { id: 'gladiator-v',         name: 'Gladiator',          role: 'villain', expansionId: 'war-of-kings' },
 
   // ── X-Men: The Age of Apocalypse ─────────────────────────────────────────
   { id: 'apocalypse-aoa',      name: 'Apocalypse (Age of Apocalypse)', role: 'villain', expansionId: 'age-of-apocalypse' },
@@ -128,6 +141,7 @@ export const villains: Character[] = [
   { id: 'firelord',            name: 'Firelord',           role: 'villain', expansionId: 'coming-of-galactus' },
   { id: 'galactus',            name: 'Galactus',           role: 'villain', expansionId: 'coming-of-galactus' },
   { id: 'terrax',              name: 'Terrax',             role: 'villain', expansionId: 'coming-of-galactus' },
+  { id: 'nova-frankie-raye-v', name: 'Nova (Frankie Raye)', role: 'villain', expansionId: 'coming-of-galactus' },
 
   // ── Season 3 Stretch Goals ───────────────────────────────────────────────
   { id: 'abomination',         name: 'Abomination',        role: 'villain', expansionId: 'season-3-stretch-goals' },
@@ -154,6 +168,15 @@ export const villains: Character[] = [
   { id: 'thunderball',         name: 'Thunderball',        role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'titania',             name: 'Titania',            role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'wrecker',             name: 'Wrecker',            role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'daken-v',             name: 'Daken',              role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'darkchild-v',         name: 'Darkchild',          role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'moonstone-v',         name: 'Moonstone',          role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'us-agent-v',          name: 'U.S. Agent',         role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'white-widow-v',       name: 'White Widow',        role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'red-hulk-v',          name: 'Red Hulk',           role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'darkstar-v',          name: 'Darkstar',           role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'ursa-major-v',        name: 'Ursa Major',         role: 'villain', expansionId: 'season-3-stretch-goals' },
+  { id: 'red-guardian-v',      name: 'Red Guardian',       role: 'villain', expansionId: 'season-3-stretch-goals' },
 
   // ── Avengers (KS Exclusives) ─────────────────────────────────────────────
   { id: 'baron-zemo',          name: 'Baron Zemo',         role: 'villain', expansionId: 'season-1-stretch-goals' },
