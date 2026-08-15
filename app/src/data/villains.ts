@@ -58,7 +58,6 @@ export const villains: Character[] = [
   // ── Deadpool ─────────────────────────────────────────────────────────────
   { id: 'deadpool-v',          name: 'Deadpool',           role: 'villain', expansionId: 'deadpool' },
   { id: 'deadpool-challenge',  name: 'Deadpool (Challenge)', role: 'villain', expansionId: 'deadpool' },
-  { id: 'bob-v',               name: 'Bob, Agent of Hydra',role: 'villain', expansionId: 'deadpool' },
 
   // ── Rise of the Black Panther ────────────────────────────────────────────
   { id: 'killmonger',          name: 'Killmonger',         role: 'villain', expansionId: 'black-panther' },
@@ -81,19 +80,21 @@ export const villains: Character[] = [
   { id: 'sentinel-challenge',  name: 'Sentinel',           role: 'villain', expansionId: 'dofp' },
 
   // ── X-Men: First Class ───────────────────────────────────────────────────
-  { id: 'quicksilver-fc',      name: 'Quicksilver (First Class)', role: 'villain', expansionId: 'first-class' },
-  { id: 'scarlet-witch-fc',    name: 'Scarlet Witch (First Class)', role: 'villain', expansionId: 'first-class' },
+  { id: 'scarlet-witch-quicksilver', name: 'Scarlet Witch & Quicksilver', role: 'villain', expansionId: 'first-class' },
 
   // ── Fantastic Four ───────────────────────────────────────────────────────
-  { id: 'super-skrull',        name: 'Super-Skrull',       role: 'villain', expansionId: 'fantastic-four' },
+  { id: 'super-skrull',        name: 'Super-Skrull',       role: 'villain', expansionId: 'fantastic-four', ksExclusive: true },
   { id: 'doctor-doom-v',       name: 'Doctor Doom',        role: 'villain', expansionId: 'fantastic-four' },
 
   // ── Maximum Carnage ──────────────────────────────────────────────────────
   { id: 'scream',              name: 'Scream',             role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'shriek',              name: 'Shriek',             role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'scorpion',            name: 'Scorpion',           role: 'villain', expansionId: 'maximum-carnage' },
-  { id: 'demogoblin',          name: 'Demogoblin',         role: 'villain', expansionId: 'maximum-carnage' },
-  { id: 'doppelganger',        name: 'Doppelganger',       role: 'villain', expansionId: 'maximum-carnage' },
+  { id: 'demogoblin-doppelganger', name: 'Demogoblin & Doppelganger', role: 'villain', expansionId: 'maximum-carnage' },
+
+  // ── World War Hulk ───────────────────────────────────────────────────────
+  { id: 'world-breaker-hulk',  name: 'World Breaker Hulk', role: 'villain', expansionId: 'world-war-hulk' },
+  { id: 'the-void',            name: 'The Void',           role: 'villain', expansionId: 'world-war-hulk' },
 
   // ── Witching Hour ────────────────────────────────────────────────────────
   { id: 'scarlet-witch-v',     name: 'Scarlet Witch',      role: 'villain', expansionId: 'witching-hour' },
