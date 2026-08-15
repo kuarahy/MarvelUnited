@@ -16,7 +16,7 @@ export const villains: Character[] = [
   { id: 'emperor-doom',        name: 'Emperor Doom',       role: 'villain', expansionId: 'multiverse-core' },
   { id: 'immortus',            name: 'Immortus',           role: 'villain', expansionId: 'multiverse-core' },
   { id: 'maestro',             name: 'Maestro',            role: 'villain', expansionId: 'multiverse-core' },
-  { id: 'cosmic-ghost-rider-blaze', name: 'Cosmic Ghost Rider', role: 'villain', expansionId: 'multiverse-core' },
+  { id: 'cosmic-ghost-rider', name: 'Cosmic Ghost Rider', role: 'villain', expansionId: 'multiverse-core' },
 
   // ── Enter the Spider-Verse ───────────────────────────────────────────────
   { id: 'green-goblin',        name: 'Green Goblin',       role: 'villain', expansionId: 'spider-verse' },
