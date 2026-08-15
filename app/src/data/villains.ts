@@ -55,7 +55,7 @@ export const villains: Character[] = [
 
   // ── Season 1 Stretch Goals (continued) ───────────────────────────────────
   { id: 'dormammu',            name: 'Dormammu',           role: 'villain', expansionId: 'season-1-stretch-goals' },
-  { id: 'modok',               name: 'M.O.D.O.K.',        role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'modok',               name: 'M.O.D.O.K.',         role: 'villain', expansionId: 'season-1-stretch-goals' },
   { id: 'venom',               name: 'Venom',              role: 'villain', expansionId: 'season-1-stretch-goals' },
 
   // ── Season 2 Stretch Goals (continued) ───────────────────────────────────

@@ -13,7 +13,7 @@ export const expansions: Expansion[] = [
   { id: 'days-of-future-past', name: 'Days of Future Past',              type: 'promo' },
   { id: 'deadpool',            name: 'Deadpool',                         type: 'expansion' },
   { id: 'spider-verse',        name: 'Enter the Spider-Verse',           type: 'expansion' },
-  { id: 'fantastic-four',      name: 'Fantastic Four',                   type: 'promo' },
+  { id: 'fantastic-four',      name: 'Fantastic Four',                   type: 'promo', parentId: 'fantastic-four' },
   { id: 'guardians',           name: 'Guardians of the Galaxy',          type: 'expansion' },
   { id: 'maximum-carnage',     name: 'Maximum Carnage',                  type: 'expansion' },
   { id: 'pet-companions',      name: 'Pet Companions',                   type: 'promo' },
