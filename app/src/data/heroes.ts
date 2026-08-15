@@ -149,11 +149,11 @@ export const heroes: Character[] = [
   { id: 'sentry',              name: 'Sentry',             role: 'anti-hero', expansionId: 'world-war-hulk' },
 
   // ── Witching Hour ────────────────────────────────────────────────────────
-  { id: 'agatha-harkness',     name: 'Agatha Harkness',   role: 'anti-hero', expansionId: 'witching-hour' },
+  { id: 'agatha-harkness',     name: 'Agatha Harkness',    role: 'anti-hero', expansionId: 'witching-hour' },
   { id: 'deadpool-x-force',    name: 'Deadpool (X-Force)', role: 'hero',      expansionId: 'witching-hour' },
-  { id: 'grey-hulk',           name: 'Grey-Hulk',         role: 'anti-hero', expansionId: 'witching-hour' },
-  { id: 'juggernaut-hero',     name: 'Juggernaut',        role: 'anti-hero', expansionId: 'witching-hour' },
-  { id: 'mister-sinister-hero',name: 'Mister Sinister',   role: 'anti-hero', expansionId: 'witching-hour' },
+  { id: 'grey-hulk',           name: 'Grey-Hulk',          role: 'anti-hero', expansionId: 'witching-hour' },
+  { id: 'mister-sinister-hero',name: 'Mister Sinister',    role: 'anti-hero', expansionId: 'witching-hour' },
+  { id: 'juggernaut',          name: 'Juggernaut',         role: 'anti-hero', expansionId: 'witching-hour' },
 
   // ── Pet Companions ───────────────────────────────────────────────────────
   { id: 'lockheed',            name: 'Lockheed',           role: 'hero',      expansionId: 'pet-companions' },
@@ -193,8 +193,7 @@ export const heroes: Character[] = [
   { id: 'quasar',              name: 'Quasar',             role: 'hero',      expansionId: 'annihilation' },
 
   // ── The Coming of Galactus ─────────────────────────────────────────────────
-  { id: 'iron-lad',            name: 'Iron Lad',           role: 'hero',      expansionId: 'coming-of-galactus' },
-  { id: 'nova-frankie-raye',   name: 'Nova (Frankie Raye)', role: 'anti-hero',expansionId: 'coming-of-galactus' },
+  { id: 'nova-frankie-raye',   name: 'Nova (Frankie Raye)', role: 'hero',     expansionId: 'coming-of-galactus' },
 
   // ── Season 3 Stretch Goals ───────────────────────────────────────────────
   { id: 'agent-venom',         name: 'Agent Venom',        role: 'hero',      expansionId: 'season-3-stretch-goals' },
@@ -237,6 +236,7 @@ export const heroes: Character[] = [
   { id: 'darkstar',            name: 'Darkstar',           role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
   { id: 'ursa-major',          name: 'Ursa Major',         role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
   { id: 'red-guardian',        name: 'Red Guardian',       role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'iron-lad',            name: 'Iron Lad',           role: 'hero',      expansionId: 'season-3-stretch-goals' },
 
   // ── Season 1 Stretch Goals ──────────────────────────────────────────────────────────────────
   { id: 'adam-warlock',        name: 'Adam Warlock',       role: 'hero',      expansionId: 'season-1-stretch-goals' },
