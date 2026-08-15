@@ -11,6 +11,7 @@ const locationRepo = new LocationRepository()
 const service = new RandomizerService(charRepo, expansionRepo)
 const allExpansions = expansionRepo.getAll()
 const allLocations = locationRepo.getAll()
+const LOCATIONS_COUNT = 6
 
 /** Parent expansion IDs for which the user owns the KS variant. */
 function ownedKsParentIds(ownedIds: Set<string>): Set<string> {
