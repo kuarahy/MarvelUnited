@@ -20,7 +20,6 @@ export const villains: Character[] = [
 
   // ── Tales of Asgard ──────────────────────────────────────────────────────
   { id: 'loki-v',              name: 'Loki',               role: 'villain', expansionId: 'tales-of-asgard' },
-  { id: 'hela',                name: 'Hela',               role: 'villain', expansionId: 'tales-of-asgard' },
 
   // ── Guardians of the Galaxy ──────────────────────────────────────────────
   { id: 'ronan',               name: 'Ronan',              role: 'villain', expansionId: 'guardians' },
@@ -90,7 +89,6 @@ export const villains: Character[] = [
   { id: 'doctor-doom-v',       name: 'Doctor Doom',        role: 'villain', expansionId: 'fantastic-four' },
 
   // ── Maximum Carnage ──────────────────────────────────────────────────────
-  { id: 'carnage',             name: 'Carnage',            role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'scream',              name: 'Scream',             role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'shriek',              name: 'Shriek',             role: 'villain', expansionId: 'maximum-carnage' },
   { id: 'scorpion',            name: 'Scorpion',           role: 'villain', expansionId: 'maximum-carnage' },
@@ -105,7 +103,6 @@ export const villains: Character[] = [
   { id: 'electro',             name: 'Electro',            role: 'villain', expansionId: 'spider-foes' },
   { id: 'kraven',              name: 'Kraven',             role: 'villain', expansionId: 'spider-foes' },
   { id: 'mysterio',            name: 'Mysterio',           role: 'villain', expansionId: 'spider-foes' },
-  { id: 'rhino',               name: 'Rhino',              role: 'villain', expansionId: 'spider-foes' },
   { id: 'sandman',             name: 'Sandman',            role: 'villain', expansionId: 'spider-foes' },
   { id: 'vulture',             name: 'Vulture',            role: 'villain', expansionId: 'spider-foes' },
 
@@ -160,6 +157,9 @@ export const villains: Character[] = [
   { id: 'baron-zemo',          name: 'Baron Zemo',         role: 'villain', expansionId: 'season-1-stretch-goals' },
   { id: 'corvus-glaive',       name: 'Corvus Glaive',      role: 'villain', expansionId: 'season-1-stretch-goals' },
   { id: 'kang',                name: 'Kang',               role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'hela',                name: 'Hela',               role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'carnage',             name: 'Carnage',            role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'rhino',               name: 'Rhino',              role: 'villain', expansionId: 'season-1-stretch-goals' },
 
   // ── The Infinity Gauntlet ─────────────────────────────────────────────────
   { id: 'black-dwarf',         name: 'Black Dwarf',        role: 'villain', expansionId: 'infinity-gauntlet' },
