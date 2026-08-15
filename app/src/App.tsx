@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Header, TabNav, Footer } from './components/layout'
 import type { TabId } from './components/layout'
 import { RandomizerPanel } from './components/randomizer'
+import { LocationsPanel } from './components/locations'
 // Not ready for prod yet — re-enable with TabNav entries when content is ready:
 // import { CampaignPanel } from './components/campaigns'
 // import { ScenarioPanel } from './components/scenarios'
@@ -9,6 +10,7 @@ import type { ReactElement } from 'react'
 
 const TAB_PANELS: Partial<Record<TabId, ReactElement>> = {
   randomizer: <RandomizerPanel />,
+  locations: <LocationsPanel />,
   // campaigns: <CampaignPanel />,
   // scenarios: <ScenarioPanel />,
 }

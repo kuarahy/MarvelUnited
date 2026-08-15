@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react'
 
-const STORAGE_KEY = 'mu-randomizer:owned-expansions'
+const DEFAULT_STORAGE_KEY = 'mu-randomizer:owned-expansions'
 
 export interface CollectionState {
   ownedIds: Set<string>
@@ -10,9 +10,9 @@ export interface CollectionState {
   isOwned: (id: string) => boolean
 }
 
-function loadFromStorage(allIds: string[]): Set<string> {
+function loadFromStorage(storageKey: string, allIds: string[]): Set<string> {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
+    const raw = localStorage.getItem(storageKey)
     if (raw === null) return new Set(allIds)
     const parsed = JSON.parse(raw)
     if (Array.isArray(parsed)) return new Set(parsed as string[])
@@ -22,12 +22,12 @@ function loadFromStorage(allIds: string[]): Set<string> {
   return new Set(allIds)
 }
 
-export function useCollection(allIds: string[]): CollectionState {
-  const [ownedIds, setOwnedIds] = useState<Set<string>>(() => loadFromStorage(allIds))
+export function useCollection(allIds: string[], storageKey = DEFAULT_STORAGE_KEY): CollectionState {
+  const [ownedIds, setOwnedIds] = useState<Set<string>>(() => loadFromStorage(storageKey, allIds))
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([...ownedIds]))
-  }, [ownedIds])
+    localStorage.setItem(storageKey, JSON.stringify([...ownedIds]))
+  }, [storageKey, ownedIds])
 
   const toggle = useCallback((id: string) => {
     setOwnedIds((prev) => {
