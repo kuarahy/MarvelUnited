@@ -9,8 +9,8 @@ export const villains: Character[] = [
   // ── Spider-Geddon Core Box ───────────────────────────────────────────────
   { id: 'morlun',              name: 'Morlun',             role: 'villain', expansionId: 'spider-geddon' },
   { id: 'spot',                name: 'Spot',               role: 'villain', expansionId: 'spider-geddon' },
-  { id: 'anti-venom-v',        name: 'Anti-Venom',         role: 'villain', expansionId: 'spider-geddon' },
-  { id: 'superior-spider-man-v', name: 'Superior Spider-Man', role: 'villain', expansionId: 'spider-geddon' },
+  { id: 'anti-venom',        name: 'Anti-Venom',         role: 'villain', expansionId: 'spider-geddon' },
+  { id: 'superior-spider-man', name: 'Superior Spider-Man', role: 'villain', expansionId: 'spider-geddon' },
 
   // ── Multiverse Core Box ──────────────────────────────────────────────────
   { id: 'emperor-doom',        name: 'Emperor Doom',       role: 'villain', expansionId: 'multiverse-core' },
