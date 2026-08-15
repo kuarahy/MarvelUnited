@@ -193,8 +193,7 @@ export const heroes: Character[] = [
   { id: 'quasar',              name: 'Quasar',             role: 'hero',      expansionId: 'annihilation' },
 
   // ── The Coming of Galactus ─────────────────────────────────────────────────
-  { id: 'iron-lad',            name: 'Iron Lad',           role: 'hero',      expansionId: 'coming-of-galactus' },
-  { id: 'nova-frankie-raye',   name: 'Nova (Frankie Raye)', role: 'anti-hero',expansionId: 'coming-of-galactus' },
+  { id: 'nova-frankie-raye',   name: 'Nova (Frankie Raye)', role: 'hero',     expansionId: 'coming-of-galactus' },
 
   // ── Season 3 Stretch Goals ───────────────────────────────────────────────
   { id: 'agent-venom',         name: 'Agent Venom',        role: 'hero',      expansionId: 'season-3-stretch-goals' },
@@ -237,6 +236,7 @@ export const heroes: Character[] = [
   { id: 'darkstar',            name: 'Darkstar',           role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
   { id: 'ursa-major',          name: 'Ursa Major',         role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
   { id: 'red-guardian',        name: 'Red Guardian',       role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
+  { id: 'iron-lad',            name: 'Iron Lad',           role: 'hero',      expansionId: 'season-3-stretch-goals' },
 
   // ── Season 1 Stretch Goals ──────────────────────────────────────────────────────────────────
   { id: 'adam-warlock',        name: 'Adam Warlock',       role: 'hero',      expansionId: 'season-1-stretch-goals' },

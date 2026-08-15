@@ -147,7 +147,6 @@ export const villains: Character[] = [
   { id: 'firelord',            name: 'Firelord',           role: 'villain', expansionId: 'coming-of-galactus' },
   { id: 'galactus',            name: 'Galactus',           role: 'villain', expansionId: 'coming-of-galactus' },
   { id: 'terrax',              name: 'Terrax',             role: 'villain', expansionId: 'coming-of-galactus' },
-  { id: 'nova-frankie-raye',   name: 'Nova (Frankie Raye)', role: 'villain', expansionId: 'coming-of-galactus' },
 
   // ── Season 3 Stretch Goals ───────────────────────────────────────────────
   { id: 'abomination',         name: 'Abomination',        role: 'villain', expansionId: 'season-3-stretch-goals' },
