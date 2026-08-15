@@ -6,7 +6,7 @@ const expansionRepo = new ExpansionRepository()
 const allExpansions = expansionRepo.getAll()
 
 export function LocationsPanel() {
-  const collection = useCollection(allExpansions.map((e) => e.id))
+  const collection = useCollection(allExpansions.map((e) => e.id), 'mu-randomizer:locations-owned-expansions')
   const { locations, rollLocations } = useRandomizer(collection.ownedIds)
 
   return (
