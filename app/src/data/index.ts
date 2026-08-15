@@ -1,5 +1,6 @@
 export { expansions } from './expansions'
 export { heroes } from './heroes'
 export { villains } from './villains'
+export { locations } from './locations'
 export { scenarios } from './scenarios'
 export { campaigns } from './campaigns'

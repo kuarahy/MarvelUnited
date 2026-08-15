@@ -1,9 +1,10 @@
-import type { Character, Expansion } from '../types'
+import type { Character, Expansion, Location } from '../types'
 import type { CharacterRepository } from '../repositories/CharacterRepository'
 import type { ExpansionRepository } from '../repositories/ExpansionRepository'
 import { ShuffleService } from './ShuffleService'
 
 const TEAM_SIZE = 4
+const LOCATIONS_COUNT = 6
 
 export class RandomizerService {
   private readonly shuffle = new ShuffleService()
@@ -27,5 +28,9 @@ export class RandomizerService {
 
   rollExpansion(pool?: Expansion[]): Expansion {
     return this.shuffle.pickOne(pool ?? this.expansionRepo.getAll())
+  }
+
+  rollLocations(pool: Location[]): Location[] {
+    return this.shuffle.pickMany(pool, LOCATIONS_COUNT)
   }
 }
