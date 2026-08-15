@@ -108,8 +108,6 @@ export const villains: Character[] = [
   { id: 'world-breaker-hulk',  name: 'World Breaker Hulk', role: 'villain', expansionId: 'world-war-hulk' },
   { id: 'the-void',            name: 'The Void',           role: 'villain', expansionId: 'world-war-hulk' },
   { id: 'ares',                name: 'Ares',               role: 'villain', expansionId: 'world-war-hulk' },
-  { id: 'gladiator-hulk',      name: 'Gladiator Hulk',     role: 'villain', expansionId: 'world-war-hulk' },
-  { id: 'sentry',              name: 'Sentry',             role: 'villain', expansionId: 'world-war-hulk' },
 
   // ── Witching Hour ────────────────────────────────────────────────────────
   { id: 'scarlet-witch',       name: 'Scarlet Witch',      role: 'villain', expansionId: 'witching-hour' },
