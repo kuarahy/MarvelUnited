@@ -79,8 +79,6 @@ export const heroes: Character[] = [
   { id: 'jubilee',             name: 'Jubilee',            role: 'hero',      expansionId: 'xmen-blue' },
   { id: 'rogue',               name: 'Rogue',              role: 'hero',      expansionId: 'xmen-blue' },
   { id: 'gambit',              name: 'Gambit',             role: 'hero',      expansionId: 'xmen-blue' },
-  { id: 'mystique',            name: 'Mystique',           role: 'anti-hero', expansionId: 'xmen-core' },
-  { id: 'magneto',             name: 'Magneto',            role: 'anti-hero', expansionId: 'xmen-core' },
 
   // ── X-Men Gold Team ──────────────────────────────────────────────────────
   { id: 'archangel',           name: 'Archangel',          role: 'hero',      expansionId: 'xmen-gold' },
