@@ -32,10 +32,6 @@ export const villains: Character[] = [
   // ── Guardians of the Galaxy ──────────────────────────────────────────────
   { id: 'ronan',               name: 'Ronan',              role: 'villain', expansionId: 'guardians' },
 
-  // ── Season 1 Stretch Goals ───────────────────────────────────────────────
-  { id: 'kingpin',             name: 'Kingpin',            role: 'villain', expansionId: 'season-1-stretch-goals' },
-  { id: 'bullseye',            name: 'Bullseye',           role: 'villain', expansionId: 'season-1-stretch-goals' },
-
   // ── X-MEN: The Horsemen of Apocalypse ───────────────────────────────────
   { id: 'famine',              name: 'Famine',             role: 'villain', expansionId: 'horsemen' },
   { id: 'war',                 name: 'War',                role: 'villain', expansionId: 'horsemen' },
@@ -48,17 +44,28 @@ export const villains: Character[] = [
   { id: 'sabretooth',          name: 'Sabretooth',         role: 'villain', expansionId: 'xmen-core' },
   { id: 'mystique',            name: 'Mystique',           role: 'villain', expansionId: 'xmen-core' },
   { id: 'magneto',             name: 'Magneto',            role: 'villain', expansionId: 'xmen-core' },
+  { id: 'pyro',                name: 'Pyro',               role: 'villain', expansionId: 'xmen-core', ksExclusive: true },
+  { id: 'toad',                name: 'Toad',               role: 'villain', expansionId: 'xmen-core', ksExclusive: true },
+  { id: 'blob',                name: 'Blob',               role: 'villain', expansionId: 'xmen-core', ksExclusive: true },
 
   // ── X-Men Blue Team ──────────────────────────────────────────────────────
   { id: 'mister-sinister',     name: 'Mister Sinister',    role: 'villain', expansionId: 'xmen-blue' },
 
   // ── Season 1 Stretch Goals (continued) ───────────────────────────────────
+  { id: 'baron-zemo',          name: 'Baron Zemo',         role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'bullseye',            name: 'Bullseye',           role: 'villain', expansionId: 'season-1-stretch-goals' },  
+  { id: 'carnage',             name: 'Carnage',            role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'corvus-glaive',       name: 'Corvus Glaive',      role: 'villain', expansionId: 'season-1-stretch-goals' },
   { id: 'dormammu',            name: 'Dormammu',           role: 'villain', expansionId: 'season-1-stretch-goals' },
   { id: 'modok',               name: 'M.O.D.O.K.',         role: 'villain', expansionId: 'season-1-stretch-goals' },
   { id: 'venom',               name: 'Venom',              role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'kingpin',             name: 'Kingpin',            role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'kang',                name: 'Kang',               role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'hela',                name: 'Hela',               role: 'villain', expansionId: 'season-1-stretch-goals' },
+  { id: 'rhino',               name: 'Rhino',              role: 'villain', expansionId: 'season-1-stretch-goals' },
 
   // ── Season 2 Stretch Goals (continued) ───────────────────────────────────
-  { id: 'callisto',            name: 'Callisto',           role: 'villain', expansionId: 'season-2-stretch-goals' },
+
 
   // ── X-Men Gold Team ──────────────────────────────────────────────────────
   { id: 'sebastian-shaw',      name: 'Sebastian Shaw',     role: 'villain', expansionId: 'xmen-gold' },
@@ -172,14 +179,6 @@ export const villains: Character[] = [
   { id: 'ursa-major',          name: 'Ursa Major',         role: 'villain', expansionId: 'season-3-stretch-goals' },
   { id: 'red-guardian',        name: 'Red Guardian',       role: 'villain', expansionId: 'season-3-stretch-goals' },
 
-  // ── Avengers (KS Exclusives) ─────────────────────────────────────────────
-  { id: 'baron-zemo',          name: 'Baron Zemo',         role: 'villain', expansionId: 'season-1-stretch-goals' },
-  { id: 'corvus-glaive',       name: 'Corvus Glaive',      role: 'villain', expansionId: 'season-1-stretch-goals' },
-  { id: 'kang',                name: 'Kang',               role: 'villain', expansionId: 'season-1-stretch-goals' },
-  { id: 'hela',                name: 'Hela',               role: 'villain', expansionId: 'season-1-stretch-goals' },
-  { id: 'carnage',             name: 'Carnage',            role: 'villain', expansionId: 'season-1-stretch-goals' },
-  { id: 'rhino',               name: 'Rhino',              role: 'villain', expansionId: 'season-1-stretch-goals' },
-
   // ── The Infinity Gauntlet ─────────────────────────────────────────────────
   { id: 'black-dwarf',         name: 'Black Dwarf',        role: 'villain', expansionId: 'infinity-gauntlet' },
   { id: 'ebony-maw',           name: 'Ebony Maw',          role: 'villain', expansionId: 'infinity-gauntlet' },
@@ -196,9 +195,6 @@ export const villains: Character[] = [
   { id: 'omega-red',           name: 'Omega Red',          role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'arcade',              name: 'Arcade',             role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'sauron',              name: 'Sauron',             role: 'villain', expansionId: 'season-2-stretch-goals' },
-  { id: 'pyro',                name: 'Pyro',               role: 'villain', expansionId: 'xmen-core-ks', alsoIn: 'season-2-stretch-goals' },
-  { id: 'toad',                name: 'Toad',               role: 'villain', expansionId: 'xmen-core-ks', alsoIn: 'season-2-stretch-goals' },
-  { id: 'blob',                name: 'Blob',               role: 'villain', expansionId: 'xmen-core-ks', alsoIn: 'season-2-stretch-goals' },
   { id: 'mojo',                name: 'Mojo',               role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'brood-queen',         name: 'Brood Queen',        role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'onslaught',           name: 'Onslaught',          role: 'villain', expansionId: 'season-2-stretch-goals' },
@@ -208,4 +204,5 @@ export const villains: Character[] = [
   { id: 'marrow',              name: 'Marrow',             role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'spiral',              name: 'Spiral',             role: 'villain', expansionId: 'season-2-stretch-goals' },
   { id: 'namor-promo',         name: 'Namor',              role: 'villain', expansionId: 'season-2-stretch-goals' },
+  { id: 'callisto',            name: 'Callisto',           role: 'villain', expansionId: 'season-2-stretch-goals' },
 ]
