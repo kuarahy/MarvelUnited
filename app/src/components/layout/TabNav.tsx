@@ -1,4 +1,4 @@
-export type TabId = 'randomizer' | 'campaigns' | 'scenarios'
+export type TabId = 'randomizer' | 'locations' | 'campaigns' | 'scenarios'
 
 interface Tab {
   id: TabId
@@ -7,6 +7,7 @@ interface Tab {
 
 const TABS: Tab[] = [
   { id: 'randomizer', label: 'Randomizer' },
+  { id: 'locations', label: 'Locations' },
   // Not ready for prod yet — re-enable when content is ready:
   // { id: 'campaigns', label: 'Campaigns' },
   // { id: 'scenarios', label: 'Scenarios' },
