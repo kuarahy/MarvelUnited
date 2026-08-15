@@ -121,7 +121,7 @@ export const heroes: Character[] = [
   { id: 'cable',               name: 'Cable',              role: 'hero',      expansionId: 'x-force' },
 
   // ── Days of Future Past ──────────────────────────────────────────────────
-  { id: 'logan',               name: 'Logan',              role: 'hero',      expansionId: 'dofp' },
+  { id: 'logan',               name: 'Logan',              role: 'hero',      expansionId: 'days-of-future-past' },
 
   // ── X-Men: First Class ───────────────────────────────────────────────────
   { id: 'angel-first-class',   name: 'Angel (First Class)', role: 'hero',     expansionId: 'first-class' },

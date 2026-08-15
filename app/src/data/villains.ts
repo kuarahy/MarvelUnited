@@ -83,11 +83,11 @@ export const villains: Character[] = [
   { id: 'stryfe',              name: 'Stryfe',             role: 'villain', expansionId: 'x-force' },
 
   // ── Days of Future Past ──────────────────────────────────────────────────
-  { id: 'sentinel-i',          name: 'Sentinel I',         role: 'villain', expansionId: 'dofp' },
-  { id: 'sentinel-ii',         name: 'Sentinel II',        role: 'villain', expansionId: 'dofp' },
-  { id: 'sentinel-iii',        name: 'Sentinel III',       role: 'villain', expansionId: 'dofp' },
-  { id: 'nimrod',              name: 'Nimrod',             role: 'villain', expansionId: 'dofp' },
-  { id: 'sentinel-challenge',  name: 'Sentinel',           role: 'villain', expansionId: 'dofp' },
+  { id: 'sentinel-i',          name: 'Sentinel I',         role: 'villain', expansionId: 'days-of-future-past' },
+  { id: 'sentinel-ii',         name: 'Sentinel II',        role: 'villain', expansionId: 'days-of-future-past' },
+  { id: 'sentinel-iii',        name: 'Sentinel III',       role: 'villain', expansionId: 'days-of-future-past' },
+  { id: 'nimrod',              name: 'Nimrod',             role: 'villain', expansionId: 'days-of-future-past' },
+  { id: 'sentinel-challenge',  name: 'Sentinel',           role: 'villain', expansionId: 'days-of-future-past' },
 
   // ── X-Men: First Class ───────────────────────────────────────────────────
   { id: 'scarlet-witch-quicksilver', name: 'Scarlet Witch & Quicksilver', role: 'villain', expansionId: 'first-class' },
