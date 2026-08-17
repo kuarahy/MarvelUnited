@@ -12,7 +12,6 @@ export const expansions: Expansion[] = [
   { id: 'civil-war',           name: 'Civil War',                        type: 'expansion' },
   { id: 'deadpool',            name: 'Deadpool',                         type: 'expansion' },
   { id: 'spider-verse',        name: 'Enter the Spider-Verse',           type: 'expansion' },
-  { id: 'fantastic-four',      name: 'Fantastic Four',                   type: 'promo', parentId: 'fantastic-four' },
   { id: 'guardians',           name: 'Guardians of the Galaxy',          type: 'expansion' },
   { id: 'maximum-carnage',     name: 'Maximum Carnage',                  type: 'expansion' },
   { id: 'pet-companions',      name: 'Pet Companions',                   type: 'promo' },
@@ -20,7 +19,6 @@ export const expansions: Expansion[] = [
   { id: 'black-panther',       name: 'Rise of the Black Panther',        type: 'expansion' },
   { id: 'secret-invasion',     name: 'Secret Invasion',                  type: 'expansion' },
   { id: 'tales-of-asgard',     name: 'Tales of Asgard',                  type: 'expansion' },
-  { id: 'the-coming-of-galactus', name: 'Fantastic Four: The Coming of Galactus', type: 'expansion' },
   { id: 'war-of-kings',        name: 'War of Kings',                     type: 'expansion' },
   { id: 'witching-hour',       name: 'Witching Hour',                    type: 'expansion' },
   { id: 'world-war-hulk',      name: 'World War Hulk',                   type: 'expansion' },
@@ -49,4 +47,7 @@ export const expansions: Expansion[] = [
   { id: 'xmen-gold-ks',          name: 'X-Men: Gold Team (KS)',            type: 'promo', parentId: 'xmen-gold' },
   { id: 'xmen-core-ks',          name: 'X-Men Core Box (KS)',              type: 'promo', parentId: 'xmen-core' },
   { id: 'fin-fang-foom',      name: 'Fin Fang Foom',                    type: 'promo' },
+  { id: 'the-coming-of-galactus', name: 'Fantastic Four: The Coming of Galactus', type: 'promo', parentId: 'the-coming-of-galactus' },
+  { id: 'fantastic-four', name: 'Fantastic Four', type: 'promo', parentId: 'fantastic-four' },
+  
 ]

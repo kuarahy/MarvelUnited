@@ -143,11 +143,10 @@ export const villains: Character[] = [
   { id: 'annihilus',           name: 'Annihilus',          role: 'villain', expansionId: 'annihilation' },
 
   // ── The Coming of Galactus ───────────────────────────────────────────────
-  { id: 'air-walker',          name: 'Air-Walker',         role: 'villain', expansionId: 'coming-of-galactus' },
-  { id: 'firelord',            name: 'Firelord',           role: 'villain', expansionId: 'coming-of-galactus' },
-  { id: 'galactus',            name: 'Galactus',           role: 'villain', expansionId: 'coming-of-galactus' },
-  { id: 'terrax',              name: 'Terrax',             role: 'villain', expansionId: 'coming-of-galactus' },
-  { id: 'nova-frankie-raye',   name: 'Nova (Frankie Raye)', role: 'hero',     expansionId: 'coming-of-galactus' },
+  { id: 'air-walker',          name: 'Air-Walker',         role: 'villain', expansionId: 'the-coming-of-galactus' },
+  { id: 'firelord',            name: 'Firelord',           role: 'villain', expansionId: 'the-coming-of-galactus' },
+  { id: 'galactus',            name: 'Galactus',           role: 'villain', expansionId: 'the-coming-of-galactus' },
+  { id: 'terrax',              name: 'Terrax',             role: 'villain', expansionId: 'the-coming-of-galactus' },
 
   // ── Season 3 Stretch Goals ───────────────────────────────────────────────
   { id: 'abomination',         name: 'Abomination',        role: 'villain', expansionId: 'season-3-stretch-goals' },
