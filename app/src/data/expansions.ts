@@ -47,6 +47,7 @@ export const expansions: Expansion[] = [
   { id: 'xmen-gold-ks',          name: 'X-Men: Gold Team (KS)',            type: 'promo', parentId: 'xmen-gold' },
   { id: 'xmen-core-ks',          name: 'X-Men Core Box (KS)',              type: 'promo', parentId: 'xmen-core' },
   { id: 'fin-fang-foom',      name: 'Fin Fang Foom',                    type: 'promo' },
-  { id: 'fantastic-four',      name: 'Fantastic Four: The Coming of Galactus', type: 'promo' },
+  { id: 'the-coming-of-galactus', name: 'Fantastic Four: The Coming of Galactus', type: 'promo', parentId: 'the-coming-of-galactus' },
+  { id: 'fantastic-four', name: 'Fantastic Four', type: 'promo', parentId: 'fantastic-four' },
   
 ]

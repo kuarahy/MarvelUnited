@@ -58,7 +58,7 @@ export const heroes: Character[] = [
   { id: 'groot',               name: 'Groot',              role: 'hero',      expansionId: 'guardians' },
   { id: 'rocket',              name: 'Rocket',             role: 'hero',      expansionId: 'guardians' },
   { id: 'yondu',               name: 'Yondu',              role: 'hero',      expansionId: 'season-1-stretch-goals' },
-  { id: 'silver-surfer',       name: 'Silver Surfer',      role: 'hero',      expansionId: 'fantastic-four' },
+
 
   // ── Season 1 Stretch Goals (street-level heroes) ─────────────────────────
   { id: 'daredevil',           name: 'Daredevil',          role: 'hero',      expansionId: 'season-1-stretch-goals' },
@@ -136,6 +136,7 @@ export const heroes: Character[] = [
   { id: 'mister-fantastic',    name: 'Mister Fantastic',   role: 'hero',      expansionId: 'fantastic-four' },
   { id: 'the-thing',           name: 'The Thing',          role: 'hero',      expansionId: 'fantastic-four' },
   { id: 'doctor-doom',         name: 'Doctor Doom',        role: 'anti-hero', expansionId: 'fantastic-four' },
+  { id: 'silver-surfer',       name: 'Silver Surfer',      role: 'hero',      expansionId: 'fantastic-four' },
 
   // ── Maximum Carnage ──────────────────────────────────────────────────────
   { id: 'morbius',             name: 'Morbius',            role: 'anti-hero', expansionId: 'maximum-carnage' },
@@ -193,7 +194,8 @@ export const heroes: Character[] = [
   { id: 'quasar',              name: 'Quasar',             role: 'hero',      expansionId: 'annihilation' },
 
   // ── The Coming of Galactus ─────────────────────────────────────────────────
-  { id: 'nova-frankie-raye',   name: 'Nova (Frankie Raye)', role: 'hero',     expansionId: 'coming-of-galactus' },
+  { id: 'nova-frankie-raye',   name: 'Nova (Frankie Raye)', role: 'hero',     expansionId: 'the-coming-of-galactus' },
+  { id: 'iron-lad',            name: 'Iron Lad',           role: 'hero',      expansionId: 'the-coming-of-galactus', ksExclusive: true },
 
   // ── Season 3 Stretch Goals ───────────────────────────────────────────────
   { id: 'agent-venom',         name: 'Agent Venom',        role: 'hero',      expansionId: 'season-3-stretch-goals' },
@@ -236,8 +238,7 @@ export const heroes: Character[] = [
   { id: 'darkstar',            name: 'Darkstar',           role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
   { id: 'ursa-major',          name: 'Ursa Major',         role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
   { id: 'red-guardian',        name: 'Red Guardian',       role: 'anti-hero', expansionId: 'season-3-stretch-goals' },
-  { id: 'iron-lad',            name: 'Iron Lad',           role: 'hero',      expansionId: 'season-3-stretch-goals' },
-
+  
   // ── Season 1 Stretch Goals ──────────────────────────────────────────────────────────────────
   { id: 'adam-warlock',        name: 'Adam Warlock',       role: 'hero',      expansionId: 'season-1-stretch-goals' },
   { id: 'america-chavez',      name: 'America Chavez',     role: 'hero',      expansionId: 'season-1-stretch-goals' },
